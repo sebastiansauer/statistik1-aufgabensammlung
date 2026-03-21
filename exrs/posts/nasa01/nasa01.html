@@ -1050,20 +1050,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">66</span> Aufgabe</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">65.1</span> Aufgabe</a></li>
   <li>
-<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">67</span> Lösung</a>
+<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">65.2</span> Lösung</a>
   <ul class="collapse">
-<li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">67.1</span> Setup</a></li>
-  <li><a href="#daten-aufbereiten" id="toc-daten-aufbereiten" class="nav-link" data-scroll-target="#daten-aufbereiten"><span class="header-section-number">67.2</span> Daten aufbereiten</a></li>
-  <li><a href="#statistiken-berechnen" id="toc-statistiken-berechnen" class="nav-link" data-scroll-target="#statistiken-berechnen"><span class="header-section-number">67.3</span> Statistiken berechnen</a></li>
-  <li>
-<a href="#statistiken-visualisieren" id="toc-statistiken-visualisieren" class="nav-link" data-scroll-target="#statistiken-visualisieren"><span class="header-section-number">67.4</span> Statistiken visualisieren</a>
-  <ul class="collapse">
-<li><a href="#mit-dataexplorer" id="toc-mit-dataexplorer" class="nav-link" data-scroll-target="#mit-dataexplorer"><span class="header-section-number">67.4.1</span> Mit <code>DataExplorer</code></a></li>
-  <li><a href="#mit-ggpubr" id="toc-mit-ggpubr" class="nav-link" data-scroll-target="#mit-ggpubr"><span class="header-section-number">67.4.2</span> Mit <code>ggpubr</code></a></li>
-  </ul>
-</li>
+<li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">65.2.1</span> Setup</a></li>
+  <li><a href="#daten-aufbereiten" id="toc-daten-aufbereiten" class="nav-link" data-scroll-target="#daten-aufbereiten"><span class="header-section-number">65.2.2</span> Daten aufbereiten</a></li>
+  <li><a href="#statistiken-berechnen" id="toc-statistiken-berechnen" class="nav-link" data-scroll-target="#statistiken-berechnen"><span class="header-section-number">65.2.3</span> Statistiken berechnen</a></li>
+  <li><a href="#statistiken-visualisieren" id="toc-statistiken-visualisieren" class="nav-link" data-scroll-target="#statistiken-visualisieren"><span class="header-section-number">65.2.4</span> Statistiken visualisieren</a></li>
   </ul>
 </li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
@@ -1105,8 +1099,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="66"><h1 data-number="66">
-<span class="header-section-number">66</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="65.1"><h2 data-number="65.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">65.1</span> Aufgabe</h2>
 <p>Viele Quellen berichten Klimadaten unserer Erde, z.B. auch <a href="https://data.giss.nasa.gov/gistemp/">National Aeronautics and Space Administration - Goddard Institute for Space Studies</a>.</p>
 <p>Von dieser Quelle beziehen wir <a href="https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv">diesen Datensatz</a>.</p>
 <p>Die Datensatz sind auf der Webseite wie folgt beschrieben:</p>
@@ -1137,16 +1131,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Sie müssen zuerst die Dekade als neue Spalte berechnen.</li>
 </ul>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="67"><h1 data-number="67">
-<span class="header-section-number">67</span> Lösung</h1>
-<section id="setup" class="level2" data-number="67.1"><h2 data-number="67.1" class="anchored" data-anchor-id="setup">
-<span class="header-section-number">67.1</span> Setup</h2>
+</section><section id="lösung" class="level2" data-number="65.2"><h2 data-number="65.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">65.2</span> Lösung</h2>
+<section id="setup" class="level3" data-number="65.2.1"><h3 data-number="65.2.1" class="anchored" data-anchor-id="setup">
+<span class="header-section-number">65.2.1</span> Setup</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://rpkgs.datanovia.com/ggpubr/">ggpubr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://boxuancui.github.io/DataExplorer/">DataExplorer</a></span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="daten-aufbereiten" class="level2" data-number="67.2"><h2 data-number="67.2" class="anchored" data-anchor-id="daten-aufbereiten">
-<span class="header-section-number">67.2</span> Daten aufbereiten</h2>
+</section><section id="daten-aufbereiten" class="level3" data-number="65.2.2"><h3 data-number="65.2.2" class="anchored" data-anchor-id="daten-aufbereiten">
+<span class="header-section-number">65.2.2</span> Daten aufbereiten</h3>
 <p>Dekade berechnen:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">&lt;-</span></span>
@@ -1154,8 +1148,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>decade <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">Year</span><span class="op">/</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Das ist <em>ein möglicher</em> Weg, um aus einer Jahreszahl die Dekade zu berechnen.</p>
-</section><section id="statistiken-berechnen" class="level2" data-number="67.3"><h2 data-number="67.3" class="anchored" data-anchor-id="statistiken-berechnen">
-<span class="header-section-number">67.3</span> Statistiken berechnen</h2>
+</section><section id="statistiken-berechnen" class="level3" data-number="65.2.3"><h3 data-number="65.2.3" class="anchored" data-anchor-id="statistiken-berechnen">
+<span class="header-section-number">65.2.3</span> Statistiken berechnen</h3>
 <p>Statistiken pro Dekade:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">&lt;-</span> </span>
@@ -1168,23 +1162,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="cooospsbff" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#cooospsbff table {
+<div id="fdvehnclxf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fdvehnclxf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cooospsbff thead, #cooospsbff tbody, #cooospsbff tfoot, #cooospsbff tr, #cooospsbff td, #cooospsbff th {
+#fdvehnclxf thead, #fdvehnclxf tbody, #fdvehnclxf tfoot, #fdvehnclxf tr, #fdvehnclxf td, #fdvehnclxf th {
   border-style: none;
 }
 
-#cooospsbff p {
+#fdvehnclxf p {
   margin: 0;
   padding: 0;
 }
 
-#cooospsbff .gt_table {
+#fdvehnclxf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1210,12 +1204,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#cooospsbff .gt_caption {
+#fdvehnclxf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cooospsbff .gt_title {
+#fdvehnclxf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1227,7 +1221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#cooospsbff .gt_subtitle {
+#fdvehnclxf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1239,7 +1233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#cooospsbff .gt_heading {
+#fdvehnclxf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1251,13 +1245,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#cooospsbff .gt_bottom_border {
+#fdvehnclxf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cooospsbff .gt_col_headings {
+#fdvehnclxf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1272,7 +1266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#cooospsbff .gt_col_heading {
+#fdvehnclxf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1292,7 +1286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#cooospsbff .gt_column_spanner_outer {
+#fdvehnclxf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1304,15 +1298,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#cooospsbff .gt_column_spanner_outer:first-child {
+#fdvehnclxf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cooospsbff .gt_column_spanner_outer:last-child {
+#fdvehnclxf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cooospsbff .gt_column_spanner {
+#fdvehnclxf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1324,11 +1318,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#cooospsbff .gt_spanner_row {
+#fdvehnclxf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cooospsbff .gt_group_heading {
+#fdvehnclxf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1354,7 +1348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#cooospsbff .gt_empty_group_heading {
+#fdvehnclxf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1369,15 +1363,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#cooospsbff .gt_from_md > :first-child {
+#fdvehnclxf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cooospsbff .gt_from_md > :last-child {
+#fdvehnclxf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cooospsbff .gt_row {
+#fdvehnclxf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1396,7 +1390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#cooospsbff .gt_stub {
+#fdvehnclxf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1409,7 +1403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#cooospsbff .gt_stub_row_group {
+#fdvehnclxf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1423,15 +1417,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#cooospsbff .gt_row_group_first td {
+#fdvehnclxf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cooospsbff .gt_row_group_first th {
+#fdvehnclxf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cooospsbff .gt_summary_row {
+#fdvehnclxf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1441,16 +1435,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#cooospsbff .gt_first_summary_row {
+#fdvehnclxf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cooospsbff .gt_first_summary_row.thick {
+#fdvehnclxf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cooospsbff .gt_last_summary_row {
+#fdvehnclxf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1460,7 +1454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#cooospsbff .gt_grand_summary_row {
+#fdvehnclxf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1470,7 +1464,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#cooospsbff .gt_first_grand_summary_row {
+#fdvehnclxf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1480,7 +1474,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#cooospsbff .gt_last_grand_summary_row_top {
+#fdvehnclxf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1490,11 +1484,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#cooospsbff .gt_striped {
+#fdvehnclxf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cooospsbff .gt_table_body {
+#fdvehnclxf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1503,7 +1497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#cooospsbff .gt_footnotes {
+#fdvehnclxf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1517,7 +1511,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#cooospsbff .gt_footnote {
+#fdvehnclxf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1526,7 +1520,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#cooospsbff .gt_sourcenotes {
+#fdvehnclxf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1540,7 +1534,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#cooospsbff .gt_sourcenote {
+#fdvehnclxf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1548,72 +1542,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#cooospsbff .gt_left {
+#fdvehnclxf .gt_left {
   text-align: left;
 }
 
-#cooospsbff .gt_center {
+#fdvehnclxf .gt_center {
   text-align: center;
 }
 
-#cooospsbff .gt_right {
+#fdvehnclxf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cooospsbff .gt_font_normal {
+#fdvehnclxf .gt_font_normal {
   font-weight: normal;
 }
 
-#cooospsbff .gt_font_bold {
+#fdvehnclxf .gt_font_bold {
   font-weight: bold;
 }
 
-#cooospsbff .gt_font_italic {
+#fdvehnclxf .gt_font_italic {
   font-style: italic;
 }
 
-#cooospsbff .gt_super {
+#fdvehnclxf .gt_super {
   font-size: 65%;
 }
 
-#cooospsbff .gt_footnote_marks {
+#fdvehnclxf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cooospsbff .gt_asterisk {
+#fdvehnclxf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cooospsbff .gt_indent_1 {
+#fdvehnclxf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cooospsbff .gt_indent_2 {
+#fdvehnclxf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cooospsbff .gt_indent_3 {
+#fdvehnclxf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cooospsbff .gt_indent_4 {
+#fdvehnclxf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cooospsbff .gt_indent_5 {
+#fdvehnclxf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#cooospsbff .katex-display {
+#fdvehnclxf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#cooospsbff div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fdvehnclxf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1709,61 +1703,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section><section id="statistiken-visualisieren" class="level2" data-number="67.4"><h2 data-number="67.4" class="anchored" data-anchor-id="statistiken-visualisieren">
-<span class="header-section-number">67.4</span> Statistiken visualisieren</h2>
-<section id="mit-dataexplorer" class="level3" data-number="67.4.1"><h3 data-number="67.4.1" class="anchored" data-anchor-id="mit-dataexplorer">
-<span class="header-section-number">67.4.1</span> Mit <code>DataExplorer</code>
-</h3>
+</section><section id="statistiken-visualisieren" class="level3" data-number="65.2.4"><h3 data-number="65.2.4" class="anchored" data-anchor-id="statistiken-visualisieren">
+<span class="header-section-number">65.2.4</span> Statistiken visualisieren</h3>
+<section id="mit-dataexplorer" class="level4" data-number="65.2.4.1"><h4 data-number="65.2.4.1" class="anchored" data-anchor-id="mit-dataexplorer">
+<span class="header-section-number">65.2.4.1</span> Mit <code>DataExplorer</code>
+</h4>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">decade</span>, <span class="va">temp_mean</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span>
-<span></span>
+<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="nasa01_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span></span>
 <span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">decade</span>, <span class="va">temp_sd</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_sd"</span><span class="op">)</span></span>
-<span>  </span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_sd"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="chunk-img/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="chunk-img/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="chunk-img/unnamed-chunk-7-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="chunk-img/unnamed-chunk-7-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-7-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="nasa01_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
 </div>
-</section><section id="mit-ggpubr" class="level3" data-number="67.4.2"><h3 data-number="67.4.2" class="anchored" data-anchor-id="mit-ggpubr">
-<span class="header-section-number">67.4.2</span> Mit <code>ggpubr</code>
-</h3>
+</section><section id="mit-ggpubr" class="level4" data-number="65.2.4.2"><h4 data-number="65.2.4.2" class="anchored" data-anchor-id="mit-ggpubr">
+<span class="header-section-number">65.2.4.2</span> Mit <code>ggpubr</code>
+</h4>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggline.html">ggline</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span>
-<span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggline.html">ggline</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="nasa01_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span></span>
 <span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggline.html">ggline</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"temp_sd"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="chunk-img/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="chunk-img/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="chunk-img/unnamed-chunk-8-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="chunk-img/unnamed-chunk-8-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-8-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="nasa01_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span>  <span class="op">|&gt;</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span>  <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggerrorplot.html">ggerrorplot</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"Jan"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="chunk-img/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="chunk-img/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="nasa01_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>

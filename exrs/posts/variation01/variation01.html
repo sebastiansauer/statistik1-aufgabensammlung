@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -1040,18 +1075,10 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li>
-<a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">3</span> Aufgabe</a>
-  <ul class="collapse">
-<li><a href="#answerlist" id="toc-answerlist" class="nav-link" data-scroll-target="#answerlist"><span class="header-section-number">3.1</span> Answerlist</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">4</span> Lösung</a>
-  <ul class="collapse">
-<li><a href="#answerlist-1" id="toc-answerlist-1" class="nav-link" data-scroll-target="#answerlist-1"><span class="header-section-number">4.1</span> Answerlist</a></li>
-  </ul>
-</li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">2.1</span> Aufgabe</a></li>
+  <li><a href="#answerlist" id="toc-answerlist" class="nav-link" data-scroll-target="#answerlist"><span class="header-section-number">2.2</span> Answerlist</a></li>
+  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">2.3</span> Lösung</a></li>
+  <li><a href="#answerlist-1" id="toc-answerlist-1" class="nav-link" data-scroll-target="#answerlist-1"><span class="header-section-number">2.4</span> Answerlist</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1089,11 +1116,14 @@ window.Quarto = {
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="3"><h1 data-number="3">
-<span class="header-section-number">3</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">2.1</span> Aufgabe</h2>
 <p>In welchem Datensatz, <span class="math inline">\(x1, x2, x3, x4\)</span>, gibt es am meisten Variation?</p>
 <p>Datensatz x1:</p>
 <div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">x1</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">display</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead><tr class="header">
@@ -1137,13 +1167,16 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="variation01_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="variation01_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Datensatz x2:</p>
 <div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">x2</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">display</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead><tr class="header">
@@ -1187,13 +1220,16 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="variation01_files/figure-html/unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="variation01_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Datensatz x3:</p>
 <div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">x3</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">display</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead><tr class="header">
@@ -1237,13 +1273,16 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="variation01_files/figure-html/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="variation01_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Datensatz x4:</p>
 <div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">x4</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span>  <span class="fu">display</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead><tr class="header">
@@ -1287,13 +1326,13 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="variation01_files/figure-html/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="variation01_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<section id="answerlist" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="answerlist">
-<span class="header-section-number">3.1</span> Answerlist</h2>
+</section><section id="answerlist" class="level2" data-number="2.2"><h2 data-number="2.2" class="anchored" data-anchor-id="answerlist">
+<span class="header-section-number">2.2</span> Answerlist</h2>
 <ul>
 <li>A</li>
 <li>B</li>
@@ -1301,10 +1340,10 @@ window.Quarto = {
 <li>D</li>
 </ul>
 <p>         </p>
-</section></section><section id="lösung" class="level1" data-number="4"><h1 data-number="4">
-<span class="header-section-number">4</span> Lösung</h1>
-<section id="answerlist-1" class="level2" data-number="4.1"><h2 data-number="4.1" class="anchored" data-anchor-id="answerlist-1">
-<span class="header-section-number">4.1</span> Answerlist</h2>
+</section><section id="lösung" class="level2" data-number="2.3"><h2 data-number="2.3" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">2.3</span> Lösung</h2>
+</section><section id="answerlist-1" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="answerlist-1">
+<span class="header-section-number">2.4</span> Answerlist</h2>
 <ul>
 <li>Falsch</li>
 <li>Falsch</li>
@@ -1320,7 +1359,7 @@ window.Quarto = {
 </ul>
 
 
-</section></section></main><!-- /main --><script>
+</section></main><!-- /main --><script>
 
 /* definition of content for the buttons */
 const webex_buttons = {check_hidden:          "<b>&check;</b>",

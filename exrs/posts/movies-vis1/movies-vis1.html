@@ -1050,8 +1050,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">57</span> Aufgabe</a></li>
-  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">58</span> Lösung</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">56.1</span> Aufgabe</a></li>
+  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">56.2</span> Lösung</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1089,8 +1089,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="57"><h1 data-number="57">
-<span class="header-section-number">57</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="56.1"><h2 data-number="56.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">56.1</span> Aufgabe</h2>
 <p>Importieren Sie bitte für diese Aufgabe den Datensatz <a href="https://vincentarelbundock.github.io/Rdatasets/csv/ggplot2movies/movies.csv">movies</a> (aus dem R-Paket <code>ggplot2movies</code>). Ein Data-Dictionary findet sich <a href="https://vincentarelbundock.github.io/Rdatasets/doc/ggplot2movies/movies.html">hier</a>.</p>
 <p>Erstellen Sie folgende Visualisierung:</p>
 <ul>
@@ -1100,8 +1100,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Verzichten Sie auf Filme mit einer unterdurchschnittlichen Zahl an Bewertungen (<code>votes</code>; gemessen an allen Filmen, gerundet zur nächsten ganzen Zahl)</li>
 </ul>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="58"><h1 data-number="58">
-<span class="header-section-number">58</span> Lösung</h1>
+</section><section id="lösung" class="level2" data-number="56.2"><h2 data-number="56.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">56.2</span> Lösung</h2>
 <p>Pakete starten:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
@@ -1135,7 +1135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"rating"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+<figure class="figure"><p><a href="movies-vis1_files/figure-html/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="movies-vis1_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
 </figure>
 </div>
 </div>

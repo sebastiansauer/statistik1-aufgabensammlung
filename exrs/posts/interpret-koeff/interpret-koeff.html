@@ -1072,8 +1072,8 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise"><span class="header-section-number">100</span> Exercise</a></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution"><span class="header-section-number">101</span> Solution</a></li>
+<li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise"><span class="header-section-number">99.1</span> Exercise</a></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution"><span class="header-section-number">99.2</span> Solution</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1112,8 +1112,8 @@ window.Quarto = {
   </div>
 </div>
 
-</header><section id="exercise" class="level1" data-number="100"><h1 data-number="100">
-<span class="header-section-number">100</span> Exercise</h1>
+</header><section id="exercise" class="level2" data-number="99.1"><h2 data-number="99.1" class="anchored" data-anchor-id="exercise">
+<span class="header-section-number">99.1</span> Exercise</h2>
 <p>Betrachten Sie dieses Modell, das den Zusammenhang von PS-Zahl und Spritverbrauch untersucht (Datensatz <code>mtcars</code>):</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span></span>
@@ -1125,7 +1125,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["Parameter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Median"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["CI"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["CI_low"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["CI_high"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["pd"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["Rhat"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["ESS"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["Prior_Distribution"],"name":[9],"type":["chr"],"align":["left"]},{"label":["Prior_Location"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["Prior_Scale"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[{"1":"(Intercept)","2":"30.05188754","3":"0.95","4":"26.69069218","5":"33.36371095","6":"1","7":"1.001255","8":"3538.407","9":"normal","10":"20.09062","11":"15.0673701"},{"1":"hp","2":"-0.06792768","3":"0.95","4":"-0.08819914","5":"-0.04718702","6":"1","7":"1.000362","8":"3411.348","9":"normal","10":"0.00000","11":"0.2197599"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
+{"columns":[{"label":["Parameter"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Median"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["CI"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["CI_low"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["CI_high"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["pd"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["Rhat"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["ESS"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["Prior_Distribution"],"name":[9],"type":["chr"],"align":["left"]},{"label":["Prior_Location"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["Prior_Scale"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[{"1":"(Intercept)","2":"30.1101096","3":"0.95","4":"26.94299301","5":"33.33691976","6":"1","7":"1.000083","8":"3591.508","9":"normal","10":"20.09062","11":"15.0673701"},{"1":"hp","2":"-0.0683406","3":"0.95","4":"-0.08868323","5":"-0.04865442","6":"1","7":"1.000029","8":"3443.635","9":"normal","10":"0.00000","11":"0.2197599"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
   </script>
 </div>
 </div>
@@ -1140,8 +1140,8 @@ window.Quarto = {
 <li>Beachten Sie die üblichen Hinweise des Datenwerks.</li>
 </ul>
 <p>         </p>
-</section><section id="solution" class="level1" data-number="101"><h1 data-number="101">
-<span class="header-section-number">101</span> Solution</h1>
+</section><section id="solution" class="level2" data-number="99.2"><h2 data-number="99.2" class="anchored" data-anchor-id="solution">
+<span class="header-section-number">99.2</span> Solution</h2>
 <ol type="a">
 <li><p><em>Intercept</em> (<span class="math inline">\(\beta_0\)</span>): Der Achsenabschnitt gibt den geschätzten mittleren Y-Wert (Spritverbrauch) an, wenn <span class="math inline">\(x=0\)</span>, also für ein Auto mit 0 PS (was nicht wirklich Sinn macht). <em>hp</em> (<span class="math inline">\(\beta_1\)</span>) ist der <em>Regressionskoeffizient</em> oder <em>Regressionsgewicht</em> und damit die Steigung der Regressionsgeraden.</p></li>
 <li><p><em>hp</em> (<span class="math inline">\(\beta_1\)</span>) ist der <em>Regressionskoeffizient</em> oder <em>Regressionsgewicht</em> und gibt den statistischen “Effekt” der PS-Zahl auf den Spritverbrauch an. Vorsicht: Dieser “Effekt” darf nicht vorschnell als kausaler Effekt verstanden werden. Daher muss man vorsichtig sein, wenn man von einem “Effekt” spricht. Vorsichtiger wäre zu sagen: “Ein Auto mit einem PS mehr, kommt im Mittel 0,1 (0.07) Meilen weniger weit mit einer Gallone Sprit, laut diesem Modell”. Den Punktschätzer des Regressionskoeffizienten (<span class="math inline">\(\beta_1\)</span>) kann man in der Tabelle mit den Parameterwerten auslesen, in der Spalte <code>Median</code>.</p></li>

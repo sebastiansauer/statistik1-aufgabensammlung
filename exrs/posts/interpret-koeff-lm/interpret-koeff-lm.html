@@ -1072,8 +1072,8 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">86</span> Aufgabe</a></li>
-  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">87</span> Lösung</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">85.1</span> Aufgabe</a></li>
+  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">85.2</span> Lösung</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1111,8 +1111,8 @@ window.Quarto = {
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="86"><h1 data-number="86">
-<span class="header-section-number">86</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="85.1"><h2 data-number="85.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">85.1</span> Aufgabe</h2>
 <p>Betrachten Sie dieses Modell, das den Zusammenhang von PS-Zahl und Spritverbrauch untersucht (Datensatz <code>mtcars</code>):</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span></span>
@@ -1132,8 +1132,8 @@ window.Quarto = {
 <li>Wie ist der Effekt von <span class="math inline">\(\beta_1\)</span> zu interpretieren?</li>
 </ol>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="87"><h1 data-number="87">
-<span class="header-section-number">87</span> Lösung</h1>
+</section><section id="lösung" class="level2" data-number="85.2"><h2 data-number="85.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">85.2</span> Lösung</h2>
 <ol type="a">
 <li><p><em>Intercept</em> (<span class="math inline">\(\beta_0\)</span>): Der Achsenabschnitt gibt den geschätzten mittleren Y-Wert (Spritverbrauch) an, wenn <span class="math inline">\(x=0\)</span>, also für ein Auto mit 0 PS (was nicht wirklich Sinn macht). <em>hp</em> (<span class="math inline">\(\beta_1\)</span>) ist der <em>Regressionskoeffizient</em> oder <em>Regressionsgewicht</em> und damit die Steigung der Regressionsgeraden.</p></li>
 <li><p><em>hp</em> (<span class="math inline">\(\beta_1\)</span>) ist der <em>Regressionskoeffizient</em> oder <em>Regressionsgewicht</em> und gibt den statistischen “Effekt” der PS-Zahl auf den Spritverbrauch an. Vorsicht: Dieser “Effekt” darf nicht vorschnell als kausaler Effekt verstanden werden. Daher muss man vorsichtig sein, wenn man von einem “Effekt” spricht. Vorsichtiger wäre zu sagen: “Ein Auto mit einem PS mehr, kommt im Mittel 0,1 Meilen weniger weit mit einer Gallone Sprit, laut diesem Modell”.</p></li>

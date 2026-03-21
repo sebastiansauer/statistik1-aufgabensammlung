@@ -1072,8 +1072,8 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">87</span> Aufgabe</a></li>
-  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">88</span> Lösung</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">86.1</span> Aufgabe</a></li>
+  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">86.2</span> Lösung</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1116,8 +1116,8 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op">(</span>digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op">(</span>width <span class="op">=</span> <span class="fl">80</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="aufgabe" class="level1" data-number="87"><h1 data-number="87">
-<span class="header-section-number">87</span> Aufgabe</h1>
+<section id="aufgabe" class="level2" data-number="86.1"><h2 data-number="86.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">86.1</span> Aufgabe</h2>
 <p>Die Korrelation prüft, ob bzw. inwieweit zwei Merkmale linear zusammenhängen.</p>
 <p>Wie viele andere Verfahren kann die Korrelation als ein Spezialfall der Regression bzw. des linearen Modells <span class="math inline">\(y = \beta_0 + \beta_1 + \ldots \beta_n + \epsilon\)</span> betrachtet werden.</p>
 <p>Als ein spezielles Beispiel betrachten wir die Frage, ob das Gewicht eines Diamanten (<code>carat</code>) mit dem Preis (<code>price</code>) zusammenhängt (Datensatz <code>diamonds</code>).</p>
@@ -1138,19 +1138,19 @@ window.Quarto = {
 <span><span class="co">## lm(formula = price ~ carat, data = diamonds)</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Residuals:</span></span>
-<span><span class="co">##    Min     1Q Median     3Q    Max </span></span>
-<span><span class="co">## -18585   -805    -19    537  12732 </span></span>
+<span><span class="co">##      Min       1Q   Median       3Q      Max </span></span>
+<span><span class="co">## -18585.3   -804.8    -18.9    537.4  12731.7 </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Coefficients:</span></span>
 <span><span class="co">##             Estimate Std. Error t value Pr(&gt;|t|)    </span></span>
-<span><span class="co">## (Intercept)  -2256.4       13.1    -173   &lt;2e-16 ***</span></span>
-<span><span class="co">## carat         7756.4       14.1     551   &lt;2e-16 ***</span></span>
+<span><span class="co">## (Intercept) -2256.36      13.06  -172.8   &lt;2e-16 ***</span></span>
+<span><span class="co">## carat        7756.43      14.07   551.4   &lt;2e-16 ***</span></span>
 <span><span class="co">## ---</span></span>
 <span><span class="co">## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</span></span>
 <span><span class="co">## </span></span>
-<span><span class="co">## Residual standard error: 1550 on 53938 degrees of freedom</span></span>
-<span><span class="co">## Multiple R-squared:  0.849,  Adjusted R-squared:  0.849 </span></span>
-<span><span class="co">## F-statistic: 3.04e+05 on 1 and 53938 DF,  p-value: &lt;2e-16</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span><span class="co">## Residual standard error: 1549 on 53938 degrees of freedom</span></span>
+<span><span class="co">## Multiple R-squared:  0.8493, Adjusted R-squared:  0.8493 </span></span>
+<span><span class="co">## F-statistic: 3.041e+05 on 1 and 53938 DF,  p-value: &lt; 2.2e-16</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Wie (bzw. wo) ist aus dieser Ausgabe die Korrelation herauszulesen?</p>
 <ol start="3" type="a">
@@ -1167,21 +1167,21 @@ window.Quarto = {
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Parameter1"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Parameter2"],"name":[2],"type":["chr"],"align":["left"]},{"label":["r"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["CI"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["CI_low"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["CI_high"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["t"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["df_error"],"name":[8],"type":["int"],"align":["right"]},{"label":["p"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["Method"],"name":[10],"type":["chr"],"align":["left"]},{"label":["n_Obs"],"name":[11],"type":["int"],"align":["right"]}],"data":[{"1":"price","2":"carat","3":"0.98","4":"0.95","5":"0.96","6":"0.99","7":"25","8":"28","9":"7e-21","10":"Pearson correlation","11":"30","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Parameter1"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Parameter2"],"name":[2],"type":["chr"],"align":["left"]},{"label":["r"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["CI"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["CI_low"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["CI_high"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["t"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["df_error"],"name":[8],"type":["int"],"align":["right"]},{"label":["p"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["Method"],"name":[10],"type":["chr"],"align":["left"]},{"label":["n_Obs"],"name":[11],"type":["int"],"align":["right"]}],"data":[{"1":"price","2":"carat","3":"0.9539217","4":"0.95","5":"0.9045012","6":"0.9780618","7":"16.82248","8":"28","9":"3.59084e-16","10":"Pearson correlation","11":"30","_rn_":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
   </script>
 </div>
 </div>
 </div>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="88"><h1 data-number="88">
-<span class="header-section-number">88</span> Lösung</h1>
+</section><section id="lösung" class="level2" data-number="86.2"><h2 data-number="86.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">86.2</span> Lösung</h2>
 <ol type="a">
 <li><p><code>carat</code> ist metrisch (verhältnisskaliert) und <code>price</code> ist metrisch (verhältnisskaliert)</p></li>
 <li><p><span class="math inline">\(R^2\)</span> kann bei einer einfachen (univariaten) Regression als das Quadrat von <span class="math inline">\(r\)</span> berechnet werden. Daher <span class="math inline">\(r = \sqrt{R^2}\)</span>.</p></li>
 </ol>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">0.8493</span><span class="op">)</span></span>
-<span><span class="co">## [1] 0.92</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span><span class="co">## [1] 0.9215747</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Zum Vergleich</p>
 <div class="cell" data-layout-align="center">
@@ -1190,7 +1190,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["r"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.92"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
+{"columns":[{"label":["r"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.9215913"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[5],"max":[5]},"pages":{}}}
   </script>
 </div>
 </div>

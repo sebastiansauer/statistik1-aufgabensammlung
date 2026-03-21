@@ -1049,9 +1049,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">106</span> Aufgabe</a></li>
-  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">107</span> Lösung</a></li>
-  <li><a href="#bonus" id="toc-bonus" class="nav-link" data-scroll-target="#bonus"><span class="header-section-number">108</span> BONUS</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">105.1</span> Aufgabe</a></li>
+  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">105.2</span> Lösung</a></li>
+  <li><a href="#bonus" id="toc-bonus" class="nav-link" data-scroll-target="#bonus"><span class="header-section-number">105.3</span> BONUS</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1089,8 +1089,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="106"><h1 data-number="106">
-<span class="header-section-number">106</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="105.1"><h2 data-number="105.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">105.1</span> Aufgabe</h2>
 <p>Variieren Sie das folgende Modell mit einer bzw. beiden UV bzw. mit Interaktionseffekt. Welches Modell ist am besten?</p>
 <p><code>lm_mario_2uv &lt;- lm(total_pr ~ start_pr + ship_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))</code></p>
 <p>Hinweise:</p>
@@ -1102,8 +1102,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mariokart</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="lösung" class="level1" data-number="107"><h1 data-number="107">
-<span class="header-section-number">107</span> Lösung</h1>
+</section><section id="lösung" class="level2" data-number="105.2"><h2 data-number="105.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">105.2</span> Lösung</h2>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://easystats.github.io/easystats/">easystats</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1143,8 +1143,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="co">##        R2: 0.108</span></span>
 <span><span class="co">##   adj. R2: 0.088</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="bonus" class="level1" data-number="108"><h1 data-number="108">
-<span class="header-section-number">108</span> BONUS</h1>
+</section><section id="bonus" class="level2" data-number="105.3"><h2 data-number="105.3" class="anchored" data-anchor-id="bonus">
+<span class="header-section-number">105.3</span> BONUS</h2>
 <p>Visualisieren Sie das Streudiagramm!</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://boxuancui.github.io/DataExplorer/">DataExplorer</a></span><span class="op">)</span></span>

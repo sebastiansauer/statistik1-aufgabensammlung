@@ -1047,13 +1047,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">103</span> Aufgabe</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">102.1</span> Aufgabe</a></li>
   <li>
-<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">104</span> Lösung</a>
+<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">102.2</span> Lösung</a>
   <ul class="collapse">
-<li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">104.1</span> Setup</a></li>
-  <li><a href="#regressionsgerade-berechnen" id="toc-regressionsgerade-berechnen" class="nav-link" data-scroll-target="#regressionsgerade-berechnen"><span class="header-section-number">104.2</span> Regressionsgerade berechnen</a></li>
-  <li><a href="#vorhersagen" id="toc-vorhersagen" class="nav-link" data-scroll-target="#vorhersagen"><span class="header-section-number">104.3</span> Vorhersagen</a></li>
+<li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">102.2.1</span> Setup</a></li>
+  <li><a href="#regressionsgerade-berechnen" id="toc-regressionsgerade-berechnen" class="nav-link" data-scroll-target="#regressionsgerade-berechnen"><span class="header-section-number">102.2.2</span> Regressionsgerade berechnen</a></li>
+  <li><a href="#vorhersagen" id="toc-vorhersagen" class="nav-link" data-scroll-target="#vorhersagen"><span class="header-section-number">102.2.3</span> Vorhersagen</a></li>
   </ul>
 </li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
@@ -1094,22 +1094,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="103"><h1 data-number="103">
-<span class="header-section-number">103</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="102.1"><h2 data-number="102.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">102.1</span> Aufgabe</h2>
 <p>Sagen Sie den Verkaufspreis vorher für ein Spiel mit 3 Euro Versandkosten (<code>ship_pr</code>)!</p>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="104"><h1 data-number="104">
-<span class="header-section-number">104</span> Lösung</h1>
-<section id="setup" class="level2" data-number="104.1"><h2 data-number="104.1" class="anchored" data-anchor-id="setup">
-<span class="header-section-number">104.1</span> Setup</h2>
+</section><section id="lösung" class="level2" data-number="102.2"><h2 data-number="102.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">102.2</span> Lösung</h2>
+<section id="setup" class="level3" data-number="102.2.1"><h3 data-number="102.2.1" class="anchored" data-anchor-id="setup">
+<span class="header-section-number">102.2.1</span> Setup</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mariokart</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://easystats.github.io/easystats/">easystats</a></span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="regressionsgerade-berechnen" class="level2" data-number="104.2"><h2 data-number="104.2" class="anchored" data-anchor-id="regressionsgerade-berechnen">
-<span class="header-section-number">104.2</span> Regressionsgerade berechnen</h2>
+</section><section id="regressionsgerade-berechnen" class="level3" data-number="102.2.2"><h3 data-number="102.2.2" class="anchored" data-anchor-id="regressionsgerade-berechnen">
+<span class="header-section-number">102.2.2</span> Regressionsgerade berechnen</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">lm_mariokart</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">total_pr</span> <span class="op">~</span> <span class="va">ship_pr</span>, data <span class="op">=</span> <span class="va">mariokart</span><span class="op">)</span> <span class="co"># "lm" wie *l*lineares *M*odell, also eine Gerade.</span></span>
 <span><span class="va">lm_mariokart</span></span>
@@ -1121,8 +1121,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="co">## (Intercept)      ship_pr  </span></span>
 <span><span class="co">##      36.246        4.337</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="vorhersagen" class="level2" data-number="104.3"><h2 data-number="104.3" class="anchored" data-anchor-id="vorhersagen">
-<span class="header-section-number">104.3</span> Vorhersagen</h2>
+</section><section id="vorhersagen" class="level3" data-number="102.2.3"><h3 data-number="102.2.3" class="anchored" data-anchor-id="vorhersagen">
+<span class="header-section-number">102.2.3</span> Vorhersagen</h3>
 <p>Vorhersagen funktionieren mit dem Befehl <code>predict</code>:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">neues_spiel</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>ship_pr <span class="op">=</span> <span class="fl">3</span><span class="op">)</span>  <span class="co"># oder "data.frame" statt "tibble"</span></span>

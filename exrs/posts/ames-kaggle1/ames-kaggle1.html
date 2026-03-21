@@ -1047,15 +1047,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">99</span> Aufgabe</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">98.1</span> Aufgabe</a></li>
   <li>
-<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">100</span> Lösung</a>
+<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">98.2</span> Lösung</a>
   <ul class="collapse">
-<li><a href="#pakete-starten" id="toc-pakete-starten" class="nav-link" data-scroll-target="#pakete-starten"><span class="header-section-number">100.1</span> Pakete starten</a></li>
-  <li><a href="#daten-importieren" id="toc-daten-importieren" class="nav-link" data-scroll-target="#daten-importieren"><span class="header-section-number">100.2</span> Daten importieren</a></li>
-  <li><a href="#model-definieren" id="toc-model-definieren" class="nav-link" data-scroll-target="#model-definieren"><span class="header-section-number">100.3</span> Model definieren</a></li>
-  <li><a href="#neue-daten-vorhersagen" id="toc-neue-daten-vorhersagen" class="nav-link" data-scroll-target="#neue-daten-vorhersagen"><span class="header-section-number">100.4</span> Neue Daten vorhersagen</a></li>
-  <li><a href="#daten-einreichen" id="toc-daten-einreichen" class="nav-link" data-scroll-target="#daten-einreichen"><span class="header-section-number">100.5</span> Daten einreichen</a></li>
+<li><a href="#pakete-starten" id="toc-pakete-starten" class="nav-link" data-scroll-target="#pakete-starten"><span class="header-section-number">98.2.1</span> Pakete starten</a></li>
+  <li><a href="#daten-importieren" id="toc-daten-importieren" class="nav-link" data-scroll-target="#daten-importieren"><span class="header-section-number">98.2.2</span> Daten importieren</a></li>
+  <li><a href="#model-definieren" id="toc-model-definieren" class="nav-link" data-scroll-target="#model-definieren"><span class="header-section-number">98.2.3</span> Model definieren</a></li>
+  <li><a href="#neue-daten-vorhersagen" id="toc-neue-daten-vorhersagen" class="nav-link" data-scroll-target="#neue-daten-vorhersagen"><span class="header-section-number">98.2.4</span> Neue Daten vorhersagen</a></li>
+  <li><a href="#daten-einreichen" id="toc-daten-einreichen" class="nav-link" data-scroll-target="#daten-einreichen"><span class="header-section-number">98.2.5</span> Daten einreichen</a></li>
   </ul>
 </li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
@@ -1096,42 +1096,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="99"><h1 data-number="99">
-<span class="header-section-number">99</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="98.1"><h2 data-number="98.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">98.1</span> Aufgabe</h2>
 <p>Berechnen Sie ein einfaches lineare Modell für die <a href="https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data">Ames House Price Kaggle Competition</a>.</p>
 <p>Hinweise:</p>
 <ul>
 <li>Orientieren Sie sich im Übrigen an den <a href="https://datenwerk.netlify.app/hinweise">allgemeinen Hinweisen des Datenwerks</a>.</li>
 </ul>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="100"><h1 data-number="100">
-<span class="header-section-number">100</span> Lösung</h1>
-<section id="pakete-starten" class="level2" data-number="100.1"><h2 data-number="100.1" class="anchored" data-anchor-id="pakete-starten">
-<span class="header-section-number">100.1</span> Pakete starten</h2>
+</section><section id="lösung" class="level2" data-number="98.2"><h2 data-number="98.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">98.2</span> Lösung</h2>
+<section id="pakete-starten" class="level3" data-number="98.2.1"><h3 data-number="98.2.1" class="anchored" data-anchor-id="pakete-starten">
+<span class="header-section-number">98.2.1</span> Pakete starten</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://easystats.github.io/easystats/">easystats</a></span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="daten-importieren" class="level2" data-number="100.2"><h2 data-number="100.2" class="anchored" data-anchor-id="daten-importieren">
-<span class="header-section-number">100.2</span> Daten importieren</h2>
+</section><section id="daten-importieren" class="level3" data-number="98.2.2"><h3 data-number="98.2.2" class="anchored" data-anchor-id="daten-importieren">
+<span class="header-section-number">98.2.2</span> Daten importieren</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_train_path_online</span> <span class="op">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/ames-kaggle/train.csv"</span></span>
 <span><span class="va">d_test_path_online</span> <span class="op">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/ames-kaggle/test.csv"</span></span>
 <span><span class="va">d_train</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="va">d_train_path_online</span><span class="op">)</span></span>
 <span><span class="va">d_test</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://readr.tidyverse.org/reference/read_delim.html">read_csv</a></span><span class="op">(</span><span class="va">d_test_path_online</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="model-definieren" class="level2" data-number="100.3"><h2 data-number="100.3" class="anchored" data-anchor-id="model-definieren">
-<span class="header-section-number">100.3</span> Model definieren</h2>
+</section><section id="model-definieren" class="level3" data-number="98.2.3"><h3 data-number="98.2.3" class="anchored" data-anchor-id="model-definieren">
+<span class="header-section-number">98.2.3</span> Model definieren</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">m1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">SalePrice</span> <span class="op">~</span> <span class="va">OverallQual</span>, data <span class="op">=</span> <span class="va">d_train</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="neue-daten-vorhersagen" class="level2" data-number="100.4"><h2 data-number="100.4" class="anchored" data-anchor-id="neue-daten-vorhersagen">
-<span class="header-section-number">100.4</span> Neue Daten vorhersagen</h2>
+</section><section id="neue-daten-vorhersagen" class="level3" data-number="98.2.4"><h3 data-number="98.2.4" class="anchored" data-anchor-id="neue-daten-vorhersagen">
+<span class="header-section-number">98.2.4</span> Neue Daten vorhersagen</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">m1_pred</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/predict.html">predict</a></span><span class="op">(</span><span class="va">m1</span>, newdata <span class="op">=</span> <span class="va">d_test</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section><section id="daten-einreichen" class="level2" data-number="100.5"><h2 data-number="100.5" class="anchored" data-anchor-id="daten-einreichen">
-<span class="header-section-number">100.5</span> Daten einreichen</h2>
+</section><section id="daten-einreichen" class="level3" data-number="98.2.5"><h3 data-number="98.2.5" class="anchored" data-anchor-id="daten-einreichen">
+<span class="header-section-number">98.2.5</span> Daten einreichen</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_subm</span> <span class="op">&lt;-</span></span>
 <span>  <span class="va">d_test</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>

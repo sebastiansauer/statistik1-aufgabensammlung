@@ -1047,8 +1047,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">29</span> Aufgabe</a></li>
-  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">30</span> Lösung</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">28.1</span> Aufgabe</a></li>
+  <li><a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">28.2</span> Lösung</a></li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -1088,21 +1088,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 </header><p>Question</p>
-<section id="aufgabe" class="level1" data-number="29"><h1 data-number="29">
-<span class="header-section-number">29</span> Aufgabe</h1>
+<section id="aufgabe" class="level2" data-number="28.1"><h2 data-number="28.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">28.1</span> Aufgabe</h2>
 <p>Berechnen Sie den Mittelwert folgender <code>zahlenreihe</code>; ignorieren sie etwaige fehlende Werte. Runden Sie auf zwei Dezimalstellen.</p>
 <div class="cell" data-layout-align="center">
-<pre><code>## [1] -0.12  0.86 -2.01 -0.06  0.60    NA</code></pre>
+<pre><code>## [1]  0.54 -0.32  1.91  0.38 -2.87</code></pre>
 </div>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="30"><h1 data-number="30">
-<span class="header-section-number">30</span> Lösung</h1>
-<p>Der Mittelwert liegt bei -0.15.</p>
-<p>Die Antwort lautet -0.15.</p>
+</section><section id="lösung" class="level2" data-number="28.2"><h2 data-number="28.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">28.2</span> Lösung</h2>
+<p>Der Mittelwert liegt bei -0.07.</p>
+<p>Die Antwort lautet -0.07.</p>
 <p>In R kann man den Mittelwert z.B. so berechnen:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">zahlenreihe</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co">## [1] -0.146</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span><span class="co">## [1] -0.072</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Das Argument <code>na.rm = TRUE</code> sorgt dafür, dass R <em>auch bei Vorhandensein fehlender Werte</em> ein Ergebnis ausgibt. Ohne dieses Argument würde R ein sprödes <code>NA</code> zurückgeben, falls fehlende Werte vorliegen. Dieses Verhalten von R ist recht defensiv, getreu dem Motto: Wenn es ein Problem gibt, sollte man so früh wie möglich darüber deutlich informiert werden (und nicht erst, wenn die Marsrakete gestartet ist…).</p>
 <hr>

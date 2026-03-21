@@ -1050,14 +1050,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">105</span> Aufgabe</a></li>
+<li><a href="#aufgabe" id="toc-aufgabe" class="nav-link active" data-scroll-target="#aufgabe"><span class="header-section-number">104.1</span> Aufgabe</a></li>
   <li>
-<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">106</span> Lösung</a>
+<a href="#l%C3%B6sung" id="toc-lösung" class="nav-link" data-scroll-target="#l%C3%B6sung"><span class="header-section-number">104.2</span> Lösung</a>
   <ul class="collapse">
-<li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">106.1</span> Setup</a></li>
-  <li><a href="#%C3%BCberblick" id="toc-überblick" class="nav-link" data-scroll-target="#%C3%BCberblick"><span class="header-section-number">106.2</span> Überblick</a></li>
-  <li><a href="#daten-aufbereiten-mit-z-transformation" id="toc-daten-aufbereiten-mit-z-transformation" class="nav-link" data-scroll-target="#daten-aufbereiten-mit-z-transformation"><span class="header-section-number">106.3</span> Daten aufbereiten mit z-Transformation</a></li>
-  <li><a href="#extremwerte-durch-mw-ersetzen" id="toc-extremwerte-durch-mw-ersetzen" class="nav-link" data-scroll-target="#extremwerte-durch-mw-ersetzen"><span class="header-section-number">106.4</span> Extremwerte durch MW ersetzen</a></li>
+<li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">104.2.1</span> Setup</a></li>
+  <li><a href="#%C3%BCberblick" id="toc-überblick" class="nav-link" data-scroll-target="#%C3%BCberblick"><span class="header-section-number">104.2.2</span> Überblick</a></li>
+  <li><a href="#daten-aufbereiten-mit-z-transformation" id="toc-daten-aufbereiten-mit-z-transformation" class="nav-link" data-scroll-target="#daten-aufbereiten-mit-z-transformation"><span class="header-section-number">104.2.3</span> Daten aufbereiten mit z-Transformation</a></li>
+  <li><a href="#extremwerte-durch-mw-ersetzen" id="toc-extremwerte-durch-mw-ersetzen" class="nav-link" data-scroll-target="#extremwerte-durch-mw-ersetzen"><span class="header-section-number">104.2.4</span> Extremwerte durch MW ersetzen</a></li>
   </ul>
 </li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
@@ -1099,8 +1099,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-</header><section id="aufgabe" class="level1" data-number="105"><h1 data-number="105">
-<span class="header-section-number">105</span> Aufgabe</h1>
+</header><section id="aufgabe" class="level2" data-number="104.1"><h2 data-number="104.1" class="anchored" data-anchor-id="aufgabe">
+<span class="header-section-number">104.1</span> Aufgabe</h2>
 <p>Entfernen Sie alle Ausreißer im Datensatz <code>mariokart</code>!</p>
 <p>Hinweise:</p>
 <ul>
@@ -1108,12 +1108,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Definieren Sie “Ausreißer” als Werte, die mehr als 3SD vom Mittelwert entfernt sind.</li>
 </ul>
 <p>         </p>
-</section><section id="lösung" class="level1" data-number="106"><h1 data-number="106">
-<span class="header-section-number">106</span> Lösung</h1>
-<section id="setup" class="level2" data-number="106.1"><h2 data-number="106.1" class="anchored" data-anchor-id="setup">
-<span class="header-section-number">106.1</span> Setup</h2>
-</section><section id="überblick" class="level2" data-number="106.2"><h2 data-number="106.2" class="anchored" data-anchor-id="überblick">
-<span class="header-section-number">106.2</span> Überblick</h2>
+</section><section id="lösung" class="level2" data-number="104.2"><h2 data-number="104.2" class="anchored" data-anchor-id="lösung">
+<span class="header-section-number">104.2</span> Lösung</h2>
+<section id="setup" class="level3" data-number="104.2.1"><h3 data-number="104.2.1" class="anchored" data-anchor-id="setup">
+<span class="header-section-number">104.2.1</span> Setup</h3>
+</section><section id="überblick" class="level3" data-number="104.2.2"><h3 data-number="104.2.2" class="anchored" data-anchor-id="überblick">
+<span class="header-section-number">104.2.2</span> Überblick</h3>
 <p>Wir verschaffen uns einen Überblick über die Verteilungen:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">plot_histogram</span><span class="op">(</span><span class="va">mariokart</span><span class="op">)</span>  <span class="co"># aus Paket `DataExplorer`</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1125,8 +1125,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Wie man sieht gibt es einige Ausreißer, z.B. bei <code>ship_pr</code> und <code>total_pr</code>.</p>
-</section><section id="daten-aufbereiten-mit-z-transformation" class="level2" data-number="106.3"><h2 data-number="106.3" class="anchored" data-anchor-id="daten-aufbereiten-mit-z-transformation">
-<span class="header-section-number">106.3</span> Daten aufbereiten mit z-Transformation</h2>
+</section><section id="daten-aufbereiten-mit-z-transformation" class="level3" data-number="104.2.3"><h3 data-number="104.2.3" class="anchored" data-anchor-id="daten-aufbereiten-mit-z-transformation">
+<span class="header-section-number">104.2.3</span> Daten aufbereiten mit z-Transformation</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mariokart2</span> <span class="op">&lt;-</span></span>
 <span>  <span class="va">mariokart</span> <span class="op">%&gt;%</span> </span>
@@ -1146,8 +1146,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section><section id="extremwerte-durch-mw-ersetzen" class="level2" data-number="106.4"><h2 data-number="106.4" class="anchored" data-anchor-id="extremwerte-durch-mw-ersetzen">
-<span class="header-section-number">106.4</span> Extremwerte durch MW ersetzen</h2>
+</section><section id="extremwerte-durch-mw-ersetzen" class="level3" data-number="104.2.4"><h3 data-number="104.2.4" class="anchored" data-anchor-id="extremwerte-durch-mw-ersetzen">
+<span class="header-section-number">104.2.4</span> Extremwerte durch MW ersetzen</h3>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">mariokart3</span> <span class="op">&lt;-</span></span>
 <span>  <span class="va">mariokart2</span> <span class="op">%&gt;%</span> </span>
