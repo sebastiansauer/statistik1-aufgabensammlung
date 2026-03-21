@@ -1,5 +1,6 @@
 # statistik1-aufgabensammlung
-Collection of exercises related to the this book on Github: sebastiansauer/statistik1
+Collection of exercises related to the this book on Github: [sebastiansauer/statistik1](https://github.com/sebastiansauer/statistik1), see <https://sebastiansauer.github.io/statistik1/>.
+
 
 
 ## License
