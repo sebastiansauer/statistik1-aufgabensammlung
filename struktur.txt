@@ -1,0 +1,1852 @@
+.
+├── exrs
+│   ├── aufgabensammlung.Rproj
+│   ├── liste_aufgaben_datenwerk.txt
+│   ├── posts
+│   │   ├── abh-ereignisse
+│   │   │   ├── abh-ereignisse_files
+│   │   │   ├── abh-ereignisse.qmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── abh-ereignisse2
+│   │   │   ├── abh-ereignisse2_files
+│   │   │   ├── abh-ereignisse2.qmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── additionssatz1
+│   │   │   └── additionssatz1.qmd
+│   │   ├── adjustieren1
+│   │   │   ├── adjustieren1.rmd
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── adjustieren1a
+│   │   │   ├── adjustieren1a_files
+│   │   │   ├── adjustieren1a.qmd
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-8-1.png
+│   │   │   └── unnamed-chunk-9-1.png
+│   │   ├── adjustieren1b
+│   │   │   ├── index.qmd
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── adjustieren2
+│   │   │   ├── adjustieren2_files
+│   │   │   ├── adjustieren2.rmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── adjustieren2a
+│   │   │   ├── adjustieren2a.qmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── adjustieren2_var1
+│   │   │   ├── adjustieren2_var1_files
+│   │   │   ├── adjustieren2_var1.qmd
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── affairs-dplyr
+│   │   │   └── affairs-dplyr.rmd
+│   │   ├── alphafehler-inflation2
+│   │   │   └── alphafehler-inflation2.qmd
+│   │   ├── alphafehler-inflation3
+│   │   │   ├── alphafehler-inflation3.qmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── alphafehler-inflation4
+│   │   │   ├── alphafehler-inflation4.qmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── ames-kaggle1
+│   │   │   └── ames-kaggle1.rmd
+│   │   ├── anim01
+│   │   │   ├── anim01_files
+│   │   │   └── anim01.rmd
+│   │   ├── anim02
+│   │   │   ├── anim02_files
+│   │   │   └── anim02.rmd
+│   │   ├── anim03
+│   │   │   ├── anim03_files
+│   │   │   └── anim03.qmd
+│   │   ├── anova-skalenniveau
+│   │   │   └── anova-skalenniveau.rmd
+│   │   ├── anteil-apple
+│   │   │   ├── anteil-apple_files
+│   │   │   ├── anteil-apple.rmd
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── anz-params
+│   │   │   └── index.qmd
+│   │   ├── argumente
+│   │   │   └── argumente.rmd
+│   │   ├── ausreisser1
+│   │   │   ├── ausreisser1_files
+│   │   │   └── ausreisser1.qmd
+│   │   ├── aussagen-infstat
+│   │   │   ├── desk-inf-fans.jpg
+│   │   │   └── index.qmd
+│   │   ├── bath42
+│   │   │   ├── bath42_files
+│   │   │   ├── bath42.qmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   └── unnamed-chunk-9-1.png
+│   │   ├── bayes1
+│   │   │   └── index.qmd
+│   │   ├── bayes2
+│   │   │   └── bayes2.qmd
+│   │   ├── bayesbox
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── bayesbox2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── bayesbox3
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── bayesmod-bestimmen01
+│   │   │   └── bayesmod-bestimmen01.rmd
+│   │   ├── bayesmod-bestimmen02
+│   │   │   └── bayesmod-bestimmen02.rmd
+│   │   ├── bayes-theorem1
+│   │   │   └── bayes-theorem1.qmd
+│   │   ├── bayes-ziel1
+│   │   │   └── bayes-ziel1.rmd
+│   │   ├── bed-post-wskt1
+│   │   │   ├── Bed-Post-Wskt1_files
+│   │   │   ├── bed-post-wskt1.rmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   └── unnamed-chunk-11-1.png
+│   │   ├── bed-wskt1
+│   │   │   ├── bed-wskt1_files
+│   │   │   ├── bed-wskt1.qmd
+│   │   │   └── plot-bars-1.png
+│   │   ├── bed-wskt2
+│   │   │   ├── Bed-Wskt2_files
+│   │   │   ├── bed-wskt2.qmd
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── bed-wskt3
+│   │   │   └── bed-wskt3.qmd
+│   │   ├── bertie-bott3
+│   │   │   └── index.qmd
+│   │   ├── bestehen_ohne_lernen
+│   │   │   └── index.qmd
+│   │   ├── bfi10
+│   │   │   ├── bfi10.png
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── bike01
+│   │   │   └── bike01.rmd
+│   │   ├── bike02
+│   │   │   └── bike02.rmd
+│   │   ├── bike03
+│   │   │   └── bike03.rmd
+│   │   ├── bike04
+│   │   │   └── bike04.rmd
+│   │   ├── bike05
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── bike06
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── boosting1
+│   │   │   └── boosting1.rmd
+│   │   ├── boosting2
+│   │   │   └── boosting2.rmd
+│   │   ├── bootstrap
+│   │   │   ├── boot1-1.png
+│   │   │   └── bootstrap.rmd
+│   │   ├── bootstrap1
+│   │   │   └── bootstrap1.rmd
+│   │   ├── boxhist
+│   │   │   ├── boxhist.csv
+│   │   │   ├── boxhist.rmd
+│   │   │   └── boxplot_hist-1.png
+│   │   ├── boxplot-aussagen
+│   │   │   ├── Boxplot-Aussagen_files
+│   │   │   ├── boxplot-aussagen.rmd
+│   │   │   └── p-boxplot-aussagen-1.png
+│   │   ├── boxplots-de1a
+│   │   │   ├── boxplot-1.png
+│   │   │   └── boxplots-de1a.rmd
+│   │   ├── boxplot_with_points
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── breiman
+│   │   │   └── breiman.rmd
+│   │   ├── bsp-binomial
+│   │   │   └── bsp-binomial.qmd
+│   │   ├── bsps-nullhyp
+│   │   │   └── index.qmd
+│   │   ├── bus1
+│   │   │   ├── bus1_files
+│   │   │   ├── bus1.qmd
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── chatgpt-curl
+│   │   │   └── chatgpt-curl.qmd
+│   │   ├── chatgpt-sentiment-loop
+│   │   │   └── chatgpt-sentiment-loop.qmd
+│   │   ├── chatgpt-sentiment-simple
+│   │   │   └── chatgpt-sentiment-simple.qmd
+│   │   ├── cluster01
+│   │   │   └── cluster01.rmd
+│   │   ├── cluster02
+│   │   │   └── cluster02.rmd
+│   │   ├── confounder-example
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── corona-blutgruppe
+│   │   │   └── corona-blutgruppe.qmd
+│   │   ├── count-emoji
+│   │   │   └── count-emoji.rmd
+│   │   ├── count-emoji-emo
+│   │   │   └── count-emoji-emo.qmd
+│   │   ├── count-emojis
+│   │   │   └── count-emojis.qmd
+│   │   ├── count-lexicon
+│   │   │   └── count-lexicon.qmd
+│   │   ├── count-words01
+│   │   │   └── count-words01.qmd
+│   │   ├── cv1
+│   │   │   └── cv1.rmd
+│   │   ├── dag-graph
+│   │   │   ├── dag-graph_files
+│   │   │   ├── DAG-Graph_files
+│   │   │   └── dag-graph.qmd
+│   │   ├── def-nullhyp
+│   │   │   └── index.qmd
+│   │   ├── def-signif
+│   │   │   └── index.qmd
+│   │   ├── def-statistik01
+│   │   │   └── def-statistik01.rmd
+│   │   ├── desk-vs-wskt
+│   │   │   └── index.qmd
+│   │   ├── diamonds-histogram
+│   │   │   ├── diamonds-histogram.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── diamonds-histogramm-vergleich
+│   │   │   ├── diamonds-histogramm-vergleich.rmd
+│   │   │   └── p-diamonds1-1.png
+│   │   ├── diamonds-histogramm-vergleich2
+│   │   │   ├── diamonds-histogramm-vergleich2.rmd
+│   │   │   └── p-diamonds2-1.png
+│   │   ├── diamonds-nullhyp-mws
+│   │   │   ├── diamonds-nullhyp-mws_files
+│   │   │   ├── diamonds-nullhyp-mws.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── diamonds-tidymodels01
+│   │   │   └── diamonds-tidymodels01.rmd
+│   │   ├── distros
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── dplyr-mtcars01
+│   │   │   └── index.qmd
+│   │   ├── dplyr-uebersetzen
+│   │   │   └── dplyr-uebersetzen.rmd
+│   │   ├── ds-quiz
+│   │   │   └── ds-quiz.rmd
+│   │   ├── ds-quiz2
+│   │   │   └── ds-quiz2.rmd
+│   │   ├── durch3-durch5
+│   │   │   └── durch3-durch5.rmd
+│   │   ├── einhoerner-fliegen
+│   │   │   └── index.qmd
+│   │   ├── einsamkeit-modellierung
+│   │   │   ├── einsamkeit.csv
+│   │   │   ├── einsamkeit.xlsx
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── emojis1
+│   │   │   └── emojis1.qmd
+│   │   ├── eti-hdi
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── euro-bayes
+│   │   │   ├── euro-bayes_files
+│   │   │   ├── euro-bayes.rmd
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── exp1
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── exp2
+│   │   │   └── index.qmd
+│   │   ├── exp-tab
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── exp-tab2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── fattails01
+│   │   │   └── fattails01.rmd
+│   │   ├── fattails02
+│   │   │   └── fattails02.rmd
+│   │   ├── fat-tails-artikel
+│   │   │   └── fat-tails-artikel.rmd
+│   │   ├── filter01
+│   │   │   └── filter01.rmd
+│   │   ├── filter-na1
+│   │   │   └── filter-na1.rmd
+│   │   ├── filter-na2
+│   │   │   └── filter-na2.rmd
+│   │   ├── filter-na3
+│   │   │   └── filter-na3.rmd
+│   │   ├── filter-na4
+│   │   │   ├── filter-na4_files
+│   │   │   └── filter-na4.rmd
+│   │   ├── filter-na5
+│   │   │   └── filter-na5.rmd
+│   │   ├── finde-prior
+│   │   │   └── index.qmd
+│   │   ├── flex-vs-nichtflex-methode
+│   │   │   └── flex-vs-nichtflex-methode.rmd
+│   │   ├── flex-vs-nichtflex-methode2
+│   │   │   └── flex-vs-nichtflex-methode2.rmd
+│   │   ├── flex-vs-nichtflex-methode3
+│   │   │   └── flex-vs-nichtflex-methode3.rmd
+│   │   ├── flights-delay
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── flights-delay-simplified
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── flights-yacsda-eda
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── fofrage-regrformel
+│   │   │   └── index.qmd
+│   │   ├── fofrage-regrformel2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── fun1
+│   │   │   └── index.qmd
+│   │   ├── gem-wskt1
+│   │   │   ├── Gem-Wskt1_files
+│   │   │   ├── gem-wskt1.rmd
+│   │   │   └── plot-bars-1.png
+│   │   ├── gem-wskt2
+│   │   │   └── gem-wskt2.qmd
+│   │   ├── gem-wskt3
+│   │   │   └── gem-wskt3.qmd
+│   │   ├── gem-wskt4
+│   │   │   └── index.qmd
+│   │   ├── genial
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── germeval02
+│   │   │   └── germeval02.qmd
+│   │   ├── germeval05
+│   │   │   └── germeval05.qmd
+│   │   ├── germeval06
+│   │   │   └── germeval06.qmd
+│   │   ├── germeval07
+│   │   │   └── germeval07.qmd
+│   │   ├── germeval08-extract-spacy
+│   │   │   └── germeval08-extract-spacy.qmd
+│   │   ├── germeval08-schimpf
+│   │   │   └── germeval08-schimpf.qmd
+│   │   ├── germeval09-tfidf
+│   │   │   └── germeval09-tfidf.qmd
+│   │   ├── germeval10-wordvec-rf
+│   │   │   ├── germeval10-wordvec-rf.qmd
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── germeval-senti01
+│   │   │   └── germeval-senti01.qmd
+│   │   ├── germeval-sent-wordvec-elasticnet
+│   │   │   ├── germeval-sent-wordvec-elasticnet_files
+│   │   │   ├── germeval-sent-wordvec-elasticnet.qmd
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── germeval-sent-wordvec-glm
+│   │   │   └── germeval-sent-wordvec-glm.qmd
+│   │   ├── germeval-sent-wordvec-rf-plain
+│   │   │   ├── germeval-sent-wordvec-rf-plain.qmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── vis-dat-1.png
+│   │   ├── germeval-sent-wordvec-rf-tune
+│   │   │   ├── germeval-sent-wordvec-rf-tune_files
+│   │   │   ├── germeval-sent-wordvec-rf-tune.qmd
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── vis-dat-1.png
+│   │   ├── germeval-sent-wordvec-xgb
+│   │   │   └── germeval-sent-wordvec-xgb.qmd
+│   │   ├── germeval-sent-wordvec-xgb-parallel
+│   │   │   └── germeval-sent-wordvec-xgb-parallel.qmd
+│   │   ├── germeval-sent-wordvec-xgb-plain
+│   │   │   ├── germeval-sent-wordvec-xgb-plain.qmd
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   ├── unnamed-chunk-15-1.png
+│   │   │   └── vis-dat-1.png
+│   │   ├── germeval-sent-wordvec-xgb-tune
+│   │   │   └── germeval-sent-wordvec-xgb-tune.qmd
+│   │   ├── gini-plot
+│   │   │   ├── gini-plot_files
+│   │   │   └── gini-plot.rmd
+│   │   ├── globus1
+│   │   │   └── index.qmd
+│   │   ├── globus2
+│   │   │   └── index.qmd
+│   │   ├── globus3
+│   │   │   └── index.qmd
+│   │   ├── globus-bin
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── globus-bin2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── griech-buchstaben
+│   │   │   └── griech-buchstaben.rmd
+│   │   ├── griech-buchstaben-inferenz
+│   │   │   └── griech-buchstaben-inferenz.rmd
+│   │   ├── groesse01
+│   │   │   ├── groesse01_files
+│   │   │   ├── groesse01.qmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── groesse02
+│   │   │   ├── groesse02_files
+│   │   │   ├── groesse02.qmd
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   ├── unnamed-chunk-13-1.png
+│   │   │   ├── unnamed-chunk-14-1.png
+│   │   │   ├── unnamed-chunk-15-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── groesse03
+│   │   │   ├── fig-dens-1.png
+│   │   │   ├── fig-params-1.png
+│   │   │   ├── height-distribution_850.png
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── groesse04
+│   │   │   ├── height-distribution_850.png
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── plot-hdi-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── gruppenvergleich-regression
+│   │   │   └── index.qmd
+│   │   ├── haeufigkeit01
+│   │   │   └── haeufigkeit01.rmd
+│   │   ├── hintertuer
+│   │   │   ├── fig-dag-grannies-1.png
+│   │   │   ├── hintertuer_files
+│   │   │   └── hintertuer.qmd
+│   │   ├── histogramm-in-boxplot
+│   │   │   ├── data-gen-1.png
+│   │   │   ├── generate-boxplots-1.png
+│   │   │   ├── generate-boxplots-2.png
+│   │   │   ├── generate-boxplots-3.png
+│   │   │   ├── generate-boxplots-4.png
+│   │   │   ├── generate-boxplots-5.png
+│   │   │   └── histogramm-in-boxplot.rmd
+│   │   ├── import-data
+│   │   │   ├── index.qmd
+│   │   │   └── mtcars.csv
+│   │   ├── import-mtcars
+│   │   │   └── import-mtcars.rmd
+│   │   ├── import-xls
+│   │   │   └── import-xls.qmd
+│   │   ├── indifferenz-p
+│   │   │   └── indifferenz-p.qmd
+│   │   ├── inferenz-fuer-alle
+│   │   │   └── inferenz-fuer-alle.rmd
+│   │   ├── interaktionseffekt1
+│   │   │   ├── Interaktionseffekt1_files
+│   │   │   ├── interaktionseffekt1.rmd
+│   │   │   ├── plot-scatter-1.png
+│   │   │   ├── plot-scatter-2.png
+│   │   │   ├── plot-scatter-3.png
+│   │   │   ├── plot-scatter-4.png
+│   │   │   └── plot-scatter-5.png
+│   │   ├── interpret-ci
+│   │   │   └── index.qmd
+│   │   ├── interpret-ci2
+│   │   │   └── index.qmd
+│   │   ├── interpret-koeff
+│   │   │   └── interpret-koeff.rmd
+│   │   ├── interpret-koeff-lm
+│   │   │   └── interpret-koeff-lm.rmd
+│   │   ├── iq01
+│   │   │   └── iq01.qmd
+│   │   ├── iq01a
+│   │   │   └── index.qmd
+│   │   ├── iq02
+│   │   │   └── iq02.qmd
+│   │   ├── iq02a
+│   │   │   └── index.qmd
+│   │   ├── iq03
+│   │   │   └── iq03.qmd
+│   │   ├── iq03a
+│   │   │   └── index.qmd
+│   │   ├── iq04
+│   │   │   └── iq04.qmd
+│   │   ├── iq05
+│   │   │   └── iq05.qmd
+│   │   ├── iq06
+│   │   │   └── iq06.qmd
+│   │   ├── iq07
+│   │   │   ├── iq07.qmd
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── iq08
+│   │   │   ├── iq08.qmd
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── iq09
+│   │   │   └── iq09.qmd
+│   │   ├── iq10
+│   │   │   └── iq10.qmd
+│   │   ├── iq-studentis
+│   │   │   ├── iq-studentis_files
+│   │   │   ├── iq-studentis.rmd
+│   │   │   ├── unnamed-chunk-13-1.png
+│   │   │   ├── unnamed-chunk-14-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── kaefer1
+│   │   │   └── kaefer1.qmd
+│   │   ├── kaefer2
+│   │   │   └── kaefer2.qmd
+│   │   ├── kausal
+│   │   │   ├── Kausal_files
+│   │   │   └── kausal.qmd
+│   │   ├── kausal01
+│   │   │   ├── kausal01.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── kausal02
+│   │   │   ├── kausal02.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── kausal03
+│   │   │   ├── kausal03.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── kausal04
+│   │   │   ├── kausal04.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── kausal05
+│   │   │   ├── kausal05.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── kausal06
+│   │   │   ├── kausal06.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── kausal07
+│   │   │   ├── kausal07.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── kausal08
+│   │   │   ├── kausal08.rmd
+│   │   │   ├── plot-dag-question-1.png
+│   │   │   ├── solution-dag-1.png
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── kausal09
+│   │   │   ├── kausal09.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── kausal10
+│   │   │   ├── kausal10.rmd
+│   │   │   ├── plot-dag-question-1.png
+│   │   │   ├── plot-solution-dag-1.png
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── kausal20
+│   │   │   ├── kausal20.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal21
+│   │   │   ├── kausal21.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal22
+│   │   │   ├── kausal22.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal23
+│   │   │   ├── kausal23.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal24
+│   │   │   ├── kausal24.rmd
+│   │   │   ├── kausal28_files
+│   │   │   ├── kausal28.rmd
+│   │   │   ├── plot-dag-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── kausal25
+│   │   │   ├── kausal25.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal26
+│   │   │   ├── kausal26.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal27
+│   │   │   ├── kausal27.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal28
+│   │   │   ├── kausal28.rmd
+│   │   │   └── plot-dag-1.png
+│   │   ├── kausal29
+│   │   │   ├── kausal29.rmd
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── kausal-bedrooms1
+│   │   │   ├── kausal-bedrooms1.rmd
+│   │   │   ├── mediation.jpg
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── kausal_corona_glatze
+│   │   │   └── kausal_corona_glatze.rmd
+│   │   ├── kausal-einfach
+│   │   │   ├── kausal-einfach.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── kausale-verben
+│   │   │   └── kausale-verben.rmd
+│   │   ├── k-coins-k-hits
+│   │   │   └── k-coins-k-hits.qmd
+│   │   ├── kekse01
+│   │   │   ├── kekse01_files
+│   │   │   ├── kekse01.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── kekse02
+│   │   │   ├── kekse02_files
+│   │   │   ├── kekse02.qmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── kekse03
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── kennwert-robust
+│   │   │   └── kennwert-robust.rmd
+│   │   ├── kennwert-robust2
+│   │   │   └── kennwert-robust2.rmd
+│   │   ├── klausuren-bestehen
+│   │   │   └── klausuren-bestehen.qmd
+│   │   ├── klausur-raten
+│   │   │   ├── Klausur-raten_files
+│   │   │   ├── klausur-raten.qmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── knn-ames01
+│   │   │   └── knn-ames01.qmd
+│   │   ├── kollision-eignung
+│   │   │   ├── fig-coll3-dag-1.png
+│   │   │   ├── kollision-eignung_files
+│   │   │   ├── kollision-eignung.qmd
+│   │   │   ├── m1-1.png
+│   │   │   └── m2-1.png
+│   │   ├── kolmogorov
+│   │   │   └── index.qmd
+│   │   ├── korr01
+│   │   │   ├── korr01.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── korr02
+│   │   │   ├── korr02.rmd
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── korr-als-regr
+│   │   │   └── korr-als-regr.rmd
+│   │   ├── korr-ungewiss
+│   │   │   └── index.qmd
+│   │   ├── krebs1
+│   │   │   └── krebs1.qmd
+│   │   ├── kung-height
+│   │   │   ├── kung-height_files
+│   │   │   ├── kung-height.rmd
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-2-2.png
+│   │   │   ├── unnamed-chunk-2-3.png
+│   │   │   └── unnamed-chunk-3-1.png
+│   │   ├── kung-height2
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   └── unnamed-chunk-2-2.png
+│   │   ├── likelihood2
+│   │   │   └── likelihood2.rmd
+│   │   ├── likelihood-identifizieren
+│   │   │   └── likelihood-identifizieren.rmd
+│   │   ├── likelihood-nv
+│   │   │   └── likelihood-nv.qmd
+│   │   ├── linearitaet1a
+│   │   │   ├── linearitaet1a_files
+│   │   │   ├── Linearitaet1a_files
+│   │   │   └── linearitaet1a.rmd
+│   │   ├── lm1
+│   │   │   ├── lm1.rmd
+│   │   │   └── regression.csv
+│   │   ├── lm-mario1
+│   │   │   ├── lm-mario1_files
+│   │   │   └── lm-mario1.rmd
+│   │   ├── lm-mario2
+│   │   │   └── lm-mario2.rmd
+│   │   ├── lm-mario3
+│   │   │   └── lm-mario3.rmd
+│   │   ├── lm-standardfehler
+│   │   │   └── lm-standardfehler.rmd
+│   │   ├── logikpruefung1
+│   │   │   └── logikpruefung1.rmd
+│   │   ├── logikpruefung2
+│   │   │   └── logikpruefung2.rmd
+│   │   ├── log-y-regr1
+│   │   │   └── log-y-regr1.rmd
+│   │   ├── log-y-regr2
+│   │   │   ├── log-y-regr2.rmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-6-2.png
+│   │   ├── log-y-regr3
+│   │   │   └── log-y-regr3.rmd
+│   │   ├── lose-nieten-binomial-grid
+│   │   │   ├── lose-nieten-binomial-grid_files
+│   │   │   ├── lose-nieten-binomial-grid.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── unnamed-chunk-4-2.png
+│   │   │   └── unnamed-chunk-4-3.png
+│   │   ├── mario-compare-models
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── mariokart-desk01
+│   │   │   └── mariokart-desk01.rmd
+│   │   ├── mariokart_desk-inf-mod
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── m1.mmd
+│   │   ├── mariokart-korr1
+│   │   │   ├── mariokart-korr1.rmd
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── mariokart-korr2
+│   │   │   └── mariokart-korr2.rmd
+│   │   ├── mariokart-korr3
+│   │   │   └── mariokart-korr3.rmd
+│   │   ├── mariokart-korr4
+│   │   │   └── mariokart-korr4.rmd
+│   │   ├── mariokart-max1
+│   │   │   └── mariokart-max1.rmd
+│   │   ├── mariokart-max2
+│   │   │   └── mariokart-max2.rmd
+│   │   ├── mariokart-mean1
+│   │   │   └── mariokart-mean1.rmd
+│   │   ├── mariokart-mean2
+│   │   │   └── mariokart-mean2.rmd
+│   │   ├── mariokart-mean3
+│   │   │   └── mariokart-mean3.rmd
+│   │   ├── mariokart-mean4
+│   │   │   └── mariokart-mean4.rmd
+│   │   ├── mariokart-sd1
+│   │   │   └── mariokart-sd1.rmd
+│   │   ├── mariokart-sd2
+│   │   │   └── mariokart-sd2.rmd
+│   │   ├── mariokart-sd3
+│   │   │   └── mariokart-sd3.rmd
+│   │   ├── maschinendesaster
+│   │   │   ├── Gemini_Generated_Image_apdzyqapdzyqapdz.png
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── max-corr1
+│   │   │   ├── max-corr1.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── max-corr2
+│   │   │   ├── max-corr2.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── mediterran-alk
+│   │   │   ├── Mediterran-Alk_files
+│   │   │   ├── mediterran-alk.rmd
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── min-corr1
+│   │   │   ├── min-corr1.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── modelldef-regrformel
+│   │   │   └── index.qmd
+│   │   ├── modellguete-testset
+│   │   │   └── modellguete-testset.rmd
+│   │   ├── moderation
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── movie-sentiment1
+│   │   │   ├── movie-sentiment1_files
+│   │   │   ├── movie-sentiment1.qmd
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── movies-vis1
+│   │   │   ├── movies-vis1.rmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── movies-vis2
+│   │   │   ├── movies-vis2.rmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── mse
+│   │   │   └── mse.rmd
+│   │   ├── mtcars-abhaengig
+│   │   │   ├── mtcars-abhaengig.rmd
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── mtcars-abhaengig_var2
+│   │   │   └── mtcars-abhaengig_var2.rmd
+│   │   ├── mtcars-abhaengig_var3
+│   │   │   ├── mtcars-abhaengig_var3_files
+│   │   │   ├── mtcars-abhaengig_var3.qmd
+│   │   │   └── unnamed-chunk-12-1.png
+│   │   ├── mtcars-abhaengig_var3a
+│   │   │   ├── mtcars-abhaengig_var3a_files
+│   │   │   ├── mtcars-abhaengig_var3a.qmd
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── mtcars-easystats
+│   │   │   └── index.qmd
+│   │   ├── mtcars-post
+│   │   │   └── mtcars-post.rmd
+│   │   ├── mtcars-post2
+│   │   │   └── mtcars-post2.rmd
+│   │   ├── mtcars-post2a
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── mtcars-post3
+│   │   │   └── mtcars-post3.rmd
+│   │   ├── mtcars-post3a
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── mtcars-post_paper
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── mtcars-regr01
+│   │   │   ├── mtcars-regr01_files
+│   │   │   └── mtcars-regr01.rmd
+│   │   ├── mtcars-rope1
+│   │   │   ├── mtcars-rope1_files
+│   │   │   ├── mtcars-rope1.rmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── mtcars-simple1
+│   │   │   └── mtcars-simple1.rmd
+│   │   ├── mtcars-simple2
+│   │   │   └── mtcars-simple2.rmd
+│   │   ├── mtcars-simple3
+│   │   │   └── mtcars-simple3.rmd
+│   │   ├── muenze-weird
+│   │   │   └── index.qmd
+│   │   ├── mutate01
+│   │   │   └── mutate01.rmd
+│   │   ├── mutate02
+│   │   │   └── mutate02.rmd
+│   │   ├── mutate03
+│   │   │   └── mutate03.rmd
+│   │   ├── mw-berechnen
+│   │   │   ├── mw-berechnen2.rmd
+│   │   │   └── mw-berechnen.rmd
+│   │   ├── mwberechnen
+│   │   │   └── mwberechnen.rmd
+│   │   ├── na-per-col
+│   │   │   └── na-per-col.qmd
+│   │   ├── nasa01
+│   │   │   ├── chunk-img
+│   │   │   └── nasa01.rmd
+│   │   ├── nasa02
+│   │   │   ├── chunk-img
+│   │   │   ├── nasa02_files
+│   │   │   └── nasa02.rmd
+│   │   ├── nasa03
+│   │   │   └── nasa03.rmd
+│   │   ├── nasa04
+│   │   │   ├── chunk-img
+│   │   │   ├── nasa04_files
+│   │   │   └── nasa04.rmd
+│   │   ├── nasa05
+│   │   │   └── nasa05.rmd
+│   │   ├── nasa06
+│   │   │   ├── chunk-img
+│   │   │   └── nasa06.rmd
+│   │   ├── nasa07
+│   │   │   ├── chunk-img
+│   │   │   └── index.rmd
+│   │   ├── nerd-gelockert
+│   │   │   └── nerd-gelockert.qmd
+│   │   ├── nichtlineare-regr1
+│   │   │   ├── nichtlineare-regr1_files
+│   │   │   ├── nichtlineare-regr1.rmd
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── norms-sd
+│   │   │   └── index.qmd
+│   │   ├── n-se
+│   │   │   └── n-se.rmd
+│   │   ├── nullhyp-beispiel
+│   │   │   └── nullhyp-beispiel.rmd
+│   │   ├── n-vars-diagram
+│   │   │   ├── n-vars-diagram.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── nyc_casestudy
+│   │   │   └── nyc_casestudy.rmd
+│   │   ├── oecd-yacsda
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── ols-minimierung
+│   │   │   └── ols-minimierung.rmd
+│   │   ├── options-print
+│   │   │   └── options-print.rmd
+│   │   ├── parameter-genau
+│   │   │   └── index.qmd
+│   │   ├── pca
+│   │   │   └── pca.rmd
+│   │   ├── pca1
+│   │   │   └── pca1.rmd
+│   │   ├── pd1
+│   │   │   └── index.qmd
+│   │   ├── penguins-interact
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-interact2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-lm
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-lm2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-postbreite
+│   │   │   └── index.qmd
+│   │   ├── penguins-regr02
+│   │   │   ├── penguins-regr02_files
+│   │   │   └── penguins-regr02.rmd
+│   │   ├── penguins-regr02a
+│   │   │   ├── index_files
+│   │   │   └── index.rmd
+│   │   ├── penguins-regr02b
+│   │   │   ├── index_files
+│   │   │   └── index.rmd
+│   │   ├── penguins-relationen
+│   │   │   └── index.qmd
+│   │   ├── penguins-relationen2
+│   │   │   └── index.qmd
+│   │   ├── penguins-rope
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-simpson
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-stan-01
+│   │   │   ├── penguins-stan-01_files
+│   │   │   └── penguins-stan-01.rmd
+│   │   ├── penguins-stan-01a
+│   │   │   ├── index_files
+│   │   │   └── index.rmd
+│   │   ├── penguins-stan-02
+│   │   │   └── penguins-stan-02.rmd
+│   │   ├── penguins-stan-02a
+│   │   │   ├── index_files
+│   │   │   └── index.rmd
+│   │   ├── penguins-stan-03
+│   │   │   └── penguins-stan-03.rmd
+│   │   ├── penguins-stan-04
+│   │   │   └── penguins-stan-04.rmd
+│   │   ├── penguins-stan-04a
+│   │   │   ├── index_files
+│   │   │   └── index.rmd
+│   │   ├── penguins-stan-05
+│   │   │   └── penguins-stan-05.rmd
+│   │   ├── penguins-stan-05a
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── penguins-stan-05a_files
+│   │   │   └── penguins-stan-05_files
+│   │   ├── penguins-stan-06
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-vis-bodymass1
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-vis-bodymass2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── penguins-weight
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── pfad
+│   │   │   └── pfad.rmd
+│   │   ├── pigs2
+│   │   │   ├── pigs2_files
+│   │   │   ├── pigs2.rmd
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── post-befragen1
+│   │   │   └── post-befragen1.rmd
+│   │   ├── posterior_interval
+│   │   │   └── posterior_interval.rmd
+│   │   ├── post-groesse
+│   │   │   └── post-groesse.qmd
+│   │   ├── postvert-regr-01
+│   │   │   └── postvert-regr-01.rmd
+│   │   ├── postvert-vis-zwielicht
+│   │   │   ├── fig-stiprovert-post-zwielicht-1.png
+│   │   │   ├── postvert-vis-zwielicht_files
+│   │   │   ├── postvert-vis-zwielicht.qmd
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── ppv1a-mtcars
+│   │   │   └── ppv1a-mtcars.rmd
+│   │   ├── ppv-dyn1
+│   │   │   ├── ppv-dyn1_files
+│   │   │   └── ppv-dyn1.rmd
+│   │   ├── ppv-mtcars1
+│   │   │   ├── ppv-mtcars1_files
+│   │   │   └── ppv-mtcars1.rmd
+│   │   ├── predictioncontest1
+│   │   │   └── predictioncontest1.rmd
+│   │   ├── priori-streuung
+│   │   │   ├── priori-streuung_files
+│   │   │   ├── priori-streuung.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── priorwahl1
+│   │   │   └── priorwahl1.rmd
+│   │   ├── priorwahl2
+│   │   │   └── priorwahl2.rmd
+│   │   ├── prob-disjunkt
+│   │   │   └── index.qmd
+│   │   ├── prob-disjunkt2
+│   │   │   └── index.qmd
+│   │   ├── prob-elementarereignis
+│   │   │   └── index.qmd
+│   │   ├── prob-ereignisraum
+│   │   │   └── index.qmd
+│   │   ├── prob-hyps
+│   │   │   └── index.qmd
+│   │   ├── prob-sicher-unmöglich
+│   │   │   └── index.qmd
+│   │   ├── prob-vereinigung
+│   │   │   └── index.qmd
+│   │   ├── prob-voll-esystem
+│   │   │   └── index.qmd
+│   │   ├── punktschaetzer-reicht-nicht
+│   │   │   └── punktschaetzer-reicht-nicht.rmd
+│   │   ├── pupil-size
+│   │   │   ├── hdi-plot-1.png
+│   │   │   ├── plot-params-1.png
+│   │   │   ├── pupil-size_files
+│   │   │   ├── pupil-size.rmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   ├── unnamed-chunk-8-1.png
+│   │   │   └── unnamed-chunk-9-1.png
+│   │   ├── pupil-size2
+│   │   │   ├── hdi-plot-1.png
+│   │   │   ├── index_files
+│   │   │   ├── index.rmd
+│   │   │   └── plot-params-1.png
+│   │   ├── purrr-map01
+│   │   │   └── purrr-map01.rmd
+│   │   ├── purrr-map02
+│   │   │   └── purrr-map02.rmd
+│   │   ├── purrr-map03
+│   │   │   ├── purrr-map03_files
+│   │   │   └── purrr-map03.rmd
+│   │   ├── purrr-map04
+│   │   │   ├── purrr-map04_files
+│   │   │   └── purrr-map04.qmd
+│   │   ├── purrr-map05
+│   │   │   └── purrr-map05.rmd
+│   │   ├── purrr-map06
+│   │   │   └── purrr-map06.rmd
+│   │   ├── pwert
+│   │   │   └── index.qmd
+│   │   ├── pwert2
+│   │   │   └── index.qmd
+│   │   ├── qm2-quiz-globus
+│   │   │   └── index.qmd
+│   │   ├── qm2-quiz-inferenz
+│   │   │   └── index.qmd
+│   │   ├── qm2-quiz-wskt
+│   │   │   └── index.qmd
+│   │   ├── quiz-qm2-verteilungen
+│   │   │   └── index.qmd
+│   │   ├── randomdag1
+│   │   │   ├── plot-dag-1.png
+│   │   │   └── randomdag1.buggy
+│   │   ├── regex01
+│   │   │   └── regex01.qmd
+│   │   ├── regex02
+│   │   │   └── regex02.qmd
+│   │   ├── regex03
+│   │   │   └── regex03.qmd
+│   │   ├── regex-insert-char
+│   │   │   └── regex-insert-char.rmd
+│   │   ├── regr-bayes-interpret
+│   │   │   └── regr-bayes-interpret.rmd
+│   │   ├── regr-bayes-interpret02
+│   │   │   └── regr-bayes-interpret02.rmd
+│   │   ├── regr-bayes-interpret02a
+│   │   │   └── regr-bayes-interpret02a.qmd
+│   │   ├── regr-bayes-interpret03
+│   │   │   └── regr-bayes-interpret03.rmd
+│   │   ├── regr-bayes-interpret03a
+│   │   │   └── regr-bayes-interpret03a.qmd
+│   │   ├── regression1
+│   │   │   └── regression1.rmd
+│   │   ├── regression1a
+│   │   │   └── regression1a.rmd
+│   │   ├── regression1b
+│   │   │   └── regression1b.rmd
+│   │   ├── regression2
+│   │   │   ├── plot-scatter-1.png
+│   │   │   ├── regression2.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── regression3
+│   │   │   ├── plot-scatter-1.png
+│   │   │   ├── Regression3_files
+│   │   │   └── regression3.rmd
+│   │   ├── regression4
+│   │   │   └── regression4.rmd
+│   │   ├── regression5
+│   │   │   └── regression5.rmd
+│   │   ├── regression6
+│   │   │   └── regression6.rmd
+│   │   ├── regr-tree01
+│   │   │   ├── regr-tree01_files
+│   │   │   └── regr-tree01.rmd
+│   │   ├── regr-tree02
+│   │   │   ├── regr-tree02_files
+│   │   │   └── regr-tree02.rmd
+│   │   ├── regr-tree03
+│   │   │   ├── regr-tree03_files
+│   │   │   └── regr-tree03.rmd
+│   │   ├── remove-digits
+│   │   │   └── index.qmd
+│   │   ├── repro1-sessioninfo
+│   │   │   └── repro1-sessioninfo.rmd
+│   │   ├── rethink2m1
+│   │   │   ├── Rethink2m1_files
+│   │   │   ├── rethink2m1.qmd
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-2-2.png
+│   │   │   ├── unnamed-chunk-2-3.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── unnamed-chunk-4-2.png
+│   │   │   └── unnamed-chunk-4-3.png
+│   │   ├── rethink2m2
+│   │   │   ├── Rethink2m2_files
+│   │   │   ├── rethink2m2.qmd
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── rethink2m3
+│   │   │   └── rethink2m3.qmd
+│   │   ├── rethink2m4
+│   │   │   └── rethink2m4.qmd
+│   │   ├── rethink2m5
+│   │   │   └── rethink2m5.qmd
+│   │   ├── rethink2m6
+│   │   │   └── rethink2m6.qmd
+│   │   ├── rethink2m7
+│   │   │   ├── Rethink2m7_files
+│   │   │   ├── rethink2m7.qmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── rethink3e1-7
+│   │   │   ├── rethink3e1-7_files
+│   │   │   ├── rethink3e1-7.rmd
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── rethink3e1-7-paper
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── rethink3m1
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── rethink3m2
+│   │   │   ├── samples-p-1.png
+│   │   │   └── unnamed-chunk-4-1.png
+│   │   ├── rethink3m3
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── rethink3m4
+│   │   │   └── rethink3m4.qmd
+│   │   ├── rethink3m5
+│   │   │   ├── post-vert-p-1.png
+│   │   │   └── rethink3m5.qmd
+│   │   ├── rethink3m6
+│   │   │   └── rethink3m6.qmd
+│   │   ├── rethink4e1
+│   │   │   └── rethink4e1.rmd
+│   │   ├── rethink4e3
+│   │   │   └── rethink4e3.qmd
+│   │   ├── rf-finalize
+│   │   │   └── rf-finalize.rmd
+│   │   ├── rf-finalize2
+│   │   │   └── rf-finalize2.rmd
+│   │   ├── rf-finalize3
+│   │   │   ├── rf-finalize3_files
+│   │   │   └── rf-finalize3.rmd
+│   │   ├── rf-usemodels
+│   │   │   └── rf-usemodels.rmd
+│   │   ├── ridges-vergleichen
+│   │   │   ├── ridgeplot-1.png
+│   │   │   └── ridges-vergleichen.rmd
+│   │   ├── rope1
+│   │   │   └── rope1.rmd
+│   │   ├── rope2
+│   │   │   ├── rope2.rmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── rope2a
+│   │   │   ├── index_files
+│   │   │   ├── index.rmd
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── rope3
+│   │   │   ├── rope3.rmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-8-1.png
+│   │   │   └── unnamed-chunk-9-1.png
+│   │   ├── rope3a
+│   │   │   ├── index_files
+│   │   │   ├── index.rmd
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── rope4
+│   │   │   ├── rope4.rmd
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   └── unnamed-chunk-14-1.png
+│   │   ├── rope-luecke
+│   │   │   └── index.qmd
+│   │   ├── rope-regr
+│   │   │   └── rope-regr.rmd
+│   │   ├── rowmeans-groupby-summarise
+│   │   │   └── index.qmd
+│   │   ├── r-quiz
+│   │   │   └── r-quiz.qmd
+│   │   ├── samples-nyc
+│   │   │   └── index.qmd
+│   │   ├── samples-nyc2
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── saratoga-cor1
+│   │   │   ├── saratoga-cor1_files
+│   │   │   ├── saratoga-cor1.qmd
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── saratoga-cor2
+│   │   │   ├── saratoga-cor2_files
+│   │   │   ├── saratoga-cor2.qmd
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── schiefe1
+│   │   │   ├── schiefe1_files
+│   │   │   ├── Schiefe1_files
+│   │   │   └── schiefe1.rmd
+│   │   ├── schiefe-erkennen
+│   │   │   ├── generate-histograms-1.png
+│   │   │   ├── generate-histograms-2.png
+│   │   │   ├── generate-histograms-3.png
+│   │   │   ├── generate-histograms-4.png
+│   │   │   ├── generate-histograms-5.png
+│   │   │   └── schiefe-erkennen.rmd
+│   │   ├── schmalste-post
+│   │   │   └── index.qmd
+│   │   ├── scikit-llm-zeroshot
+│   │   │   ├── scikit-llm-zeroshot.qmd
+│   │   │   └── scikit-lmm.png
+│   │   ├── sd-vergleich
+│   │   │   ├── sd-vergleich.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── sentiws2
+│   │   │   └── sentiws2.qmd
+│   │   ├── shrinkage1
+│   │   │   └── shrinkage1.rmd
+│   │   ├── sicherheit
+│   │   │   └── sicherheit.qmd
+│   │   ├── sicherheit2
+│   │   │   └── sicherheit2.qmd
+│   │   ├── sim-prior
+│   │   │   ├── sim-prior.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── simu-unif2
+│   │   │   └── index.qmd
+│   │   ├── simu-unif3
+│   │   │   └── index.qmd
+│   │   ├── simu-uniform
+│   │   │   └── index.qmd
+│   │   ├── skalenniveau1a
+│   │   │   └── skalenniveau1a.rmd
+│   │   ├── skalenniveau1b
+│   │   │   └── skalenniveau1b.rmd
+│   │   ├── small-wide-normal
+│   │   │   └── index.qmd
+│   │   ├── smape
+│   │   │   └── smape.rmd
+│   │   ├── smartphone1
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── smartphone_addict
+│   │   │   └── index.qmd
+│   │   ├── sophie-kann-fliegen
+│   │   │   └── index.qmd
+│   │   ├── stand-regr
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── stan_glm01
+│   │   │   └── stan_glm01.rmd
+│   │   ├── stan_glm01a
+│   │   │   └── index.rmd
+│   │   ├── stan_glm_parameterzahl
+│   │   │   └── stan_glm_parameterzahl.rmd
+│   │   ├── stan_glm_parameterzahl_simple
+│   │   │   └── stan_glm_parameterzahl_simple.rmd
+│   │   ├── stan_glm_prioriwerte
+│   │   │   ├── stan_glm_prioriwerte_files
+│   │   │   ├── stan_glm_prioriwerte.rmd
+│   │   │   └── unnamed-chunk-5-1.png
+│   │   ├── step-dummy
+│   │   │   └── step-dummy.rmd
+│   │   ├── stichprobenziehen1
+│   │   │   └── stichprobenziehen1.rmd
+│   │   ├── streudiagramm
+│   │   │   ├── streudiagramm.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── streuung-histogramm
+│   │   │   ├── generate-histograms-1.png
+│   │   │   ├── generate-histograms-2.png
+│   │   │   ├── generate-histograms-3.png
+│   │   │   ├── generate-histograms-4.png
+│   │   │   └── streuung-histogramm.rmd
+│   │   ├── streuung-post
+│   │   │   └── index.qmd
+│   │   ├── streuung-post2
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── tikzc1e8d8f403.log
+│   │   ├── subjektiv-bayes
+│   │   │   └── subjektiv-bayes.rmd
+│   │   ├── summarise01
+│   │   │   └── summarise01.rmd
+│   │   ├── summarise02
+│   │   │   └── summarise02.rmd
+│   │   ├── summarise03
+│   │   │   └── summarise03.rmd
+│   │   ├── summarise04
+│   │   │   └── summarise04.rmd
+│   │   ├── summarise05
+│   │   │   └── summarise05.rmd
+│   │   ├── summarise06
+│   │   │   └── summarise06.rmd
+│   │   ├── supervisedlearning
+│   │   │   └── supervisedlearning.rmd
+│   │   ├── szenario-charakterisieren1
+│   │   │   └── szenario-charakterisieren1.rmd
+│   │   ├── targets-multiple-data-files
+│   │   │   └── targets-multiple-data-files.rmd
+│   │   ├── tengku-hanis01
+│   │   │   ├── Tengku-Hanis01_files
+│   │   │   └── tengku-hanis01.rmd
+│   │   ├── test-mse1
+│   │   │   └── test-mse1.rmd
+│   │   ├── test-mse2
+│   │   │   └── test-mse2.rmd
+│   │   ├── there-is-no-package
+│   │   │   └── there-is-no-package.rmd
+│   │   ├── tidy1
+│   │   │   └── tidy1.rmd
+│   │   ├── tidydata1
+│   │   │   └── tidydata1.rmd
+│   │   ├── tidymodels1
+│   │   │   └── tidymodels1.rmd
+│   │   ├── tidymodels2
+│   │   │   └── tidymodels2.rmd
+│   │   ├── tidymodels3
+│   │   │   └── tidymodels3.rmd
+│   │   ├── tidymodels-ames-01
+│   │   │   └── tidymodels-ames-01.qmd
+│   │   ├── tidymodels-ames-02
+│   │   │   └── tidymodels-ames-02.qmd
+│   │   ├── tidymodels-ames-03
+│   │   │   └── tidymodels-ames-03.qmd
+│   │   ├── tidymodels-ames-04
+│   │   │   └── tidymodels-ames-04.qmd
+│   │   ├── tidymodels-ames-05
+│   │   │   ├── tidymodels-ames-05.qmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── tidymodels-ames-06-boost.qmd
+│   │   │   ├── tidymodels-ames-06-boost.buggy
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   └── unnamed-chunk-8-1.png
+│   │   ├── tidymodels-error1
+│   │   │   └── tidymodels-error1.qmd
+│   │   ├── tidymodels-lasso
+│   │   │   └── tidymodels-lasso.qmd
+│   │   ├── tidymodels-lasso2
+│   │   │   └── tidymodels-lasso2.qmd
+│   │   ├── tidymodels-lasso3
+│   │   │   ├── tidymodels-lasso3_files
+│   │   │   └── tidymodels-lasso3.qmd
+│   │   ├── tidymodels-penguins01
+│   │   │   └── tidymodels-penguins01.qmd
+│   │   ├── tidymodels-penguins02
+│   │   │   └── tidymodels-penguins02.rmd
+│   │   ├── tidymodels-penguins03
+│   │   │   └── tidymodels-penguins03.rmd
+│   │   ├── tidymodels-penguins04
+│   │   │   └── tidymodels-penguins04.rmd
+│   │   ├── tidymodels-penguins05
+│   │   │   └── tidymodels-penguins05.rmd
+│   │   ├── tidymodels-penguins06
+│   │   │   └── tidymodels-penguins06.qmd
+│   │   ├── tidymodels-penguins07
+│   │   │   └── tidymodels-penguins07.qmd
+│   │   ├── tidymodels-poly01
+│   │   │   ├── tidymodels-poly01.rmd
+│   │   │   └── unnamed-chunk-6-1.png
+│   │   ├── tidymodels-poly02
+│   │   │   ├── tidymodels-poly02.qmd
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── tidymodels-remove-na
+│   │   │   └── tidymodels-remove-na.qmd
+│   │   ├── tidymodels-remove-na2
+│   │   │   └── tidymodels-remove-na2.qmd
+│   │   ├── tidymodels-tree1
+│   │   │   └── tidymodels-tree1.rmd
+│   │   ├── tidymodels-tree2
+│   │   │   └── tidymodels-tree2.rmd
+│   │   ├── tidymodels-tree3
+│   │   │   └── tidymodels-tree3.rmd
+│   │   ├── tidymodels-tree4
+│   │   │   └── tidymodels-tree4.rmd
+│   │   ├── tidymodels-tree5
+│   │   │   └── tidymodels-tree5.rmd
+│   │   ├── tidymodels-vorlage
+│   │   │   └── tidymodels-vorlage.rmd
+│   │   ├── tidymodels-vorlage2
+│   │   │   └── tidymodels-vorlage2.qmd
+│   │   ├── tidymodels-vorlage3
+│   │   │   └── tidymodels-vorlage3.qmd
+│   │   ├── tidymodels_workflowset01
+│   │   │   └── tidymodels_workflowset01.qmd
+│   │   ├── tidytext
+│   │   │   └── tidytext.qmd
+│   │   ├── titanic_casestudy
+│   │   │   ├── titanic_casestudy.rmd
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── tmdb01
+│   │   │   └── tmdb01.rmd
+│   │   ├── tmdb02
+│   │   │   └── tmdb02.qmd
+│   │   ├── tmdb03
+│   │   │   ├── tmdb03.qmd
+│   │   │   ├── unnamed-chunk-23-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── tmdb04
+│   │   │   └── tmdb04.qmd
+│   │   ├── tmdb05
+│   │   │   └── tmdb05.qmd
+│   │   ├── tmdb06
+│   │   │   └── tmdb06.rmd
+│   │   ├── tmdb07
+│   │   │   └── tmdb07.rmd
+│   │   ├── tmdb08
+│   │   │   ├── tmdb08.rmd
+│   │   │   └── unnamed-chunk-11-1.png
+│   │   ├── totale-wskt1
+│   │   │   └── totale-wskt1.qmd
+│   │   ├── totale-Wskt1
+│   │   │   └── totale-wskt1.qmd
+│   │   ├── ttest-als-regr
+│   │   │   ├── ttest-als-regr_files
+│   │   │   ├── ttest-als-regr.rmd
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── ttest-skalenniveau
+│   │   │   ├── ttest-skalenniveau_files
+│   │   │   ├── ttest-skalenniveau.rmd
+│   │   │   └── unnamed-chunk-1-1.png
+│   │   ├── tutorium-kausal
+│   │   │   ├── fig-dag-grannies-1.png
+│   │   │   ├── fig-dag-tutor1-1.png
+│   │   │   ├── fig-dag-tutor2-rct-1.png
+│   │   │   ├── fig-dag-tutor2-rct-mult-1.png
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   └── unnamed-chunk-2-1.png
+│   │   ├── typ-fehler-r-01
+│   │   │   └── typ-fehler-r-01.rmd
+│   │   ├── typ-fehler-r-02
+│   │   │   └── typ-fehler-r-02.rmd
+│   │   ├── typ-fehler-r-03
+│   │   │   └── typ-fehler-r-03.rmd
+│   │   ├── typ-fehler-r-04
+│   │   │   └── typ-fehler-r-04.rmd
+│   │   ├── typ-fehler-r-06a
+│   │   │   └── typ-fehler-r-06a.rmd
+│   │   ├── typ-fehler-r-07
+│   │   │   └── typ-fehler-r-07.qmd
+│   │   ├── typ-fehler-r-08-name-clash
+│   │   │   └── typ-fehler-r-08-name-clash.qmd
+│   │   ├── ungewiss-arten-regr
+│   │   │   └── ungewiss-arten-regr.rmd
+│   │   ├── urne1
+│   │   │   └── urne1.qmd
+│   │   ├── urne2
+│   │   │   └── urne2.qmd
+│   │   ├── variation01
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   ├── unnamed-chunk-9-1.png
+│   │   │   └── variation01.rmd
+│   │   ├── variation02
+│   │   │   ├── unnamed-chunk-2-1.png
+│   │   │   ├── unnamed-chunk-3-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── variation02.rmd
+│   │   ├── var-vs-stufe
+│   │   │   └── var-vs-stufe.rmd
+│   │   ├── verteilungen-quiz-01
+│   │   │   ├── p-post1-1.png
+│   │   │   └── verteilungen-quiz-01.qmd
+│   │   ├── verteilungen-quiz-02
+│   │   │   └── verteilungen-quiz-02.rmd
+│   │   ├── verteilungen-quiz-03
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-03_files
+│   │   │   └── verteilungen-quiz-03.rmd
+│   │   ├── verteilungen-quiz-04
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-04_files
+│   │   │   └── verteilungen-quiz-04.rmd
+│   │   ├── verteilungen-quiz-05
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── unnamed-chunk-1-2.png
+│   │   │   ├── Verteilungen-Quiz-05_files
+│   │   │   └── verteilungen-quiz-05.rmd
+│   │   ├── verteilungen-quiz-06
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-06_files
+│   │   │   └── verteilungen-quiz-06.rmd
+│   │   ├── verteilungen-quiz-07
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-07_files
+│   │   │   └── verteilungen-quiz-07.rmd
+│   │   ├── verteilungen-quiz-08
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-08_files
+│   │   │   └── verteilungen-quiz-08.rmd
+│   │   ├── verteilungen-quiz-09
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-09_files
+│   │   │   └── verteilungen-quiz-09.rmd
+│   │   ├── verteilungen-quiz-10
+│   │   │   └── verteilungen-quiz-10.rmd
+│   │   ├── verteilungen-quiz-11
+│   │   │   └── verteilungen-quiz-11.rmd
+│   │   ├── verteilungen-quiz-12
+│   │   │   └── verteilungen-quiz-12.rmd
+│   │   ├── verteilungen-quiz-13
+│   │   │   └── verteilungen-quiz-13.rmd
+│   │   ├── verteilungen-quiz-14
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── Verteilungen-Quiz-14_files
+│   │   │   └── verteilungen-quiz-14.rmd
+│   │   ├── verteilungen-quiz-15
+│   │   │   └── verteilungen-quiz-15.rmd
+│   │   ├── verteilungen-quiz-16
+│   │   │   └── verteilungen-quiz-16.rmd
+│   │   ├── verteilungen-quiz-17
+│   │   │   └── verteilungen-quiz-17.rmd
+│   │   ├── verteilungen-quiz-18
+│   │   │   └── verteilungen-quiz-18.rmd
+│   │   ├── verteilungsfunktion-penguins
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── vier_oder_acht
+│   │   │   └── index.qmd
+│   │   ├── vis-gapminder
+│   │   │   ├── ggscatter2-1.png
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   ├── unnamed-chunk-13-1.png
+│   │   │   ├── unnamed-chunk-14-1.png
+│   │   │   ├── unnamed-chunk-15-1.png
+│   │   │   ├── unnamed-chunk-16-1.png
+│   │   │   ├── unnamed-chunk-17-1.png
+│   │   │   ├── unnamed-chunk-18-1.png
+│   │   │   ├── unnamed-chunk-19-1.png
+│   │   │   ├── unnamed-chunk-20-1.png
+│   │   │   ├── unnamed-chunk-22-1.png
+│   │   │   ├── unnamed-chunk-24-1.png
+│   │   │   ├── unnamed-chunk-25-1.png
+│   │   │   ├── unnamed-chunk-27-1.png
+│   │   │   ├── unnamed-chunk-29-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   ├── unnamed-chunk-9-1.png
+│   │   │   └── vis-gapminder.rmd
+│   │   ├── vis-mariokart-variab
+│   │   │   ├── vis-mariokart-variab_files
+│   │   │   └── vis-mariokart-variab.rmd
+│   │   ├── vis-mtcars
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   ├── unnamed-chunk-13-1.png
+│   │   │   ├── unnamed-chunk-14-1.png
+│   │   │   ├── unnamed-chunk-15-1.png
+│   │   │   ├── unnamed-chunk-16-1.png
+│   │   │   ├── unnamed-chunk-17-1.png
+│   │   │   ├── unnamed-chunk-18-1.png
+│   │   │   ├── unnamed-chunk-19-1.png
+│   │   │   ├── unnamed-chunk-20-1.png
+│   │   │   ├── unnamed-chunk-21-1.png
+│   │   │   ├── unnamed-chunk-22-1.png
+│   │   │   ├── unnamed-chunk-23-1.png
+│   │   │   ├── unnamed-chunk-25-1.png
+│   │   │   ├── unnamed-chunk-26-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-8-1.png
+│   │   │   ├── unnamed-chunk-9-1.png
+│   │   │   └── vis-mtcars.rmd
+│   │   ├── vis-penguins
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   ├── unnamed-chunk-13-1.png
+│   │   │   ├── unnamed-chunk-14-1.png
+│   │   │   ├── unnamed-chunk-15-1.png
+│   │   │   ├── unnamed-chunk-16-1.png
+│   │   │   ├── unnamed-chunk-17-1.png
+│   │   │   ├── unnamed-chunk-18-1.png
+│   │   │   ├── unnamed-chunk-19-1.png
+│   │   │   ├── unnamed-chunk-20-1.png
+│   │   │   ├── unnamed-chunk-21-1.png
+│   │   │   ├── unnamed-chunk-22-1.png
+│   │   │   ├── unnamed-chunk-23-1.png
+│   │   │   ├── unnamed-chunk-24-1.png
+│   │   │   ├── unnamed-chunk-26-1.png
+│   │   │   ├── unnamed-chunk-27-1.png
+│   │   │   ├── unnamed-chunk-29-1.png
+│   │   │   ├── unnamed-chunk-5-1.png
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   ├── unnamed-chunk-7-1.png
+│   │   │   ├── unnamed-chunk-8-1.png
+│   │   │   ├── unnamed-chunk-9-1.png
+│   │   │   └── vis-penguins.rmd
+│   │   ├── voll-normal
+│   │   │   └── index.qmd
+│   │   ├── vorhersageintervall1
+│   │   │   └── vorhersageintervall1.rmd
+│   │   ├── warum-bayes
+│   │   │   └── warum-bayes.rmd
+│   │   ├── weinhaendler
+│   │   │   ├── plot-ppv-1.png
+│   │   │   ├── post-vert-p-1.png
+│   │   │   ├── unnamed-chunk-4-1.png
+│   │   │   ├── weinhaendler_files
+│   │   │   └── weinhaendler.qmd
+│   │   ├── wertberechnen
+│   │   │   └── wertberechnen.rmd
+│   │   ├── wertberechnen2
+│   │   │   └── wertberechnen2.rmd
+│   │   ├── wertpruefen
+│   │   │   └── wertpruefen.rmd
+│   │   ├── wertzuweisen
+│   │   │   └── wertzuweisen.rmd
+│   │   ├── wertzuweisen_mc
+│   │   │   └── wertzuweisen_mc.rmd
+│   │   ├── wfsets1
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   ├── unnamed-chunk-12-1.png
+│   │   │   └── wfsets1.qmd
+│   │   ├── wfsets_penguins01
+│   │   │   ├── unnamed-chunk-10-1.png
+│   │   │   ├── unnamed-chunk-11-1.png
+│   │   │   └── wfsets_penguins01.rmd
+│   │   ├── wfsets_penguins02
+│   │   │   ├── unnamed-chunk-13-1.png
+│   │   │   ├── unnamed-chunk-16-1.png
+│   │   │   └── wfsets_penguins02.rmd
+│   │   ├── wikipedia
+│   │   │   ├── bib.bib
+│   │   │   ├── index_files
+│   │   │   └── index.qmd
+│   │   ├── within-design-analysis1
+│   │   │   ├── within-design-analysis1_files
+│   │   │   └── within-design-analysis1.rmd
+│   │   ├── wozu-balkendiagramm
+│   │   │   └── wozu-balkendiagramm.rmd
+│   │   ├── wozu-streudiagramm
+│   │   │   └── wozu-streudiagramm.rmd
+│   │   ├── wrangle1
+│   │   │   └── wrangle1.rmd
+│   │   ├── wrangle10
+│   │   │   └── wrangle10.rmd
+│   │   ├── wrangle3
+│   │   │   └── wrangle3.rmd
+│   │   ├── wrangle4
+│   │   │   └── wrangle4.rmd
+│   │   ├── wrangle5
+│   │   │   └── wrangle5.rmd
+│   │   ├── wrangle7
+│   │   │   └── wrangle7.rmd
+│   │   ├── wrangle9
+│   │   │   └── wrangle9.rmd
+│   │   ├── wskt-df-r
+│   │   │   └── wskt-df-r.qmd
+│   │   ├── wskt-mtcars-1l
+│   │   │   └── wskt-mtcars-1l.qmd
+│   │   ├── wskt-mtcars-5meilen
+│   │   │   └── index.qmd
+│   │   ├── wskt-quiz01
+│   │   │   └── wskt-quiz01.qmd
+│   │   ├── wskt-quiz02
+│   │   │   └── wskt-quiz02.qmd
+│   │   ├── wskt-quiz03
+│   │   │   └── wskt-quiz03.qmd
+│   │   ├── wskt-quiz04
+│   │   │   ├── unnamed-chunk-1-1.png
+│   │   │   ├── wskt-quiz04_files
+│   │   │   └── wskt-quiz04.qmd
+│   │   ├── wskt-quiz05
+│   │   │   └── wskt-quiz05.qmd
+│   │   ├── wskt-quiz06
+│   │   │   └── wskt-quiz06.qmd
+│   │   ├── wskt-quiz07
+│   │   │   └── wskt-quiz07.qmd
+│   │   ├── wskt-quiz08
+│   │   │   └── wskt-quiz08.qmd
+│   │   ├── wskt-quiz09
+│   │   │   └── wskt-quiz09.qmd
+│   │   ├── wskt-quiz10
+│   │   │   └── wskt-quiz10.qmd
+│   │   ├── wskt-quiz11
+│   │   │   └── wskt-quiz11.qmd
+│   │   ├── wskt-quiz12
+│   │   │   └── wskt-quiz12.qmd
+│   │   ├── wskt-quiz13
+│   │   │   └── wskt-quiz13.qmd
+│   │   ├── wskt-quiz14
+│   │   │   └── wskt-quiz14.qmd
+│   │   ├── wskt-quiz15
+│   │   │   └── wskt-quiz15.qmd
+│   │   ├── wskt-quiz16
+│   │   │   └── wskt-quiz16.qmd
+│   │   ├── wskt-quiz17
+│   │   │   └── wskt-quiz17.qmd
+│   │   ├── wskt-quiz18
+│   │   │   └── wskt-quiz18.qmd
+│   │   ├── wskt-quiz19
+│   │   │   └── wskt-quiz19.qmd
+│   │   ├── wskt-quiz20
+│   │   │   └── wskt-quiz20.qmd
+│   │   ├── wskt-schluckspecht
+│   │   │   └── wskt-schluckspecht.qmd
+│   │   ├── wskt-schluckspecht2
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── wskt-schluckspecht2a
+│   │   │   ├── index_files
+│   │   │   ├── index.qmd
+│   │   │   ├── unnamed-chunk-6-1.png
+│   │   │   └── unnamed-chunk-7-1.png
+│   │   ├── wuerfel01
+│   │   │   └── wuerfel01.rmd
+│   │   ├── wuerfel02
+│   │   │   └── wuerfel02.rmd
+│   │   ├── wuerfel03
+│   │   │   └── wuerfel03.rmd
+│   │   ├── wuerfel04
+│   │   │   └── wuerfel04.rmd
+│   │   ├── wuerfel05
+│   │   │   └── wuerfel05.qmd
+│   │   ├── wuerfel06
+│   │   │   └── wuerfel06.qmd
+│   │   ├── xlsx-online-import
+│   │   │   └── index.qmd
+│   │   ├── ziel-bayes
+│   │   │   └── index.qmd
+│   │   ├── ziele-statistik
+│   │   │   └── ziele-statistik.rmd
+│   │   ├── zuordnung_regr_formel1
+│   │   │   └── index.qmd
+│   │   ├── zwert-berechnen
+│   │   │   └── zwert-berechnen.rmd
+│   │   └── zwielichter-dozent-bayes
+│   │       ├── ppv-p-1.png
+│   │       ├── unnamed-chunk-3-1.png
+│   │       ├── unnamed-chunk-6-1.png
+│   │       ├── unnamed-chunk-7-1.png
+│   │       ├── zwielichter-dozent-bayes_files
+│   │       ├── Zwielichter-Dozent-Bayes_files
+│   │       └── zwielichter-dozent-bayes.rmd
+│   ├── posts_buggy
+│   │   ├── germeval01-textfeatures
+│   │   │   └── germeval01-textfeatures.qmd
+│   │   ├── germeval03
+│   │   │   └── germeval03.qmd
+│   │   ├── germeval04
+│   │   │   └── germeval04.qmd
+│   │   ├── germeval-textfeatures01
+│   │   │   └── germeval-textfeatures01.qmd
+│   │   ├── twitter01
+│   │   │   └── twitter01.rmd
+│   │   ├── twitter02
+│   │   │   └── twitter02.qmd
+│   │   ├── twitter03
+│   │   │   └── twitter03.qmd
+│   │   ├── twitter04
+│   │   │   └── twitter04.qmd
+│   │   ├── twitter05
+│   │   │   └── twitter05.qmd
+│   │   ├── twitter06
+│   │   │   └── twitter06.rmd
+│   │   ├── twitter07
+│   │   │   └── twitter07.rmd
+│   │   └── wildemojis
+│   │       └── wildemojis.qmd
+│   └── README.md
+├── index.qmd
+├── _quarto.yml
+├── README.md
+├── specifics
+│   ├── apa7.csl
+│   ├── bib-local.bib
+│   ├── styles.css
+│   ├── webex.css
+│   └── webex.js
+├── statistik1-aufgabensammlung.Rproj
+└── struktur.txt
+
+802 directories, 1048 files

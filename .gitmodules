@@ -1,0 +1,3 @@
+[submodule "exrs"]
+	path = exrs
+	url = https://github.com/sebastiansauer/aufgabensammlung

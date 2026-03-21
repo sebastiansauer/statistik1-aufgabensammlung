@@ -1,0 +1,245 @@
+project:
+  type: book
+  resources:
+    - "!**/Icon*"
+
+engine: knitr
+
+
+lang: de-DE
+#citation: true
+description: |
+  Aufgaben zur Einführung in die Statistik mit einem Schwerpunkt auf Prognose-Modellierung
+
+license: "CC BY 4.0" 
+keywords:
+- Aufgaben
+- Statistik
+- Prognose
+- Modellierung
+- R
+- Datenanalyse
+- Regression
+
+
+
+
+
+book:
+  title: "Aufgabensammlung - Statistik1"
+  subtitle: "Aufgaben zur Einführung in die Prognose-Modellierung"
+  author: 
+    - name: Sebastian Sauer
+      orcid: 0000-0003-1515-8348
+    # - affiliation: Hochschule Ansbach
+  image: img/statistik1_icon.png
+  cover-image: img/statistik1-cover/statistik1-cover.001.png
+  description: "Aufgaben zur Einführung in die Statistik mit einem Schwerpunkt auf Prognose-Modellierung"
+  date: now
+  doi: 10.5281/zenodo.10082518
+  reader-mode: true
+
+  
+  sidebar: 
+    logo: img/statistik1_icon.png
+  favicon: img/statistik1_icon.png
+  repo-url: https://github.com/sebastiansauer/statistik1
+  repo-actions: [issue] 
+   
+
+  chapters:
+    - index.qmd
+    # - 005-orga.qmd
+
+    - part: Rahmen
+      chapters:
+        - exrs/posts/variation01/variation01.rmd
+        - exrs/posts/def-statistik01/def-statistik01.rmd
+        - exrs/posts/tidy1/tidy1.rmd
+        - exrs/posts/skalenniveau1a/skalenniveau1a.rmd
+        - exrs/posts/ziele-statistik/ziele-statistik.rmd
+        - exrs/posts/variation02/variation02.rmd
+        - exrs/posts/skalenniveau1b/skalenniveau1b.rmd
+        - exrs/posts/tidydata1/tidydata1.rmd
+
+    - part: R
+      chapters:
+        - exrs/posts/typ-fehler-r-01/typ-fehler-r-01.rmd
+        - exrs/posts/typ-fehler-r-02/typ-fehler-r-02.rmd
+        - exrs/posts/typ-fehler-r-03/typ-fehler-r-03.rmd
+        - exrs/posts/typ-fehler-r-04/typ-fehler-r-04.rmd
+        - exrs/posts/typ-fehler-r-06a/typ-fehler-r-06a.rmd
+        - exrs/posts/typ-fehler-r-07/typ-fehler-r-07.qmd
+        - exrs/posts/typ-fehler-r-08-name-clash/typ-fehler-r-08-name-clash.qmd
+        - exrs/posts/logikpruefung1/logikpruefung1.rmd
+        - exrs/posts/logikpruefung2/logikpruefung2.rmd
+        - exrs/posts/there-is-no-package/there-is-no-package.rmd
+        - exrs/posts/wertberechnen2/wertberechnen2.rmd
+        - exrs/posts/wertzuweisen_mc/wertzuweisen_mc.rmd
+        - exrs/posts/argumente/argumente.rmd
+        - exrs/posts/import-mtcars/import-mtcars.rmd
+        - exrs/posts/wertzuweisen/wertzuweisen.rmd
+        - exrs/posts/wertpruefen/wertpruefen.rmd
+        - exrs/posts/wrangle1/wrangle1.rmd
+        - exrs/posts/repro1-sessioninfo/repro1-sessioninfo.rmd
+        - exrs/posts/mw-berechnen/mw-berechnen.rmd
+
+    - part: Aufbereiten
+      chapters:
+        - exrs/posts/wrangle3/wrangle3.rmd
+        - exrs/posts/wrangle4/wrangle4.rmd
+        - exrs/posts/wrangle5/wrangle5.rmd
+        - exrs/posts/wrangle7/wrangle7.rmd
+        - exrs/posts/wrangle9/wrangle9.rmd
+        - exrs/posts/wrangle10/wrangle10.rmd
+        - exrs/posts/tidydata1/tidydata1.rmd
+        - exrs/posts/affairs-dplyr/affairs-dplyr.rmd
+        - exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd
+        - exrs/posts/haeufigkeit01/haeufigkeit01.rmd
+        - exrs/posts/mariokart-mean1/mariokart-mean1.rmd
+        - exrs/posts/mariokart-mean2/mariokart-mean2.rmd
+        - exrs/posts/mariokart-mean3/mariokart-mean3.rmd
+        - exrs/posts/mariokart-mean4/mariokart-mean4.rmd
+        - exrs/posts/mariokart-max1/mariokart-max1.rmd
+        - exrs/posts/mariokart-max2/mariokart-max2.rmd
+        - exrs/posts/filter01/filter01.rmd
+        - exrs/posts/summarise01/summarise01.rmd
+        - exrs/posts/summarise02/summarise02.rmd
+        - exrs/posts/mutate01/mutate01.rmd
+
+    - part: verbildlichen
+      chapters:
+        - exrs/posts/boxhist/boxhist.rmd
+        - exrs/posts/max-corr1/max-corr1.rmd
+        - exrs/posts/max-corr2/max-corr2.rmd
+        - exrs/posts/histogramm-in-boxplot/histogramm-in-boxplot.rmd
+        - exrs/posts/diamonds-histogramm-vergleich2/diamonds-histogramm-vergleich2.rmd
+        - exrs/posts/boxplot-aussagen/boxplot-aussagen.rmd
+        - exrs/posts/boxplots-de1a/boxplots-de1a.rmd
+        - exrs/posts/movies-vis1/movies-vis1.rmd
+        - exrs/posts/movies-vis2/movies-vis2.rmd
+        - exrs/posts/vis-gapminder/vis-gapminder.rmd
+        - exrs/posts/diamonds-histogramm-vergleich/diamonds-histogramm-vergleich.rmd
+        - exrs/posts/wozu-balkendiagramm/wozu-balkendiagramm.rmd
+        - exrs/posts/diamonds-histogram/diamonds-histogram.rmd
+        - exrs/posts/n-vars-diagram/n-vars-diagram.rmd
+
+    - part: Zusammenfassen
+      chapters:
+        - exrs/posts/kennwert-robust/kennwert-robust.rmd
+        - exrs/posts/mw-berechnen/mw-berechnen.rmd
+        - exrs/posts/nasa01/nasa01.rmd
+        - exrs/posts/schiefe1/schiefe1.rmd
+        - exrs/posts/summarise03/summarise03.rmd
+
+    - part: Modellguete
+      chapters:
+        - exrs/posts/mariokart-sd1/mariokart-sd1.rmd
+        - exrs/posts/mariokart-sd2/mariokart-sd2.rmd
+        - exrs/posts/mariokart-sd3/mariokart-sd3.rmd
+        - exrs/posts/summarise04/summarise04.rmd
+        - exrs/posts/summarise05/summarise05.rmd
+        - exrs/posts/summarise06/summarise06.rmd
+        - exrs/posts/vis-mariokart-variab/vis-mariokart-variab.rmd
+        - exrs/posts/sd-vergleich/sd-vergleich.rmd
+        - exrs/posts/streuung-histogramm/streuung-histogramm.rmd
+        - exrs/posts/mariokart-desk01/mariokart-desk01.rmd
+
+    - part: Zusammenhaenge
+      chapters:
+        - exrs/posts/nasa02/nasa02.rmd
+        - exrs/posts/mariokart-korr1/mariokart-korr1.rmd
+        - exrs/posts/mariokart-korr2/mariokart-korr2.rmd
+        - exrs/posts/mariokart-korr3/mariokart-korr3.rmd
+        - exrs/posts/mariokart-korr4/mariokart-korr4.rmd
+        - exrs/posts/korr01/korr01.rmd
+        - exrs/posts/korr02/korr02.rmd
+
+    - part: Regression 1
+      chapters:
+#        - exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.qmd
+        - exrs/posts/interpret-koeff-lm/interpret-koeff-lm.rmd
+        - exrs/posts/korr-als-regr/korr-als-regr.rmd
+        - exrs/posts/linearitaet1a/linearitaet1a.rmd
+        - exrs/posts/lm1/lm1.rmd
+        - exrs/posts/mtcars-regr01/mtcars-regr01.rmd
+        - exrs/posts/nichtlineare-regr1/nichtlineare-regr1.rmd
+        - exrs/posts/penguins-regr02/penguins-regr02.rmd
+        - exrs/posts/regression1/regression1.rmd
+        - exrs/posts/regression1b/regression1b.rmd
+        - exrs/posts/regression3/regression3.rmd
+        - exrs/posts/regression4/regression4.rmd
+        - exrs/posts/regression5/regression5.rmd
+        - exrs/posts/regression6/regression6.rmd
+        - exrs/posts/ames-kaggle1/ames-kaggle1.rmd
+
+    - part: Regression 2
+      chapters:
+        - exrs/posts/interpret-koeff/interpret-koeff.rmd
+        - exrs/posts/regression1a/regression1a.rmd
+        - exrs/posts/lm-mario1/lm-mario1.rmd
+        - exrs/posts/lm-mario2/lm-mario2.rmd
+        - exrs/posts/lm-mario3/lm-mario3.rmd
+        - exrs/posts/ausreisser1/ausreisser1.qmd
+        - exrs/posts/mario-compare-models/index.qmd
+
+# bibliography: bib/bib.bib
+bibliography: specifics/bib-local.bib
+csl: specifics/apa7.csl
+
+
+
+  
+editor: source
+keep-md: false
+#prefer-html: true
+
+execute: 
+  freeze: auto 
+  warning: false
+  cache: true
+  message: false
+
+knitr:
+  opts_knit:
+    verbose: true
+    fig-align: center
+  opts_chunk: 
+    collapse: true
+    out.width: "100%"
+    fig.align: center
+    results: hold
+    rows.print: 5
+    #dev: cairo_pdf
+    # comment: "#>" 
+    R.options:
+      knitr. graphics.auto_pdf: true  # use pdf version of image for pdf output formats
+
+
+format:
+
+  html:
+    toc: true
+    lang: de
+    theme:
+      light: lumen
+      dark: darkly
+    #css: specifics/styles.css
+    number-sections: true
+    df-print: paged
+    code-fold: false
+
+    fig-align: center
+    fig-asp: 0.7
+
+    code-link: true
+    code-annotations: true
+    mermaid:
+      theme: default
+    out-width: 75%
+    dev: png
+    fig-format: png
+    css: specifics/webex.css  # r-exams
+    include-after-body: specifics/webex.js  # r-exams
+    lightbox: true
+

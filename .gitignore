@@ -1,0 +1,38 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+
+*.rds
+*.rdb
+.vscode/
+
+
+/.quarto/
+objects/
+
+_freeze/
+
+# Hier wohnen Monster, riesig, auf jeden Fall ignorieren:
+*_cache/
+*_html/
+
+# !!Use **Quarto publish**, do not track the rendered website:
+_site/
+site_libs/
+/docs-OLD/
+docs/
+_book/
+
+
+# Do not track html files
+**/*.html
+
+# strange Mac Apple stuff:
+Icon?
+**/Icon?
+.DS_Store
+
+**/*.quarto_ipynb
+
