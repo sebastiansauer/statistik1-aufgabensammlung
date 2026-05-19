@@ -1,0 +1,59 @@
+---
+exname: variability02
+extype: schoice
+exsolution: 00100
+exshuffle: 5
+expoints: 1
+categories:
+- variability
+- basics
+- schoice
+date: '2023-02-02'
+title: variability02
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Vier Datensätze (A–D) zeigen Körpergrößen. Die zugehörigen Standardabweichungen lauten:
+
+- **Datensatz A**: SD ≈ 1 (Mittelwert 170)
+- **Datensatz B**: SD ≈ 1 (Mittelwert 190)
+- **Datensatz C**: SD ≈ 10 (Mittelwert 170)
+- **Datensatz D**: SD ≈ 0.1 (Mittelwert 170)
+
+In welchem Datensatz gibt es am **meisten** Variation?
+
+Answerlist
+----------
+* A
+* B
+* C
+* D
+* Alle gleich variabel
+
+## Solution
+
+**Datensatz C** hat mit SD ≈ 10 die größte Streuung. Datensatz D ist mit SD ≈ 0.1 der homogenste.
+
+Answerlist
+----------
+* Falsch
+* Falsch
+* Wahr
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 00100
+exname: variability02
+exshuffle: 5

@@ -1,0 +1,62 @@
+---
+exname: mariokart-korr2
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- dplyr
+- eda
+- association
+- schoice
+date: '2023-05-08'
+title: mariokart-korr2
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Importieren Sie den `mariokart`-Datensatz. Filtern Sie auf **neue Spiele** (`cond == "new"`). Berechnen Sie die Korrelation von Verkaufspreis (`total_pr`) und Startgebot (`start_pr`).
+
+Welcher Wert (gerundet auf 2 Dezimalstellen) kommt dem Ergebnis am nächsten?
+
+Answerlist
+----------
+* ca. 0.30
+* ca. -0.50
+* ca. 0.90
+* ca. 0.05
+* ca. -0.20
+
+## Solution
+
+```r
+library(tidyverse); library(easystats)
+d <- data_read("https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv")
+d %>% filter(cond == "new") %>% summarise(cor(total_pr, start_pr))
+```
+
+Die Korrelation beträgt ca. **0.30** (moderater positiver Zusammenhang).
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: mariokart-korr2
+exshuffle: 5

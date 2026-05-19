@@ -1,0 +1,54 @@
+---
+exname: wertzuweisen_mc
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- R
+- schoice
+date: '2023-03-23'
+title: Wertzuweisen_mc
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Welche der folgenden Syntax-Varianten ist syntaktisch **korrekt** in R?
+
+Answerlist
+----------
+* `loesung <-42`
+* `loesung < - 42`
+* `loesung->42`
+* `loesung==42`
+* `loesung<-"42"`
+
+## Solution
+
+`loesung <-42` ist korrekt: Der Zuweisungsoperator `<-` weist der Variable `loesung` den Wert `42` zu. Leerzeichen um `<-` sind optional.
+
+- `loesung < - 42` ist syntaktisch falsch (Leerzeichen zwischen `<` und `-` bricht den Operator auf).
+- `loesung->42` wäre umgekehrte Zuweisung, aber die Richtung ist falsch (42 existiert nicht als Variablenname).
+- `loesung==42` prüft auf Gleichheit, weist aber nichts zu.
+- `loesung<-"42"` weist den **String** "42" zu, nicht die Zahl.
+
+Answerlist
+----------
+* Richtig
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: wertzuweisen_mc
+exshuffle: 5

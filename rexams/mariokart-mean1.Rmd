@@ -1,0 +1,59 @@
+---
+exname: mariokart-mean1
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- dplyr
+- eda
+- schoice
+date: '2023-04-19'
+title: mariokart-mean1
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Importieren Sie den Datensatz `mariokart` und berechnen Sie den **mittleren Verkaufspreis (`total_pr`)** über alle Spiele.
+
+Welcher Wert (gerundet auf 1 Dezimalstelle) kommt dem Ergebnis am nächsten?
+
+Answerlist
+----------
+* ca. 49.9
+* ca. 35.2
+* ca. 62.4
+* ca. 28.7
+* ca. 71.3
+
+## Solution
+
+Der Mittelwert von `total_pr` im `mariokart`-Datensatz beträgt ca. **49.9**:
+
+```r
+library(tidyverse); library(easystats)
+d <- data_read("https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv")
+d %>% summarise(mean(total_pr))
+```
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: mariokart-mean1
+exshuffle: 5

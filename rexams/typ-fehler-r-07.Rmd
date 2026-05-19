@@ -1,0 +1,63 @@
+---
+exname: typ-fehler-r-07
+extype: schoice
+exsolution: 00100
+exshuffle: 5
+expoints: 1
+categories:
+- R
+- error
+- schoice
+date: '2023-11-15'
+title: Typ-Fehler-R-07
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Sie geben in der R-Konsole ein:
+
+```r
+gruss <- "hallo
+```
+
+R antwortet mit:
+
+```
+> gruss <- "hallo
++
+```
+
+Wie ist diese Reaktion zu interpretieren bzw. was ist zu tun?
+
+Answerlist
+----------
+* R ist abgestürzt; am besten neu starten.
+* R verträgt im Standard nur Grüße in englischer Sprache – Sprachpakete updaten.
+* R wartet auf das schließende Anführungszeichen. Es muss noch eingegeben werden; alternativ `Escape` drücken.
+* Es gibt kein Problem; man kann einfach den nächsten Befehl eingeben.
+* R hat auf das Anführungszeichen gewartet und ist jetzt abgestürzt.
+
+## Solution
+
+Das `+` in der Konsole zeigt, dass R auf die **Vervollständigung** des Ausdrucks wartet – in diesem Fall auf das schließende `"`. Entweder das Zeichen eingeben oder mit `Escape` abbrechen.
+
+Answerlist
+----------
+* Falsch
+* Falsch
+* Richtig
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 00100
+exname: typ-fehler-r-07
+exshuffle: 5

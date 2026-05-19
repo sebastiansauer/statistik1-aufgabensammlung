@@ -1,0 +1,59 @@
+---
+exname: haeufigkeit01
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- eda
+- count
+- schoice
+date: '2023-03-27'
+title: haeufigkeit01
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Im Datensatz `mtcars` werden drei Variablen gemeinsam ausgezählt:
+
+- `am` (2 Stufen: 0, 1)
+- `cyl` (3 Stufen: 4, 6, 8)
+- `vs` (2 Stufen: 0, 1)
+
+Wie viele Gruppen ergeben sich **theoretisch** bei einer gemeinsamen Häufigkeitsanalyse aller drei Variablen?
+
+Answerlist
+----------
+* 12
+* 6
+* 4
+* 8
+* 24
+
+## Solution
+
+$2 \times 3 \times 2 = 12$ theoretisch mögliche Gruppen. (Nicht alle müssen in den Daten vorkommen – tatsächlich gibt es nur 7 belegte Gruppen.)
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: haeufigkeit01
+exshuffle: 5

@@ -1,0 +1,52 @@
+---
+exname: korr01
+extype: schoice
+exsolution: 00100
+exshuffle: 5
+expoints: 1
+categories:
+- eda
+- association
+- schoice
+date: '2023-05-08'
+title: korr01
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Ein Streudiagramm zweier Variablen V1 und V2 zeigt eine **wolkenförmige, unstrukturierte** Punktewolke ohne erkennbaren Trend. Die Daten wurden aus zwei unabhängigen Normalverteilungen (Σ = Einheitsmatrix) gezogen.
+
+Welcher Korrelationswert (Pearson) beschreibt die Korrelation am besten?
+
+Answerlist
+----------
+* $r = 1$
+* $r = -1$
+* $r = 0$
+* $r = 0.8$
+* $r = -0.8$
+
+## Solution
+
+Da die Daten aus unabhängigen (unkorrelierten) Normalverteilungen stammen, beträgt die Populationskorrelation $\rho = 0$. Eine wolkenförmige Punktewolke ohne Trend ist das visuelle Zeichen einer Nullkorrelation.
+
+Answerlist
+----------
+* Falsch
+* Falsch
+* Wahr
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 00100
+exname: korr01
+exshuffle: 5

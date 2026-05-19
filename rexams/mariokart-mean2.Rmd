@@ -1,0 +1,62 @@
+---
+exname: mariokart-mean2
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- dplyr
+- eda
+- schoice
+date: '2023-04-19'
+title: mariokart-mean2
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Importieren Sie den Datensatz `mariokart` und berechnen Sie den **mittleren Verkaufspreis (`total_pr`) ausschließlich für neue Spiele** (`cond == "new"`).
+
+Welcher Wert (gerundet auf 1 Dezimalstelle) kommt dem Ergebnis am nächsten?
+
+Answerlist
+----------
+* ca. 53.8
+* ca. 42.1
+* ca. 67.4
+* ca. 35.2
+* ca. 79.5
+
+## Solution
+
+Filterung auf neue Spiele und anschließende Berechnung des Mittelwerts von `total_pr` ergibt ca. **53.8**.
+
+```r
+library(tidyverse)
+library(easystats)
+d <- data_read("https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv")
+d %>% filter(cond == "new") %>% summarise(mean(total_pr))
+```
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: mariokart-mean2
+exshuffle: 5

@@ -1,0 +1,49 @@
+---
+exname: Diamonds-Histogramm-Vergleich2
+extype: schoice
+exsolution: 01000
+exshuffle: 5
+expoints: 1
+categories:
+- vis
+- schoice
+date: '2023-02-26'
+title: Diamonds-Histogramm-Vergleich2
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Zwei Diagramme (A und B) vergleichen die Preisverteilungen für drei Schliffarten (`Fair`, `Premium`, `Ideal`) im `diamonds`-Datensatz. Welche Aussage ist korrekt?
+
+Answerlist
+----------
+* Im Diagramm A wird ein Maß der zentralen Tendenz gruppenbezogen gezeigt (der Median der jeweiligen Gruppe).
+* Im Diagramm B wird die Gesamtverteilung über alle drei Gruppen hinweg (hellgrau) dargestellt; kräftigere Farbtöne zeigen die gruppenspezifische Verteilung.
+* Insgesamt sind die Verteilungen linksschief.
+* Insgesamt sind die Verteilungen rechtssteil.
+* Beide Diagramme zeigen identische Informationen.
+
+## Solution
+
+In Diagramm **B** werden Gesamtverteilung (grau) und Gruppenverteilungen (farbig) überlagert – das ermöglicht einen direkten Vergleich. Diagramm A zeigt nur den Median pro Gruppe als vertikale Linie.
+
+Answerlist
+----------
+* Falsch
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 01000
+exname: Diamonds-Histogramm-Vergleich2
+exshuffle: 5

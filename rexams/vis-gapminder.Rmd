@@ -1,0 +1,54 @@
+---
+exname: vis-gapminder
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- vis
+- gapminder
+- schoice
+date: '2023-09-12'
+title: vis-gapminder
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Im `gapminder`-Datensatz soll der Zusammenhang von Bruttosozialprodukt (`gdpPercap`) und Lebenserwartung (`lifeExp`) visualisiert werden. Das Streudiagramm wirkt jedoch wegen extremer Ausreißer im BSP sehr unübersichtlich.
+
+Welche Transformation des BSP verbessert die Lesbarkeit des Streudiagramms am meisten?
+
+Answerlist
+----------
+* Logarithmierung (`log(gdpPercap)`)
+* Quadratwurzel (`sqrt(gdpPercap)`)
+* Standardisierung (`scale(gdpPercap)`)
+* Keine Transformation nötig
+* Quadrierung (`gdpPercap^2`)
+
+## Solution
+
+Die **Logarithmierung** streckt kleine Werte und staucht große, was bei rechtsschiefen, exponentiell wachsenden Variablen wie dem BSP die Verteilung linearisiert und das Streudiagramm deutlich übersichtlicher macht.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: vis-gapminder
+exshuffle: 5

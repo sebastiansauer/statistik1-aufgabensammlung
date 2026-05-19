@@ -1,0 +1,57 @@
+---
+exname: sd-vergleich
+extype: schoice
+exsolution: 00100
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- eda
+- variability
+- schoice
+date: '2023-04-28'
+title: sd-vergleich
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Drei Histogramme (A, B, C) zeigen Verteilungen auf der gleichen x-Achse (−6 bis 6):
+
+- **A**: erzeugt mit `rnorm(1000)` → SD ≈ 1
+- **B**: erzeugt mit `rnorm(1000, sd = 2)` → SD ≈ 2
+- **C**: erzeugt mit `runif(1000, −6, 6)` → SD ≈ 3.5
+
+Welches Diagramm hat die **größte Streuung** (gemessen in Standardabweichung)?
+
+Answerlist
+----------
+* A
+* B
+* C
+* Alle gleich
+* Keine Antwort möglich
+
+## Solution
+
+Diagramm **C** (Gleichverteilung auf [−6, 6]) hat die größte Standardabweichung (≈ 3.5). Diagramm A hat die kleinste (≈ 1).
+
+Answerlist
+----------
+* Falsch
+* Falsch
+* Wahr
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 00100
+exname: sd-vergleich
+exshuffle: 5

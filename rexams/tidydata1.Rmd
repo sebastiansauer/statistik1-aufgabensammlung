@@ -1,0 +1,52 @@
+---
+exname: tidydata1
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- tidy
+- schoice
+date: '2023-03-27'
+title: tidydata1
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Fünf Tabellen (`table1` bis `table5`) liegen vor. Nur eine davon entspricht der **Normalform** (tidy data): jede Variable ist eine Spalte, jede Beobachtung ist eine Zeile, jede Zelle enthält genau einen Wert.
+
+Welche der Tabellen ist in der Normalform?
+
+Answerlist
+----------
+* table1
+* table2
+* table3
+* table4
+* table5
+
+## Solution
+
+Nur **table1** ist tidy: jede Variable hat eine eigene Spalte, jede Zeile beschreibt genau eine Beobachtung. Die anderen Tabellen verletzen diese Regeln (z. B. mehrere Variablen in einer Spalte, Werte in Spaltennamen).
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: tidydata1
+exshuffle: 5

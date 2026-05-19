@@ -1,0 +1,52 @@
+---
+exname: Schiefe1
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 2
+categories:
+- schoice
+- eda
+- distributions
+date: '2023-04-19'
+title: Schiefe1
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Wie ist eine **rechtsschiefe** (positiv schiefe) Verteilung charakterisiert?
+
+Answerlist
+----------
+* Langer rechter Schwanz; Häufung der Werte auf der linken Seite; Mittelwert > Median.
+* Langer linker Schwanz; Häufung der Werte auf der rechten Seite; Mittelwert < Median.
+* Symmetrische Verteilung; Mittelwert ≈ Median.
+* Bimodale Verteilung mit zwei gleich hohen Gipfeln.
+* Gleichmäßig verteilte (uniforme) Verteilung ohne erkennbare Häufung.
+
+## Solution
+
+Eine **rechtsschiefe** Verteilung hat einen langen rechten Schwanz. Die meisten Werte liegen links (klein), wenige Extremwerte ziehen den Mittelwert nach rechts, sodass Mittelwert > Median gilt.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: Schiefe1
+exshuffle: 5

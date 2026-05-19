@@ -1,0 +1,51 @@
+---
+exname: Kennwert-robust
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- eda
+- lagemasze
+- variability
+- schoice
+date: '2023-04-28'
+title: Kennwert-robust
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Welcher der folgenden Kennwerte ist **robust** im statistischen Sinne (d. h. wenig anfällig für Ausreißer)?
+
+Answerlist
+----------
+* Median
+* Mittelwert
+* Korrelation (Pearson)
+* Standardabweichung
+* Varianz
+
+## Solution
+
+Der **Median** ist robust, weil er nur den mittleren Rangwert nutzt – extreme Ausreißer verschieben ihn kaum. Mittelwert, Pearson-Korrelation, Standardabweichung und Varianz basieren alle auf quadratischen oder linearen Abständen und reagieren stark auf Ausreißer.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: Kennwert-robust
+exshuffle: 5
