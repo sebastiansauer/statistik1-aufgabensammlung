@@ -22,6 +22,8 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
+% ACHTUNG RAUS
+
 Importieren Sie den Datensatz `mariokart` und berechnen Sie die **Standardabweichung des Verkaufspreises (`total_pr`)**.
 
 Welcher Wert (gerundet auf 1 Dezimalstelle) kommt dem Ergebnis am nächsten?

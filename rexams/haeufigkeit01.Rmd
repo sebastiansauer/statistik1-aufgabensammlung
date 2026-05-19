@@ -21,7 +21,7 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
 
 Im Datensatz `mtcars` werden drei Variablen gemeinsam ausgezählt:
 

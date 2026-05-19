@@ -19,7 +19,7 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
 
 Ein Histogramm zeigt eine **rechtsschiefe** Verteilung (langer rechter Schwanz, Häufung kleiner Werte). Welche Aussage über den zugehörigen Boxplot ist korrekt?
 
@@ -33,7 +33,7 @@ Answerlist
 
 ## Solution
 
-Bei einer **rechtsschiefen** Verteilung liegen die meisten Werte klein und der Schwanz geht nach rechts. Das zeigt sich im Boxplot durch:
+Bei einer **rechtsschiefen** Verteilung liegen die meisten Werte klein und der "Schwanz" (die "Antenne") geht nach rechts. Das zeigt sich im Boxplot durch:
 - Median nah an Q1 (Box nach unten verschoben)
 - langen oberen Whisker / Ausreißer auf der rechten Seite
 

@@ -19,6 +19,8 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
                       message = FALSE, warning = FALSE, fig.show = "hold")
 ```
 
+% ACHTUNG - nicht gut.
+
 ## Question
 
 Im Datensatz `mariokart` wird `describe_distribution()` aus dem Paket `easystats` auf die Variable `total_pr` angewendet.

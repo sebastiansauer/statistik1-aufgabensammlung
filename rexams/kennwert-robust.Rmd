@@ -21,7 +21,7 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-Welcher der folgenden Kennwerte ist **robust** im statistischen Sinne (d. h. wenig anfällig für Ausreißer)?
+Welcher der folgenden Kennwerte ist *robust* im statistischen Sinne (d. h. wenig anfällig für Ausreißer)?
 
 Answerlist
 ----------

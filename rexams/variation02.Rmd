@@ -20,14 +20,105 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-% ACHTUNG - NOCH ZU KONTROLLIEREN!
 
-Vier Datensätze (A–D) zeigen Körpergrößen. Die zugehörigen Standardabweichungen lauten:
 
-- **Datensatz A**: SD ≈ 1 (Mittelwert 170)
-- **Datensatz B**: SD ≈ 1 (Mittelwert 190)
-- **Datensatz C**: SD ≈ 10 (Mittelwert 170)
-- **Datensatz D**: SD ≈ 0.1 (Mittelwert 170)
+Vier Datensätze (A–D) zeigen Körpergrößen. 
+
+
+
+```{r}
+
+groesse_df <-
+  tibble(
+    x1 = 170 + rnorm(n = 10, mean = 0, sd = 1),
+    x2 = 190 + rnorm(n = 10, mean = 0, sd = 1),
+    x3 = 170 + rnorm(n = 10, mean = 0, sd = 10),
+    x4 = 170 + rnorm(n = 10, mean = 0, sd = 0.1),    
+    id = 1:10
+    )
+
+
+```
+
+
+Datensatz A:
+
+```{r}
+groesse_df2 <-
+  groesse_df %>% 
+  mutate(groesse = x1) %>% 
+  mutate(groesse_mw = mean(groesse)) %>% 
+  mutate(abweichung = groesse - groesse_mw) %>% 
+  mutate(vorzeichen = factor(sign(abweichung)))
+
+groesse_df2 %>% 
+  ggplot(aes(x = id)) +
+  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +
+  geom_point(aes(x = id, y = groesse), color = "grey60", alpha = .7) +
+  geom_hline(aes(yintercept = groesse_mw)) +
+  labs(title = "Abweichung vom Mittelwert der Körpergröße")
+```
+
+
+
+Datensatz B:
+
+```{r}
+groesse_df2 <-
+  groesse_df %>% 
+  mutate(groesse = x2) %>% 
+  mutate(groesse_mw = mean(groesse)) %>% 
+  mutate(abweichung = groesse - groesse_mw) %>% 
+  mutate(vorzeichen = factor(sign(abweichung)))
+
+groesse_df2 %>% 
+  ggplot(aes(x = id)) +
+  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +
+  geom_point(aes(x = id, y = groesse), color = "grey60", alpha = .7) +
+  geom_hline(aes(yintercept = groesse_mw)) +
+  labs(title = "Abweichung vom Mittelwert der Körpergröße")
+```
+
+
+Datensatz C:
+
+```{r}
+groesse_df2 <-
+  groesse_df %>% 
+  mutate(groesse = x3) %>% 
+  mutate(groesse_mw = mean(groesse)) %>% 
+  mutate(abweichung = groesse - groesse_mw) %>% 
+  mutate(vorzeichen = factor(sign(abweichung)))
+
+groesse_df2 %>% 
+  ggplot(aes(x = id)) +
+  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +
+  geom_point(aes(x = id, y = groesse), color = "grey60", alpha = .7) +
+  geom_hline(aes(yintercept = groesse_mw)) +
+  labs(title = "Abweichung vom Mittelwert der Körpergröße")
+```
+
+
+
+
+Datensatz D:
+
+```{r}
+groesse_df2 <-
+  groesse_df %>% 
+  mutate(groesse = x4) %>% 
+  mutate(groesse_mw = mean(groesse)) %>% 
+  mutate(abweichung = groesse - groesse_mw) %>% 
+  mutate(vorzeichen = factor(sign(abweichung)))
+
+groesse_df2 %>% 
+  ggplot(aes(x = id)) +
+  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +
+  geom_point(aes(x = id, y = groesse), color = "grey60", alpha = .7) +
+  geom_hline(aes(yintercept = groesse_mw)) +
+  labs(title = "Abweichung vom Mittelwert der Körpergröße")
+```
+
 
 In welchem Datensatz gibt es am **meisten** Variation?
 

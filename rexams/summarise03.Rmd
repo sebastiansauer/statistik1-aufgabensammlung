@@ -22,6 +22,8 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
+% ACHTUNG RAUS
+
 Im Datensatz `mariokart`:
 
 1. Gruppieren Sie nach Anzahl der Lenkräder (`wheels`).

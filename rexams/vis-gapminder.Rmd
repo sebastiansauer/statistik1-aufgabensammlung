@@ -20,7 +20,7 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-% ACHTUNG - NOCH ZU KONTROLLIEREN!
+% ACHTUNG - RAUS
 
 Im `gapminder`-Datensatz soll der Zusammenhang von Bruttosozialprodukt (`gdpPercap`) und Lebenserwartung (`lifeExp`) visualisiert werden. Das Streudiagramm wirkt jedoch wegen extremer Ausreißer im BSP sehr unübersichtlich.
 

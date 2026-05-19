@@ -19,8 +19,6 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-% ACHTUNG - NOCH ZU KONTROLLIEREN!
-
 Wie prüft man in R, ob die Variable `loesung` den Wert `42` hat?
 
 Answerlist

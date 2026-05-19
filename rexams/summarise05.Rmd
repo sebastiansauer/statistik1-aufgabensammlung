@@ -23,6 +23,8 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
+% ACHTUNG RAUS
+
 Im Datensatz `mariokart`, gruppiert nach Anzahl der Lenkräder (`wheels`):
 
 Wie groß ist der **IQR** (`total_pr`) für die Gruppe mit **0 Lenkrädern** (erster Wert)?

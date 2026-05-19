@@ -22,7 +22,7 @@ knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
 
 ## Question
 
-% ACHTUNG - NOCH ZU KONTROLLIEREN!
+% ACHTUNG - RAUS
 
 Importieren Sie den `mariokart`-Datensatz. Filtern Sie auf Spiele, die **neu sind UND über mindestens ein Lenkrad verfügen** (`cond == "new" & wheels > 0`). Berechnen Sie die Korrelation von `total_pr` und `start_pr`.
 
