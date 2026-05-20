@@ -1,0 +1,51 @@
+---
+exname: Skalenniveau1a
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- variable-levels
+- schoice
+date: '2023-02-02'
+title: Skalenniveau1a
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+
+
+Auf welchem Skalenniveau liegt die Variable **IQ**?
+
+Answerlist
+----------
+* Intervallskala
+* Nominalskala
+* Ordinalskala
+* Verhältnisskala
+* Dichotomskala
+
+## Solution
+
+Der IQ hat ein **Intervallskalenniveau**: Abstände sind sinnvoll interpretierbar (z. B. der Unterschied von IQ 90 auf 100 ist gleich groß wie von 100 auf 110), aber es gibt keinen absoluten Nullpunkt. Deshalb ist kein Verhältnisurteil möglich ("doppelt so schlau").
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: Skalenniveau1a
+exshuffle: 5

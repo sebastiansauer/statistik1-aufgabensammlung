@@ -1,0 +1,63 @@
+---
+exname: Typ-Fehler-R-08-name-clash
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- R
+- error
+- schoice
+date: '2023-11-15'
+title: Typ-Fehler-R-08-name-clash
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Folgender Code erzeugt eine Fehlermeldung:
+
+```r
+library(dplyr)
+library(MASS)
+
+mtcars_small <-
+  mtcars %>%
+  select(hp, am)
+```
+
+Was ist die Ursache des Fehlers?
+
+Answerlist
+----------
+* Es besteht ein Name-Clash: sowohl `dplyr` als auch `MASS` haben eine Funktion `select()`. Die zuletzt geladene (`MASS`) überschreibt die andere.
+* Der Datensatz `mtcars` existiert nicht in R.
+* Die Funktion `select()` kann nur eine Spalte auswählen, nicht zwei.
+* Das Paket `dplyr` ist nicht kompatibel mit `MASS`.
+* Der Pipe-Operator `%>%` ist in dieser R-Version nicht verfügbar.
+
+## Solution
+
+Das Problem ist ein **Name-Clash**: Beide Pakete (`dplyr` und `MASS`) enthalten eine Funktion namens `select()`. Da `MASS` als letztes geladen wurde, überschreibt dessen Version die von `dplyr`. Die Lösung: entweder `MASS` nicht laden, `dplyr::select()` explizit ansprechen oder das Paket `conflicted` verwenden.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: Typ-Fehler-R-08-name-clash
+exshuffle: 5

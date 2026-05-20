@@ -1,0 +1,51 @@
+---
+exname: mw-berechnen
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- eda
+- datawrangling
+- schoice
+date: '2023-04-19'
+title: mw-berechnen
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+
+Welches Argument der Funktion `mean()` in R sorgt dafür, dass fehlende Werte (`NA`) beim Berechnen des Mittelwerts ignoriert werden?
+
+Answerlist
+----------
+* `na.rm = TRUE`
+* `na.rm = FALSE`
+* `remove.na = TRUE`
+* `drop.na = TRUE`
+* `exclude.na = TRUE`
+
+## Solution
+
+Das Argument `na.rm = TRUE` (steht für *NA remove*) weist R an, fehlende Werte vor der Berechnung zu entfernen. Ohne dieses Argument gibt `mean()` bei vorhandenen `NA`s den Wert `NA` zurück.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: mw-berechnen
+exshuffle: 5

@@ -36,3 +36,4 @@ Icon?
 
 **/*.quarto_ipynb
 
+.positai

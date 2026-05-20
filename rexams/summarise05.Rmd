@@ -1,0 +1,65 @@
+---
+exname: summarise05
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- eda
+- tidyverse
+- dplyr
+- variability
+- schoice
+date: '2023-04-28'
+title: summarise05
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG RAUS
+
+Im Datensatz `mariokart`, gruppiert nach Anzahl der Lenkräder (`wheels`):
+
+Wie groß ist der **IQR** (`total_pr`) für die Gruppe mit **0 Lenkrädern** (erster Wert)?
+
+Answerlist
+----------
+* ca. 7
+* ca. 14
+* ca. 21
+* ca. 3.5
+* ca. 28
+
+## Solution
+
+```r
+library(tidyverse); library(easystats)
+mariokart <- data_read("https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv")
+mariokart |>
+  group_by(wheels) |>
+  summarise(pr_iqr = IQR(total_pr))
+```
+
+Der erste Wert (Gruppe `wheels = 0`) beträgt ca. **7**.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: summarise05
+exshuffle: 5

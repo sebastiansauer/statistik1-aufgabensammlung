@@ -1,0 +1,67 @@
+---
+exname: summarise03
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- eda
+- tidyverse
+- dplyr
+- schoice
+date: '2023-04-19'
+title: summarise03
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG RAUS
+
+Im Datensatz `mariokart`:
+
+1. Gruppieren Sie nach Anzahl der Lenkräder (`wheels`).
+2. Berechnen Sie den mittleren Verkaufspreis (`total_pr`) pro Gruppe.
+3. Berechnen Sie den Mittelwert dieser Gruppenm­ittelwerte.
+
+Welcher Wert kommt dem Ergebnis am nächsten?
+
+Answerlist
+----------
+* ca. 56
+* ca. 35
+* ca. 73
+* ca. 48
+* ca. 62
+
+## Solution
+
+```r
+mariokart |>
+  group_by(wheels) |>
+  summarise(pr_mean = mean(total_pr)) |>
+  summarise(mean(pr_mean))
+```
+
+Das Ergebnis beträgt ca. **56**.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: summarise03
+exshuffle: 5

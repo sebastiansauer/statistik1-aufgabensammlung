@@ -1,0 +1,53 @@
+---
+exname: histogramm-in-boxplot
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- vis
+- schoice
+date: '2023-02-26'
+title: Histogramm-in-Boxplot
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+
+
+Ein Histogramm zeigt eine **rechtsschiefe** Verteilung (langer rechter Schwanz, Häufung kleiner Werte). Welche Aussage über den zugehörigen Boxplot ist korrekt?
+
+Answerlist
+----------
+* Der Median liegt näher am unteren Quartil (Q1) als am oberen Quartil (Q3); der obere Whisker ist länger.
+* Der Median liegt genau in der Mitte der Box; beide Whisker sind gleich lang.
+* Der Median liegt näher am oberen Quartil (Q3); der untere Whisker ist länger.
+* Die Box ist symmetrisch, weil Boxplots keine Schiefe anzeigen können.
+* Der Boxplot hat keine Ausreißerpunkte.
+
+## Solution
+
+Bei einer **rechtsschiefen** Verteilung liegen die meisten Werte klein und der "Schwanz" (die "Antenne") geht nach rechts. Das zeigt sich im Boxplot durch:
+- Median nah an Q1 (Box nach unten verschoben)
+- langen oberen Whisker / Ausreißer auf der rechten Seite
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: histogramm-in-boxplot
+exshuffle: 5

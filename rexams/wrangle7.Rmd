@@ -1,0 +1,49 @@
+---
+exname: wrangle7
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- eda
+- schoice
+date: '2023-03-27'
+title: wrangle7
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Welche Aussage zur Funktion `filter()` aus dem R-Paket `dplyr` ist richtig?
+
+Answerlist
+----------
+* `filter()` filtert (behält) Zeilen, für die eine Prüfung `TRUE` ergibt.
+* `filter()` filtert (behält) Zeilen, für die eine Prüfung `FALSE` ergibt.
+* `filter()` filtert (behält) Zeilen, für die eine Prüfung `TRUE` oder `NA` ergibt.
+* Möchte man nur nicht-fehlende Zeilen aus der Variable `x` behalten, schreibt man `filter(df, x == NA)`.
+* Möchte man nur nicht-fehlende Zeilen aus der Variable `x` behalten, schreibt man `filter(df, is.na(x))`.
+
+## Solution
+
+`filter()` behält genau die Zeilen, für die der Ausdruck `TRUE` ergibt. `NA`-Zeilen werden nicht behalten (Option 3 falsch). Fehlende Werte können nicht mit `== NA` geprüft werden – dafür nutzt man `!is.na(x)` (Option 5 dreht die Logik um).
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: wrangle7
+exshuffle: 5

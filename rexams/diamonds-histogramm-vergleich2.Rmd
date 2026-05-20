@@ -1,0 +1,97 @@
+---
+exname: Diamonds-Histogramm-Vergleich2
+extype: schoice
+exsolution: 01000
+exshuffle: 5
+expoints: 1
+categories:
+- vis
+- schoice
+date: '2023-02-26'
+title: Diamonds-Histogramm-Vergleich2
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+
+```{r p-diamonds1, echo = FALSE}
+data(diamonds, package = "ggplot2")
+library(tidyverse)
+library(gghighlight)
+library(cowplot)
+
+p1 <- diamonds %>% 
+  drop_na(cut, price) %>% 
+  filter(cut %in% c("Fair", "Premium", "Ideal")) %>% 
+  mutate(price = price/1000 %>% round) %>% 
+    ggplot() +
+  aes(x = price) +
+  geom_histogram()  +
+  geom_vline(aes(xintercept = median(price))) +
+  theme_light() +
+  facet_wrap( ~ cut, scales = "free")
+
+
+diamonds %>% 
+  drop_na(cut, price) %>% 
+  filter(cut %in% c("Fair", "Premium", "Ideal")) %>%
+  group_by(cut) %>% 
+  mutate(price = price/1000 %>% round) %>% 
+  summarise(price = median(price)) -> diamonds_sum
+ 
+    
+p2 <- diamonds %>% 
+  drop_na(cut, price) %>% 
+  filter(cut %in% c("Fair", "Premium", "Ideal")) %>% 
+  mutate(price = price/1000 %>% round) %>% 
+  ggplot() +
+  aes(x = price, fill = cut) +
+  geom_histogram() +
+  scale_fill_viridis_d() +
+  gghighlight() + 
+  facet_wrap(~ cut, scales = "free") +
+  geom_vline(data = diamonds_sum, aes(xintercept = price)) +
+  theme_light()
+
+
+plot_grid(p1, p2,
+          nrow = 2,
+          labels = c("A", "B"))
+
+```
+
+
+Zwei Diagramme (A und B) vergleichen die Preisverteilungen für drei Schliffarten (`Fair`, `Premium`, `Ideal`) im `diamonds`-Datensatz. Welche Aussage ist korrekt?
+
+Answerlist
+----------
+* Im Diagramm A wird ein Maß der zentralen Tendenz gruppenbezogen gezeigt (der Median der jeweiligen Gruppe).
+* Im Diagramm B wird die Gesamtverteilung über alle drei Gruppen hinweg (hellgrau) dargestellt; kräftigere Farbtöne zeigen die gruppenspezifische Verteilung.
+* Insgesamt sind die Verteilungen linksschief.
+* Insgesamt sind die Verteilungen rechtssteil.
+* Beide Diagramme zeigen identische Informationen.
+
+## Solution
+
+In Diagramm **B** werden Gesamtverteilung (grau) und Gruppenverteilungen (farbig) überlagert – das ermöglicht einen direkten Vergleich. Diagramm A zeigt nur den Median pro Gruppe als vertikale Linie.
+
+Answerlist
+----------
+* Falsch
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 01000
+exname: Diamonds-Histogramm-Vergleich2
+exshuffle: 5

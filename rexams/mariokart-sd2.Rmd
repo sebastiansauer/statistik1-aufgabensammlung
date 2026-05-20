@@ -1,0 +1,62 @@
+---
+exname: mariokart-sd2
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- dplyr
+- eda
+- variability
+- schoice
+date: '2023-04-28'
+title: mariokart-sd2
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG RAUS
+
+Importieren Sie den Datensatz `mariokart` und berechnen Sie die **Standardabweichung des Verkaufspreises (`total_pr`)**.
+
+Welcher Wert (gerundet auf 1 Dezimalstelle) kommt dem Ergebnis am nächsten?
+
+Answerlist
+----------
+* ca. 25.7
+* ca. 12.3
+* ca. 42.8
+* ca. 8.5
+* ca. 64.2
+
+## Solution
+
+```r
+library(tidyverse); library(easystats)
+mariokart <- data_read("https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv")
+mariokart %>% summarise(sd(total_pr))
+```
+
+Die Standardabweichung beträgt ca. **25.7**.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: mariokart-sd2
+exshuffle: 5

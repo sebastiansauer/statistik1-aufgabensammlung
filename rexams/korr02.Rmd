@@ -1,0 +1,51 @@
+---
+exname: korr02
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- eda
+- association
+- schoice
+date: '2023-05-08'
+title: korr02
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+
+Was beschreibt eine **Pearson-Korrelation von r = −0.9** am treffendsten?
+
+Answerlist
+----------
+* Starker negativer linearer Zusammenhang: hohe Werte in V1 gehen mit niedrigen Werten in V2 einher.
+* Starker positiver linearer Zusammenhang: hohe Werte in V1 gehen mit hohen Werten in V2 einher.
+* Kein linearer Zusammenhang zwischen V1 und V2.
+* Schwacher negativer linearer Zusammenhang.
+* Die Variablen sind kausal verknüpft (V1 verursacht V2).
+
+## Solution
+
+r = −0.9 bedeutet einen **starken negativen** linearen Zusammenhang. Korrelation impliziert keine Kausalität.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: korr02
+exshuffle: 5

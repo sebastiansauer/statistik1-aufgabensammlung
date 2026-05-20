@@ -1,0 +1,69 @@
+---
+exname: max-corr2
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- vis
+- schoice
+date: '2023-02-26'
+title: max-corr2
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+% ACHTUNG - NOCH ZU KONTROLLIEREN!
+
+Mehrere Streudiagramme zeigen jeweils zwei Variablen V1 und V2. Eines der Diagramme zeigt den stärksten **negativen** linearen Zusammenhang.
+
+
+```{r}
+library(tidyverse)
+d_path <- "https://raw.githubusercontent.com/sebastiansauer/pradadata/master/data-raw/corr_data.csv"
+d <- read.csv(d_path)
+
+d %>% 
+  #filter(correlation > 0) %>% 
+  ggplot(aes(V1, V2)) +
+  geom_point() +
+  stat_ellipse(level = .999, type = "norm", color = "blue", alpha = .5) +
+  facet_wrap(~ id_cor)
+```
+
+
+
+In welchem Teildiagramm (nach seiner Nummer in der Kopfzeile) ist die stärkste negative Korrelation zu sehen?
+
+Answerlist
+----------
+* 1
+* 2
+* 3
+* 4
+* 5
+
+## Solution
+
+Diagramm **1** zeigt den stärksten negativen linearen Zusammenhang (r ≈ -1): die Punkte folgen eng einer fallenden Geraden.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: max-corr2
+exshuffle: 5

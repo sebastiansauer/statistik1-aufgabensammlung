@@ -1,0 +1,53 @@
+---
+exname: wertpruefen
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- R
+- schoice
+date: '2023-03-23'
+title: Wertpruefen
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Wie prüft man in R, ob die Variable `loesung` den Wert `42` hat?
+
+Answerlist
+----------
+* `loesung==42`
+* `loesung=42`
+* `loesung<-42`
+* `loesung!=42`
+* `is.equal(loesung, 42)`
+
+## Solution
+
+Der **Gleichheitsoperator** in R ist `==`. Er prüft (ohne zuzuweisen), ob zwei Ausdrücke gleich sind. `loesung==42` ergibt `TRUE` falls `loesung` den Wert 42 hat, sonst `FALSE`.
+
+- `loesung=42` und `loesung<-42` sind Zuweisungen, keine Tests.
+- `loesung!=42` prüft auf Ungleichheit.
+- `is.equal()` existiert nicht; die korrekte Funktion wäre `identical()`.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: wertpruefen
+exshuffle: 5
