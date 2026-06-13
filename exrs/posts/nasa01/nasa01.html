@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta charset="UTF-8">
+<meta name="generator" content="quarto-1.9.37">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="keywords" content="Aufgaben, Statistik, Prognose, Modellierung, R, Datenanalyse, Regression">
 <meta name="description" content="Aufgaben zur Einführung in die Statistik mit einem Schwerpunkt auf Prognose-Modellierung">
 <title>65&nbsp; nasa01 – Aufgabensammlung - Statistik1</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -68,19 +70,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../img/statistik1_icon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-56eda4583107212d29f4466ddc7a5529.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e8fcd5ffe478d53ee79b2cefb23d4866.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-56eda4583107212d29f4466ddc7a5529.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-613b3621c13d6e1168d5fe52bd912707.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
@@ -1073,6 +1074,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="quarto-category">lagemaße</div>
     <div class="quarto-category">variability</div>
     <div class="quarto-category">string</div>
+    <div class="quarto-category">computer</div>
   </div>
   </div>
 
@@ -1162,23 +1164,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fdvehnclxf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fdvehnclxf table {
+<div id="tnvmcwkisb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tnvmcwkisb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fdvehnclxf thead, #fdvehnclxf tbody, #fdvehnclxf tfoot, #fdvehnclxf tr, #fdvehnclxf td, #fdvehnclxf th {
+#tnvmcwkisb thead, #tnvmcwkisb tbody, #tnvmcwkisb tfoot, #tnvmcwkisb tr, #tnvmcwkisb td, #tnvmcwkisb th {
   border-style: none;
 }
 
-#fdvehnclxf p {
+#tnvmcwkisb p {
   margin: 0;
   padding: 0;
 }
 
-#fdvehnclxf .gt_table {
+#tnvmcwkisb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1204,12 +1206,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_caption {
+#tnvmcwkisb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fdvehnclxf .gt_title {
+#tnvmcwkisb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1221,7 +1223,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#fdvehnclxf .gt_subtitle {
+#tnvmcwkisb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1233,7 +1235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#fdvehnclxf .gt_heading {
+#tnvmcwkisb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1245,13 +1247,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_bottom_border {
+#tnvmcwkisb .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_col_headings {
+#tnvmcwkisb .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1266,7 +1268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_col_heading {
+#tnvmcwkisb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1286,7 +1288,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fdvehnclxf .gt_column_spanner_outer {
+#tnvmcwkisb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1298,15 +1300,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#fdvehnclxf .gt_column_spanner_outer:first-child {
+#tnvmcwkisb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fdvehnclxf .gt_column_spanner_outer:last-child {
+#tnvmcwkisb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fdvehnclxf .gt_column_spanner {
+#tnvmcwkisb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1318,11 +1320,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#fdvehnclxf .gt_spanner_row {
+#tnvmcwkisb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fdvehnclxf .gt_group_heading {
+#tnvmcwkisb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1348,7 +1350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#fdvehnclxf .gt_empty_group_heading {
+#tnvmcwkisb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1363,15 +1365,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#fdvehnclxf .gt_from_md > :first-child {
+#tnvmcwkisb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fdvehnclxf .gt_from_md > :last-child {
+#tnvmcwkisb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fdvehnclxf .gt_row {
+#tnvmcwkisb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1390,7 +1392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#fdvehnclxf .gt_stub {
+#tnvmcwkisb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1403,7 +1405,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fdvehnclxf .gt_stub_row_group {
+#tnvmcwkisb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1417,15 +1419,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#fdvehnclxf .gt_row_group_first td {
+#tnvmcwkisb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fdvehnclxf .gt_row_group_first th {
+#tnvmcwkisb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fdvehnclxf .gt_summary_row {
+#tnvmcwkisb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1435,16 +1437,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fdvehnclxf .gt_first_summary_row {
+#tnvmcwkisb .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_first_summary_row.thick {
+#tnvmcwkisb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fdvehnclxf .gt_last_summary_row {
+#tnvmcwkisb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1454,7 +1456,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_grand_summary_row {
+#tnvmcwkisb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1464,7 +1466,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fdvehnclxf .gt_first_grand_summary_row {
+#tnvmcwkisb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1474,7 +1476,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_last_grand_summary_row_top {
+#tnvmcwkisb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,11 +1486,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_striped {
+#tnvmcwkisb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fdvehnclxf .gt_table_body {
+#tnvmcwkisb .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1497,7 +1499,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_footnotes {
+#tnvmcwkisb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1511,7 +1513,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_footnote {
+#tnvmcwkisb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1520,7 +1522,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fdvehnclxf .gt_sourcenotes {
+#tnvmcwkisb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1534,7 +1536,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#fdvehnclxf .gt_sourcenote {
+#tnvmcwkisb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1542,72 +1544,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#fdvehnclxf .gt_left {
+#tnvmcwkisb .gt_left {
   text-align: left;
 }
 
-#fdvehnclxf .gt_center {
+#tnvmcwkisb .gt_center {
   text-align: center;
 }
 
-#fdvehnclxf .gt_right {
+#tnvmcwkisb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fdvehnclxf .gt_font_normal {
+#tnvmcwkisb .gt_font_normal {
   font-weight: normal;
 }
 
-#fdvehnclxf .gt_font_bold {
+#tnvmcwkisb .gt_font_bold {
   font-weight: bold;
 }
 
-#fdvehnclxf .gt_font_italic {
+#tnvmcwkisb .gt_font_italic {
   font-style: italic;
 }
 
-#fdvehnclxf .gt_super {
+#tnvmcwkisb .gt_super {
   font-size: 65%;
 }
 
-#fdvehnclxf .gt_footnote_marks {
+#tnvmcwkisb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fdvehnclxf .gt_asterisk {
+#tnvmcwkisb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fdvehnclxf .gt_indent_1 {
+#tnvmcwkisb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fdvehnclxf .gt_indent_2 {
+#tnvmcwkisb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fdvehnclxf .gt_indent_3 {
+#tnvmcwkisb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fdvehnclxf .gt_indent_4 {
+#tnvmcwkisb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fdvehnclxf .gt_indent_5 {
+#tnvmcwkisb .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fdvehnclxf .katex-display {
+#tnvmcwkisb .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fdvehnclxf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#tnvmcwkisb div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1625,12 +1627,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="decade">189</td>
-<td class="gt_row gt_right" headers="temp_mean">−0.45</td>
+<td class="gt_row gt_right" headers="temp_mean">−0.44</td>
 <td class="gt_row gt_right" headers="temp_sd">0.22</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="decade">190</td>
-<td class="gt_row gt_right" headers="temp_mean">−0.28</td>
+<td class="gt_row gt_right" headers="temp_mean">−0.27</td>
 <td class="gt_row gt_right" headers="temp_sd">0.16</td>
 </tr>
 <tr class="even">
@@ -1646,7 +1648,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="even">
 <td class="gt_row gt_right" headers="decade">193</td>
 <td class="gt_row gt_right" headers="temp_mean">−0.14</td>
-<td class="gt_row gt_right" headers="temp_sd">0.21</td>
+<td class="gt_row gt_right" headers="temp_sd">0.22</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="decade">194</td>
@@ -1656,7 +1658,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="even">
 <td class="gt_row gt_right" headers="decade">195</td>
 <td class="gt_row gt_right" headers="temp_mean">−0.05</td>
-<td class="gt_row gt_right" headers="temp_sd">0.18</td>
+<td class="gt_row gt_right" headers="temp_sd">0.19</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="decade">196</td>
@@ -1680,18 +1682,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="decade">200</td>
-<td class="gt_row gt_right" headers="temp_mean">0.51</td>
+<td class="gt_row gt_right" headers="temp_mean">0.52</td>
 <td class="gt_row gt_right" headers="temp_sd">0.19</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="decade">201</td>
-<td class="gt_row gt_right" headers="temp_mean">0.63</td>
+<td class="gt_row gt_right" headers="temp_mean">0.64</td>
 <td class="gt_row gt_right" headers="temp_sd">0.20</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="decade">202</td>
 <td class="gt_row gt_right" headers="temp_mean">1.02</td>
-<td class="gt_row gt_right" headers="temp_sd">0.19</td>
+<td class="gt_row gt_right" headers="temp_sd">0.20</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="decade">203</td>
@@ -1711,20 +1713,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">decade</span>, <span class="va">temp_mean</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">decade</span>, <span class="va">temp_sd</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_sd"</span><span class="op">)</span></span>
+<span>  </span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="nasa01_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+<figure class="figure"><p><a href="chunk-img/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="chunk-img/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
 </figure>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span></span>
-<span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">decade</span>, <span class="va">temp_sd</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="http://boxuancui.github.io/DataExplorer/reference/plot_scatterplot.html">plot_scatterplot</a></span><span class="op">(</span>by <span class="op">=</span> <span class="st">"temp_sd"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-7-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="nasa01_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+<figure class="figure"><p><a href="chunk-img/unnamed-chunk-7-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="chunk-img/unnamed-chunk-7-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
 </figure>
 </div>
 </div>
@@ -1733,30 +1736,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="header-section-number">65.2.4.2</span> Mit <code>ggpubr</code>
 </h4>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggline.html">ggline</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="nasa01_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
-</figure>
-</div>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggline.html">ggline</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"temp_mean"</span><span class="op">)</span></span>
+<span></span>
 <span><span class="va">d_summarized</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggline.html">ggline</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"temp_sd"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-8-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="nasa01_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+<figure class="figure"><p><a href="chunk-img/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="chunk-img/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="chunk-img/unnamed-chunk-8-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="chunk-img/unnamed-chunk-8-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span>  <span class="op">|&gt;</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d</span>  <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://rpkgs.datanovia.com/ggpubr/reference/ggerrorplot.html">ggerrorplot</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"decade"</span>, y <span class="op">=</span> <span class="st">"Jan"</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="nasa01_files/figure-html/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="nasa01_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a></p>
+<figure class="figure"><p><a href="chunk-img/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="chunk-img/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="H"></a></p>
 </figure>
 </div>
 </div>

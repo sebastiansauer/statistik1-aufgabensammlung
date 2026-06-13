@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Aufgabensammlung - Statistik1",
     "section": "",
-    "text": "1 Willkommen\nWillkommen zur Aufgabensammlung für Statistik1.",
+    "text": "1 Willkommen",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Willkommen</span>"
     ]
@@ -14,7 +14,7 @@
     "href": "exrs/posts/variation01/variation01.html",
     "title": "\n2  variability01\n",
     "section": "",
-    "text": "2.1 Aufgabe\nIn welchem Datensatz, \\(x1, x2, x3, x4\\), gibt es am meisten Variation?\nDatensatz x1:\nd %&gt;% \n  select(x1) %&gt;% \n  display()\n\n\n\nx1\n\n\n\n0.14\n\n\n-0.06\n\n\n0.04\n\n\n0.06\n\n\n0.04\n\n\n-0.01\n\n\n0.15\n\n\n-9.47e-03\n\n\n0.20\n\n\n-6.27e-03\nDatensatz x2:\nd %&gt;% \n  select(x2) %&gt;% \n  display()\n\n\n\nx2\n\n\n\n1.30\n\n\n2.29\n\n\n-1.39\n\n\n-0.28\n\n\n-0.13\n\n\n0.64\n\n\n-0.28\n\n\n-2.66\n\n\n-2.44\n\n\n1.32\nDatensatz x3:\nd %&gt;% \n  select(x3) %&gt;% \n  display()\n\n\n\nx3\n\n\n\n-3.07\n\n\n-17.81\n\n\n-1.72\n\n\n12.15\n\n\n18.95\n\n\n-4.30\n\n\n-2.57\n\n\n-17.63\n\n\n4.60\n\n\n-6.40\nDatensatz x4:\nd %&gt;% \n  select(x4) %&gt;% \n  display()\n\n\n\nx4\n\n\n\n45.55\n\n\n70.48\n\n\n103.51\n\n\n-60.89\n\n\n50.50\n\n\n-171.70\n\n\n-78.45\n\n\n-85.09\n\n\n-241.42\n\n\n3.61",
+    "text": "2.1 Aufgabe\nIn welchem Datensatz, \\(x1, x2, x3, x4\\), gibt es am meisten Variation?\nDatensatz x1:\nx1\n\n\n\n0.14\n\n\n-0.06\n\n\n0.04\n\n\n0.06\n\n\n0.04\n\n\n-0.01\n\n\n0.15\n\n\n-9.47e-03\n\n\n0.20\n\n\n-6.27e-03\nDatensatz x2:\nx2\n\n\n\n1.30\n\n\n2.29\n\n\n-1.39\n\n\n-0.28\n\n\n-0.13\n\n\n0.64\n\n\n-0.28\n\n\n-2.66\n\n\n-2.44\n\n\n1.32\nDatensatz x3:\nx3\n\n\n\n-3.07\n\n\n-17.81\n\n\n-1.72\n\n\n12.15\n\n\n18.95\n\n\n-4.30\n\n\n-2.57\n\n\n-17.63\n\n\n4.60\n\n\n-6.40\nDatensatz x4:\nx4\n\n\n\n45.55\n\n\n70.48\n\n\n103.51\n\n\n-60.89\n\n\n50.50\n\n\n-171.70\n\n\n-78.45\n\n\n-85.09\n\n\n-241.42\n\n\n3.61",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>variability01</span>"
@@ -69,7 +69,7 @@
     "href": "exrs/posts/def-statistik01/def-statistik01.html#answerlist",
     "title": "\n3  Def-Statistik01\n",
     "section": "\n3.2 Answerlist",
-    "text": "3.2 Answerlist\n\nStatistik fasst Daten zusammen.\nStatistik vervielfacht Daten.\nStatistik fasst Daten zusammen, um wesentliche Informationen den Daten zu entnehmen .\nStatistik fasst Daten zusammen, um wesentliche Informationen den Daten zu entnehmen und beschreibt die Ungewissheit unserer Schlüsse.",
+    "text": "3.2 Answerlist\n\nStatistik fasst Daten zusammen.\nStatistik vervielfacht Daten.\nStatistik fasst Daten zusammen, um wesentliche Informationen den Daten zu entnehmen.\nStatistik fasst Daten zusammen, um wesentliche Informationen den Daten zu entnehmen und beschreibt die Ungewissheit unserer Schlüsse.\nKeine der genannten.",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Def-Statistik01</span>"
@@ -102,7 +102,7 @@
     "href": "exrs/posts/tidy1/tidy1.html",
     "title": "\n4  tidy1\n",
     "section": "",
-    "text": "4.1 Aufgabe\nDas Konzept von “tidy” Daten (“Tidyformat”) spielt in der Datenanalyse eine wichtige Rolle.\nBetrachten Sie die Tabellen im Folgenden. Welche ist “tidy”?\nHinweise:\n# prepare some helper constants:\nrows_n &lt;- 4\ngroup_n &lt;- 2\nconstant_factor &lt;- 10\ntidy_df &lt;- \n  tibble(\n    group = rep(c(1:group_n), times = rows_n/group_n),\n    y = (1:rows_n)*constant_factor\n  ) %&gt;% \n  mutate(id1 = row_number()) %&gt;% \n  group_by(group) %&gt;% \n  mutate(id2 = row_number()) %&gt;% \n  ungroup()\n# more helper constants:\ncols_n &lt;-\n  ncol(tidy_df)\n\ncol_random &lt;- sample(1:cols_n, 1)\nrow_random &lt;- sample(1:nrow(tidy_df), 1)\ncol_names &lt;- names(tidy_df)\ncol_names_random &lt;- sample(col_names, 1)\ncol_names_random_position &lt;- which(names(tidy_df) == col_names_random)\nuntidy_tibbles &lt;- list()\ntibbles_listdf &lt;- tibble(type = \"tidy\",\n                         data = list(tidy_df),\n                         explanation = \"Das ist ein 'tidy Tibble'.\")\nuntidy_df1 &lt;- \ntidy_df %&gt;% \n  pivot_wider(names_from = group,\n              values_from = y)\n\nuntidy_tibbles &lt;- \nlist() %&gt;% \n  append(list(untidy_df1))\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df1), \n                   explanation = \"Ein Tibble im breiten Format. Die Spalten `1` und `2` sind eigentlich eine Variable.\"))\nempty_row_df &lt;- \n  tidy_df %&gt;% \n  # mutate(across(everything(),\n  #               as.numeric)) %&gt;% \n  filter(row_number() == 1) %&gt;% \n  mutate(across(everything(),\n                ~ assign_in(.x, where = 1, value = NA)))\ncol_chosen &lt;- sample(cols_n, 1)\n\nempty_col_df &lt;- \n  tidy_df %&gt;% \n  select(all_of(col_chosen))\n\nempty_col_df[1] &lt;- NA\nempty_col_noname_df &lt;-\n  tidy_df %&gt;% \n  mutate(` ` = NA ) %&gt;% \n  select(last_col())\nuntidy_df2 &lt;- \n  tidy_df %&gt;% \n  bind_rows(empty_row_df) %&gt;% \n  sample_n(size = nrow(.))\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df2))\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df2),\n                   explanation = \"In einem Tidy-Tibble darf keine leere Zeile vorkommen.\"))\nuntidy_df3 &lt;- \ntidy_df %&gt;% \n  bind_cols(empty_col_noname_df) %&gt;% \n  relocate(last_col(), .after = col_random)\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df3))\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df3),\n                   explanation = \"In einem Tidy-Tibble darf keine leere Spalte vorkommen.\"))\nuntidy_df4 &lt;- \ntidy_df %&gt;% \n  mutate(!!col_names_random := NA)\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df4))\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df4),\n                   explanation = \"In einem Tidy-Tibble darf keine Spalte nur aus `NA` bestehen.\"))\nuntidy_df5 &lt;-\n  tidy_df %&gt;% \n  mutate(!!col_names_random := LETTERS[1:nrow(.)])\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df5))\n\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df5),\n                   explanation = \"Alle Werte sollen numerisch sein\"))\nuntidy_df6 &lt;-\n  tidy_df %&gt;% \n  mutate(!!col_names_random := 1)\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df6))\n\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df6),\n                   explanation = \"Variablen sollen nicht konstant sein.\"))\nuntidy_df7 &lt;-\n  tidy_df %&gt;% \n  mutate(!!col_names_random := na_if(id1, row_random))\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df7))\n\n\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df7),\n                   explanation = \"Fehlende Werte sind nicht erlaubt\"))\nuntidy_df8 &lt;-\n  tidy_df %&gt;% \n  mutate(!!col_names_random := \"1,2\")\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df8))\n\n\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df8),\n                   explanation = \"In einer Zelle darf nur ein (numerischer) Wert stehen.\"))\nuntidy_df9 &lt;-\n  tidy_df %&gt;% \n  mutate(across(!!col_names_random,\n                   .fns = ~max(.)))\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df9))\n\n\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df9),\n                   explanation = \"Eine Spalte soll nicht aus einem uniquen Wert bestehen.\"))\nuntidy_df10 &lt;-\n  tidy_df %&gt;% \n  mutate(!!col_names_random := as.character(!!col_names_random))\n\nuntidy_df10[row_random, col_names_random_position] &lt;- \"1,2\"\n\nuntidy_tibbles &lt;- \nuntidy_tibbles %&gt;% \n  append(list(untidy_df10))\n\n\ntibbles_listdf &lt;- \ntibbles_listdf %&gt;% \n  bind_rows(tibble(type = \"untidy\", data = list(untidy_df10),\n                   explanation = paste0(\"Die Spalte \", col_names_random, \n                                        \"weißt einen nicht erlaubten Wert auf.\")))\nuntidy_tibbles_chosen_nr &lt;- sample(2:nrow(tibbles_listdf), size = 4)\n\n\ntibbles_chosen &lt;-\n  tibbles_listdf %&gt;% \n  mutate(id = row_number(), .before = type) %&gt;% \n  filter(id == 1 | id %in% untidy_tibbles_chosen_nr) %&gt;% \n  sample_n(size = 5) %&gt;%  # Reihenfolge permutieren\n  mutate(id2 = paste0(\"Tabelle \", LETTERS[row_number()])) %&gt;% \n  mutate(is_correct = ifelse(type == \"tidy\", TRUE, FALSE))\nTabelle A:\ngt(tibbles_chosen$data[[1]]) %&gt;% tab_header(title = tibbles_chosen$id2[[1]])\n\n\n\n\n\n\nTabelle A\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\n1\n1\n1\n\n\n2\n1\n2\n1\n\n\n1\n1\n3\n2\n\n\n2\n1\n4\n2\nTabelle B:\ngt(tibbles_chosen$data[[2]]) %&gt;% tab_header(title = tibbles_chosen$id2[[2]])\n\n\n\n\n\n\nTabelle B\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n\n1\n10\n1\n1\nNA\n\n\n2\n20\n2\n1\nNA\n\n\n1\n30\n3\n2\nNA\n\n\n2\n40\n4\n2\nNA\nTabelle C:\ngt(tibbles_chosen$data[[3]]) %&gt;% tab_header(title = tibbles_chosen$id2[[3]])\n\n\n\n\n\n\nTabelle C\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\nNA\n1\n1\n\n\n2\nNA\n2\n1\n\n\n1\nNA\n3\n2\n\n\n2\nNA\n4\n2\nTabelle D:\ngt(tibbles_chosen$data[[4]]) %&gt;% tab_header(title = tibbles_chosen$id2[[4]])\n\n\n\n\n\n\nTabelle D\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\n10\n1\n1\n\n\n2\n20\n2\n1\n\n\n1\n30\n3\n2\n\n\n2\n40\n4\n2\nTabelle E:\ngt(tibbles_chosen$data[[5]]) %&gt;% tab_header(title = tibbles_chosen$id2[[5]])\n\n\n\n\n\n\nTabelle E\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\nA\n1\n1\n\n\n2\nB\n2\n1\n\n\n1\nC\n3\n2\n\n\n2\nD\n4\n2",
+    "text": "4.1 Aufgabe\nDas Konzept von “tidy” Daten (“Tidyformat”) spielt in der Datenanalyse eine wichtige Rolle.\nBetrachten Sie die Tabellen im Folgenden. Welche ist “tidy”?\nHinweise:\nTabelle A:\nTabelle A\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\n10\n1\n1\n\n\n2\n20\n2\n1\n\n\n1\n30\n3\n2\n\n\n2\n40\n4\n2\nTabelle B:\nTabelle B\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\n10\n1\n2\n\n\n2\n20\n2\n2\n\n\n1\n30\n3\n2\n\n\n2\n40\n4\n2\nTabelle C:\nTabelle C\n\n\nid1\nid2\n1\n2\n\n\n\n\n1\n1\n10\nNA\n\n\n2\n1\nNA\n20\n\n\n3\n2\n30\nNA\n\n\n4\n2\nNA\n40\nTabelle D:\nTabelle D\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n2\n20\n2\n1\n\n\n2\n40\n4\n2\n\n\n1\n30\n3\n2\n\n\nNA\nNA\nNA\nNA\n\n\n1\n10\n1\n1\nTabelle E:\nTabelle E\n\n\ngroup\ny\nid1\nid2\n\n\n\n\n1\n10\n1\n1\n\n\n2\n20\n2\n1\n\n\n1\n30\n3\n1\n\n\n2\n40\n4\n1",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>tidy1</span>"
@@ -135,7 +135,7 @@
     "href": "exrs/posts/skalenniveau1a/skalenniveau1a.html",
     "title": "\n5  Skalenniveau1a\n",
     "section": "",
-    "text": "5.1 Aufgabe\nd_raw &lt;- \ntibble::tribble(\n                                                                                ~Variable,     ~Skalenniveau, ~Nominalniveau, ~Ordinalniveau, ~Intervallniveau, ~Verhältnisniveau, ~stetig, ~diskret,\n                                                                  \"Temperatur in Celcius\",  \"Intervallskala\",             0L,             0L,               1L,                0L,      1L,       0L,\n                                                                   \"Temperatur in Kelvin\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                               \"Temperatur in Fahrenheit\", \"Verhältnisskala\",             0L,             0L,               1L,                0L,      1L,       0L,\n                                                                                  \"Alter\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                             \"Schuhgröße\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                   \"Gewicht einer Person\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                   \"Gewicht eines Tieres\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                   \"Gewicht eines Buches\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                 \"Gewicht einer Maschine\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                    \"Anzahl Geschwister in einer Familie\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      0L,       1L,\n                                                         \"Anzahl Kinder in einer Familie\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      0L,       1L,\n                                \"Ranking von Hochschulen (1. Platz XYZ, 2. Platz ABC, …)\",    \"Ordinalskala\",             0L,             1L,               0L,                0L,      0L,       0L,\n                                                                                     \"IQ\",  \"Intervallskala\",             0L,             0L,               1L,                0L,      1L,       0L,\n                                                                             \"Augenfarbe\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                                              \"Haarfarbe\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                              \"Präferenz für eine Partei\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                    \"Beliebtester Politiker einer Person\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                                     \"Umsatz einer Firma\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                     \"Gewinn einer Firma\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                             \"Geschlecht\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                                           \"Nationalität\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                            \"Rangfolge der Lieblingsspeisen einer Person\",    \"Ordinalskala\",             0L,             1L,               0L,                0L,      0L,       0L,\n  \"Ergebnis bei Talent-Show (1. Platz Mr. Cool, 2. Platz Mr. Bright, 3. Platz Mr. Right)\",    \"Ordinalskala\",             0L,             1L,               0L,                0L,      0L,       0L\n  )\n# Add \"metric level\":\nd &lt;-\n  d_raw %&gt;% \n  mutate(metrisch =\n           case_when(Skalenniveau == \"Intervallskala\" | Skalenniveau == \"Verhältnisskala\" ~ 1,\n                     TRUE ~ 0))\nd_sol &lt;- \n  d %&gt;% \n  sample_n(size = 1)\nVerfügt die Variable Geschlecht über ein metrisches Skalenniveau?",
+    "text": "5.1 Aufgabe\nVerfügt die Variable Gewicht einer Maschine über ein metrisches Skalenniveau?",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Skalenniveau1a</span>"
@@ -157,7 +157,7 @@
     "href": "exrs/posts/skalenniveau1a/skalenniveau1a.html#lösung",
     "title": "\n5  Skalenniveau1a\n",
     "section": "\n5.3 Lösung",
-    "text": "5.3 Lösung\n\nif (d_sol$metrisch == 1) {\n  sol &lt;- \"ja\"\n  sol_str &lt;- \"01\"\n  } else {\n    sol &lt;- \"nein\"\n    sol_str &lt;- \"10\"\n}\n\nHier ist ein Überblick über die Skalenniveau-Information der ausgewählten Variablen:\n\nd_sol %&gt;% gt::gt()\n\n\n\n\n\nVariable\nSkalenniveau\nNominalniveau\nOrdinalniveau\nIntervallniveau\nVerhältnisniveau\nstetig\ndiskret\nmetrisch\n\n\nGeschlecht\nNominalskala\n1\n0\n0\n0\n0\n0\n0\n\n\n\n\n\nDie richtige Antwort lautet: nein.\n\nCategories:\n\ndyn\nvariable-levels\nvariable-levels\nschoice",
+    "text": "5.3 Lösung\nHier ist ein Überblick über die Skalenniveau-Information der ausgewählten Variablen:\n\n\n\n\n\n\nVariable\nSkalenniveau\nNominalniveau\nOrdinalniveau\nIntervallniveau\nVerhältnisniveau\nstetig\ndiskret\nmetrisch\n\n\nGewicht einer Maschine\nVerhältnisskala\n0\n0\n0\n1\n1\n0\n1\n\n\n\n\n\nDie richtige Antwort lautet: ja.\n\nCategories:\n\ndyn\nvariable-levels\nvariable-levels\nschoice",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Skalenniveau1a</span>"
@@ -212,7 +212,7 @@
     "href": "exrs/posts/variation02/variation02.html",
     "title": "\n7  variability02\n",
     "section": "",
-    "text": "7.1 Aufgabe\nIn welchem Datensatz (x1-x4) gibt es am meisten Variation?\ngroesse_df &lt;-\n  tibble(\n    x1 = 170 + rnorm(n = 10, mean = 0, sd = 1),\n    x2 = 190 + rnorm(n = 10, mean = 0, sd = 1),\n    x3 = 170 + rnorm(n = 10, mean = 0, sd = 10),\n    x4 = 170 + rnorm(n = 10, mean = 0, sd = 0.1),    \n    id = 1:10\n    )\nDatensatz A:\ngroesse_df2 &lt;-\n  groesse_df %&gt;% \n  mutate(groesse = x1) %&gt;% \n  mutate(groesse_mw = mean(groesse)) %&gt;% \n  mutate(abweichung = groesse - groesse_mw) %&gt;% \n  mutate(vorzeichen = factor(sign(abweichung)))\n\ngroesse_df2 %&gt;% \n  ggplot(aes(x = id)) +\n  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +\n  geom_point(aes(x = id, y = groesse), color = \"grey60\", alpha = .7) +\n  geom_hline(aes(yintercept = groesse_mw)) +\n  labs(title = \"Abweichung vom Mittelwert der Körpergröße\")\nDatensatz B:\ngroesse_df2 &lt;-\n  groesse_df %&gt;% \n  mutate(groesse = x2) %&gt;% \n  mutate(groesse_mw = mean(groesse)) %&gt;% \n  mutate(abweichung = groesse - groesse_mw) %&gt;% \n  mutate(vorzeichen = factor(sign(abweichung)))\n\ngroesse_df2 %&gt;% \n  ggplot(aes(x = id)) +\n  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +\n  geom_point(aes(x = id, y = groesse), color = \"grey60\", alpha = .7) +\n  geom_hline(aes(yintercept = groesse_mw)) +\n  labs(title = \"Abweichung vom Mittelwert der Körpergröße\")\nDatensatz C:\ngroesse_df2 &lt;-\n  groesse_df %&gt;% \n  mutate(groesse = x3) %&gt;% \n  mutate(groesse_mw = mean(groesse)) %&gt;% \n  mutate(abweichung = groesse - groesse_mw) %&gt;% \n  mutate(vorzeichen = factor(sign(abweichung)))\n\ngroesse_df2 %&gt;% \n  ggplot(aes(x = id)) +\n  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +\n  geom_point(aes(x = id, y = groesse), color = \"grey60\", alpha = .7) +\n  geom_hline(aes(yintercept = groesse_mw)) +\n  labs(title = \"Abweichung vom Mittelwert der Körpergröße\")\nDatensatz D:\ngroesse_df2 &lt;-\n  groesse_df %&gt;% \n  mutate(groesse = x4) %&gt;% \n  mutate(groesse_mw = mean(groesse)) %&gt;% \n  mutate(abweichung = groesse - groesse_mw) %&gt;% \n  mutate(vorzeichen = factor(sign(abweichung)))\n\ngroesse_df2 %&gt;% \n  ggplot(aes(x = id)) +\n  geom_segment(aes(xend = id, y = groesse, yend = groesse_mw, color = vorzeichen)) +\n  geom_point(aes(x = id, y = groesse), color = \"grey60\", alpha = .7) +\n  geom_hline(aes(yintercept = groesse_mw)) +\n  labs(title = \"Abweichung vom Mittelwert der Körpergröße\")",
+    "text": "7.1 Aufgabe\nIn welchem Datensatz (x1-x4) gibt es am meisten Variation?\nDatensatz A:\nDatensatz B:\nDatensatz C:\nDatensatz D:",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>variability02</span>"
@@ -234,7 +234,7 @@
     "href": "exrs/posts/variation02/variation02.html#lösung",
     "title": "\n7  variability02\n",
     "section": "\n7.3 Lösung",
-    "text": "7.3 Lösung\nHier ist die Streuung (SD) für die vier Datensätze (x1 bis x4):\n\ngroesse_df2 |&gt; \n  summarise(across(x1:x4, sd))",
+    "text": "7.3 Lösung\nHier ist die Streuung (SD) für die vier Datensätze (x1 bis x4):",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>variability02</span>"
@@ -256,7 +256,7 @@
     "href": "exrs/posts/skalenniveau1b/skalenniveau1b.html",
     "title": "\n8  Skalenniveau1b\n",
     "section": "",
-    "text": "8.1 Aufgabe\nd_raw &lt;- \ntibble::tribble(\n                                                                                ~Variable,     ~Skalenniveau, ~Nominalniveau, ~Ordinalniveau, ~Intervallniveau, ~Verhältnisniveau, ~stetig, ~diskret,\n                                                                  \"Temperatur in Celcius\",  \"Intervallskala\",             0L,             0L,               1L,                0L,      1L,       0L,\n                                                                   \"Temperatur in Kelvin\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                               \"Temperatur in Fahrenheit\", \"Verhältnisskala\",             0L,             0L,               1L,                0L,      1L,       0L,\n                                                                                  \"Alter\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                             \"Schuhgröße\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                   \"Gewicht einer Person\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                   \"Gewicht eines Tieres\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                   \"Gewicht eines Buches\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                 \"Gewicht einer Maschine\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                    \"Anzahl Geschwister in einer Familie\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      0L,       1L,\n                                                         \"Anzahl Kinder in einer Familie\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      0L,       1L,\n                                \"Ranking von Hochschulen (1. Platz XYZ, 2. Platz ABC, …)\",    \"Ordinalskala\",             0L,             1L,               0L,                0L,      0L,       0L,\n                                                                                     \"IQ\",  \"Intervallskala\",             0L,             0L,               1L,                0L,      1L,       0L,\n                                                                             \"Augenfarbe\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                                              \"Haarfarbe\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                              \"Präferenz für eine Partei\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                    \"Beliebtester Politiker einer Person\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                                     \"Umsatz einer Firma\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                     \"Gewinn einer Firma\", \"Verhältnisskala\",             0L,             0L,               0L,                1L,      1L,       0L,\n                                                                             \"Geschlecht\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                                                           \"Nationalität\",    \"Nominalskala\",             1L,             0L,               0L,                0L,      0L,       0L,\n                                            \"Rangfolge der Lieblingsspeisen einer Person\",    \"Ordinalskala\",             0L,             1L,               0L,                0L,      0L,       0L,\n  \"Ergebnis bei Talent-Show (1. Platz Mr. Cool, 2. Platz Mr. Bright, 3. Platz Mr. Right)\",    \"Ordinalskala\",             0L,             1L,               0L,                0L,      0L,       0L\n  )\n# Add \"metric level\":\nd &lt;-\n  d_raw %&gt;% \n  mutate(metrisch =\n           case_when(Skalenniveau == \"Intervallskala\" | Skalenniveau == \"Verhältnisskala\" ~ 1,\n                     TRUE ~ 0))\nd_sol &lt;- \n  d %&gt;% \n  sample_n(size = 4)\n\nd_sol |&gt; \n  select(1) |&gt; \n  gt()\n\n\n\n\n\nVariable\n\n\n\nPräferenz für eine Partei\n\n\nAnzahl Kinder in einer Familie\n\n\nErgebnis bei Talent-Show (1. Platz Mr. Cool, 2. Platz Mr. Bright, 3. Platz Mr. Right)\n\n\nHaarfarbe\nGeben Sie für jede der folgenden vier Variable an, ob sie über ein metrisches Skalenniveau verfügt!",
+    "text": "8.1 Aufgabe\nVariable\n\n\n\nIQ\n\n\nGewicht eines Tieres\n\n\nUmsatz einer Firma\n\n\nGewicht eines Buches\nGeben Sie für jede der folgenden vier Variable an, ob sie über ein metrisches Skalenniveau verfügt!",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Skalenniveau1b</span>"
@@ -267,7 +267,7 @@
     "href": "exrs/posts/skalenniveau1b/skalenniveau1b.html#lösung",
     "title": "\n8  Skalenniveau1b\n",
     "section": "\n8.2 Lösung",
-    "text": "8.2 Lösung\nHier ist ein Überblick über die Skalenniveau-Information der ausgewählten Variablen:\n\nd_sol %&gt;% gt::gt()\n\n\n\n\n\nVariable\nSkalenniveau\nNominalniveau\nOrdinalniveau\nIntervallniveau\nVerhältnisniveau\nstetig\ndiskret\nmetrisch\n\n\n\nPräferenz für eine Partei\nNominalskala\n1\n0\n0\n0\n0\n0\n0\n\n\nAnzahl Kinder in einer Familie\nVerhältnisskala\n0\n0\n0\n1\n0\n1\n1\n\n\nErgebnis bei Talent-Show (1. Platz Mr. Cool, 2. Platz Mr. Bright, 3. Platz Mr. Right)\nOrdinalskala\n0\n1\n0\n0\n0\n0\n0\n\n\nHaarfarbe\nNominalskala\n1\n0\n0\n0\n0\n0\n0\n\n\n\n\n\n\nDementsprechend lauten die Lösungen zu den Items:\n\n\n\n\nCategories:\n\ndyn\nvariable-levels\nvariable-levels\nmchoice",
+    "text": "8.2 Lösung\nHier ist ein Überblick über die Skalenniveau-Information der ausgewählten Variablen:\n\n\n\n\n\n\nVariable\nSkalenniveau\nNominalniveau\nOrdinalniveau\nIntervallniveau\nVerhältnisniveau\nstetig\ndiskret\nmetrisch\n\n\n\nIQ\nIntervallskala\n0\n0\n1\n0\n1\n0\n1\n\n\nGewicht eines Tieres\nVerhältnisskala\n0\n0\n0\n1\n1\n0\n1\n\n\nUmsatz einer Firma\nVerhältnisskala\n0\n0\n0\n1\n1\n0\n1\n\n\nGewicht eines Buches\nVerhältnisskala\n0\n0\n0\n1\n1\n0\n1\n\n\n\n\n\n\nDementsprechend lauten die Lösungen zu den Items:\n\n\n\n\nCategories:\n\ndyn\nvariable-levels\nvariable-levels\nmchoice",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Skalenniveau1b</span>"
@@ -344,7 +344,7 @@
     "href": "exrs/posts/typ-fehler-r-01/typ-fehler-r-01.html#lösung",
     "title": "\n10  Typ-Fehler-R-01\n",
     "section": "\n10.2 Lösung",
-    "text": "10.2 Lösung\n\nmean(x=c(1,5,10,52))\n## [1] 17\n\n\nsol &lt;- \"mean(x=c(1,5,10,52))\"\n\nDie Antwort lautet: mean(x=c(1,5,10,52)).\n\nCategories:\n\nR\n‘2023’\nstring",
+    "text": "10.2 Lösung\n\nmean(x=c(1,5,10,52))\n## [1] 17\n\nDie Antwort lautet: mean(x=c(1,5,10,52)).\n\nCategories:\n\nR\n‘2023’\nstring",
     "crumbs": [
       "R",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Typ-Fehler-R-01</span>"
@@ -399,7 +399,7 @@
     "href": "exrs/posts/typ-fehler-r-03/typ-fehler-r-03.html",
     "title": "\n12  Typ-Fehler-R-03\n",
     "section": "",
-    "text": "12.1 Aufgabe\nGegeben sei diese Syntax:\nx &lt;- 42\nY &lt;- 1\nLässt man folgende Syntax laufen, so kommt eine Fehlermeldung:\nX + Y\n## Error: Objekt 'X' nicht gefunden\nGeben Sie die korrekte Syntax ein (zur Berechnung der Summe), die nicht zu einer Fehlermeldung führt!\nBitte verwenden Sie keine Leerzeichen bei Ihrer Eingabe.",
+    "text": "12.1 Aufgabe\nGegeben sei diese Syntax:\nx &lt;- 42\nY &lt;- 1\nLässt man folgende Syntax laufen, so kommt eine Fehlermeldung:\nX + Y\n## Error:\n## ! Objekt 'X' nicht gefunden\nGeben Sie die korrekte Syntax ein (zur Berechnung der Summe), die nicht zu einer Fehlermeldung führt!\nBitte verwenden Sie keine Leerzeichen bei Ihrer Eingabe.",
     "crumbs": [
       "R",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Typ-Fehler-R-03</span>"
@@ -410,7 +410,7 @@
     "href": "exrs/posts/typ-fehler-r-03/typ-fehler-r-03.html#lösung",
     "title": "\n12  Typ-Fehler-R-03\n",
     "section": "\n12.2 Lösung",
-    "text": "12.2 Lösung\n\nx+Y\n## [1] 43\n\n\nsol &lt;- \"x+Y\"\n\nDie Antwort lautet: x+Y.\n\nCategories:\nstring",
+    "text": "12.2 Lösung\n\nx+Y\n## [1] 43\n\nDie Antwort lautet: x+Y.\n\nCategories:\nstring",
     "crumbs": [
       "R",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Typ-Fehler-R-03</span>"
@@ -432,7 +432,7 @@
     "href": "exrs/posts/typ-fehler-r-04/typ-fehler-r-04.html#lösung",
     "title": "\n13  Typ-Fehler-R-04\n",
     "section": "\n13.2 Lösung",
-    "text": "13.2 Lösung\n\nmean(c(1,2,3,4), na.rm = TRUE)\n## [1] 2.5\n\n\nsol &lt;- \"mean(c(1,2,3,4),na.rm=TRUE)\"\n\nDie Antwort lautet: mean(c(1,2,3,4),na.rm=TRUE).\n\nCategories:\n\nR\n‘2023’\nstring",
+    "text": "13.2 Lösung\n\nmean(c(1,2,3,4), na.rm = TRUE)\n## [1] 2.5\n\nDie Antwort lautet: mean(c(1,2,3,4),na.rm=TRUE).\n\nCategories:\n\nR\n‘2023’\nstring",
     "crumbs": [
       "R",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Typ-Fehler-R-04</span>"
@@ -454,7 +454,7 @@
     "href": "exrs/posts/typ-fehler-r-06a/typ-fehler-r-06a.html#lösung",
     "title": "\n14  Typ-Fehler-R-06a\n",
     "section": "\n14.2 Lösung",
-    "text": "14.2 Lösung\nHinten ist eine (schließende) Klammer zu viel, die muss weg:\n\nsum(abs(mean(x)-x))  # so geht's\n## [1] 2\n\n\nsol &lt;- \"sum(abs(mean(x)-x))\"\n\nDie Antwort lautet: sum(abs(mean(x)-x)).\n\nCategories:\n\nR\n‘2023’\nstring",
+    "text": "14.2 Lösung\nHinten ist eine (schließende) Klammer zu viel, die muss weg:\n\nsum(abs(mean(x)-x))  # so geht's\n## [1] 2\n\nDie Antwort lautet: sum(abs(mean(x)-x)).\n\nCategories:\n\nR\n‘2023’\nstring",
     "crumbs": [
       "R",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Typ-Fehler-R-06a</span>"
@@ -520,7 +520,7 @@
     "href": "exrs/posts/typ-fehler-r-08-name-clash/typ-fehler-r-08-name-clash.html",
     "title": "\n16  Typ-Fehler-R-08-name-clash\n",
     "section": "",
-    "text": "16.1 Aufgabe\nR spuckt eine komische Fehlermeldung aus. Was ist nur los? Hat R einen schlechten Tag?\nSchauen wir uns die Sache näher an:\nlibrary(dplyr)\nlibrary(MASS)\n\nmtcars_small &lt;-\n  mtcars %&gt;% \n  select(hp, am)\n## Error in select(., hp, am): unbenutzte Argumente (hp, am)\nOh nein! Fehler!\nWas ist nur los?\nHinweise:",
+    "text": "16.1 Aufgabe\nR spuckt eine komische Fehlermeldung aus. Was ist nur los? Hat R einen schlechten Tag?\nSchauen wir uns die Sache näher an:\n## Error in `select()`:\n## ! unbenutzte Argumente (hp, am)\nOh nein! Fehler!\nWas ist nur los?\nHinweise:",
     "crumbs": [
       "R",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Typ-Fehler-R-08-name-clash</span>"
@@ -542,7 +542,7 @@
     "href": "exrs/posts/typ-fehler-r-08-name-clash/typ-fehler-r-08-name-clash.html#lösung",
     "title": "\n16  Typ-Fehler-R-08-name-clash\n",
     "section": "\n16.2 Lösung",
-    "text": "16.2 Lösung\nDas Problem ist, dass es in beiden Paketen, MASS und dplyr (dasjenige Paket im tidyverse, in dem select() wohnt), eine Funktion namens select vorhanden ist.\nEs kommt zu einem “Name Clash”, einer Namenskollision.\nWenn mehrere Funktion gleichen Namens geladen (“attached”) sind, so “gewinnt” diejenige Funktion, die als letztes geladen wurde, in unserem Fall ist das die Funktion aus MASS.\nEs gibt eine Reihe von Lösungen.\n\nNur das benötigte Paket starten\n\nZuerst “entladen” wir MASS, da wir es nicht benötigen:\n\ndetach(\"package:MASS\", unload = TRUE)\n\nAlternativ (und einfacher) könnten wir R neu starten: Session &gt; Restart R.\n\nlibrary(dplyr)\n#library(MASS)\n\nmtcars %&gt;% \n  select(hp, am)\n## Error in select(., hp, am): unbenutzte Argumente (hp, am)\n\nUnd schon geht’s!\n\nPaketnamen vor Funktionsnamen anfügen\n\n\n#library(dplyr)\n#library(MASS)\n\nmtcars %&gt;% \n  dplyr::select(hp, am) %&gt;% \n  dplyr::filter(hp &gt; 200)\n\n\n  \n\n\n\n\nPaket conflicted nutzen\n\nHier gibt’s dazu nähere Infos.\n\nCategories:\n\nR\nerror\nstring",
+    "text": "16.2 Lösung\nDas Problem ist, dass es in beiden Paketen, MASS und dplyr (dasjenige Paket im tidyverse, in dem select() wohnt), eine Funktion namens select vorhanden ist.\nEs kommt zu einem “Name Clash”, einer Namenskollision.\nWenn mehrere Funktion gleichen Namens geladen (“attached”) sind, so “gewinnt” diejenige Funktion, die als letztes geladen wurde, in unserem Fall ist das die Funktion aus MASS.\nEs gibt eine Reihe von Lösungen.\n\nNur das benötigte Paket starten\n\nZuerst “entladen” wir MASS, da wir es nicht benötigen:\nAlternativ (und einfacher) könnten wir R neu starten: Session &gt; Restart R.\n\n## Error in `select()`:\n## ! unbenutzte Argumente (hp, am)\n\nUnd schon geht’s!\n\nPaketnamen vor Funktionsnamen anfügen\n\n\n\n\n  \n\n\n\n\nPaket conflicted nutzen\n\nHier gibt’s dazu nähere Infos.\n\nCategories:\n\nR\nerror\nstring",
     "crumbs": [
       "R",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Typ-Fehler-R-08-name-clash</span>"
@@ -553,7 +553,7 @@
     "href": "exrs/posts/logikpruefung1/logikpruefung1.html",
     "title": "\n17  Logikpruefung1\n",
     "section": "",
-    "text": "17.1 Aufgabe\nWir definieren x wie folgt:\nx &lt;- 42\nGeben Sie die Syntax an, für die Prüfung, ob x kleiner 100 und größer 0 ist.\nGeben Sie keine Leerzeichen in Ihre Lösung ein.",
+    "text": "17.1 Aufgabe\nWir definieren x wie folgt:\nGeben Sie die Syntax an, für die Prüfung, ob x kleiner 100 und größer 0 ist.\nGeben Sie keine Leerzeichen in Ihre Lösung ein.",
     "crumbs": [
       "R",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Logikpruefung1</span>"
@@ -564,7 +564,7 @@
     "href": "exrs/posts/logikpruefung1/logikpruefung1.html#lösung",
     "title": "\n17  Logikpruefung1\n",
     "section": "\n17.2 Lösung",
-    "text": "17.2 Lösung\n\nx&lt;100&x&gt;0\n## [1] TRUE\n\nMit Leerzeichen sieht es aber schöner aus:\n\nx &lt; 100 & x &gt; 0\n## [1] TRUE\n\n\nCategories:\n\nR\n‘2023’\nLogikpruefung1",
+    "text": "17.2 Lösung\n\n## [1] TRUE\n\nMit Leerzeichen sieht es aber schöner aus:\n\n## [1] TRUE\n\n\nCategories:\n\nR\n‘2023’\nLogikpruefung1",
     "crumbs": [
       "R",
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Logikpruefung1</span>"
@@ -575,7 +575,7 @@
     "href": "exrs/posts/logikpruefung2/logikpruefung2.html",
     "title": "\n18  Logikpruefung2\n",
     "section": "",
-    "text": "18.1 Aufgabe\nWir definieren x wie folgt:\nx &lt;- c(-1, 0, 1)\nGeben Sie die Syntax an, für die Prüfung, ob x positiv ist.",
+    "text": "18.1 Aufgabe\nWir definieren x wie folgt:\nGeben Sie die Syntax an, für die Prüfung, ob x positiv ist.",
     "crumbs": [
       "R",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Logikpruefung2</span>"
@@ -586,7 +586,7 @@
     "href": "exrs/posts/logikpruefung2/logikpruefung2.html#lösung",
     "title": "\n18  Logikpruefung2\n",
     "section": "\n18.2 Lösung",
-    "text": "18.2 Lösung\n\nx &gt; 0\n## [1] FALSE FALSE  TRUE\n\n\nCategories:\n\nR\n‘2023’\nLogikpruefung2",
+    "text": "18.2 Lösung\n\n## [1] FALSE FALSE  TRUE\n\n\nCategories:\n\nR\n‘2023’\nLogikpruefung2",
     "crumbs": [
       "R",
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Logikpruefung2</span>"
@@ -652,7 +652,7 @@
     "href": "exrs/posts/wertberechnen2/wertberechnen2.html",
     "title": "\n20  Wertberechnen2\n",
     "section": "",
-    "text": "20.1 Aufgabe\nWelchen Wert bzw. welches Ergebnis liefert folgende R-Syntax für ergebnis zurück?\nx hat zu Beginn den Wert 24.\nHinweise:\ny &lt;- 1\n\nx &lt;- x + y - 1\n\ny = x\n\ny &lt;- y * 2\n\nx &lt;- x + 1\n\nx &lt;- sqrt(x)\n\nergebnis &lt;- x^2",
+    "text": "20.1 Aufgabe\nWelchen Wert bzw. welches Ergebnis liefert folgende R-Syntax für ergebnis zurück?\nx hat zu Beginn den Wert 15.\nHinweise:\ny &lt;- 1\n\nx &lt;- x + y - 1\n\ny = x\n\ny &lt;- y * 2\n\nx &lt;- x + 1\n\nx &lt;- sqrt(x)\n\nergebnis &lt;- x^2",
     "crumbs": [
       "R",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Wertberechnen2</span>"
@@ -674,7 +674,7 @@
     "href": "exrs/posts/wertberechnen2/wertberechnen2.html#lösung",
     "title": "\n20  Wertberechnen2\n",
     "section": "\n20.2 Lösung",
-    "text": "20.2 Lösung\nEs wird 25 zurückgeliefert.\n\nCategories:\n\nR\ndyn\nnum",
+    "text": "20.2 Lösung\nEs wird 16 zurückgeliefert.\n\nCategories:\n\nR\ndyn\nnum",
     "crumbs": [
       "R",
       "<span class='chapter-number'>20</span>  <span class='chapter-title'>Wertberechnen2</span>"
@@ -905,7 +905,7 @@
     "href": "exrs/posts/repro1-sessioninfo/repro1-sessioninfo.html#lösung",
     "title": "\n27  repro1-sessioninfo\n",
     "section": "\n27.2 Lösung",
-    "text": "27.2 Lösung\nMit dem Befehl sessionInfo bekommen Sie einen Überblick über die Versionen der aktuell gestarteten R-Pakete sowie von R. Die Version von RStudio ist zumeist nicht wichtig, da RStudio keinen R-Code ausführt; das macht nur R.\n\nsessionInfo()\n## R version 4.5.1 (2025-06-13)\n## Platform: x86_64-pc-linux-gnu\n## Running under: Ubuntu 25.10\n## \n## Matrix products: default\n## BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1 \n## LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1;  LAPACK version 3.12.0\n## \n## locale:\n##  [1] LC_CTYPE=de_DE.UTF-8       LC_NUMERIC=C              \n##  [3] LC_TIME=de_DE.UTF-8        LC_COLLATE=de_DE.UTF-8    \n##  [5] LC_MONETARY=de_DE.UTF-8    LC_MESSAGES=de_DE.UTF-8   \n##  [7] LC_PAPER=de_DE.UTF-8       LC_NAME=C                 \n##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n## [11] LC_MEASUREMENT=de_DE.UTF-8 LC_IDENTIFICATION=C       \n## \n## time zone: Europe/Berlin\n## tzcode source: system (glibc)\n## \n## attached base packages:\n## [1] stats     graphics  grDevices utils     datasets  methods   base     \n## \n## loaded via a namespace (and not attached):\n##  [1] htmlwidgets_1.6.4 compiler_4.5.1    fastmap_1.2.0     cli_3.6.5        \n##  [5] tools_4.5.1       htmltools_0.5.8.1 rstudioapi_0.17.1 yaml_2.3.12      \n##  [9] rmarkdown_2.30    knitr_1.50        jsonlite_2.0.0    xfun_0.56        \n## [13] digest_0.6.39     rlang_1.1.7       evaluate_1.0.5\n\n\nCategories:\n\nR\nrepro\nstring",
+    "text": "27.2 Lösung\nMit dem Befehl sessionInfo bekommen Sie einen Überblick über die Versionen der aktuell gestarteten R-Pakete sowie von R. Die Version von RStudio ist zumeist nicht wichtig, da RStudio keinen R-Code ausführt; das macht nur R.\n\nsessionInfo()\n## R version 4.5.2 (2025-10-31)\n## Platform: x86_64-pc-linux-gnu\n## Running under: Ubuntu 26.04 LTS\n## \n## Matrix products: default\n## BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1 \n## LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1;  LAPACK version 3.12.0\n## \n## locale:\n##  [1] LC_CTYPE=de_DE.UTF-8       LC_NUMERIC=C              \n##  [3] LC_TIME=de_DE.UTF-8        LC_COLLATE=de_DE.UTF-8    \n##  [5] LC_MONETARY=de_DE.UTF-8    LC_MESSAGES=de_DE.UTF-8   \n##  [7] LC_PAPER=de_DE.UTF-8       LC_NAME=C                 \n##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n## [11] LC_MEASUREMENT=de_DE.UTF-8 LC_IDENTIFICATION=C       \n## \n## time zone: Europe/Berlin\n## tzcode source: system (glibc)\n## \n## attached base packages:\n## [1] stats     graphics  grDevices datasets  utils     methods   base     \n## \n## loaded via a namespace (and not attached):\n##  [1] htmlwidgets_1.6.4 compiler_4.5.2    fastmap_1.2.0     cli_3.6.6        \n##  [5] htmltools_0.5.9   tools_4.5.2       otel_0.2.0        rstudioapi_0.18.0\n##  [9] yaml_2.3.12       rmarkdown_2.31    knitr_1.51        jsonlite_2.0.0   \n## [13] xfun_0.57         digest_0.6.39     rlang_1.2.0       renv_1.2.3       \n## [17] evaluate_1.0.5\n\n\nCategories:\n\nR\nrepro\nstring",
     "crumbs": [
       "R",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>repro1-sessioninfo</span>"
@@ -916,7 +916,7 @@
     "href": "exrs/posts/mw-berechnen/mw-berechnen.html",
     "title": "\n28  mw-berechnen\n",
     "section": "",
-    "text": "28.1 Aufgabe\nQuestion\nBerechnen Sie den Mittelwert folgender zahlenreihe; ignorieren sie etwaige fehlende Werte. Runden Sie auf zwei Dezimalstellen.\n## [1]  0.54 -0.32  1.91  0.38 -2.87",
+    "text": "28.1 Aufgabe\nQuestion\nBerechnen Sie den Mittelwert folgender zahlenreihe; ignorieren sie etwaige fehlende Werte. Runden Sie auf zwei Dezimalstellen.\n## [1] -0.61  1.09 -0.26 -0.10  0.37    NA",
     "crumbs": [
       "R",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>mw-berechnen</span>"
@@ -927,7 +927,7 @@
     "href": "exrs/posts/mw-berechnen/mw-berechnen.html#lösung",
     "title": "\n28  mw-berechnen\n",
     "section": "\n28.2 Lösung",
-    "text": "28.2 Lösung\nDer Mittelwert liegt bei -0.07.\nDie Antwort lautet -0.07.\nIn R kann man den Mittelwert z.B. so berechnen:\n\nmean(zahlenreihe, na.rm = TRUE)\n## [1] -0.072\n\nDas Argument na.rm = TRUE sorgt dafür, dass R auch bei Vorhandensein fehlender Werte ein Ergebnis ausgibt. Ohne dieses Argument würde R ein sprödes NA zurückgeben, falls fehlende Werte vorliegen. Dieses Verhalten von R ist recht defensiv, getreu dem Motto: Wenn es ein Problem gibt, sollte man so früh wie möglich darüber deutlich informiert werden (und nicht erst, wenn die Marsrakete gestartet ist…).\n\nCategories:\n\neda\ndatawrangling\ndyn\nnum",
+    "text": "28.2 Lösung\nDer Mittelwert liegt bei 0.1.\nDie Antwort lautet 0.1.\nIn R kann man den Mittelwert z.B. so berechnen:\n\nmean(zahlenreihe, na.rm = TRUE)\n## [1] 0.098\n\nDas Argument na.rm = TRUE sorgt dafür, dass R auch bei Vorhandensein fehlender Werte ein Ergebnis ausgibt. Ohne dieses Argument würde R ein sprödes NA zurückgeben, falls fehlende Werte vorliegen. Dieses Verhalten von R ist recht defensiv, getreu dem Motto: Wenn es ein Problem gibt, sollte man so früh wie möglich darüber deutlich informiert werden (und nicht erst, wenn die Marsrakete gestartet ist…).\n\nCategories:\n\neda\ndatawrangling\ndyn\nnum",
     "crumbs": [
       "R",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>mw-berechnen</span>"
@@ -1411,7 +1411,7 @@
     "href": "exrs/posts/mariokart-max1/mariokart-max1.html#lösung",
     "title": "\n43  mariokart-max1\n",
     "section": "\n43.2 Lösung",
-    "text": "43.2 Lösung\nPakete starten:\n\nlibrary(tidyverse)\nlibrary(easystats)\n\nDaten importieren:\n\nd_url &lt;- \"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\"\nd &lt;- data_read(d_url)\n\n\nsolution &lt;-\nd  %&gt;% \n  group_by(wheels) %&gt;% \n  summarise(pr_max = max(total_pr)) %&gt;% \n  summarise(pr_max_mean = mean(pr_max))\n\nsolution\n\n\n  \n\n\n\nLösung:\n\n\n\n.\n\nCategories:\n\ndatawrangling\ndplyr\neda\nnum",
+    "text": "43.2 Lösung\nPakete starten:\nDaten importieren:\n\n\n\n  \n\n\n\nLösung:\n\n\n\n.\n\nCategories:\n\ndatawrangling\ndplyr\neda\nnum",
     "crumbs": [
       "Aufbereiten",
       "<span class='chapter-number'>43</span>  <span class='chapter-title'>mariokart-max1</span>"
@@ -1444,7 +1444,7 @@
     "href": "exrs/posts/mariokart-max2/mariokart-max2.html#lösung",
     "title": "\n44  mariokart-max2\n",
     "section": "\n44.2 Lösung",
-    "text": "44.2 Lösung\nPakete starten:\n\nlibrary(tidyverse)\nlibrary(easystats)\n\nDaten importieren:\n\nd_url &lt;- \"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\"\nd &lt;- data_read(d_url)\n\n\nsolution &lt;-\nd  %&gt;% \n  filter(cond == \"new\") %&gt;% \n  group_by(wheels) %&gt;% \n  summarise(pr_max = max(total_pr)) %&gt;% \n  summarise(pr_max_mean = mean(pr_max))\n\nsolution\n\n\n  \n\n\n\nLösung:\n\n\n\n.\n\nCategories:\n\ndatawrangling\ndplyr\neda\nnum",
+    "text": "44.2 Lösung\nPakete starten:\nDaten importieren:\n\n\n\n  \n\n\n\nLösung:\n\n\n\n.\n\nCategories:\n\ndatawrangling\ndplyr\neda\nnum",
     "crumbs": [
       "Aufbereiten",
       "<span class='chapter-number'>44</span>  <span class='chapter-title'>mariokart-max2</span>"
@@ -1532,7 +1532,7 @@
     "href": "exrs/posts/summarise02/summarise02.html#lösung",
     "title": "\n47  summarise02\n",
     "section": "\n47.2 Lösung",
-    "text": "47.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nZusammenfassen:\n\nmariokart_gruppiert &lt;- group_by(mariokart, stock_photo)  # Gruppieren\nmariokart_klein &lt;- summarise(mariokart_gruppiert, max_preis = max(total_pr))  # zusammenfassen\nmariokart_klein\n\n\n  \n\n\n\n\nsummarise(mariokart_klein, max_preis_mw = mean(max_preis))\n\n\n  \n\n\n\nmin analog.\nDie Lösung lautet: 201\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nnum",
+    "text": "47.2 Lösung\nPakete starten:\nDaten importieren:\nZusammenfassen:\n\n\n\n  \n\n\n\n\n\n\n  \n\n\n\nmin analog.\nDie Lösung lautet: 201\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nnum",
     "crumbs": [
       "Aufbereiten",
       "<span class='chapter-number'>47</span>  <span class='chapter-title'>summarise02</span>"
@@ -1554,7 +1554,7 @@
     "href": "exrs/posts/mutate01/mutate01.html#lösung",
     "title": "\n48  mutate01\n",
     "section": "\n48.2 Lösung",
-    "text": "48.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\n\nmariokart &lt;- \n  mutate(mariokart, zu_teuer = total_pr &gt; 100)\n\nmariokart2 &lt;-\n  select(mariokart, total_pr, zu_teuer)\n\nhead(mariokart2)\n\n\n  \n\n\n\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nnum",
+    "text": "48.2 Lösung\nPakete starten:\nDaten importieren:\n\n\n\n  \n\n\n\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nnum",
     "crumbs": [
       "Aufbereiten",
       "<span class='chapter-number'>48</span>  <span class='chapter-title'>mutate01</span>"
@@ -1565,7 +1565,7 @@
     "href": "exrs/posts/boxhist/boxhist.html",
     "title": "\n49  boxhist\n",
     "section": "",
-    "text": "49.1 Aufgabe\nboxhist.csv draw a histogram, and a boxplot. Based on the graphics, answer the following questions or check the correct statements, respectively. (Comment: The tolerance for numeric answers is \\(\\pm0.2\\), the true/false statements are either about correct or clearly wrong.)",
+    "text": "49.1 Aufgabe\nboxhist.csv draw a histogram, and a boxplot. Based on the graphics, answer the following questions or check the correct statements, respectively. (Comment: The tolerance for numeric answers is \\(\\pm0.1\\), the true/false statements are either about correct or clearly wrong.)",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>49</span>  <span class='chapter-title'>boxhist</span>"
@@ -1598,7 +1598,7 @@
     "href": "exrs/posts/max-corr1/max-corr1.html#lösung",
     "title": "\n50  max-corr1\n",
     "section": "\n50.2 Lösung",
-    "text": "50.2 Lösung\n\nd_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/pradadata/master/data-raw/corr_data.csv\"\nd &lt;- read.csv(d_path)\n\nd %&gt;% \n  filter(correlation &gt; 0) %&gt;% \n  ggplot(aes(V1, V2)) +\n  geom_point() +\n  stat_ellipse(level = .999, type = \"norm\", color = \"blue\", alpha = .5) +\n  facet_wrap(~ id_cor)\n\n\n\n\n\n\n\n\nsol &lt;- 9\n\n\nCategories:\n\nvis\n‘2023’\nnum",
+    "text": "50.2 Lösung\n\n\n\n\n\n\n\n\n\nCategories:\n\nvis\n‘2023’\nnum",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>50</span>  <span class='chapter-title'>max-corr1</span>"
@@ -1620,7 +1620,7 @@
     "href": "exrs/posts/max-corr2/max-corr2.html#lösung",
     "title": "\n51  max-corr2\n",
     "section": "\n51.2 Lösung",
-    "text": "51.2 Lösung\n\nd_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/pradadata/master/data-raw/corr_data.csv\"\nd &lt;- read.csv(d_path)\n\nd %&gt;% \n  #filter(correlation &gt; 0) %&gt;% \n  ggplot(aes(V1, V2)) +\n  geom_point() +\n  stat_ellipse(level = .999, type = \"norm\", color = \"blue\", alpha = .5) +\n  facet_wrap(~ id_cor)\n\n\n\n\n\n\n\n\nsol &lt;- 1\n\n\nCategories:\n\nvis\n‘2023’\nnum",
+    "text": "51.2 Lösung\n\n\n\n\n\n\n\n\n\nCategories:\n\nvis\n‘2023’\nnum",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>51</span>  <span class='chapter-title'>max-corr2</span>"
@@ -1642,7 +1642,7 @@
     "href": "exrs/posts/histogramm-in-boxplot/histogramm-in-boxplot.html#lösung",
     "title": "\n52  Histogramm-in-Boxplot\n",
     "section": "\n52.2 Lösung",
-    "text": "52.2 Lösung\nBoxplot Boxplot C spiegelt das Histogramm am genauesten wider.\n\n\n\n\nCategories:\n\nvis\n‘2023’\nschoice",
+    "text": "52.2 Lösung\nBoxplot Boxplot E spiegelt das Histogramm am genauesten wider.\n\n\n\n\nCategories:\n\nvis\n‘2023’\nschoice",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>52</span>  <span class='chapter-title'>Histogramm-in-Boxplot</span>"
@@ -1697,7 +1697,7 @@
     "href": "exrs/posts/boxplot-aussagen/boxplot-aussagen.html",
     "title": "\n54  Boxplot-Aussagen\n",
     "section": "",
-    "text": "54.1 Aufgabe\nHinweis: Female steht für Frauen; Male für Männer.\nDiese Aufgabe bezieht sich auf den Datensatz tips (aus dem R-Paket reshape2), den Sie ggf. hier herunterladen können. Ein Data-Dictionary findet sich hier.\ndata(tips, package = \"reshape2\")\nlibrary(tidyverse)\n\nggplot(tips) +\n  aes(x = sex, y = total_bill) +\n  geom_boxplot() +\n  theme_light()",
+    "text": "54.1 Aufgabe\nHinweis: Female steht für Frauen; Male für Männer.\nDiese Aufgabe bezieht sich auf den Datensatz tips (aus dem R-Paket reshape2), den Sie ggf. hier herunterladen können. Ein Data-Dictionary findet sich hier.",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>54</span>  <span class='chapter-title'>Boxplot-Aussagen</span>"
@@ -2038,7 +2038,7 @@
     "href": "exrs/posts/n-vars-diagram/n-vars-diagram.html",
     "title": "\n62  n-vars-diagram\n",
     "section": "",
-    "text": "62.1 Aufgabe\nWie viele Variablen sind in folgendem Diagramm dargestellt?\nDie Daten beziehen sich au den Datensatz mtcars; hier finden Sie Informationen zu dem Datensatz. Er ist in R “fest eingebaut”, also direkt verfügbar und muss daher nicht explizit geladen werden.\nmtcars %&gt;% \n  ggplot(aes(x = hp, y = mpg, color = factor(am), size = cyl)) +\n  geom_point() +\n  facet_wrap(~vs)",
+    "text": "62.1 Aufgabe\nWie viele Variablen sind in folgendem Diagramm dargestellt?\nDie Daten beziehen sich au den Datensatz mtcars; hier finden Sie Informationen zu dem Datensatz. Er ist in R “fest eingebaut”, also direkt verfügbar und muss daher nicht explizit geladen werden.",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>62</span>  <span class='chapter-title'>n-vars-diagram</span>"
@@ -2049,7 +2049,7 @@
     "href": "exrs/posts/n-vars-diagram/n-vars-diagram.html#lösung",
     "title": "\n62  n-vars-diagram\n",
     "section": "\n62.2 Lösung",
-    "text": "62.2 Lösung\nEs sind 5 Variablen abgebildet:\n\nhp\nmpg\nam\ncyl\nvs\n\n\nsol &lt;- 5\n\n\nCategories:\n\nvis\n‘2023’\nnum",
+    "text": "62.2 Lösung\nEs sind 5 Variablen abgebildet:\n\nhp\nmpg\nam\ncyl\nvs\n\n\nCategories:\n\nvis\n‘2023’\nnum",
     "crumbs": [
       "verbildlichen",
       "<span class='chapter-number'>62</span>  <span class='chapter-title'>n-vars-diagram</span>"
@@ -2126,7 +2126,7 @@
     "href": "exrs/posts/nasa01/nasa01.html#lösung",
     "title": "\n65  nasa01\n",
     "section": "\n65.2 Lösung",
-    "text": "65.2 Lösung\n\n65.2.1 Setup\n\nlibrary(ggpubr)\nlibrary(DataExplorer)\n\n\n65.2.2 Daten aufbereiten\nDekade berechnen:\n\nd &lt;-\n  d %&gt;% \n  mutate(decade = round(Year/10))\n\nDas ist ein möglicher Weg, um aus einer Jahreszahl die Dekade zu berechnen.\n\n65.2.3 Statistiken berechnen\nStatistiken pro Dekade:\n\nd_summarized &lt;- \n  d %&gt;% \n  group_by(decade) %&gt;% \n  summarise(temp_mean = mean(Jan),\n            temp_sd = sd(Jan))\n\nd_summarized\n\n\n\n\n\n\n\ndecade\ntemp_mean\ntemp_sd\n\n\n\n188\n−0.21\n0.24\n\n\n189\n−0.45\n0.22\n\n\n190\n−0.28\n0.16\n\n\n191\n−0.40\n0.22\n\n\n192\n−0.29\n0.15\n\n\n193\n−0.14\n0.21\n\n\n194\n0.02\n0.21\n\n\n195\n−0.05\n0.18\n\n\n196\n0.03\n0.15\n\n\n197\n−0.07\n0.17\n\n\n198\n0.21\n0.19\n\n\n199\n0.35\n0.13\n\n\n200\n0.51\n0.19\n\n\n201\n0.63\n0.20\n\n\n202\n1.02\n0.19\n\n\n203\n1.08\nNA\n\n\n\n\n\n\n\n65.2.4 Statistiken visualisieren\n\n65.2.4.1 Mit DataExplorer\n\n\nd_summarized |&gt; \n  select(decade, temp_mean) |&gt; \n  plot_scatterplot(by = \"temp_mean\")\n\n\n\n\n\n\n\nd_summarized |&gt; \n  select(decade, temp_sd) |&gt; \n  plot_scatterplot(by = \"temp_sd\")\n\n\n\n\n\n\n\n\n65.2.4.2 Mit ggpubr\n\n\nd_summarized |&gt; \n  ggline(x = \"decade\", y = \"temp_mean\")\n\n\n\n\n\n\n\nd_summarized |&gt; \n  ggline(x = \"decade\", y = \"temp_sd\")\n\n\n\n\n\n\n\n\nd  |&gt; \n  ggerrorplot(x = \"decade\", y = \"Jan\")\n\n\n\n\n\n\n\nFalls Sie Teile der R-Syntax nicht kennen: Machen Sie sich nichts daraus. 😄\n\nCategories:\n\ndata\neda\nlagemaße\nvariability\nstring",
+    "text": "65.2 Lösung\n\n65.2.1 Setup\n\nlibrary(ggpubr)\nlibrary(DataExplorer)\n\n\n65.2.2 Daten aufbereiten\nDekade berechnen:\n\nd &lt;-\n  d %&gt;% \n  mutate(decade = round(Year/10))\n\nDas ist ein möglicher Weg, um aus einer Jahreszahl die Dekade zu berechnen.\n\n65.2.3 Statistiken berechnen\nStatistiken pro Dekade:\n\nd_summarized &lt;- \n  d %&gt;% \n  group_by(decade) %&gt;% \n  summarise(temp_mean = mean(Jan),\n            temp_sd = sd(Jan))\n\nd_summarized\n\n\n\n\n\n\n\ndecade\ntemp_mean\ntemp_sd\n\n\n\n188\n−0.21\n0.24\n\n\n189\n−0.44\n0.22\n\n\n190\n−0.27\n0.16\n\n\n191\n−0.40\n0.22\n\n\n192\n−0.29\n0.15\n\n\n193\n−0.14\n0.22\n\n\n194\n0.02\n0.21\n\n\n195\n−0.05\n0.19\n\n\n196\n0.03\n0.15\n\n\n197\n−0.07\n0.17\n\n\n198\n0.21\n0.19\n\n\n199\n0.35\n0.13\n\n\n200\n0.52\n0.19\n\n\n201\n0.64\n0.20\n\n\n202\n1.02\n0.20\n\n\n203\n1.08\nNA\n\n\n\n\n\n\n\n65.2.4 Statistiken visualisieren\n\n65.2.4.1 Mit DataExplorer\n\n\nd_summarized |&gt; \n  select(decade, temp_mean) |&gt; \n  plot_scatterplot(by = \"temp_mean\")\n\nd_summarized |&gt; \n  select(decade, temp_sd) |&gt; \n  plot_scatterplot(by = \"temp_sd\")\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n65.2.4.2 Mit ggpubr\n\n\nd_summarized |&gt; \n  ggline(x = \"decade\", y = \"temp_mean\")\n\nd_summarized |&gt; \n  ggline(x = \"decade\", y = \"temp_sd\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nd  |&gt; \n  ggerrorplot(x = \"decade\", y = \"Jan\")\n\n\n\n\n\n\n\nFalls Sie Teile der R-Syntax nicht kennen: Machen Sie sich nichts daraus. 😄\n\nCategories:\n\ndata\neda\nlagemaße\nvariability\nstring",
     "crumbs": [
       "Zusammenfassen",
       "<span class='chapter-number'>65</span>  <span class='chapter-title'>nasa01</span>"
@@ -2137,7 +2137,7 @@
     "href": "exrs/posts/schiefe1/schiefe1.html",
     "title": "\n66  Schiefe1\n",
     "section": "",
-    "text": "66.1 Aufgabe\nWelche der Abbildungen zeigt am deutlichsten eine rechtsschiefe Verteilung?",
+    "text": "66.1 Aufgabe\nWelche der Abbildungen zeigt am deutlichsten eine bimodale Verteilung?",
     "crumbs": [
       "Zusammenfassen",
       "<span class='chapter-number'>66</span>  <span class='chapter-title'>Schiefe1</span>"
@@ -2181,7 +2181,7 @@
     "href": "exrs/posts/summarise03/summarise03.html#lösung",
     "title": "\n67  summarise03\n",
     "section": "\n67.2 Lösung",
-    "text": "67.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nZusammenfassen:\n\nmariokart_gruppiert &lt;- group_by(mariokart, wheels)  # Gruppieren\nmariokart_klein &lt;- summarise(mariokart_gruppiert, pr_mean = mean(total_pr))  # zusammenfassen\nmariokart_klein\n\n\n  \n\n\n\n\nsummarise(mariokart_klein, pr_mean = mean(pr_mean))\n\n\n  \n\n\n\nmin analog.\nDie Lösung lautet: 56\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nnum",
+    "text": "67.2 Lösung\nPakete starten:\nDaten importieren:\nZusammenfassen:\n\n\n\n  \n\n\n\n\n\n\n  \n\n\n\nmin analog.\nDie Lösung lautet: 56\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nnum",
     "crumbs": [
       "Zusammenfassen",
       "<span class='chapter-number'>67</span>  <span class='chapter-title'>summarise03</span>"
@@ -2313,7 +2313,7 @@
     "href": "exrs/posts/summarise04/summarise04.html#lösung",
     "title": "\n71  summarise04\n",
     "section": "\n71.2 Lösung",
-    "text": "71.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nOder so:\n\ndata(mariokart, package = \"openintro\")  # aus dem Paket \"openintro\"\n\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nZusammenfassen:\n\nmariokart_gruppiert &lt;- group_by(mariokart, wheels)  # Gruppieren\nmariokart_klein &lt;- summarise(mariokart_gruppiert, pr_sd = sd(total_pr))  # zusammenfassen\nmariokart_klein\n\n\n  \n\n\n\nDie Lösung lautet: 14.27\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nvariability\nnum",
+    "text": "71.2 Lösung\nPakete starten:\nDaten importieren:\nOder so:\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nZusammenfassen:\n\n\n\n  \n\n\n\nDie Lösung lautet: 14.27\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nvariability\nnum",
     "crumbs": [
       "Modellguete",
       "<span class='chapter-number'>71</span>  <span class='chapter-title'>summarise04</span>"
@@ -2346,7 +2346,7 @@
     "href": "exrs/posts/summarise05/summarise05.html#lösung",
     "title": "\n72  summarise05\n",
     "section": "\n72.2 Lösung",
-    "text": "72.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nOder so:\n\ndata(mariokart, package = \"openintro\")  # aus dem Paket \"openintro\"\n\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nZusammenfassen:\n\nlibrary(DescTools)\nmariokart_gruppiert &lt;- group_by(mariokart, wheels)  # Gruppieren\nmariokart_klein &lt;- summarise(mariokart_gruppiert, \n                             pr_iqr = IQR(total_pr),\n                             pr_maa = mean(abs(total_pr - mean(total_pr))),\n                             pr_maa2 = MeanAD(total_pr)\n                             )  # zusammenfassen\nmariokart_klein\n\n\n  \n\n\n\nMöchte man den MAA nicht von Hand ausrechnen, so kann man die Funktion MeanAD aus dem Paket DescTools nutzen (Denken Sie daran, dass Sie das Paket einmalig installiert haben müssen.)\nDie Lösung lautet: 7.00\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nvariability\nnum",
+    "text": "72.2 Lösung\nPakete starten:\nDaten importieren:\nOder so:\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nZusammenfassen:\n\n\n\n  \n\n\n\nMöchte man den MAA nicht von Hand ausrechnen, so kann man die Funktion MeanAD aus dem Paket DescTools nutzen (Denken Sie daran, dass Sie das Paket einmalig installiert haben müssen.)\nDie Lösung lautet: 7.00\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nvariability\nnum",
     "crumbs": [
       "Modellguete",
       "<span class='chapter-number'>72</span>  <span class='chapter-title'>summarise05</span>"
@@ -2368,7 +2368,7 @@
     "href": "exrs/posts/summarise06/summarise06.html#lösung",
     "title": "\n73  summarise06\n",
     "section": "\n73.2 Lösung",
-    "text": "73.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nOder so:\n\ndata(mariokart, package = \"openintro\")  # aus dem Paket \"openintro\"\n\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nZusammenfassen:\n\nlibrary(DescTools)\nmariokart_summarised &lt;- summarise(mariokart, \n                                  pr_sd = sd(total_pr),\n                                  pr_iqr = IQR(total_pr),\n                                  pr_maa = mean(abs(total_pr - mean(total_pr))),\n                                  pr_maa2 = MeanAD(total_pr)\n)  # zusammenfassen\nmariokart_summarised\n\n\n  \n\n\n\nMöchte man den MAA nicht von Hand ausrechnen, so kann man die Funktion MeanAD aus dem Paket DescTools nutzen (Denken Sie daran, dass Sie das Paket einmalig installiert haben müssen.)\nDa es Extremwerte gibt in total_pr wird die SD besonders hoch sein. Der Grund ist, dass die SD eine Statistik ist, die auf einem Mittelwert beruht. Außerdem werden bei der Berechnung der SD die einzelnen Werte quadriert, was große Werte überproportional vergrößert. Aus diesem Grund könnte der IQR hier gegenüber anderen Maßen bevorzugt werden.\nLösung: 12.82\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nvariability\nnum",
+    "text": "73.2 Lösung\nPakete starten:\nDaten importieren:\nOder so:\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nZusammenfassen:\n\n\n\n  \n\n\n\nMöchte man den MAA nicht von Hand ausrechnen, so kann man die Funktion MeanAD aus dem Paket DescTools nutzen (Denken Sie daran, dass Sie das Paket einmalig installiert haben müssen.)\nDa es Extremwerte gibt in total_pr wird die SD besonders hoch sein. Der Grund ist, dass die SD eine Statistik ist, die auf einem Mittelwert beruht. Außerdem werden bei der Berechnung der SD die einzelnen Werte quadriert, was große Werte überproportional vergrößert. Aus diesem Grund könnte der IQR hier gegenüber anderen Maßen bevorzugt werden.\nLösung: 12.82\n\nCategories:\n\ndatawrangling\neda\ntidyverse\ndplyr\nvariability\nnum",
     "crumbs": [
       "Modellguete",
       "<span class='chapter-number'>73</span>  <span class='chapter-title'>summarise06</span>"
@@ -2390,7 +2390,7 @@
     "href": "exrs/posts/vis-mariokart-variab/vis-mariokart-variab.html#lösung",
     "title": "\n74  vis-mariokart-variab\n",
     "section": "\n74.2 Lösung",
-    "text": "74.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\nlibrary(DataExplorer)  # Data-Vis\nlibrary(ggpubr)  # Data-Vis\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nOder so:\n\ndata(mariokart, package = \"openintro\")  # aus dem Paket \"openintro\"\n\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nVisualisieren:\nMit dataExplorer:\n\nmariokart %&gt;% \n  select(total_pr) %&gt;% \n  plot_density()  # oder \"plot_histogram()\"\n\n\n\n\n\n\n\nMit ggpubr:\n\ngghistogram(mariokart, x = \"total_pr\")\n\n\n\n\n\n\n\nMit ggplot:\n\nmariokart %&gt;% \n  ggplot(aes(x = total_pr)) +\n  geom_density()  # oder \"geom_histogram()\"\n\n\n\n\n\n\n\nFalls Sie Teile der R-Syntax nicht kennen: Im Zweifel einfach ignorieren :-)\n\nCategories:\n\ndatawrangling\neda\ntidyverse\nvis\nvariability\nstring",
+    "text": "74.2 Lösung\nPakete starten:\nDaten importieren:\nOder so:\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nVisualisieren:\nMit dataExplorer:\n\n\n\n\n\n\n\n\nMit ggpubr:\n\n\n\n\n\n\n\n\nMit ggplot:\n\n\n\n\n\n\n\n\nFalls Sie Teile der R-Syntax nicht kennen: Im Zweifel einfach ignorieren :-)\n\nCategories:\n\ndatawrangling\neda\ntidyverse\nvis\nvariability\nstring",
     "crumbs": [
       "Modellguete",
       "<span class='chapter-number'>74</span>  <span class='chapter-title'>vis-mariokart-variab</span>"
@@ -2478,7 +2478,7 @@
     "href": "exrs/posts/mariokart-desk01/mariokart-desk01.html#lösung",
     "title": "\n77  mariokart-desk01\n",
     "section": "\n77.2 Lösung",
-    "text": "77.2 Lösung\nPakete starten:\n\nlibrary(easystats)\nlibrary(tidyverse)  # startet das Paket tidyverse\n\nDaten importieren:\n\nmariokart &lt;- data_read(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nOder so:\n\ndata(mariokart, package = \"openintro\")  # aus dem Paket \"openintro\"\n\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nDaten zusammenfassen zu deskriptiven Statistiken:\nMit dataExplorer:\n\nmariokart %&gt;% \n  select(total_pr) %&gt;% \n  describe_distribution()  \n\n\n  \n\n\n\nFalls Sie Teile der R-Syntax nicht kennen: Im Zweifel einfach ignorieren :-)\nAntwort: Es werden 8 Statistiken berichtet (im Default).\n\nCategories:\n\ndatawrangling\neda\ntidyverse\nvis\nvariability\nnum",
+    "text": "77.2 Lösung\nPakete starten:\nDaten importieren:\nOder so:\nDazu muss das Paket openintro auf Ihrem Computer installiert sein.\nDaten zusammenfassen zu deskriptiven Statistiken:\nMit dataExplorer:\n\n\n\n  \n\n\n\nFalls Sie Teile der R-Syntax nicht kennen: Im Zweifel einfach ignorieren :-)\nAntwort: Es werden 8 Statistiken berichtet (im Default).\n\nCategories:\n\ndatawrangling\neda\ntidyverse\nvis\nvariability\nnum",
     "crumbs": [
       "Modellguete",
       "<span class='chapter-number'>77</span>  <span class='chapter-title'>mariokart-desk01</span>"
@@ -2654,7 +2654,7 @@
     "href": "exrs/posts/korr01/korr01.html",
     "title": "\n83  korr01\n",
     "section": "",
-    "text": "83.1 Aufgabe\nset.seed(42)\nd &lt;-\n  mvrnorm(n = 600,\n          mu = c(0, 0),\n          Sigma = diag(2)\n          ) %&gt;% \n  as_tibble() \n\nggplot(d) +\n  aes(x = V1, y = V2) +\n  geom_point()\nWelcher Korrelationswert (Pearson) beschreibt die Korrelation in den Daten am besten?",
+    "text": "83.1 Aufgabe\nWelcher Korrelationswert (Pearson) beschreibt die Korrelation in den Daten am besten?",
     "crumbs": [
       "Zusammenhaenge",
       "<span class='chapter-number'>83</span>  <span class='chapter-title'>korr01</span>"
@@ -2698,7 +2698,7 @@
     "href": "exrs/posts/korr02/korr02.html",
     "title": "\n84  korr02\n",
     "section": "",
-    "text": "84.1 Aufgabe\n# source: https://medium.com/geekculture/how-to-generate-correlated-data-in-r-57a675b7fd2f\n\ncor_preset &lt;- sample(c(.9, .4, 0, -.4, -.9), 1)\n\n# create the variance covariance matrix\nsigma&lt;-rbind(c(1,cor_preset), c(cor_preset, 1))\n# create the mean vector\nmu&lt;-c(0, 1)\n# generate the multivariate normal distribution\ndf&lt;-as.data.frame(mvrnorm(n=1000, mu=mu, Sigma=sigma))\nWelcher Korrelationswert (Pearson) beschreibt die Korrelation in den Daten am besten?\ndf |&gt; \n  ggplot(aes(V1,V2)) +\n  geom_point()",
+    "text": "84.1 Aufgabe\nWelcher Korrelationswert (Pearson) beschreibt die Korrelation in den Daten am besten?",
     "crumbs": [
       "Zusammenhaenge",
       "<span class='chapter-number'>84</span>  <span class='chapter-title'>korr02</span>"
@@ -2720,7 +2720,7 @@
     "href": "exrs/posts/korr02/korr02.html#lösung",
     "title": "\n84  korr02\n",
     "section": "\n84.2 Lösung",
-    "text": "84.2 Lösung\nDie Korrelation in der zugehörigen (bivariaten) Population beträgt 0.4.\nIn der Stichprobe kann der zugehörige Wert (etwas abweichen).\nDas ist genauso, wie wenn man sagt, dass der “mittlere deutsche Mann” 1,80m groß sei, aber wenn Sie eine Stichprobe ziehen, muss der Mittelwert ja auch nicht (notwendigerweise) exakt bei 1,80m liegen.\n\nggpairs(df)\n\n\n\n\n\n\n\n\nCategories:\n\ndyn\neda\nassociation\nnum",
+    "text": "84.2 Lösung\nDie Korrelation in der zugehörigen (bivariaten) Population beträgt -0.4.\nIn der Stichprobe kann der zugehörige Wert (etwas abweichen).\nDas ist genauso, wie wenn man sagt, dass der “mittlere deutsche Mann” 1,80m groß sei, aber wenn Sie eine Stichprobe ziehen, muss der Mittelwert ja auch nicht (notwendigerweise) exakt bei 1,80m liegen.\n\n\n\n\n\n\n\n\n\nCategories:\n\ndyn\neda\nassociation\nnum",
     "crumbs": [
       "Zusammenhaenge",
       "<span class='chapter-number'>84</span>  <span class='chapter-title'>korr02</span>"
@@ -2764,7 +2764,7 @@
     "href": "exrs/posts/korr-als-regr/korr-als-regr.html",
     "title": "\n86  korr-als-regr\n",
     "section": "",
-    "text": "86.1 Aufgabe\nDie Korrelation prüft, ob bzw. inwieweit zwei Merkmale linear zusammenhängen.\nWie viele andere Verfahren kann die Korrelation als ein Spezialfall der Regression bzw. des linearen Modells \\(y = \\beta_0 + \\beta_1 + \\ldots \\beta_n + \\epsilon\\) betrachtet werden.\nAls ein spezielles Beispiel betrachten wir die Frage, ob das Gewicht eines Diamanten (carat) mit dem Preis (price) zusammenhängt (Datensatz diamonds).\nDen Datensatz können Sie so laden:\nlibrary(tidyverse)\ndata(diamonds)\nlm1 &lt;- lm(price ~ carat, data = diamonds)\nsummary(lm1)\n## \n## Call:\n## lm(formula = price ~ carat, data = diamonds)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -18585.3   -804.8    -18.9    537.4  12731.7 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)    \n## (Intercept) -2256.36      13.06  -172.8   &lt;2e-16 ***\n## carat        7756.43      14.07   551.4   &lt;2e-16 ***\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 1549 on 53938 degrees of freedom\n## Multiple R-squared:  0.8493, Adjusted R-squared:  0.8493 \n## F-statistic: 3.041e+05 on 1 and 53938 DF,  p-value: &lt; 2.2e-16\nWie (bzw. wo) ist aus dieser Ausgabe die Korrelation herauszulesen?\nlibrary(easystats)\ndiamonds %&gt;% \n  sample_n(30) %&gt;% \n  select(price, carat) %&gt;% \n  correlation()",
+    "text": "86.1 Aufgabe\nDie Korrelation prüft, ob bzw. inwieweit zwei Merkmale linear zusammenhängen.\nWie viele andere Verfahren kann die Korrelation als ein Spezialfall der Regression bzw. des linearen Modells \\(y = \\beta_0 + \\beta_1 + \\ldots \\beta_n + \\epsilon\\) betrachtet werden.\nAls ein spezielles Beispiel betrachten wir die Frage, ob das Gewicht eines Diamanten (carat) mit dem Preis (price) zusammenhängt (Datensatz diamonds).\nDen Datensatz können Sie so laden:\nlibrary(tidyverse)\ndata(diamonds)\nlm1 &lt;- lm(price ~ carat, data = diamonds)\nsummary(lm1)\n## \n## Call:\n## lm(formula = price ~ carat, data = diamonds)\n## \n## Residuals:\n##    Min     1Q Median     3Q    Max \n## -18585   -805    -19    537  12732 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)    \n## (Intercept)  -2256.4       13.1    -173   &lt;2e-16 ***\n## carat         7756.4       14.1     551   &lt;2e-16 ***\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 1550 on 53938 degrees of freedom\n## Multiple R-squared:  0.849,  Adjusted R-squared:  0.849 \n## F-statistic: 3.04e+05 on 1 and 53938 DF,  p-value: &lt;2e-16\nWie (bzw. wo) ist aus dieser Ausgabe die Korrelation herauszulesen?\nlibrary(easystats)\ndiamonds %&gt;% \n  sample_n(30) %&gt;% \n  select(price, carat) %&gt;% \n  correlation()",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>86</span>  <span class='chapter-title'>korr-als-regr</span>"
@@ -2786,7 +2786,7 @@
     "href": "exrs/posts/korr-als-regr/korr-als-regr.html#lösung",
     "title": "\n86  korr-als-regr\n",
     "section": "\n86.2 Lösung",
-    "text": "86.2 Lösung\n\ncarat ist metrisch (verhältnisskaliert) und price ist metrisch (verhältnisskaliert)\n\\(R^2\\) kann bei einer einfachen (univariaten) Regression als das Quadrat von \\(r\\) berechnet werden. Daher \\(r = \\sqrt{R^2}\\).\n\n\nsqrt(0.8493)\n## [1] 0.9215747\n\nZum Vergleich\n\ndiamonds %&gt;% \n  summarise(r = cor(price, carat))\n\n\n  \n\n\n\nMan kann den Wert der Korrelation auch noch anderweitig berechnen (\\(\\beta\\) umrechnen in \\(\\rho\\)).\n\nNein. Die Korrelation ist eine symmetrische Relation.\nJa; die Zahl “3.81e-14” bezeichnet eine positive Zahl kleiner eins mit 13 Nullern vor der ersten Ziffer, die nicht Null ist (3.81 in diesem Fall). Der “Unsicherheitskorridor” reicht von etwa 0.87 bis 0.97.\n\n\nCategories:\n\ncorrelation\nlm\nregression\nstring",
+    "text": "86.2 Lösung\n\ncarat ist metrisch (verhältnisskaliert) und price ist metrisch (verhältnisskaliert)\n\\(R^2\\) kann bei einer einfachen (univariaten) Regression als das Quadrat von \\(r\\) berechnet werden. Daher \\(r = \\sqrt{R^2}\\).\n\n\nsqrt(0.8493)\n## [1] 0.92\n\nZum Vergleich\n\ndiamonds %&gt;% \n  summarise(r = cor(price, carat))\n\n\n  \n\n\n\nMan kann den Wert der Korrelation auch noch anderweitig berechnen (\\(\\beta\\) umrechnen in \\(\\rho\\)).\n\nNein. Die Korrelation ist eine symmetrische Relation.\nJa; die Zahl “3.81e-14” bezeichnet eine positive Zahl kleiner eins mit 13 Nullern vor der ersten Ziffer, die nicht Null ist (3.81 in diesem Fall). Der “Unsicherheitskorridor” reicht von etwa 0.87 bis 0.97.\n\n\nCategories:\n\ncorrelation\nlm\nregression\nstring",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>86</span>  <span class='chapter-title'>korr-als-regr</span>"
@@ -2863,7 +2863,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html",
     "title": "\n89  mtcars-regr01\n",
     "section": "",
-    "text": "89.1 Aufgabe\ndata(\"mtcars\")\nBetrachten Sie folgendes Modell (Datensatz mtcars):\nmpg ~ disp\nAnders gesagt: Wie gut kann man den Spritverbrauch vorhersagen auf Basis des Hubraums eines Autos?",
+    "text": "89.1 Aufgabe\nBetrachten Sie folgendes Modell (Datensatz mtcars):\nmpg ~ disp\nAnders gesagt: Wie gut kann man den Spritverbrauch vorhersagen auf Basis des Hubraums eines Autos?",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2896,7 +2896,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#vorbereitung",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.3 Vorbereitung",
-    "text": "89.3 Vorbereitung\n\nlibrary(tidyverse)\ndata(mtcars)",
+    "text": "89.3 Vorbereitung",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2907,7 +2907,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#ad-1",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.4 Ad 1",
-    "text": "89.4 Ad 1\n\nlm1 &lt;- lm(mpg ~ disp, data = mtcars)\nlm1\n## \n## Call:\n## lm(formula = mpg ~ disp, data = mtcars)\n## \n## Coefficients:\n## (Intercept)         disp  \n##    29.59985     -0.04122",
+    "text": "89.4 Ad 1\n\n## \n## Call:\n## lm(formula = mpg ~ disp, data = mtcars)\n## \n## Coefficients:\n## (Intercept)         disp  \n##    29.59985     -0.04122",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2918,7 +2918,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#ad-2",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.5 Ad 2",
-    "text": "89.5 Ad 2\nNicht einfach nur predicten:\n\npredict(lm1)\n##           Mazda RX4       Mazda RX4 Wag          Datsun 710      Hornet 4 Drive \n##            23.00544            23.00544            25.14862            18.96635 \n##   Hornet Sportabout             Valiant          Duster 360           Merc 240D \n##            14.76241            20.32645            14.76241            23.55360 \n##            Merc 230            Merc 280           Merc 280C          Merc 450SE \n##            23.79677            22.69220            22.69220            18.23272 \n##          Merc 450SL         Merc 450SLC  Cadillac Fleetwood Lincoln Continental \n##            18.23272            18.23272            10.14632            10.64090 \n##   Chrysler Imperial            Fiat 128         Honda Civic      Toyota Corolla \n##            11.46520            26.35622            26.47987            26.66946 \n##       Toyota Corona    Dodge Challenger         AMC Javelin          Camaro Z28 \n##            24.64992            16.49345            17.07046            15.17456 \n##    Pontiac Firebird           Fiat X1-9       Porsche 914-2        Lotus Europa \n##            13.11381            26.34386            24.64168            25.68030 \n##      Ford Pantera L        Ferrari Dino       Maserati Bora          Volvo 142E \n##            15.13335            23.62366            17.19410            24.61283\n\nSondern die Predictions als neue Spalte in mtcars anlegen. Viel sauberer!\n\nmtcars2  &lt;- \n  mtcars %&gt;% \n  mutate(preds_lm1 = predict(lm1))",
+    "text": "89.5 Ad 2\nNicht einfach nur predicten:\n\n##           Mazda RX4       Mazda RX4 Wag          Datsun 710      Hornet 4 Drive \n##            23.00544            23.00544            25.14862            18.96635 \n##   Hornet Sportabout             Valiant          Duster 360           Merc 240D \n##            14.76241            20.32645            14.76241            23.55360 \n##            Merc 230            Merc 280           Merc 280C          Merc 450SE \n##            23.79677            22.69220            22.69220            18.23272 \n##          Merc 450SL         Merc 450SLC  Cadillac Fleetwood Lincoln Continental \n##            18.23272            18.23272            10.14632            10.64090 \n##   Chrysler Imperial            Fiat 128         Honda Civic      Toyota Corolla \n##            11.46520            26.35622            26.47987            26.66946 \n##       Toyota Corona    Dodge Challenger         AMC Javelin          Camaro Z28 \n##            24.64992            16.49345            17.07046            15.17456 \n##    Pontiac Firebird           Fiat X1-9       Porsche 914-2        Lotus Europa \n##            13.11381            26.34386            24.64168            25.68030 \n##      Ford Pantera L        Ferrari Dino       Maserati Bora          Volvo 142E \n##            15.13335            23.62366            17.19410            24.61283\n\nSondern die Predictions als neue Spalte in mtcars anlegen. Viel sauberer!",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2929,7 +2929,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#ad-3",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.6 Ad 3",
-    "text": "89.6 Ad 3\n\nggplot(mtcars2) +\n  aes(y = mpg, x = disp) +\n  geom_point() +\n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\nAndere Visualisierung:\n\nmtcars2 %&gt;% \n  ggplot(aes(x = disp, y = preds_lm1)) +\n  geom_point(size = 2, alpha = .8, color = \"pink\") +\n  geom_line() +\n  labs(y = \"Vorhergesagte MPG-Werte\",\n       title = \"Vorhersage-Modell lm1\")\n\n\n\n\n\n\n\nOder so:\n\nlibrary(easystats)\nestimate_expectation(lm1, by = \"disp\") %&gt;% plot()",
+    "text": "89.6 Ad 3\n\n\n\n\n\n\n\n\nAndere Visualisierung:\n\n\n\n\n\n\n\n\nOder so:",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2940,7 +2940,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#ad-4",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.7 Ad 4",
-    "text": "89.7 Ad 4\n\nmtcars2 &lt;- \n  mtcars2 %&gt;% \n  mutate(e = abs(mpg - preds_lm1))  # abs steht für \"Absolutwert\"\n\nDer “Absolutwert” kickt das Vorzeichen weg. Das machen wir, wenn wir meinen, dass das Vorzeichen egal ist.",
+    "text": "89.7 Ad 4\nDer “Absolutwert” kickt das Vorzeichen weg. Das machen wir, wenn wir meinen, dass das Vorzeichen egal ist.",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2951,7 +2951,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#bonus-aufgabe",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.8 Bonus-Aufgabe",
-    "text": "89.8 Bonus-Aufgabe\nBerechnen Sie den mittleren Fehler über alle e!\n\nmtcars2 %&gt;% \n  summarise(e_avg = mean(e))",
+    "text": "89.8 Bonus-Aufgabe\nBerechnen Sie den mittleren Fehler über alle e!",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2962,7 +2962,7 @@
     "href": "exrs/posts/mtcars-regr01/mtcars-regr01.html#ad-5",
     "title": "\n89  mtcars-regr01\n",
     "section": "\n89.9 Ad 5",
-    "text": "89.9 Ad 5\n\nmtcars %&gt;% \n  summarise(cor_mpg_disp = cor(mpg, disp))\n\n\n  \n\n\n\n\nCategories:\n\nlm\nmtcars\ncorrelation\nregression\nstring",
+    "text": "89.9 Ad 5\n\n\n\n  \n\n\n\n\nCategories:\n\nlm\nmtcars\ncorrelation\nregression\nstring",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>89</span>  <span class='chapter-title'>mtcars-regr01</span>"
@@ -2984,7 +2984,7 @@
     "href": "exrs/posts/nichtlineare-regr1/nichtlineare-regr1.html#lösung",
     "title": "\n90  nichtlineare-regr1\n",
     "section": "\n90.2 Lösung",
-    "text": "90.2 Lösung\n\nmtcars &lt;-\n  mtcars %&gt;% \n  mutate(mpg_log = log(mpg)) \n\nlm1 &lt;- lm(mpg_log ~ hp, data = mtcars)\nsummary(lm1)\n## \n## Call:\n## lm(formula = mpg_log ~ hp, data = mtcars)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -0.41577 -0.06583 -0.01737  0.09827  0.39621 \n## \n## Coefficients:\n##               Estimate Std. Error t value Pr(&gt;|t|)    \n## (Intercept)  3.4604669  0.0785838  44.035  &lt; 2e-16 ***\n## hp          -0.0034287  0.0004867  -7.045 7.85e-08 ***\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 0.1858 on 30 degrees of freedom\n## Multiple R-squared:  0.6233, Adjusted R-squared:  0.6107 \n## F-statistic: 49.63 on 1 and 30 DF,  p-value: 7.853e-08\n\nVisualisieren wir die Vorhersagen des Modells:\n\nmtcars &lt;-\n  mtcars %&gt;% \n  mutate(pred = predict(lm1))\n\n\nmtcars %&gt;% \n  ggplot() +\n  aes(x = hp) +\n  geom_line(aes( y = pred), color = \"blue\") +\n  geom_point(aes(y = mpg_log)) +\n  labs(y = \"log(mpg)\",\n       title = \"Vorhersage von log-mpg in einem Log-Y-Modell\")\n\n\n\n\n\n\n\nOder so visualisieren:\n\nlibrary(easystats)\n# estimate_expectation(lm1, by = \"hp\") %&gt;% plot()\n\nMöchte man auf der Y-Achse mpg und nicht log(mpg) anzeigen, muss man den Logarithmus wieder “auflösen”, das erreicht man mit der Umkehrfunktion des Logarithmus, das Exponentieren (man “delogarithmiert”):\n\\[\\begin{aligned}\nlog(y) &= x \\qquad | \\text{Y in Log-Form}\\\\\n    exp(log(y)) &= exp(x)  \\qquad | \\text{Jetzt exponenzieren wir beide Seiten}\\\\\n    y = exp(x)\n\\end{aligned}\\]\nDabei gilt \\(exp(x) = e^x\\), mit \\(e\\) als Eulersche Zahl (2.71828…).\n\nmtcars &lt;-\n  mtcars %&gt;% \n  mutate(pred_delog = exp(pred))  # delogarithmieren\n\n\nmtcars %&gt;% \n  ggplot() +\n  aes(x = hp) +\n  geom_line(aes( y = pred_delog), color = \"blue\") +\n  geom_point(aes(y = mpg_log)) +\n  labs(y = \"mpg\",\n       title = \"Vorhersage von mpg in einem Log-Y-Modell\")\n\n\n\n\n\n\n\n\nCategories:\n\nlm\nvis\nqm2\nregression\nstring",
+    "text": "90.2 Lösung\n\n## \n## Call:\n## lm(formula = mpg_log ~ hp, data = mtcars)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -0.41577 -0.06583 -0.01737  0.09827  0.39621 \n## \n## Coefficients:\n##               Estimate Std. Error t value Pr(&gt;|t|)    \n## (Intercept)  3.4604669  0.0785838  44.035  &lt; 2e-16 ***\n## hp          -0.0034287  0.0004867  -7.045 7.85e-08 ***\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 0.1858 on 30 degrees of freedom\n## Multiple R-squared:  0.6233, Adjusted R-squared:  0.6107 \n## F-statistic: 49.63 on 1 and 30 DF,  p-value: 7.853e-08\n\nVisualisieren wir die Vorhersagen des Modells:\n\n\n\n\n\n\n\n\nOder so visualisieren:\nMöchte man auf der Y-Achse mpg und nicht log(mpg) anzeigen, muss man den Logarithmus wieder “auflösen”, das erreicht man mit der Umkehrfunktion des Logarithmus, das Exponentieren (man “delogarithmiert”):\n\\[\\begin{aligned}\nlog(y) &= x \\qquad | \\text{Y in Log-Form}\\\\\n    exp(log(y)) &= exp(x)  \\qquad | \\text{Jetzt exponenzieren wir beide Seiten}\\\\\n    y = exp(x)\n\\end{aligned}\\]\nDabei gilt \\(exp(x) = e^x\\), mit \\(e\\) als Eulersche Zahl (2.71828…).\n\n\n\n\n\n\n\n\n\nCategories:\n\nlm\nvis\nqm2\nregression\nstring",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>90</span>  <span class='chapter-title'>nichtlineare-regr1</span>"
@@ -3017,7 +3017,7 @@
     "href": "exrs/posts/penguins-regr02/penguins-regr02.html#lösung",
     "title": "\n91  penguins-regr02\n",
     "section": "\n91.2 Lösung",
-    "text": "91.2 Lösung\nWir rufen Stan:\n\nlibrary(rstanarm)\nlibrary(easystats)\nlibrary(tidyverse)\nlibrary(palmerpenguins)\ndata(penguins)\nm1 &lt;- stan_glm(body_mass_g ~ bill_length_mm, \n               seed = 42,\n               refresh = 0,\n               data = penguins)\n\n\nplot(rope(m1))\n\n\n\n\n\n\n\nHier ist also keine klare Aussage zur Frage, ob der Effekt vernachlässigbar klein ist oder größer, möglich.\n\nCategories:\n\nlm\nbayes\nrope\nstring",
+    "text": "91.2 Lösung\nWir rufen Stan:\n\n\n\n\n\n\n\n\nHier ist also keine klare Aussage zur Frage, ob der Effekt vernachlässigbar klein ist oder größer, möglich.\n\nCategories:\n\nlm\nbayes\nrope\nstring",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>91</span>  <span class='chapter-title'>penguins-regr02</span>"
@@ -3028,7 +3028,7 @@
     "href": "exrs/posts/regression1/regression1.html",
     "title": "\n92  regression1\n",
     "section": "",
-    "text": "92.1 Aufgabe\nDie folgende Frage bezieht sich auf dieses Ergebnis einer Regressionsanalyse:\n## \n## Call:\n## lm(formula = y ~ x, data = d)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -1.83190 -0.71195 -0.05888  0.67144  2.23509 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)  \n## (Intercept)  0.38265    0.15579   2.456   0.0177 *\n## x           -0.01882    0.15124  -0.124   0.9015  \n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 1.039 on 48 degrees of freedom\n## Multiple R-squared:  0.0003224,  Adjusted R-squared:  -0.0205 \n## F-statistic: 0.01548 on 1 and 48 DF,  p-value: 0.9015\nZusammengefasst sind die Koeffizienten (beta0 und beta1) also:\ncoef(m)\n## (Intercept)           x \n##  0.38264512 -0.01881678\nWelche der folgenden Aussagen ist korrekt?",
+    "text": "92.1 Aufgabe\nDie folgende Frage bezieht sich auf dieses Ergebnis einer Regressionsanalyse:\n## \n## Call:\n## lm(formula = y ~ x, data = d)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -2.87887 -0.60527  0.04293  0.70823  2.08217 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)    \n## (Intercept)  0.08065    0.10357   0.779    0.438    \n## x           -2.07399    0.10731 -19.327   &lt;2e-16 ***\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 0.9546 on 83 degrees of freedom\n## Multiple R-squared:  0.8182, Adjusted R-squared:  0.816 \n## F-statistic: 373.5 on 1 and 83 DF,  p-value: &lt; 2.2e-16\nZusammengefasst sind die Koeffizienten (beta0 und beta1) also:\n## (Intercept)           x \n##   0.0806547  -2.0739903\nWelche der folgenden Aussagen ist korrekt?",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>92</span>  <span class='chapter-title'>regression1</span>"
@@ -3050,7 +3050,7 @@
     "href": "exrs/posts/regression1b/regression1b.html",
     "title": "\n93  regression1b\n",
     "section": "",
-    "text": "93.1 Aufgabe\nDie folgende Frage bezieht sich auf dieses Ergebnis einer Regressionsanalyse:\n## \n## Call:\n## lm(formula = y ~ x, data = d)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -1.05400 -0.37217 -0.00068  0.50250  1.00282 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)\n## (Intercept) -0.09912    0.09062  -1.094    0.281\n## x            0.10901    0.08137   1.340    0.188\n## \n## Residual standard error: 0.5475 on 39 degrees of freedom\n## Multiple R-squared:  0.04399,    Adjusted R-squared:  0.01948 \n## F-statistic: 1.795 on 1 and 39 DF,  p-value: 0.1881\nZusammengefasst sind die Koeffizienten (beta0 und beta1) also:\ncoef(m)\n## (Intercept)           x \n##  -0.0991181   0.1090139\nWelche der folgenden Aussagen ist korrekt?",
+    "text": "93.1 Aufgabe\nDie folgende Frage bezieht sich auf dieses Ergebnis einer Regressionsanalyse:\n## \n## Call:\n## lm(formula = y ~ x, data = d)\n## \n## Residuals:\n##      Min       1Q   Median       3Q      Max \n## -1.04672 -0.34029 -0.06623  0.41762  1.24158 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)    \n## (Intercept) -0.07342    0.07209  -1.018    0.313    \n## x           -0.90255    0.07549 -11.955 3.88e-16 ***\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 0.5142 on 49 degrees of freedom\n## Multiple R-squared:  0.7447, Adjusted R-squared:  0.7395 \n## F-statistic: 142.9 on 1 and 49 DF,  p-value: 3.88e-16\nZusammengefasst sind die Koeffizienten (beta0 und beta1) also:\n## (Intercept)           x \n## -0.07341678 -0.90255070\nWelche der folgenden Aussagen ist korrekt?",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>93</span>  <span class='chapter-title'>regression1b</span>"
@@ -3083,7 +3083,7 @@
     "href": "exrs/posts/regression3/regression3.html#lösung",
     "title": "\n94  Regression3\n",
     "section": "\n94.2 Lösung",
-    "text": "94.2 Lösung\nDer Modellfehler \\(\\epsilon\\) hat den Anteil \\(0.05\\) im Vergleich zur Streuung von \\(y\\).\n\n\n\n\nCategories:\n\ndyn\nregression\nlm\nschoice",
+    "text": "94.2 Lösung\nDer Modellfehler \\(\\epsilon\\) hat den Anteil \\(0.3\\) im Vergleich zur Streuung von \\(y\\).\n\n\n\n\nCategories:\n\ndyn\nregression\nlm\nschoice",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>94</span>  <span class='chapter-title'>Regression3</span>"
@@ -3094,7 +3094,7 @@
     "href": "exrs/posts/regression4/regression4.html",
     "title": "\n95  Regression4\n",
     "section": "",
-    "text": "95.1 Aufgabe\nx_selected &lt;- runif(1, min = xmin, max = xmax) %&gt;% floor()\ng_selected &lt;- sample(x = c(0, 1), size = 1,\n            replace = TRUE,\n            prob = c(anteil_g1, 1-anteil_g1))\nBerechnen Sie \\(\\hat{y}\\) für das unten ausgegeben Modell!\nNutzen Sie dafür folgende Werte:\nget_regression_table(lm_true) %&gt;% \n  kbl(booktabs = T) %&gt;% \n  # kbl(booktabs = T, format = \"latex\") %&gt;%   # needed for PDF output!\n  kable_styling()\n\n\n\nterm\nestimate\nstd_error\nstatistic\np_value\nlower_ci\nupper_ci\n\n\n\nintercept\n-41.565\n1.838\n-22.614\n0\n-45.234\n-37.895\n\n\nx\n9.990\n0.164\n60.995\n0\n9.663\n10.317\n\n\ng\n41.784\n2.322\n17.997\n0\n37.149\n46.420\n\n\nx:g\n9.978\n0.214\n46.559\n0\n9.550\n10.406\nHinweis: Ein Interaktionseffekt der Variablen \\(x\\) und \\(g\\) ist mit x:g gekennzeichnet. Runden Sie zur nächsten ganzen Zahl.",
+    "text": "95.1 Aufgabe\nBerechnen Sie \\(\\hat{y}\\) für das unten ausgegeben Modell!\nNutzen Sie dafür folgende Werte:\nterm\nestimate\nstd_error\nstatistic\np_value\nlower_ci\nupper_ci\n\n\n\nintercept\n37.289\n2.519\n14.805\n0\n32.112\n42.467\n\n\nx\n-10.392\n0.373\n-27.876\n0\n-11.159\n-9.626\n\n\ng\n40.730\n3.610\n11.282\n0\n33.309\n48.150\n\n\nx:g\n-9.868\n0.668\n-14.775\n0\n-11.240\n-8.495\nHinweis: Ein Interaktionseffekt der Variablen \\(x\\) und \\(g\\) ist mit x:g gekennzeichnet. Runden Sie zur nächsten ganzen Zahl.",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>95</span>  <span class='chapter-title'>Regression4</span>"
@@ -3105,7 +3105,7 @@
     "href": "exrs/posts/regression4/regression4.html#aufgabe",
     "title": "\n95  Regression4\n",
     "section": "",
-    "text": "\\(g=0\\)\n\n\\(x=-18\\).",
+    "text": "\\(g=1\\)\n\n\\(x=-10\\).",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>95</span>  <span class='chapter-title'>Regression4</span>"
@@ -3116,7 +3116,7 @@
     "href": "exrs/posts/regression4/regression4.html#lösung",
     "title": "\n95  Regression4\n",
     "section": "\n95.2 Lösung",
-    "text": "95.2 Lösung\n\\(\\hat{y}\\) beträgt im Fall der vorliegenden Parameter und dem vorliegenden Modell \\(-221\\).\n\nCategories:\n\ndyn\nregression\nlm\nnum",
+    "text": "95.2 Lösung\n\\(\\hat{y}\\) beträgt im Fall der vorliegenden Parameter und dem vorliegenden Modell \\(281\\).\n\nCategories:\n\ndyn\nregression\nlm\nnum",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>95</span>  <span class='chapter-title'>Regression4</span>"
@@ -3138,7 +3138,7 @@
     "href": "exrs/posts/regression5/regression5.html#aufgabe",
     "title": "\n96  Regression5\n",
     "section": "",
-    "text": "\\(X_1\\): Geschlecht_Frau (0: nein, 1: ja)\n\n\\(X_2\\): Intelligenz-Testwert (z-Wert)\n\n\\(X_3\\): Motivation-Testwert (z-Wert)\n\n\\(X_4\\): Interaktion von \\(X1\\) und \\(X2\\)\n\n\n\n\n\n\n\\(x_1\\): 1\n\n\\(x_2\\): -0.27\n\n\\(x_3\\): -0.55\n\n\n\n\\(\\beta_0: 60\\)\n\\(\\beta_1: 10\\)\n\\(\\beta_2: 3\\)\n\\(\\beta_3: 20\\)\n\\(\\beta_4: 5\\)",
+    "text": "\\(X_1\\): Geschlecht_Frau (0: nein, 1: ja)\n\n\\(X_2\\): Intelligenz-Testwert (z-Wert)\n\n\\(X_3\\): Alter (z-Wert)\n\n\\(X_4\\): Interaktion von \\(X1\\) und \\(X2\\)\n\n\n\n\n\n\n\\(x_1\\): 0\n\n\\(x_2\\): -1.18\n\n\\(x_3\\): -0.47\n\n\n\n\\(\\beta_0: 60\\)\n\\(\\beta_1: 10\\)\n\\(\\beta_2: 1\\)\n\\(\\beta_3: 20\\)\n\\(\\beta_4: 11\\)",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>96</span>  <span class='chapter-title'>Regression5</span>"
@@ -3149,7 +3149,7 @@
     "href": "exrs/posts/regression5/regression5.html#lösung",
     "title": "\n96  Regression5\n",
     "section": "\n96.2 Lösung",
-    "text": "96.2 Lösung\nDie Antwort lautet 56.84.\n\nCategories:\n\ndyn\nregression\nlm\nnum",
+    "text": "96.2 Lösung\nDie Antwort lautet 49.42.\n\nCategories:\n\ndyn\nregression\nlm\nnum",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>96</span>  <span class='chapter-title'>Regression5</span>"
@@ -3171,7 +3171,7 @@
     "href": "exrs/posts/regression6/regression6.html#aufgabe",
     "title": "\n97  Regression6\n",
     "section": "",
-    "text": "X_1: Geschlecht_Frau (0: nein, 1: ja)\nX_2: Abitur-Durchschnitt (z-Wert)\nX_3: Matheanteil im Studium (z-Wert)\nX_4: Interaktion von X1 und X2\n\n\n\n\nbeta_0: 60\nbeta_1: 30\nbeta_2: 2\nbeta_3: 20\nbeta_4: 3",
+    "text": "X_1: Geschlecht_Frau (0: nein, 1: ja)\nX_2: Letzte Mathenote (z-Wert)\nX_3: Alter (z-Wert)\nX_4: Interaktion von X1 und X2\n\n\n\n\nbeta_0: 30\nbeta_1: 30\nbeta_2: 10\nbeta_3: 10\nbeta_4: 5",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>97</span>  <span class='chapter-title'>Regression6</span>"
@@ -3182,7 +3182,7 @@
     "href": "exrs/posts/regression6/regression6.html#answerlist",
     "title": "\n97  Regression6\n",
     "section": "\n97.2 Answerlist",
-    "text": "97.2 Answerlist\n\nFür einen bestimmten (festen) Wert von X_2= Abitur-Durchschnitt (z-Wert) und X_3= Matheanteil im Studium (z-Wert) gilt, dass das erwartete Gehalt im Mittel höher ist bei X_1=1 im Vergleich zu X_1=0, laut dem Modell.\nFür einen bestimmten (festen) Wert von X_2= Abitur-Durchschnitt (z-Wert) und X_3= Matheanteil im Studium (z-Wert) gilt, dass das erwartete Gehalt im Mittel höher ist bei X_1=0 im Vergleich zu X_1=1, laut dem Modell.\nDer mittlere erwartete Gehaltsunterschied Y zweier Personen a und b, wobei bei Person a gilt X_1=0 und bei Person b gilt X_1=1, beträgt stets 60, laut dem Modell.\nDer mittlere erwartete Gehaltsunterschied Y zweier Personen a und b, wobei bei Person a gilt X_2=0 und bei Person b gilt X_2=1, beträgt stets 60, laut dem Modell.\nDer mittlere erwartete Gehaltsunterschied von Menschen ist eine Wirkung von genau drei Ursachen: Geschlecht_Frau (0: nein, 1: ja), Abitur-Durchschnitt (z-Wert), Matheanteil im Studium (z-Wert), laut dem Modell.",
+    "text": "97.2 Answerlist\n\nFür einen bestimmten (festen) Wert von X_2= Letzte Mathenote (z-Wert) und X_3= Alter (z-Wert) gilt, dass das erwartete Gehalt im Mittel höher ist bei X_1=1 im Vergleich zu X_1=0, laut dem Modell.\nFür einen bestimmten (festen) Wert von X_2= Letzte Mathenote (z-Wert) und X_3= Alter (z-Wert) gilt, dass das erwartete Gehalt im Mittel höher ist bei X_1=0 im Vergleich zu X_1=1, laut dem Modell.\nDer mittlere erwartete Gehaltsunterschied Y zweier Personen a und b, wobei bei Person a gilt X_1=0 und bei Person b gilt X_1=1, beträgt stets 30, laut dem Modell.\nDer mittlere erwartete Gehaltsunterschied Y zweier Personen a und b, wobei bei Person a gilt X_2=0 und bei Person b gilt X_2=1, beträgt stets 30, laut dem Modell.\nDer mittlere erwartete Gehaltsunterschied von Menschen ist eine Wirkung von genau drei Ursachen: Geschlecht_Frau (0: nein, 1: ja), Letzte Mathenote (z-Wert), Alter (z-Wert), laut dem Modell.",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>97</span>  <span class='chapter-title'>Regression6</span>"
@@ -3237,7 +3237,7 @@
     "href": "exrs/posts/ames-kaggle1/ames-kaggle1.html#lösung",
     "title": "\n98  ames-kaggle1\n",
     "section": "\n98.2 Lösung",
-    "text": "98.2 Lösung\n\n98.2.1 Pakete starten\n\nlibrary(tidyverse)\nlibrary(easystats)\n\n\n98.2.2 Daten importieren\n\nd_train_path_online &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/ames-kaggle/train.csv\"\nd_test_path_online &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/ames-kaggle/test.csv\"\nd_train &lt;- read_csv(d_train_path_online)\nd_test &lt;- read_csv(d_test_path_online)\n\n\n98.2.3 Model definieren\n\nm1 &lt;- lm(SalePrice ~ OverallQual, data = d_train)\n\n\n98.2.4 Neue Daten vorhersagen\n\nm1_pred &lt;- predict(m1, newdata = d_test)\n\n\n98.2.5 Daten einreichen\n\nd_subm &lt;-\n  d_test %&gt;% \n  select(Id) %&gt;% \n  mutate(SalePrice = m1_pred)\n\nhead(d_subm)\n\n\n  \n\n\n\n\nwrite_csv(d_subm, file = \"einreichen-kaggle-modell1-yeah.csv\")\n\n\nCategories:\n\nregression\names\nkaggle\nstring",
+    "text": "98.2 Lösung\n\n98.2.1 Pakete starten\n\n98.2.2 Daten importieren\n\n98.2.3 Model definieren\n\n98.2.4 Neue Daten vorhersagen\n\n98.2.5 Daten einreichen\n\n\n\n  \n\n\n\n\nCategories:\n\nregression\names\nkaggle\nstring",
     "crumbs": [
       "Regression 1",
       "<span class='chapter-number'>98</span>  <span class='chapter-title'>ames-kaggle1</span>"
@@ -3281,7 +3281,7 @@
     "href": "exrs/posts/regression1a/regression1a.html",
     "title": "\n100  regression1a\n",
     "section": "",
-    "text": "100.1 Aufgabe\nDie folgende Frage bezieht sich auf dieses Ergebnis einer Regressionsanalyse:\n## \n## Call:\n## lm(formula = y ~ x, data = d)\n## \n## Residuals:\n##    Min     1Q Median     3Q    Max \n## -5.217 -0.966 -0.077  0.956  6.144 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)\n## (Intercept)    0.127      0.264    0.48     0.63\n## x             -0.132      0.246   -0.54     0.59\n## \n## Residual standard error: 2 on 58 degrees of freedom\n## Multiple R-squared:  0.00494,    Adjusted R-squared:  -0.0122 \n## F-statistic: 0.288 on 1 and 58 DF,  p-value: 0.593\nZusammengefasst sind die Koeffizienten (beta0 und beta1) also:\ncoef(m)\n## (Intercept)           x \n##        0.13       -0.13\nWelche der folgenden Aussagen passt am besten?",
+    "text": "100.1 Aufgabe\nDie folgende Frage bezieht sich auf dieses Ergebnis einer Regressionsanalyse:\n## \n## Call:\n## lm(formula = y ~ x, data = d)\n## \n## Residuals:\n##     Min      1Q  Median      3Q     Max \n## -0.8867 -0.3889  0.0384  0.3160  0.9874 \n## \n## Coefficients:\n##             Estimate Std. Error t value Pr(&gt;|t|)   \n## (Intercept)   0.0800     0.0512    1.56    0.122   \n## x            -0.1889     0.0554   -3.41    0.001 **\n## ---\n## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n## \n## Residual standard error: 0.48 on 85 degrees of freedom\n## Multiple R-squared:  0.12,   Adjusted R-squared:  0.11 \n## F-statistic: 11.6 on 1 and 85 DF,  p-value: 0.00101\nZusammengefasst sind die Koeffizienten (beta0 und beta1) also:\n## (Intercept)           x \n##        0.08       -0.19\nWelche der folgenden Aussagen passt am besten?",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>100</span>  <span class='chapter-title'>regression1a</span>"
@@ -3325,7 +3325,7 @@
     "href": "exrs/posts/lm-mario1/lm-mario1.html#lösung",
     "title": "\n101  lm-mario1\n",
     "section": "\n101.2 Lösung",
-    "text": "101.2 Lösung\n\n101.2.1 Setup\n\nmariokart &lt;- read.csv(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nlibrary(tidyverse)\nlibrary(easystats)\n\n\n101.2.2 Bild der Daten\n\nlibrary(ggpubr)  # einmalig vorab installieren, nicht vergessen\n\nggscatter(mariokart, x = \"wheels\", y = \"total_pr\")  # aus ggpubr\n\n\n\n\n\n\n\nOder mit DataExplorer visualisieren:\n\nlibrary(DataExplorer)\n\nplot_scatterplot(mariokart, by = \"total_pr\")  # \"by\" ist Y-Achse\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n101.2.3 Extremwerte entfernen\n\nmariokart2 &lt;- \n  mariokart %&gt;% \n  filter(total_pr &lt; 100)  # alle Spiele teuerer als 100€ entfernen\n\nggscatter(mariokart2, x = \"wheels\", y = \"total_pr\")\n\n\n\n\n\n\n\n\n101.2.4 Regressionsgerade eintragen in das Diagramm\n\nggscatter(mariokart2, \n          x = \"wheels\", \n          y = \"total_pr\",\n          add = \"reg.line\")  # Dieser Schalter malt die Regr.gerade in das Diagramm\n\n\n\n\n\n\n\n\n101.2.5 Regressionsgerade berechnen\n\nlm_mariokart &lt;- lm(total_pr ~ wheels, data = mariokart2)\nlm_mariokart\n## \n## Call:\n## lm(formula = total_pr ~ wheels, data = mariokart2)\n## \n## Coefficients:\n## (Intercept)       wheels  \n##      37.502        8.643\n\n“lm” wie llineares Modell, also eine Gerade.\n\n101.2.6 Vorhersagen\nVorhersagen funktionieren mit dem Befehl predict.\n\nneues_spiel &lt;-\n  data.frame(\n    wheels = 2\n  )\n\nneues_spiel\n\n\n  \n\n\n\n\npredict(lm_mariokart, neues_spiel)  # predicte mir den Verkaufspreis\n##        1 \n## 54.78743\n\n\nCategories:\n\nR\nlm\npredict\nnum",
+    "text": "101.2 Lösung\n\n101.2.1 Setup\n\n101.2.2 Bild der Daten\n\n\n\n\n\n\n\n\nOder mit DataExplorer visualisieren:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n101.2.3 Extremwerte entfernen\n\n\n\n\n\n\n\n\n\n101.2.4 Regressionsgerade eintragen in das Diagramm\n\n\n\n\n\n\n\n\n\n101.2.5 Regressionsgerade berechnen\n\n## \n## Call:\n## lm(formula = total_pr ~ wheels, data = mariokart2)\n## \n## Coefficients:\n## (Intercept)       wheels  \n##      37.502        8.643\n\n“lm” wie llineares Modell, also eine Gerade.\n\n101.2.6 Vorhersagen\nVorhersagen funktionieren mit dem Befehl predict.\n\n\n\n  \n\n\n\n\n##        1 \n## 54.78743\n\n\nCategories:\n\nR\nlm\npredict\nnum",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>101</span>  <span class='chapter-title'>lm-mario1</span>"
@@ -3347,7 +3347,7 @@
     "href": "exrs/posts/lm-mario2/lm-mario2.html#lösung",
     "title": "\n102  lm-mario2\n",
     "section": "\n102.2 Lösung",
-    "text": "102.2 Lösung\n\n102.2.1 Setup\n\nmariokart &lt;- read.csv(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nlibrary(tidyverse)\nlibrary(easystats)\n\n\n102.2.2 Regressionsgerade berechnen\n\nlm_mariokart &lt;- lm(total_pr ~ ship_pr, data = mariokart) # \"lm\" wie *l*lineares *M*odell, also eine Gerade.\nlm_mariokart\n## \n## Call:\n## lm(formula = total_pr ~ ship_pr, data = mariokart)\n## \n## Coefficients:\n## (Intercept)      ship_pr  \n##      36.246        4.337\n\n\n102.2.3 Vorhersagen\nVorhersagen funktionieren mit dem Befehl predict:\n\nneues_spiel &lt;- tibble(ship_pr = 3)  # oder \"data.frame\" statt \"tibble\"\nneues_spiel\n\n\n  \n\n\n\n\npredict(lm_mariokart, neues_spiel)  # predicte mir den Verkaufspreis\n##       1 \n## 49.2572\n\n\nCategories:\n\nR\nlm\npredict\nnum",
+    "text": "102.2 Lösung\n\n102.2.1 Setup\n\n102.2.2 Regressionsgerade berechnen\n\n## \n## Call:\n## lm(formula = total_pr ~ ship_pr, data = mariokart)\n## \n## Coefficients:\n## (Intercept)      ship_pr  \n##      36.246        4.337\n\n\n102.2.3 Vorhersagen\nVorhersagen funktionieren mit dem Befehl predict:\n\n\n\n  \n\n\n\n\n##       1 \n## 49.2572\n\n\nCategories:\n\nR\nlm\npredict\nnum",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>102</span>  <span class='chapter-title'>lm-mario2</span>"
@@ -3369,7 +3369,7 @@
     "href": "exrs/posts/lm-mario3/lm-mario3.html#lösung",
     "title": "\n103  lm-mario3\n",
     "section": "\n103.2 Lösung",
-    "text": "103.2 Lösung\n\n103.2.1 Setup\n\nmariokart &lt;- read.csv(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")\n\nlibrary(tidyverse)\nlibrary(easystats)\n\n\n103.2.2 Regressionsgerade berechnen\n\nlm_mariokart &lt;- lm(total_pr ~ ship_pr, data = mariokart) # \"lm\" wie *l*lineares *M*odell, also eine Gerade.\nlm_mariokart\n## \n## Call:\n## lm(formula = total_pr ~ ship_pr, data = mariokart)\n## \n## Coefficients:\n## (Intercept)      ship_pr  \n##      36.246        4.337\n\n\n103.2.3 Vorhersagen\nVorhersagen funktionieren mit dem Befehl predict.\n\nneue_spiele &lt;- tibble(ship_pr = c(1,2,3))\nneue_spiele\n\n\n  \n\n\n\nAnstelle von tibble können Sie auch data.frame verwenden. Mit c erstellt man einen “Vektor”, also eine “Liste” zusammengehöriger Werte.\n\nvorhersagen &lt;- predict(lm_mariokart, neue_spiele)  # predicte mir den Verkaufspreis\n\nvorhersagen\n##        1        2        3 \n## 40.58276 44.91998 49.25720\n\n\nloesung &lt;- mean(vorhersagen)\nloesung\n## [1] 44.91998\n\nDie Lösung lautet: 44.9199833.\n\nCategories:\n\nR\nlm\npredict\nnum",
+    "text": "103.2 Lösung\n\n103.2.1 Setup\n\n103.2.2 Regressionsgerade berechnen\n\n## \n## Call:\n## lm(formula = total_pr ~ ship_pr, data = mariokart)\n## \n## Coefficients:\n## (Intercept)      ship_pr  \n##      36.246        4.337\n\n\n103.2.3 Vorhersagen\nVorhersagen funktionieren mit dem Befehl predict.\n\n\n\n  \n\n\n\nAnstelle von tibble können Sie auch data.frame verwenden. Mit c erstellt man einen “Vektor”, also eine “Liste” zusammengehöriger Werte.\n\n##        1        2        3 \n## 40.58276 44.91998 49.25720\n\n\n## [1] 44.91998\n\nDie Lösung lautet: 44.9199833.\n\nCategories:\n\nR\nlm\npredict\nnum",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>103</span>  <span class='chapter-title'>lm-mario3</span>"
@@ -3402,7 +3402,7 @@
     "href": "exrs/posts/ausreisser1/ausreisser1.html#lösung",
     "title": "\n104  ausreisser1\n",
     "section": "\n104.2 Lösung",
-    "text": "104.2 Lösung\n\n104.2.1 Setup\n\n104.2.2 Überblick\nWir verschaffen uns einen Überblick über die Verteilungen:\n\nplot_histogram(mariokart)  # aus Paket `DataExplorer`\n\n\n\n\n\n\n\nWie man sieht gibt es einige Ausreißer, z.B. bei ship_pr und total_pr.\n\n104.2.3 Daten aufbereiten mit z-Transformation\n\nmariokart2 &lt;-\n  mariokart %&gt;% \n  select(-id) %&gt;% \n  mutate(across(  # \"across\" wiederholt die Funktionen \".fns\" über alle Spalten \".cols\"\n    .cols = where(is.numeric),\n    .fns = ~ as.numeric(standardize(.x))))\n\nLeider gibt standardize kein vernünftiges numerisches Objekt zurück, so dass wir mit as.numeric die Daten noch zur Räson rufen müssen.\nWie man sieht, ändert sich die Verteilungsform nicht durch die z-Transformation (oder durch irgendeine lineare Transformation):\n\nplot_histogram(mariokart2)\n\n\n\n\n\n\n\n\n104.2.4 Extremwerte durch MW ersetzen\n\nmariokart3 &lt;-\n  mariokart2 %&gt;% \n  mutate(across(\n    .cols = where(is.numeric),\n    .fns = ~ case_when(abs(.x) &lt;= 3 ~ .x,\n                       abs(.x) &gt; 3 ~ mean(.x))\n  ))\n\n\nplot_histogram(mariokart3)\n\n\n\n\n\n\n\nJetzt sind die Daten deutlich weniger extrem.\n\nCategories:\n\neda\ndatawrangling\ntidyverse\nausreisser\nstring",
+    "text": "104.2 Lösung\n\n104.2.1 Setup\n\n104.2.2 Überblick\nWir verschaffen uns einen Überblick über die Verteilungen:\n\n\n\n\n\n\n\n\nWie man sieht gibt es einige Ausreißer, z.B. bei ship_pr und total_pr.\n\n104.2.3 Daten aufbereiten mit z-Transformation\nLeider gibt standardize kein vernünftiges numerisches Objekt zurück, so dass wir mit as.numeric die Daten noch zur Räson rufen müssen.\nWie man sieht, ändert sich die Verteilungsform nicht durch die z-Transformation (oder durch irgendeine lineare Transformation):\n\n\n\n\n\n\n\n\n\n104.2.4 Extremwerte durch MW ersetzen\n\n\n\n\n\n\n\n\nJetzt sind die Daten deutlich weniger extrem.\n\nCategories:\n\neda\ndatawrangling\ntidyverse\nausreisser\nstring",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>104</span>  <span class='chapter-title'>ausreisser1</span>"
@@ -3413,7 +3413,7 @@
     "href": "exrs/posts/mario-compare-models/index.html",
     "title": "\n105  mario-compare-models\n",
     "section": "",
-    "text": "105.1 Aufgabe\nVariieren Sie das folgende Modell mit einer bzw. beiden UV bzw. mit Interaktionseffekt. Welches Modell ist am besten?\nlm_mario_2uv &lt;- lm(total_pr ~ start_pr + ship_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))\nHinweise:\nDen Datensatz können Sie hier beziehen:\nmariokart &lt;- read.csv(\"https://vincentarelbundock.github.io/Rdatasets/csv/openintro/mariokart.csv\")",
+    "text": "105.1 Aufgabe\nVariieren Sie das folgende Modell mit einer bzw. beiden UV bzw. mit Interaktionseffekt. Welches Modell ist am besten?\nlm_mario_2uv &lt;- lm(total_pr ~ start_pr + ship_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))\nHinweise:\nDen Datensatz können Sie hier beziehen:",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>105</span>  <span class='chapter-title'>mario-compare-models</span>"
@@ -3435,7 +3435,7 @@
     "href": "exrs/posts/mario-compare-models/index.html#lösung",
     "title": "\n105  mario-compare-models\n",
     "section": "\n105.2 Lösung",
-    "text": "105.2 Lösung\n\nlibrary(easystats)\nlibrary(tidyverse)\n\nModelle berechnen:\n\nlibrary(easystats)\n\n# Modell a\nlm_mario_2uv &lt;- lm(total_pr ~ start_pr + ship_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))\n\n# Modell b\nlm_mario_start_pr &lt;- lm(total_pr ~ start_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))\n\n# Modell c\nlm_mario_ship_pr &lt;- lm(total_pr ~  ship_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))\n\n# Modell d\nlm_mario_2uv_interaktion &lt;- lm(total_pr ~ start_pr + ship_pr + start_pr:ship_pr, data = mariokart %&gt;% filter(total_pr &lt; 100))\n\nModellgüten ausgeben lassen:\n\nr2(lm_mario_2uv)\nr2(lm_mario_start_pr)\nr2(lm_mario_ship_pr)\nr2(lm_mario_2uv_interaktion)\n## # R2 for Linear Regression\n##        R2: 0.107\n##   adj. R2: 0.094\n## # R2 for Linear Regression\n##        R2: 0.107\n##   adj. R2: 0.101\n## # R2 for Linear Regression\n##        R2: 0.000\n##   adj. R2: -0.007\n## # R2 for Linear Regression\n##        R2: 0.108\n##   adj. R2: 0.088",
+    "text": "105.2 Lösung\nModelle berechnen:\nModellgüten ausgeben lassen:\n\n## # R2 for Linear Regression\n##        R2: 0.107\n##   adj. R2: 0.094\n## # R2 for Linear Regression\n##        R2: 0.107\n##   adj. R2: 0.101\n## # R2 for Linear Regression\n##        R2: 0.000\n##   adj. R2: -0.007\n## # R2 for Linear Regression\n##        R2: 0.108\n##   adj. R2: 0.088",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>105</span>  <span class='chapter-title'>mario-compare-models</span>"
@@ -3446,7 +3446,7 @@
     "href": "exrs/posts/mario-compare-models/index.html#bonus",
     "title": "\n105  mario-compare-models\n",
     "section": "\n105.3 BONUS",
-    "text": "105.3 BONUS\nVisualisieren Sie das Streudiagramm!\n\nlibrary(DataExplorer)\n\nmariokart |&gt; \n  select(total_pr, ship_pr) |&gt; \n  filter(total_pr &lt; 100) |&gt; \n  plot_scatterplot( \"total_pr\")\n\n\n\n\n\n\n\n\nlibrary(ggpubr)\n\nggscatter(mariokart |&gt; filter(total_pr &lt; 100),\n          x = \"ship_pr\",\n          y = \"total_pr\",\n          add = \"reg.line\")",
+    "text": "105.3 BONUS\nVisualisieren Sie das Streudiagramm!",
     "crumbs": [
       "Regression 2",
       "<span class='chapter-number'>105</span>  <span class='chapter-title'>mario-compare-models</span>"

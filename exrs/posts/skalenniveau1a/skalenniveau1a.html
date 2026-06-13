@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta charset="UTF-8">
+<meta name="generator" content="quarto-1.9.37">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="keywords" content="Aufgaben, Statistik, Prognose, Modellierung, R, Datenanalyse, Regression">
 <meta name="description" content="Aufgaben zur Einführung in die Statistik mit einem Schwerpunkt auf Prognose-Modellierung">
 <title>5&nbsp; Skalenniveau1a – Aufgabensammlung - Statistik1</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -18,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -68,19 +35,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../img/statistik1_icon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-56eda4583107212d29f4466ddc7a5529.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e8fcd5ffe478d53ee79b2cefb23d4866.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-56eda4583107212d29f4466ddc7a5529.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-613b3621c13d6e1168d5fe52bd912707.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -1061,6 +1027,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="quarto-category">dyn</div>
     <div class="quarto-category">variable-levels</div>
     <div class="quarto-category">schoice</div>
+    <div class="quarto-category">paper</div>
   </div>
   </div>
 
@@ -1089,49 +1056,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header><section id="aufgabe" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="aufgabe">
 <span class="header-section-number">5.1</span> Aufgabe</h2>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_raw</span> <span class="op">&lt;-</span> </span>
-<span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span><span class="op">(</span></span>
-<span>                                                                                <span class="op">~</span><span class="va">Variable</span>,     <span class="op">~</span><span class="va">Skalenniveau</span>, <span class="op">~</span><span class="va">Nominalniveau</span>, <span class="op">~</span><span class="va">Ordinalniveau</span>, <span class="op">~</span><span class="va">Intervallniveau</span>, <span class="op">~</span><span class="va">Verhältnisniveau</span>, <span class="op">~</span><span class="va">stetig</span>, <span class="op">~</span><span class="va">diskret</span>,</span>
-<span>                                                                  <span class="st">"Temperatur in Celcius"</span>,  <span class="st">"Intervallskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">1L</span>,                <span class="fl">0L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                   <span class="st">"Temperatur in Kelvin"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                               <span class="st">"Temperatur in Fahrenheit"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">1L</span>,                <span class="fl">0L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                                  <span class="st">"Alter"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                             <span class="st">"Schuhgröße"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                   <span class="st">"Gewicht einer Person"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                   <span class="st">"Gewicht eines Tieres"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                   <span class="st">"Gewicht eines Buches"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                 <span class="st">"Gewicht einer Maschine"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                    <span class="st">"Anzahl Geschwister in einer Familie"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">0L</span>,       <span class="fl">1L</span>,</span>
-<span>                                                         <span class="st">"Anzahl Kinder in einer Familie"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">0L</span>,       <span class="fl">1L</span>,</span>
-<span>                                <span class="st">"Ranking von Hochschulen (1. Platz XYZ, 2. Platz ABC, …)"</span>,    <span class="st">"Ordinalskala"</span>,             <span class="fl">0L</span>,             <span class="fl">1L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                                     <span class="st">"IQ"</span>,  <span class="st">"Intervallskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">1L</span>,                <span class="fl">0L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                             <span class="st">"Augenfarbe"</span>,    <span class="st">"Nominalskala"</span>,             <span class="fl">1L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                              <span class="st">"Haarfarbe"</span>,    <span class="st">"Nominalskala"</span>,             <span class="fl">1L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                              <span class="st">"Präferenz für eine Partei"</span>,    <span class="st">"Nominalskala"</span>,             <span class="fl">1L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                    <span class="st">"Beliebtester Politiker einer Person"</span>,    <span class="st">"Nominalskala"</span>,             <span class="fl">1L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                     <span class="st">"Umsatz einer Firma"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                     <span class="st">"Gewinn einer Firma"</span>, <span class="st">"Verhältnisskala"</span>,             <span class="fl">0L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">1L</span>,      <span class="fl">1L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                             <span class="st">"Geschlecht"</span>,    <span class="st">"Nominalskala"</span>,             <span class="fl">1L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                                                           <span class="st">"Nationalität"</span>,    <span class="st">"Nominalskala"</span>,             <span class="fl">1L</span>,             <span class="fl">0L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>                                            <span class="st">"Rangfolge der Lieblingsspeisen einer Person"</span>,    <span class="st">"Ordinalskala"</span>,             <span class="fl">0L</span>,             <span class="fl">1L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span>,</span>
-<span>  <span class="st">"Ergebnis bei Talent-Show (1. Platz Mr. Cool, 2. Platz Mr. Bright, 3. Platz Mr. Right)"</span>,    <span class="st">"Ordinalskala"</span>,             <span class="fl">0L</span>,             <span class="fl">1L</span>,               <span class="fl">0L</span>,                <span class="fl">0L</span>,      <span class="fl">0L</span>,       <span class="fl">0L</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Add "metric level":</span></span>
-<span><span class="va">d</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">d_raw</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>metrisch <span class="op">=</span></span>
-<span>           <span class="fu">case_when</span><span class="op">(</span><span class="va">Skalenniveau</span> <span class="op">==</span> <span class="st">"Intervallskala"</span> <span class="op">|</span> <span class="va">Skalenniveau</span> <span class="op">==</span> <span class="st">"Verhältnisskala"</span> <span class="op">~</span> <span class="fl">1</span>,</span>
-<span>                     <span class="cn">TRUE</span> <span class="op">~</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_sol</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="va">d</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">sample_n</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Verfügt die Variable <em>Geschlecht</em> über ein metrisches Skalenniveau?</p>
+<p>Verfügt die Variable <em>Gewicht einer Maschine</em> über ein metrisches Skalenniveau?</p>
 </section><section id="answerlist" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="answerlist">
 <span class="header-section-number">5.2</span> Answerlist</h2>
 <ul>
@@ -1141,36 +1066,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>         </p>
 </section><section id="lösung" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="lösung">
 <span class="header-section-number">5.3</span> Lösung</h2>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="va">d_sol</span><span class="op">$</span><span class="va">metrisch</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">{</span></span>
-<span>  <span class="va">sol</span> <span class="op">&lt;-</span> <span class="st">"ja"</span></span>
-<span>  <span class="va">sol_str</span> <span class="op">&lt;-</span> <span class="st">"01"</span></span>
-<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
-<span>    <span class="va">sol</span> <span class="op">&lt;-</span> <span class="st">"nein"</span></span>
-<span>    <span class="va">sol_str</span> <span class="op">&lt;-</span> <span class="st">"10"</span></span>
-<span><span class="op">}</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <p>Hier ist ein Überblick über die Skalenniveau-Information der ausgewählten Variablen:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">d_sol</span> <span class="op">%&gt;%</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/gt.html">gt</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="ouarfyxzsl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ouarfyxzsl table {
+<div id="hzjsetnifh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#hzjsetnifh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ouarfyxzsl thead, #ouarfyxzsl tbody, #ouarfyxzsl tfoot, #ouarfyxzsl tr, #ouarfyxzsl td, #ouarfyxzsl th {
+#hzjsetnifh thead, #hzjsetnifh tbody, #hzjsetnifh tfoot, #hzjsetnifh tr, #hzjsetnifh td, #hzjsetnifh th {
   border-style: none;
 }
 
-#ouarfyxzsl p {
+#hzjsetnifh p {
   margin: 0;
   padding: 0;
 }
 
-#ouarfyxzsl .gt_table {
+#hzjsetnifh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1196,12 +1111,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_caption {
+#hzjsetnifh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ouarfyxzsl .gt_title {
+#hzjsetnifh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1213,7 +1128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ouarfyxzsl .gt_subtitle {
+#hzjsetnifh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1225,7 +1140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ouarfyxzsl .gt_heading {
+#hzjsetnifh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1237,13 +1152,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_bottom_border {
+#hzjsetnifh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_col_headings {
+#hzjsetnifh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1258,7 +1173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_col_heading {
+#hzjsetnifh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1278,7 +1193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ouarfyxzsl .gt_column_spanner_outer {
+#hzjsetnifh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1290,15 +1205,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ouarfyxzsl .gt_column_spanner_outer:first-child {
+#hzjsetnifh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ouarfyxzsl .gt_column_spanner_outer:last-child {
+#hzjsetnifh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ouarfyxzsl .gt_column_spanner {
+#hzjsetnifh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1310,11 +1225,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ouarfyxzsl .gt_spanner_row {
+#hzjsetnifh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ouarfyxzsl .gt_group_heading {
+#hzjsetnifh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1340,7 +1255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ouarfyxzsl .gt_empty_group_heading {
+#hzjsetnifh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1355,15 +1270,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ouarfyxzsl .gt_from_md > :first-child {
+#hzjsetnifh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ouarfyxzsl .gt_from_md > :last-child {
+#hzjsetnifh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ouarfyxzsl .gt_row {
+#hzjsetnifh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1382,7 +1297,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ouarfyxzsl .gt_stub {
+#hzjsetnifh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1395,7 +1310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ouarfyxzsl .gt_stub_row_group {
+#hzjsetnifh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1409,15 +1324,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ouarfyxzsl .gt_row_group_first td {
+#hzjsetnifh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ouarfyxzsl .gt_row_group_first th {
+#hzjsetnifh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ouarfyxzsl .gt_summary_row {
+#hzjsetnifh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1427,16 +1342,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ouarfyxzsl .gt_first_summary_row {
+#hzjsetnifh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_first_summary_row.thick {
+#hzjsetnifh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ouarfyxzsl .gt_last_summary_row {
+#hzjsetnifh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1446,7 +1361,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_grand_summary_row {
+#hzjsetnifh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1456,7 +1371,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ouarfyxzsl .gt_first_grand_summary_row {
+#hzjsetnifh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1466,7 +1381,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_last_grand_summary_row_top {
+#hzjsetnifh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1476,11 +1391,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_striped {
+#hzjsetnifh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ouarfyxzsl .gt_table_body {
+#hzjsetnifh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1489,7 +1404,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_footnotes {
+#hzjsetnifh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1503,7 +1418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_footnote {
+#hzjsetnifh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1512,7 +1427,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ouarfyxzsl .gt_sourcenotes {
+#hzjsetnifh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1526,7 +1441,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ouarfyxzsl .gt_sourcenote {
+#hzjsetnifh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1534,72 +1449,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ouarfyxzsl .gt_left {
+#hzjsetnifh .gt_left {
   text-align: left;
 }
 
-#ouarfyxzsl .gt_center {
+#hzjsetnifh .gt_center {
   text-align: center;
 }
 
-#ouarfyxzsl .gt_right {
+#hzjsetnifh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ouarfyxzsl .gt_font_normal {
+#hzjsetnifh .gt_font_normal {
   font-weight: normal;
 }
 
-#ouarfyxzsl .gt_font_bold {
+#hzjsetnifh .gt_font_bold {
   font-weight: bold;
 }
 
-#ouarfyxzsl .gt_font_italic {
+#hzjsetnifh .gt_font_italic {
   font-style: italic;
 }
 
-#ouarfyxzsl .gt_super {
+#hzjsetnifh .gt_super {
   font-size: 65%;
 }
 
-#ouarfyxzsl .gt_footnote_marks {
+#hzjsetnifh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ouarfyxzsl .gt_asterisk {
+#hzjsetnifh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ouarfyxzsl .gt_indent_1 {
+#hzjsetnifh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ouarfyxzsl .gt_indent_2 {
+#hzjsetnifh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ouarfyxzsl .gt_indent_3 {
+#hzjsetnifh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ouarfyxzsl .gt_indent_4 {
+#hzjsetnifh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ouarfyxzsl .gt_indent_5 {
+#hzjsetnifh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ouarfyxzsl .katex-display {
+#hzjsetnifh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ouarfyxzsl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#hzjsetnifh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1616,21 +1531,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <th id="metrisch" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">metrisch</th>
 </tr></thead>
 <tbody class="gt_table_body"><tr class="odd">
-<td class="gt_row gt_left" headers="Variable">Geschlecht</td>
-<td class="gt_row gt_left" headers="Skalenniveau">Nominalskala</td>
-<td class="gt_row gt_right" headers="Nominalniveau">1</td>
+<td class="gt_row gt_left" headers="Variable">Gewicht einer Maschine</td>
+<td class="gt_row gt_left" headers="Skalenniveau">Verhältnisskala</td>
+<td class="gt_row gt_right" headers="Nominalniveau">0</td>
 <td class="gt_row gt_right" headers="Ordinalniveau">0</td>
 <td class="gt_row gt_right" headers="Intervallniveau">0</td>
-<td class="gt_row gt_right" headers="Verhältnisniveau">0</td>
-<td class="gt_row gt_right" headers="stetig">0</td>
+<td class="gt_row gt_right" headers="Verhältnisniveau">1</td>
+<td class="gt_row gt_right" headers="stetig">1</td>
 <td class="gt_row gt_right" headers="diskret">0</td>
-<td class="gt_row gt_right" headers="metrisch">0</td>
+<td class="gt_row gt_right" headers="metrisch">1</td>
 </tr></tbody>
 </table>
 </div>
 </div>
 </div>
-<p>Die richtige Antwort lautet: <strong>nein</strong>.</p>
+<p>Die richtige Antwort lautet: <strong>ja</strong>.</p>
 <hr>
 <p>Categories:</p>
 <ul>

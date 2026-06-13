@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta charset="UTF-8">
+<meta name="generator" content="quarto-1.9.37">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="keywords" content="Aufgaben, Statistik, Prognose, Modellierung, R, Datenanalyse, Regression">
 <meta name="description" content="Aufgaben zur Einführung in die Statistik mit einem Schwerpunkt auf Prognose-Modellierung">
 <title>4&nbsp; tidy1 – Aufgabensammlung - Statistik1</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -18,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -68,19 +35,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../img/statistik1_icon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-56eda4583107212d29f4466ddc7a5529.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-e8fcd5ffe478d53ee79b2cefb23d4866.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-56eda4583107212d29f4466ddc7a5529.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-613b3621c13d6e1168d5fe52bd912707.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -1060,6 +1026,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="quarto-category">tidy</div>
     <div class="quarto-category">datawrangling</div>
     <div class="quarto-category">schoice</div>
+    <div class="quarto-category">paper</div>
   </div>
   </div>
 
@@ -1096,253 +1063,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Alle Variablen sollen keine fehlenden Werte aufweisen, also komplett sein.</li>
 <li>Alle Variablen sollen numerisch sein.</li>
 </ul>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># prepare some helper constants:</span></span>
-<span><span class="va">rows_n</span> <span class="op">&lt;-</span> <span class="fl">4</span></span>
-<span><span class="va">group_n</span> <span class="op">&lt;-</span> <span class="fl">2</span></span>
-<span><span class="va">constant_factor</span> <span class="op">&lt;-</span> <span class="fl">10</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">tidy_df</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="fu">tibble</span><span class="op">(</span></span>
-<span>    group <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="va">group_n</span><span class="op">)</span>, times <span class="op">=</span> <span class="va">rows_n</span><span class="op">/</span><span class="va">group_n</span><span class="op">)</span>,</span>
-<span>    y <span class="op">=</span> <span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="va">rows_n</span><span class="op">)</span><span class="op">*</span><span class="va">constant_factor</span></span>
-<span>  <span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>id1 <span class="op">=</span> <span class="fu">row_number</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">group</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>id2 <span class="op">=</span> <span class="fu">row_number</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">ungroup</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># more helper constants:</span></span>
-<span><span class="va">cols_n</span> <span class="op">&lt;-</span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">tidy_df</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">col_random</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="va">cols_n</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">row_random</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">tidy_df</span><span class="op">)</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">col_names</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">tidy_df</span><span class="op">)</span></span>
-<span><span class="va">col_names_random</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">col_names</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">col_names_random_position</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">tidy_df</span><span class="op">)</span> <span class="op">==</span> <span class="va">col_names_random</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"tidy"</span>,</span>
-<span>                         data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">tidy_df</span><span class="op">)</span>,</span>
-<span>                         explanation <span class="op">=</span> <span class="st">"Das ist ein 'tidy Tibble'."</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df1</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">group</span>,</span>
-<span>              values_from <span class="op">=</span> <span class="va">y</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df1</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df1</span><span class="op">)</span>, </span>
-<span>                   explanation <span class="op">=</span> <span class="st">"Ein Tibble im breiten Format. Die Spalten `1` und `2` sind eigentlich eine Variable."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">empty_row_df</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="co"># mutate(across(everything(),</span></span>
-<span>  <span class="co">#               as.numeric)) %&gt;% </span></span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="fu">row_number</span><span class="op">(</span><span class="op">)</span> <span class="op">==</span> <span class="fl">1</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="fu">across</span><span class="op">(</span><span class="fu">everything</span><span class="op">(</span><span class="op">)</span>,</span>
-<span>                <span class="op">~</span> <span class="fu">assign_in</span><span class="op">(</span><span class="va">.x</span>, where <span class="op">=</span> <span class="fl">1</span>, value <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">col_chosen</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="va">cols_n</span>, <span class="fl">1</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">empty_col_df</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="fu">all_of</span><span class="op">(</span><span class="va">col_chosen</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">empty_col_df</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="cn">NA</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">empty_col_noname_df</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>` ` <span class="op">=</span> <span class="cn">NA</span> <span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">select</span><span class="op">(</span><span class="fu">last_col</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df2</span> <span class="op">&lt;-</span> </span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="va">empty_row_df</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">sample_n</span><span class="op">(</span>size <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df2</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df2</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"In einem Tidy-Tibble darf keine leere Zeile vorkommen."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df3</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_cols</span><span class="op">(</span><span class="va">empty_col_noname_df</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">relocate</span><span class="op">(</span><span class="fu">last_col</span><span class="op">(</span><span class="op">)</span>, .after <span class="op">=</span> <span class="va">col_random</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df3</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df3</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"In einem Tidy-Tibble darf keine leere Spalte vorkommen."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df4</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span> <span class="op">:=</span> <span class="cn">NA</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df4</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df4</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"In einem Tidy-Tibble darf keine Spalte nur aus `NA` bestehen."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df5</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span> <span class="op">:=</span> <span class="va">LETTERS</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df5</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df5</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"Alle Werte sollen numerisch sein"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df6</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span> <span class="op">:=</span> <span class="fl">1</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df6</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df6</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"Variablen sollen nicht konstant sein."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df7</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span> <span class="op">:=</span> <span class="fu">na_if</span><span class="op">(</span><span class="va">id1</span>, <span class="va">row_random</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df7</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df7</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"Fehlende Werte sind nicht erlaubt"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df8</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span> <span class="op">:=</span> <span class="st">"1,2"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df8</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df8</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"In einer Zelle darf nur ein (numerischer) Wert stehen."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df9</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="fu">across</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span>,</span>
-<span>                   .fns <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df9</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df9</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="st">"Eine Spalte soll nicht aus einem uniquen Wert bestehen."</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_df10</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tidy_df</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span> <span class="op">:=</span> <span class="fu"><a href="https://rdrr.io/r/base/character.html">as.character</a></span><span class="op">(</span><span class="op">!</span><span class="op">!</span><span class="va">col_names_random</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">untidy_df10</span><span class="op">[</span><span class="va">row_random</span>, <span class="va">col_names_random_position</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"1,2"</span></span>
-<span></span>
-<span><span class="va">untidy_tibbles</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">untidy_tibbles</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/base/append.html">append</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df10</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_listdf</span> <span class="op">&lt;-</span> </span>
-<span><span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">bind_rows</span><span class="op">(</span><span class="fu">tibble</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"untidy"</span>, data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">untidy_df10</span><span class="op">)</span>,</span>
-<span>                   explanation <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"Die Spalte "</span>, <span class="va">col_names_random</span>, </span>
-<span>                                        <span class="st">"weißt einen nicht erlaubten Wert auf."</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">untidy_tibbles_chosen_nr</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span><span class="fl">2</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">tibbles_listdf</span><span class="op">)</span>, size <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="va">tibbles_chosen</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">tibbles_listdf</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>id <span class="op">=</span> <span class="fu">row_number</span><span class="op">(</span><span class="op">)</span>, .before <span class="op">=</span> <span class="va">type</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">id</span> <span class="op">==</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">id</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="va">untidy_tibbles_chosen_nr</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">sample_n</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">5</span><span class="op">)</span> <span class="op">%&gt;%</span>  <span class="co"># Reihenfolge permutieren</span></span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>id2 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"Tabelle "</span>, <span class="va">LETTERS</span><span class="op">[</span><span class="fu">row_number</span><span class="op">(</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">mutate</span><span class="op">(</span>is_correct <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="va">type</span> <span class="op">==</span> <span class="st">"tidy"</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <p>Tabelle A:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gt</span><span class="op">(</span><span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">data</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">tab_header</span><span class="op">(</span>title <span class="op">=</span> <span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">id2</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="bidaiiiumi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bidaiiiumi table {
+<div id="jytxzbbhsz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jytxzbbhsz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bidaiiiumi thead, #bidaiiiumi tbody, #bidaiiiumi tfoot, #bidaiiiumi tr, #bidaiiiumi td, #bidaiiiumi th {
+#jytxzbbhsz thead, #jytxzbbhsz tbody, #jytxzbbhsz tfoot, #jytxzbbhsz tr, #jytxzbbhsz td, #jytxzbbhsz th {
   border-style: none;
 }
 
-#bidaiiiumi p {
+#jytxzbbhsz p {
   margin: 0;
   padding: 0;
 }
 
-#bidaiiiumi .gt_table {
+#jytxzbbhsz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1368,12 +1108,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_caption {
+#jytxzbbhsz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bidaiiiumi .gt_title {
+#jytxzbbhsz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1385,7 +1125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#bidaiiiumi .gt_subtitle {
+#jytxzbbhsz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1397,7 +1137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#bidaiiiumi .gt_heading {
+#jytxzbbhsz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1409,13 +1149,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_bottom_border {
+#jytxzbbhsz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_col_headings {
+#jytxzbbhsz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1430,7 +1170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_col_heading {
+#jytxzbbhsz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1450,7 +1190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#bidaiiiumi .gt_column_spanner_outer {
+#jytxzbbhsz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1462,15 +1202,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#bidaiiiumi .gt_column_spanner_outer:first-child {
+#jytxzbbhsz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bidaiiiumi .gt_column_spanner_outer:last-child {
+#jytxzbbhsz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bidaiiiumi .gt_column_spanner {
+#jytxzbbhsz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1482,11 +1222,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#bidaiiiumi .gt_spanner_row {
+#jytxzbbhsz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bidaiiiumi .gt_group_heading {
+#jytxzbbhsz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1512,7 +1252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#bidaiiiumi .gt_empty_group_heading {
+#jytxzbbhsz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1527,15 +1267,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#bidaiiiumi .gt_from_md > :first-child {
+#jytxzbbhsz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bidaiiiumi .gt_from_md > :last-child {
+#jytxzbbhsz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bidaiiiumi .gt_row {
+#jytxzbbhsz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1554,7 +1294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#bidaiiiumi .gt_stub {
+#jytxzbbhsz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1567,7 +1307,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bidaiiiumi .gt_stub_row_group {
+#jytxzbbhsz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1581,15 +1321,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#bidaiiiumi .gt_row_group_first td {
+#jytxzbbhsz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bidaiiiumi .gt_row_group_first th {
+#jytxzbbhsz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bidaiiiumi .gt_summary_row {
+#jytxzbbhsz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1599,16 +1339,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bidaiiiumi .gt_first_summary_row {
+#jytxzbbhsz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_first_summary_row.thick {
+#jytxzbbhsz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bidaiiiumi .gt_last_summary_row {
+#jytxzbbhsz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1618,7 +1358,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_grand_summary_row {
+#jytxzbbhsz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1628,7 +1368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bidaiiiumi .gt_first_grand_summary_row {
+#jytxzbbhsz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1638,7 +1378,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_last_grand_summary_row_top {
+#jytxzbbhsz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1648,11 +1388,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_striped {
+#jytxzbbhsz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bidaiiiumi .gt_table_body {
+#jytxzbbhsz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1661,7 +1401,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_footnotes {
+#jytxzbbhsz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1675,7 +1415,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_footnote {
+#jytxzbbhsz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1684,7 +1424,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bidaiiiumi .gt_sourcenotes {
+#jytxzbbhsz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1698,7 +1438,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#bidaiiiumi .gt_sourcenote {
+#jytxzbbhsz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1706,72 +1446,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#bidaiiiumi .gt_left {
+#jytxzbbhsz .gt_left {
   text-align: left;
 }
 
-#bidaiiiumi .gt_center {
+#jytxzbbhsz .gt_center {
   text-align: center;
 }
 
-#bidaiiiumi .gt_right {
+#jytxzbbhsz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bidaiiiumi .gt_font_normal {
+#jytxzbbhsz .gt_font_normal {
   font-weight: normal;
 }
 
-#bidaiiiumi .gt_font_bold {
+#jytxzbbhsz .gt_font_bold {
   font-weight: bold;
 }
 
-#bidaiiiumi .gt_font_italic {
+#jytxzbbhsz .gt_font_italic {
   font-style: italic;
 }
 
-#bidaiiiumi .gt_super {
+#jytxzbbhsz .gt_super {
   font-size: 65%;
 }
 
-#bidaiiiumi .gt_footnote_marks {
+#jytxzbbhsz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bidaiiiumi .gt_asterisk {
+#jytxzbbhsz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bidaiiiumi .gt_indent_1 {
+#jytxzbbhsz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bidaiiiumi .gt_indent_2 {
+#jytxzbbhsz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bidaiiiumi .gt_indent_3 {
+#jytxzbbhsz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bidaiiiumi .gt_indent_4 {
+#jytxzbbhsz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bidaiiiumi .gt_indent_5 {
+#jytxzbbhsz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#bidaiiiumi .katex-display {
+#jytxzbbhsz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#bidaiiiumi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jytxzbbhsz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1790,25 +1530,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_right" headers="y">1</td>
+<td class="gt_row gt_right" headers="y">10</td>
 <td class="gt_row gt_right" headers="id1">1</td>
 <td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_right" headers="y">1</td>
+<td class="gt_row gt_right" headers="y">20</td>
 <td class="gt_row gt_right" headers="id1">2</td>
 <td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_right" headers="y">1</td>
+<td class="gt_row gt_right" headers="y">30</td>
 <td class="gt_row gt_right" headers="id1">3</td>
 <td class="gt_row gt_right" headers="id2">2</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_right" headers="y">1</td>
+<td class="gt_row gt_right" headers="y">40</td>
 <td class="gt_row gt_right" headers="id1">4</td>
 <td class="gt_row gt_right" headers="id2">2</td>
 </tr>
@@ -1819,25 +1559,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Tabelle B:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gt</span><span class="op">(</span><span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">data</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">tab_header</span><span class="op">(</span>title <span class="op">=</span> <span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">id2</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="hvawmnhdye" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hvawmnhdye table {
+<div id="njyqayxibh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#njyqayxibh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hvawmnhdye thead, #hvawmnhdye tbody, #hvawmnhdye tfoot, #hvawmnhdye tr, #hvawmnhdye td, #hvawmnhdye th {
+#njyqayxibh thead, #njyqayxibh tbody, #njyqayxibh tfoot, #njyqayxibh tr, #njyqayxibh td, #njyqayxibh th {
   border-style: none;
 }
 
-#hvawmnhdye p {
+#njyqayxibh p {
   margin: 0;
   padding: 0;
 }
 
-#hvawmnhdye .gt_table {
+#njyqayxibh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1863,12 +1602,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_caption {
+#njyqayxibh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hvawmnhdye .gt_title {
+#njyqayxibh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1880,7 +1619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#hvawmnhdye .gt_subtitle {
+#njyqayxibh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1892,7 +1631,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#hvawmnhdye .gt_heading {
+#njyqayxibh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1904,13 +1643,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_bottom_border {
+#njyqayxibh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_col_headings {
+#njyqayxibh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1925,7 +1664,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_col_heading {
+#njyqayxibh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1945,7 +1684,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#hvawmnhdye .gt_column_spanner_outer {
+#njyqayxibh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1957,15 +1696,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#hvawmnhdye .gt_column_spanner_outer:first-child {
+#njyqayxibh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hvawmnhdye .gt_column_spanner_outer:last-child {
+#njyqayxibh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hvawmnhdye .gt_column_spanner {
+#njyqayxibh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1977,11 +1716,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#hvawmnhdye .gt_spanner_row {
+#njyqayxibh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hvawmnhdye .gt_group_heading {
+#njyqayxibh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2007,7 +1746,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#hvawmnhdye .gt_empty_group_heading {
+#njyqayxibh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2022,15 +1761,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#hvawmnhdye .gt_from_md > :first-child {
+#njyqayxibh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hvawmnhdye .gt_from_md > :last-child {
+#njyqayxibh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hvawmnhdye .gt_row {
+#njyqayxibh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2049,7 +1788,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#hvawmnhdye .gt_stub {
+#njyqayxibh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2062,7 +1801,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hvawmnhdye .gt_stub_row_group {
+#njyqayxibh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2076,15 +1815,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#hvawmnhdye .gt_row_group_first td {
+#njyqayxibh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hvawmnhdye .gt_row_group_first th {
+#njyqayxibh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hvawmnhdye .gt_summary_row {
+#njyqayxibh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2094,16 +1833,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hvawmnhdye .gt_first_summary_row {
+#njyqayxibh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_first_summary_row.thick {
+#njyqayxibh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hvawmnhdye .gt_last_summary_row {
+#njyqayxibh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2113,7 +1852,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_grand_summary_row {
+#njyqayxibh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2123,7 +1862,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hvawmnhdye .gt_first_grand_summary_row {
+#njyqayxibh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2133,7 +1872,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_last_grand_summary_row_top {
+#njyqayxibh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2143,11 +1882,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_striped {
+#njyqayxibh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hvawmnhdye .gt_table_body {
+#njyqayxibh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2156,7 +1895,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_footnotes {
+#njyqayxibh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2170,7 +1909,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_footnote {
+#njyqayxibh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2179,7 +1918,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hvawmnhdye .gt_sourcenotes {
+#njyqayxibh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2193,7 +1932,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hvawmnhdye .gt_sourcenote {
+#njyqayxibh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2201,86 +1940,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hvawmnhdye .gt_left {
+#njyqayxibh .gt_left {
   text-align: left;
 }
 
-#hvawmnhdye .gt_center {
+#njyqayxibh .gt_center {
   text-align: center;
 }
 
-#hvawmnhdye .gt_right {
+#njyqayxibh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hvawmnhdye .gt_font_normal {
+#njyqayxibh .gt_font_normal {
   font-weight: normal;
 }
 
-#hvawmnhdye .gt_font_bold {
+#njyqayxibh .gt_font_bold {
   font-weight: bold;
 }
 
-#hvawmnhdye .gt_font_italic {
+#njyqayxibh .gt_font_italic {
   font-style: italic;
 }
 
-#hvawmnhdye .gt_super {
+#njyqayxibh .gt_super {
   font-size: 65%;
 }
 
-#hvawmnhdye .gt_footnote_marks {
+#njyqayxibh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hvawmnhdye .gt_asterisk {
+#njyqayxibh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hvawmnhdye .gt_indent_1 {
+#njyqayxibh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hvawmnhdye .gt_indent_2 {
+#njyqayxibh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hvawmnhdye .gt_indent_3 {
+#njyqayxibh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hvawmnhdye .gt_indent_4 {
+#njyqayxibh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hvawmnhdye .gt_indent_5 {
+#njyqayxibh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hvawmnhdye .katex-display {
+#njyqayxibh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hvawmnhdye div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#njyqayxibh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_heading header">
-<td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border">Tabelle B</td>
+<td colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border">Tabelle B</td>
 </tr>
 <tr class="gt_col_headings even">
 <th id="group" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">group</th>
 <th id="y" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">y</th>
 <th id="id1" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">id1</th>
 <th id="id2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">id2</th>
-<th id="a-" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"></th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
@@ -2288,29 +2026,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="group">1</td>
 <td class="gt_row gt_right" headers="y">10</td>
 <td class="gt_row gt_right" headers="id1">1</td>
-<td class="gt_row gt_right" headers="id2">1</td>
-<td class="gt_row gt_center" headers=" ">NA</td>
+<td class="gt_row gt_right" headers="id2">2</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
 <td class="gt_row gt_right" headers="y">20</td>
 <td class="gt_row gt_right" headers="id1">2</td>
-<td class="gt_row gt_right" headers="id2">1</td>
-<td class="gt_row gt_center" headers=" ">NA</td>
+<td class="gt_row gt_right" headers="id2">2</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="group">1</td>
 <td class="gt_row gt_right" headers="y">30</td>
 <td class="gt_row gt_right" headers="id1">3</td>
 <td class="gt_row gt_right" headers="id2">2</td>
-<td class="gt_row gt_center" headers=" ">NA</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
 <td class="gt_row gt_right" headers="y">40</td>
 <td class="gt_row gt_right" headers="id1">4</td>
 <td class="gt_row gt_right" headers="id2">2</td>
-<td class="gt_row gt_center" headers=" ">NA</td>
 </tr>
 </tbody>
 </table>
@@ -2319,25 +2053,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Tabelle C:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gt</span><span class="op">(</span><span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">data</span><span class="op">[[</span><span class="fl">3</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">tab_header</span><span class="op">(</span>title <span class="op">=</span> <span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">id2</span><span class="op">[[</span><span class="fl">3</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="kofigtwffk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kofigtwffk table {
+<div id="ogfyrxnhft" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ogfyrxnhft table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kofigtwffk thead, #kofigtwffk tbody, #kofigtwffk tfoot, #kofigtwffk tr, #kofigtwffk td, #kofigtwffk th {
+#ogfyrxnhft thead, #ogfyrxnhft tbody, #ogfyrxnhft tfoot, #ogfyrxnhft tr, #ogfyrxnhft td, #ogfyrxnhft th {
   border-style: none;
 }
 
-#kofigtwffk p {
+#ogfyrxnhft p {
   margin: 0;
   padding: 0;
 }
 
-#kofigtwffk .gt_table {
+#ogfyrxnhft .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2363,12 +2096,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_caption {
+#ogfyrxnhft .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kofigtwffk .gt_title {
+#ogfyrxnhft .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2380,7 +2113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#kofigtwffk .gt_subtitle {
+#ogfyrxnhft .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2392,7 +2125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#kofigtwffk .gt_heading {
+#ogfyrxnhft .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2404,13 +2137,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_bottom_border {
+#ogfyrxnhft .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_col_headings {
+#ogfyrxnhft .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2425,7 +2158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_col_heading {
+#ogfyrxnhft .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2445,7 +2178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#kofigtwffk .gt_column_spanner_outer {
+#ogfyrxnhft .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2457,15 +2190,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#kofigtwffk .gt_column_spanner_outer:first-child {
+#ogfyrxnhft .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kofigtwffk .gt_column_spanner_outer:last-child {
+#ogfyrxnhft .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kofigtwffk .gt_column_spanner {
+#ogfyrxnhft .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2477,11 +2210,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#kofigtwffk .gt_spanner_row {
+#ogfyrxnhft .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kofigtwffk .gt_group_heading {
+#ogfyrxnhft .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2507,7 +2240,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#kofigtwffk .gt_empty_group_heading {
+#ogfyrxnhft .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2522,15 +2255,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#kofigtwffk .gt_from_md > :first-child {
+#ogfyrxnhft .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kofigtwffk .gt_from_md > :last-child {
+#ogfyrxnhft .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kofigtwffk .gt_row {
+#ogfyrxnhft .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2549,7 +2282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#kofigtwffk .gt_stub {
+#ogfyrxnhft .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2562,7 +2295,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kofigtwffk .gt_stub_row_group {
+#ogfyrxnhft .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2576,15 +2309,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#kofigtwffk .gt_row_group_first td {
+#ogfyrxnhft .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kofigtwffk .gt_row_group_first th {
+#ogfyrxnhft .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kofigtwffk .gt_summary_row {
+#ogfyrxnhft .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2594,16 +2327,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kofigtwffk .gt_first_summary_row {
+#ogfyrxnhft .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_first_summary_row.thick {
+#ogfyrxnhft .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kofigtwffk .gt_last_summary_row {
+#ogfyrxnhft .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2613,7 +2346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_grand_summary_row {
+#ogfyrxnhft .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2623,7 +2356,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kofigtwffk .gt_first_grand_summary_row {
+#ogfyrxnhft .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2633,7 +2366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_last_grand_summary_row_top {
+#ogfyrxnhft .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2643,11 +2376,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_striped {
+#ogfyrxnhft .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kofigtwffk .gt_table_body {
+#ogfyrxnhft .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2656,7 +2389,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_footnotes {
+#ogfyrxnhft .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2670,7 +2403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_footnote {
+#ogfyrxnhft .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2679,7 +2412,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kofigtwffk .gt_sourcenotes {
+#ogfyrxnhft .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2693,7 +2426,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kofigtwffk .gt_sourcenote {
+#ogfyrxnhft .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2701,72 +2434,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kofigtwffk .gt_left {
+#ogfyrxnhft .gt_left {
   text-align: left;
 }
 
-#kofigtwffk .gt_center {
+#ogfyrxnhft .gt_center {
   text-align: center;
 }
 
-#kofigtwffk .gt_right {
+#ogfyrxnhft .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kofigtwffk .gt_font_normal {
+#ogfyrxnhft .gt_font_normal {
   font-weight: normal;
 }
 
-#kofigtwffk .gt_font_bold {
+#ogfyrxnhft .gt_font_bold {
   font-weight: bold;
 }
 
-#kofigtwffk .gt_font_italic {
+#ogfyrxnhft .gt_font_italic {
   font-style: italic;
 }
 
-#kofigtwffk .gt_super {
+#ogfyrxnhft .gt_super {
   font-size: 65%;
 }
 
-#kofigtwffk .gt_footnote_marks {
+#ogfyrxnhft .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kofigtwffk .gt_asterisk {
+#ogfyrxnhft .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kofigtwffk .gt_indent_1 {
+#ogfyrxnhft .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kofigtwffk .gt_indent_2 {
+#ogfyrxnhft .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kofigtwffk .gt_indent_3 {
+#ogfyrxnhft .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kofigtwffk .gt_indent_4 {
+#ogfyrxnhft .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kofigtwffk .gt_indent_5 {
+#ogfyrxnhft .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kofigtwffk .katex-display {
+#ogfyrxnhft .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kofigtwffk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ogfyrxnhft div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2776,36 +2509,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border">Tabelle C</td>
 </tr>
 <tr class="gt_col_headings even">
-<th id="group" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">group</th>
-<th id="y" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">y</th>
 <th id="id1" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">id1</th>
 <th id="id2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">id2</th>
+<th id="a1" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">1</th>
+<th id="a2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">2</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_center" headers="y">NA</td>
 <td class="gt_row gt_right" headers="id1">1</td>
 <td class="gt_row gt_right" headers="id2">1</td>
+<td class="gt_row gt_right" headers="1">10</td>
+<td class="gt_row gt_right" headers="2">NA</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_center" headers="y">NA</td>
 <td class="gt_row gt_right" headers="id1">2</td>
 <td class="gt_row gt_right" headers="id2">1</td>
+<td class="gt_row gt_right" headers="1">NA</td>
+<td class="gt_row gt_right" headers="2">20</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_center" headers="y">NA</td>
 <td class="gt_row gt_right" headers="id1">3</td>
 <td class="gt_row gt_right" headers="id2">2</td>
+<td class="gt_row gt_right" headers="1">30</td>
+<td class="gt_row gt_right" headers="2">NA</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_center" headers="y">NA</td>
 <td class="gt_row gt_right" headers="id1">4</td>
 <td class="gt_row gt_right" headers="id2">2</td>
+<td class="gt_row gt_right" headers="1">NA</td>
+<td class="gt_row gt_right" headers="2">40</td>
 </tr>
 </tbody>
 </table>
@@ -2814,25 +2547,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Tabelle D:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gt</span><span class="op">(</span><span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">data</span><span class="op">[[</span><span class="fl">4</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">tab_header</span><span class="op">(</span>title <span class="op">=</span> <span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">id2</span><span class="op">[[</span><span class="fl">4</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="ytdkznshkk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ytdkznshkk table {
+<div id="hauuvmdtnz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#hauuvmdtnz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ytdkznshkk thead, #ytdkznshkk tbody, #ytdkznshkk tfoot, #ytdkznshkk tr, #ytdkznshkk td, #ytdkznshkk th {
+#hauuvmdtnz thead, #hauuvmdtnz tbody, #hauuvmdtnz tfoot, #hauuvmdtnz tr, #hauuvmdtnz td, #hauuvmdtnz th {
   border-style: none;
 }
 
-#ytdkznshkk p {
+#hauuvmdtnz p {
   margin: 0;
   padding: 0;
 }
 
-#ytdkznshkk .gt_table {
+#hauuvmdtnz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2858,12 +2590,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_caption {
+#hauuvmdtnz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ytdkznshkk .gt_title {
+#hauuvmdtnz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2875,7 +2607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ytdkznshkk .gt_subtitle {
+#hauuvmdtnz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2887,7 +2619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ytdkznshkk .gt_heading {
+#hauuvmdtnz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2899,13 +2631,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_bottom_border {
+#hauuvmdtnz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_col_headings {
+#hauuvmdtnz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2920,7 +2652,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_col_heading {
+#hauuvmdtnz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2940,7 +2672,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ytdkznshkk .gt_column_spanner_outer {
+#hauuvmdtnz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2952,15 +2684,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ytdkznshkk .gt_column_spanner_outer:first-child {
+#hauuvmdtnz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ytdkznshkk .gt_column_spanner_outer:last-child {
+#hauuvmdtnz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ytdkznshkk .gt_column_spanner {
+#hauuvmdtnz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2972,11 +2704,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ytdkznshkk .gt_spanner_row {
+#hauuvmdtnz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ytdkznshkk .gt_group_heading {
+#hauuvmdtnz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3002,7 +2734,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ytdkznshkk .gt_empty_group_heading {
+#hauuvmdtnz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3017,15 +2749,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ytdkznshkk .gt_from_md > :first-child {
+#hauuvmdtnz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ytdkznshkk .gt_from_md > :last-child {
+#hauuvmdtnz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ytdkznshkk .gt_row {
+#hauuvmdtnz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3044,7 +2776,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ytdkznshkk .gt_stub {
+#hauuvmdtnz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3057,7 +2789,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ytdkznshkk .gt_stub_row_group {
+#hauuvmdtnz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3071,15 +2803,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ytdkznshkk .gt_row_group_first td {
+#hauuvmdtnz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ytdkznshkk .gt_row_group_first th {
+#hauuvmdtnz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ytdkznshkk .gt_summary_row {
+#hauuvmdtnz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3089,16 +2821,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ytdkznshkk .gt_first_summary_row {
+#hauuvmdtnz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_first_summary_row.thick {
+#hauuvmdtnz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ytdkznshkk .gt_last_summary_row {
+#hauuvmdtnz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3108,7 +2840,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_grand_summary_row {
+#hauuvmdtnz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3118,7 +2850,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ytdkznshkk .gt_first_grand_summary_row {
+#hauuvmdtnz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3128,7 +2860,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_last_grand_summary_row_top {
+#hauuvmdtnz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3138,11 +2870,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_striped {
+#hauuvmdtnz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ytdkznshkk .gt_table_body {
+#hauuvmdtnz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3151,7 +2883,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_footnotes {
+#hauuvmdtnz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3165,7 +2897,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_footnote {
+#hauuvmdtnz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3174,7 +2906,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ytdkznshkk .gt_sourcenotes {
+#hauuvmdtnz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3188,7 +2920,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ytdkznshkk .gt_sourcenote {
+#hauuvmdtnz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3196,72 +2928,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ytdkznshkk .gt_left {
+#hauuvmdtnz .gt_left {
   text-align: left;
 }
 
-#ytdkznshkk .gt_center {
+#hauuvmdtnz .gt_center {
   text-align: center;
 }
 
-#ytdkznshkk .gt_right {
+#hauuvmdtnz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ytdkznshkk .gt_font_normal {
+#hauuvmdtnz .gt_font_normal {
   font-weight: normal;
 }
 
-#ytdkznshkk .gt_font_bold {
+#hauuvmdtnz .gt_font_bold {
   font-weight: bold;
 }
 
-#ytdkznshkk .gt_font_italic {
+#hauuvmdtnz .gt_font_italic {
   font-style: italic;
 }
 
-#ytdkznshkk .gt_super {
+#hauuvmdtnz .gt_super {
   font-size: 65%;
 }
 
-#ytdkznshkk .gt_footnote_marks {
+#hauuvmdtnz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ytdkznshkk .gt_asterisk {
+#hauuvmdtnz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ytdkznshkk .gt_indent_1 {
+#hauuvmdtnz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ytdkznshkk .gt_indent_2 {
+#hauuvmdtnz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ytdkznshkk .gt_indent_3 {
+#hauuvmdtnz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ytdkznshkk .gt_indent_4 {
+#hauuvmdtnz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ytdkznshkk .gt_indent_5 {
+#hauuvmdtnz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ytdkznshkk .katex-display {
+#hauuvmdtnz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ytdkznshkk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#hauuvmdtnz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3279,16 +3011,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_right" headers="y">10</td>
-<td class="gt_row gt_right" headers="id1">1</td>
-<td class="gt_row gt_right" headers="id2">1</td>
-</tr>
-<tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
 <td class="gt_row gt_right" headers="y">20</td>
 <td class="gt_row gt_right" headers="id1">2</td>
 <td class="gt_row gt_right" headers="id2">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="group">2</td>
+<td class="gt_row gt_right" headers="y">40</td>
+<td class="gt_row gt_right" headers="id1">4</td>
+<td class="gt_row gt_right" headers="id2">2</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="group">1</td>
@@ -3297,10 +3029,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="id2">2</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_right" headers="y">40</td>
-<td class="gt_row gt_right" headers="id1">4</td>
-<td class="gt_row gt_right" headers="id2">2</td>
+<td class="gt_row gt_right" headers="group">NA</td>
+<td class="gt_row gt_right" headers="y">NA</td>
+<td class="gt_row gt_right" headers="id1">NA</td>
+<td class="gt_row gt_right" headers="id2">NA</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="group">1</td>
+<td class="gt_row gt_right" headers="y">10</td>
+<td class="gt_row gt_right" headers="id1">1</td>
+<td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 </tbody>
 </table>
@@ -3309,25 +3047,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Tabelle E:</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gt</span><span class="op">(</span><span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">data</span><span class="op">[[</span><span class="fl">5</span><span class="op">]</span><span class="op">]</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu">tab_header</span><span class="op">(</span>title <span class="op">=</span> <span class="va">tibbles_chosen</span><span class="op">$</span><span class="va">id2</span><span class="op">[[</span><span class="fl">5</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="oirhbsrqtp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#oirhbsrqtp table {
+<div id="dhsnzorker" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dhsnzorker table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#oirhbsrqtp thead, #oirhbsrqtp tbody, #oirhbsrqtp tfoot, #oirhbsrqtp tr, #oirhbsrqtp td, #oirhbsrqtp th {
+#dhsnzorker thead, #dhsnzorker tbody, #dhsnzorker tfoot, #dhsnzorker tr, #dhsnzorker td, #dhsnzorker th {
   border-style: none;
 }
 
-#oirhbsrqtp p {
+#dhsnzorker p {
   margin: 0;
   padding: 0;
 }
 
-#oirhbsrqtp .gt_table {
+#dhsnzorker .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3353,12 +3090,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_caption {
+#dhsnzorker .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#oirhbsrqtp .gt_title {
+#dhsnzorker .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3370,7 +3107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#oirhbsrqtp .gt_subtitle {
+#dhsnzorker .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3382,7 +3119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#oirhbsrqtp .gt_heading {
+#dhsnzorker .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3394,13 +3131,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_bottom_border {
+#dhsnzorker .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_col_headings {
+#dhsnzorker .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3415,7 +3152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_col_heading {
+#dhsnzorker .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3435,7 +3172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#oirhbsrqtp .gt_column_spanner_outer {
+#dhsnzorker .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3447,15 +3184,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#oirhbsrqtp .gt_column_spanner_outer:first-child {
+#dhsnzorker .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#oirhbsrqtp .gt_column_spanner_outer:last-child {
+#dhsnzorker .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#oirhbsrqtp .gt_column_spanner {
+#dhsnzorker .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3467,11 +3204,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#oirhbsrqtp .gt_spanner_row {
+#dhsnzorker .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#oirhbsrqtp .gt_group_heading {
+#dhsnzorker .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3497,7 +3234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#oirhbsrqtp .gt_empty_group_heading {
+#dhsnzorker .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3512,15 +3249,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#oirhbsrqtp .gt_from_md > :first-child {
+#dhsnzorker .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#oirhbsrqtp .gt_from_md > :last-child {
+#dhsnzorker .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#oirhbsrqtp .gt_row {
+#dhsnzorker .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3539,7 +3276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#oirhbsrqtp .gt_stub {
+#dhsnzorker .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3552,7 +3289,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oirhbsrqtp .gt_stub_row_group {
+#dhsnzorker .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3566,15 +3303,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#oirhbsrqtp .gt_row_group_first td {
+#dhsnzorker .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#oirhbsrqtp .gt_row_group_first th {
+#dhsnzorker .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#oirhbsrqtp .gt_summary_row {
+#dhsnzorker .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3584,16 +3321,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oirhbsrqtp .gt_first_summary_row {
+#dhsnzorker .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_first_summary_row.thick {
+#dhsnzorker .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#oirhbsrqtp .gt_last_summary_row {
+#dhsnzorker .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3603,7 +3340,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_grand_summary_row {
+#dhsnzorker .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3613,7 +3350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oirhbsrqtp .gt_first_grand_summary_row {
+#dhsnzorker .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3623,7 +3360,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_last_grand_summary_row_top {
+#dhsnzorker .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3633,11 +3370,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_striped {
+#dhsnzorker .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#oirhbsrqtp .gt_table_body {
+#dhsnzorker .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3646,7 +3383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_footnotes {
+#dhsnzorker .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3660,7 +3397,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_footnote {
+#dhsnzorker .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3669,7 +3406,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oirhbsrqtp .gt_sourcenotes {
+#dhsnzorker .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3683,7 +3420,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#oirhbsrqtp .gt_sourcenote {
+#dhsnzorker .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3691,72 +3428,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#oirhbsrqtp .gt_left {
+#dhsnzorker .gt_left {
   text-align: left;
 }
 
-#oirhbsrqtp .gt_center {
+#dhsnzorker .gt_center {
   text-align: center;
 }
 
-#oirhbsrqtp .gt_right {
+#dhsnzorker .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#oirhbsrqtp .gt_font_normal {
+#dhsnzorker .gt_font_normal {
   font-weight: normal;
 }
 
-#oirhbsrqtp .gt_font_bold {
+#dhsnzorker .gt_font_bold {
   font-weight: bold;
 }
 
-#oirhbsrqtp .gt_font_italic {
+#dhsnzorker .gt_font_italic {
   font-style: italic;
 }
 
-#oirhbsrqtp .gt_super {
+#dhsnzorker .gt_super {
   font-size: 65%;
 }
 
-#oirhbsrqtp .gt_footnote_marks {
+#dhsnzorker .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#oirhbsrqtp .gt_asterisk {
+#dhsnzorker .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#oirhbsrqtp .gt_indent_1 {
+#dhsnzorker .gt_indent_1 {
   text-indent: 5px;
 }
 
-#oirhbsrqtp .gt_indent_2 {
+#dhsnzorker .gt_indent_2 {
   text-indent: 10px;
 }
 
-#oirhbsrqtp .gt_indent_3 {
+#dhsnzorker .gt_indent_3 {
   text-indent: 15px;
 }
 
-#oirhbsrqtp .gt_indent_4 {
+#dhsnzorker .gt_indent_4 {
   text-indent: 20px;
 }
 
-#oirhbsrqtp .gt_indent_5 {
+#dhsnzorker .gt_indent_5 {
   text-indent: 25px;
 }
 
-#oirhbsrqtp .katex-display {
+#dhsnzorker .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#oirhbsrqtp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#dhsnzorker div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3767,7 +3504,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="gt_col_headings even">
 <th id="group" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">group</th>
-<th id="y" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">y</th>
+<th id="y" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">y</th>
 <th id="id1" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">id1</th>
 <th id="id2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">id2</th>
 </tr>
@@ -3775,27 +3512,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_left" headers="y">A</td>
+<td class="gt_row gt_right" headers="y">10</td>
 <td class="gt_row gt_right" headers="id1">1</td>
 <td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_left" headers="y">B</td>
+<td class="gt_row gt_right" headers="y">20</td>
 <td class="gt_row gt_right" headers="id1">2</td>
 <td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_right" headers="group">1</td>
-<td class="gt_row gt_left" headers="y">C</td>
+<td class="gt_row gt_right" headers="y">30</td>
 <td class="gt_row gt_right" headers="id1">3</td>
-<td class="gt_row gt_right" headers="id2">2</td>
+<td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_right" headers="group">2</td>
-<td class="gt_row gt_left" headers="y">D</td>
+<td class="gt_row gt_right" headers="y">40</td>
 <td class="gt_row gt_right" headers="id1">4</td>
-<td class="gt_row gt_right" headers="id2">2</td>
+<td class="gt_row gt_right" headers="id2">1</td>
 </tr>
 </tbody>
 </table>
