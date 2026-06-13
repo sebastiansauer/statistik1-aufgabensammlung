@@ -10,6 +10,56 @@
     ]
   },
   {
+    "objectID": "index.html#herzlich-willkommen",
+    "href": "index.html#herzlich-willkommen",
+    "title": "Aufgabensammlung - Statistik1",
+    "section": "1.1 Herzlich willkommen!",
+    "text": "1.1 Herzlich willkommen!\nDiese Aufgabensammlung begleitet die Lehrveranstaltung Statistik 1 und das zugehörige Lehrwerk statistik1. Sie richtet sich an Studierende, die einen praxisnahen Einstieg in die statistische Datenanalyse suchen – mit Fokus auf Prognose-Modellierung in R.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Willkommen</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#ziel-und-nutzen",
+    "href": "index.html#ziel-und-nutzen",
+    "title": "Aufgabensammlung - Statistik1",
+    "section": "1.2 Ziel und Nutzen",
+    "text": "1.2 Ziel und Nutzen\nStatistik lernt man nicht durch Lesen, sondern durch Rechnen. Diese Sammlung bietet über 600 Aufgaben, mit denen Sie Schritt für Schritt die zentralen Konzepte der beschreibenden Statistik und der Regressionsmodellierung einüben.\nKonkrete Vorteile:\n\nSie festigen das Verständnis durch wiederholtes, aktives Anwenden.\nSie erkennen typische Stolperstellen, bevor sie in der Prüfung auftauchen.\nSie üben den Umgang mit echten Datensätzen in R.\nViele Aufgaben sind als Quiz gestaltet: Sie erhalten unmittelbar Rückmeldung, ob Ihre Antwort richtig ist.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Willkommen</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#inhalt",
+    "href": "index.html#inhalt",
+    "title": "Aufgabensammlung - Statistik1",
+    "section": "1.3 Inhalt",
+    "text": "1.3 Inhalt\nDie Aufgaben sind thematisch gegliedert:\n\n\n\nKapitel\nThema\n\n\n\n\nRahmen\nGrundbegriffe, Skalenniveaus, Ziele der Statistik\n\n\nR\nR-Grundlagen, Dateneingabe, Pakete\n\n\nAufbereiten\nDaten importieren und mit dplyr transformieren\n\n\nVerbildlichen\nDatenvisualisierung mit ggplot2\n\n\nZusammenfassen\nLagemaße, Verteilungen\n\n\nModellgüte\nFehlermaße, Vorhersagequalität\n\n\nZusammenhänge\nKovarianz, Korrelation\n\n\nRegression 1\nEinfache lineare Regression\n\n\nRegression 2\nMultiple Regression, Modellvergleich",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Willkommen</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#nutzungshinweise",
+    "href": "index.html#nutzungshinweise",
+    "title": "Aufgabensammlung - Statistik1",
+    "section": "1.4 Nutzungshinweise",
+    "text": "1.4 Nutzungshinweise\nNavigation: Über das Inhaltsverzeichnis links gelangen Sie direkt zu einem Themenbereich. Innerhalb eines Kapitels können Sie mit den Pfeilschaltflächen vor- und zurückblättern.\nAufgabenformate: Es gibt zwei Typen:\n\nMultiple-Choice / Single-Choice – Wählen Sie eine oder mehrere Antworten; das System zeigt Ihnen sofort, ob Sie richtig liegen.\nOffene Rechenaufgaben – Lösen Sie die Aufgabe eigenständig und vergleichen Sie dann mit der Musterlösung.\n\nR-Code: Viele Aufgaben enthalten ausführbaren R-Code. Kopieren Sie ihn in Ihr lokales R oder in Posit Cloud, um selbst zu experimentieren.\nLehrwerk: Ergänzende Erklärungen, Herleitungen und Beispiele finden Sie im Begleitbuch statistik1.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Willkommen</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#tipps-für-eine-erfolgreiche-prüfung",
+    "href": "index.html#tipps-für-eine-erfolgreiche-prüfung",
+    "title": "Aufgabensammlung - Statistik1",
+    "section": "1.5 Tipps für eine erfolgreiche Prüfung",
+    "text": "1.5 Tipps für eine erfolgreiche Prüfung\n\nFrüh anfangen. Statistik ist kumulativ – späteres Material baut auf früherem auf. Wer in Woche 3 den Anschluss verliert, kämpft in Woche 10.\nSelbst rechnen, nicht nur nachvollziehen. Lösungen lesen erzeugt das Gefühl des Verstehens, ohne es zu liefern. Decken Sie die Lösung ab und arbeiten Sie die Aufgabe durch.\nFehler analysieren. Eine falsche Antwort ist wertvoller als eine richtige, die zufällig kam. Fragen Sie sich: Welches Konzept habe ich falsch verstanden?\nR routiniert benutzen. Viele Prüfungsaufgaben setzen voraus, dass Sie Standardbefehle (lm(), filter(), ggplot()) flüssig einsetzen. Schreiben Sie den Code immer selbst, statt ihn zu kopieren.\nFormeln verstehen, nicht nur auswendig lernen. Wer weiß, warum die Formel so aussieht, kann sie im Zweifelsfall ableiten – wer sie nur auswendig kennt, ist verloren, wenn ein ungewohnter Begriff auftaucht.\nBegriffe präzise verwenden. In der Statistik bedeuten Wörter wie Stichprobe, Parameter, Schätzer oder Residuum Genaues. Üben Sie, diese Begriffe korrekt zu benutzen.\nRegelmäßig wiederholen. Planen Sie feste Übungsblöcke ein – lieber dreimal 30 Minuten pro Woche als sechs Stunden am Vorabend der Prüfung.\n\n\nViel Erfolg – und vor allem: viel Erkenntnisgewinn!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Willkommen</span>"
+    ]
+  },
+  {
     "objectID": "exrs/posts/variation01/variation01.html",
     "href": "exrs/posts/variation01/variation01.html",
     "title": "\n2  variability01\n",

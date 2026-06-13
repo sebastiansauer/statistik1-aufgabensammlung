@@ -1032,7 +1032,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#willkommen" id="toc-willkommen" class="nav-link active" data-scroll-target="#willkommen"><span class="header-section-number">1</span> Willkommen</a></li>
+  <li><a href="#willkommen" id="toc-willkommen" class="nav-link active" data-scroll-target="#willkommen"><span class="header-section-number">1</span> Willkommen</a>
+  <ul class="collapse">
+  <li><a href="#herzlich-willkommen" id="toc-herzlich-willkommen" class="nav-link" data-scroll-target="#herzlich-willkommen"><span class="header-section-number">1.1</span> Herzlich willkommen!</a></li>
+  <li><a href="#ziel-und-nutzen" id="toc-ziel-und-nutzen" class="nav-link" data-scroll-target="#ziel-und-nutzen"><span class="header-section-number">1.2</span> Ziel und Nutzen</a></li>
+  <li><a href="#inhalt" id="toc-inhalt" class="nav-link" data-scroll-target="#inhalt"><span class="header-section-number">1.3</span> Inhalt</a></li>
+  <li><a href="#nutzungshinweise" id="toc-nutzungshinweise" class="nav-link" data-scroll-target="#nutzungshinweise"><span class="header-section-number">1.4</span> Nutzungshinweise</a></li>
+  <li><a href="#tipps-für-eine-erfolgreiche-prüfung" id="toc-tipps-für-eine-erfolgreiche-prüfung" class="nav-link" data-scroll-target="#tipps-für-eine-erfolgreiche-prüfung"><span class="header-section-number">1.5</span> Tipps für eine erfolgreiche Prüfung</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sebastiansauer/statistik1/issues/new" class="toc-action"><i class="bi bi-github"></i>Problem melden</a></li></ul></div></nav>
     </div>
@@ -1094,9 +1101,98 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="willkommen" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Willkommen</h1><p><img src="img/statistik1-cover/statistik1-cover.001.png" title="Aufgabensammlung - Statistik1" class="quarto-cover-image nolightbox img-fluid"></p>
-<!-- Willkommen zur Aufgabensammlung für grundlegende Statistik! -->
+<section id="herzlich-willkommen" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="herzlich-willkommen"><span class="header-section-number">1.1</span> Herzlich willkommen!</h2>
+<p>Diese Aufgabensammlung begleitet die Lehrveranstaltung <em>Statistik 1</em> und das zugehörige Lehrwerk <a href="https://sebastiansauer.github.io/statistik1/">statistik1</a>. Sie richtet sich an Studierende, die einen praxisnahen Einstieg in die statistische Datenanalyse suchen – mit Fokus auf Prognose-Modellierung in R.</p>
+</section>
+<section id="ziel-und-nutzen" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="ziel-und-nutzen"><span class="header-section-number">1.2</span> Ziel und Nutzen</h2>
+<p>Statistik lernt man nicht durch Lesen, sondern durch Rechnen. Diese Sammlung bietet über <strong>600 Aufgaben</strong>, mit denen Sie Schritt für Schritt die zentralen Konzepte der beschreibenden Statistik und der Regressionsmodellierung einüben.</p>
+<p>Konkrete Vorteile:</p>
+<ul>
+<li>Sie festigen das Verständnis durch wiederholtes, aktives Anwenden.</li>
+<li>Sie erkennen typische Stolperstellen, bevor sie in der Prüfung auftauchen.</li>
+<li>Sie üben den Umgang mit echten Datensätzen in R.</li>
+<li>Viele Aufgaben sind als <strong>Quiz</strong> gestaltet: Sie erhalten unmittelbar Rückmeldung, ob Ihre Antwort richtig ist.</li>
+</ul>
+</section>
+<section id="inhalt" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="inhalt"><span class="header-section-number">1.3</span> Inhalt</h2>
+<p>Die Aufgaben sind thematisch gegliedert:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Kapitel</th>
+<th>Thema</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rahmen</td>
+<td>Grundbegriffe, Skalenniveaus, Ziele der Statistik</td>
+</tr>
+<tr class="even">
+<td>R</td>
+<td>R-Grundlagen, Dateneingabe, Pakete</td>
+</tr>
+<tr class="odd">
+<td>Aufbereiten</td>
+<td>Daten importieren und mit dplyr transformieren</td>
+</tr>
+<tr class="even">
+<td>Verbildlichen</td>
+<td>Datenvisualisierung mit ggplot2</td>
+</tr>
+<tr class="odd">
+<td>Zusammenfassen</td>
+<td>Lagemaße, Verteilungen</td>
+</tr>
+<tr class="even">
+<td>Modellgüte</td>
+<td>Fehlermaße, Vorhersagequalität</td>
+</tr>
+<tr class="odd">
+<td>Zusammenhänge</td>
+<td>Kovarianz, Korrelation</td>
+</tr>
+<tr class="even">
+<td>Regression 1</td>
+<td>Einfache lineare Regression</td>
+</tr>
+<tr class="odd">
+<td>Regression 2</td>
+<td>Multiple Regression, Modellvergleich</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nutzungshinweise" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="nutzungshinweise"><span class="header-section-number">1.4</span> Nutzungshinweise</h2>
+<p><strong>Navigation:</strong> Über das Inhaltsverzeichnis links gelangen Sie direkt zu einem Themenbereich. Innerhalb eines Kapitels können Sie mit den Pfeilschaltflächen vor- und zurückblättern.</p>
+<p><strong>Aufgabenformate:</strong> Es gibt zwei Typen:</p>
+<ul>
+<li><em>Multiple-Choice / Single-Choice</em> – Wählen Sie eine oder mehrere Antworten; das System zeigt Ihnen sofort, ob Sie richtig liegen.</li>
+<li><em>Offene Rechenaufgaben</em> – Lösen Sie die Aufgabe eigenständig und vergleichen Sie dann mit der Musterlösung.</li>
+</ul>
+<p><strong>R-Code:</strong> Viele Aufgaben enthalten ausführbaren R-Code. Kopieren Sie ihn in Ihr lokales R oder in <a href="https://posit.cloud">Posit Cloud</a>, um selbst zu experimentieren.</p>
+<p><strong>Lehrwerk:</strong> Ergänzende Erklärungen, Herleitungen und Beispiele finden Sie im Begleitbuch <a href="https://sebastiansauer.github.io/statistik1/">statistik1</a>.</p>
+</section>
+<section id="tipps-für-eine-erfolgreiche-prüfung" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="tipps-für-eine-erfolgreiche-prüfung"><span class="header-section-number">1.5</span> Tipps für eine erfolgreiche Prüfung</h2>
+<ol type="1">
+<li><p><strong>Früh anfangen.</strong> Statistik ist kumulativ – späteres Material baut auf früherem auf. Wer in Woche 3 den Anschluss verliert, kämpft in Woche 10.</p></li>
+<li><p><strong>Selbst rechnen, nicht nur nachvollziehen.</strong> Lösungen lesen erzeugt das Gefühl des Verstehens, ohne es zu liefern. Decken Sie die Lösung ab und arbeiten Sie die Aufgabe durch.</p></li>
+<li><p><strong>Fehler analysieren.</strong> Eine falsche Antwort ist wertvoller als eine richtige, die zufällig kam. Fragen Sie sich: Welches Konzept habe ich falsch verstanden?</p></li>
+<li><p><strong>R routiniert benutzen.</strong> Viele Prüfungsaufgaben setzen voraus, dass Sie Standardbefehle (<code>lm()</code>, <code>filter()</code>, <code>ggplot()</code>) flüssig einsetzen. Schreiben Sie den Code immer selbst, statt ihn zu kopieren.</p></li>
+<li><p><strong>Formeln verstehen, nicht nur auswendig lernen.</strong> Wer weiß, <em>warum</em> die Formel so aussieht, kann sie im Zweifelsfall ableiten – wer sie nur auswendig kennt, ist verloren, wenn ein ungewohnter Begriff auftaucht.</p></li>
+<li><p><strong>Begriffe präzise verwenden.</strong> In der Statistik bedeuten Wörter wie <em>Stichprobe</em>, <em>Parameter</em>, <em>Schätzer</em> oder <em>Residuum</em> Genaues. Üben Sie, diese Begriffe korrekt zu benutzen.</p></li>
+<li><p><strong>Regelmäßig wiederholen.</strong> Planen Sie feste Übungsblöcke ein – lieber dreimal 30 Minuten pro Woche als sechs Stunden am Vorabend der Prüfung.</p></li>
+</ol>
+<hr>
+<p><em>Viel Erfolg – und vor allem: viel Erkenntnisgewinn!</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
