@@ -1,4 +1,4 @@
 # Willkommen
 
-Willkommen zur Aufgabensammlung für Statistik1.
+<!-- Willkommen zur Aufgabensammlung für grundlegende Statistik! -->
 

@@ -196,9 +196,10 @@ keep-md: false
 
 execute: 
   freeze: auto 
+  echo: false
   warning: false
   cache: true
-  message: false
+  # message: false
 
 knitr:
   opts_knit:
