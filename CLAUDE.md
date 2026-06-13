@@ -6,6 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Quarto-Buchprojekt: eine deutschsprachige Aufgabensammlung zur Einführung in die Statistik (Schwerpunkt Prognose-Modellierung). Begleitbuch: <https://sebastiansauer.github.io/statistik1/>.
 
+
+## Themen
+- Rahmen und Grundlagen der quantitativen Forschung
+- Daten einlesen mit R sowie Grundlagen von R
+- Daten umformen mit dplyr
+- Daten visualisieren
+- Daten zusammenfassen zu Lagemaßen
+- Variabilität von Daten bestimmen
+- Zusammen inkl. Korrelation
+- Regression
+
 ## Build-Befehle
 
 ```bash
@@ -62,3 +73,10 @@ Gemeinsam genutzte Datensätze liegen unter `data/` (CSV, XLSX). Aufgabenspezifi
 - `bib-local.bib` – Literaturnachweise
 - `apa7.csl` – Zitierstil
 - `webex.css` / `webex.js` – JavaScript-Interaktivität für r-exams-Fragen im HTML-Output
+
+
+### Quizze
+
+Manche Aufgaben sind Quizze. Quizze zeichnen sich durch vorgegebene Antworten aus (meist 4 oder 5), von denen eine (oder mehr) richtig sind. 
+Quizze erkennt man an den Antwortoptionen nach der Zeile "Answerlist". Außerdem haben Sie unten einen Abschnitt "Meta-information". Dort ist unter "exsolution" codiert, welche Antwort richtig ist. "0" steht für eine falsche Antwortoption, und "1" für eine richtige. So würde der Code "01000" bedeuten, dass die erste Antwortoption falsch ist, die zweite Antwortoption richtig, und die dritte, vierte und fünfte Antwortoption falsch ist.
+

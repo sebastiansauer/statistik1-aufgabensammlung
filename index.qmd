@@ -1,4 +1,71 @@
 # Willkommen
 
-<!-- Willkommen zur Aufgabensammlung für grundlegende Statistik! -->
+## Herzlich willkommen!
 
+Diese Aufgabensammlung begleitet die Lehrveranstaltung *Statistik 1* und das zugehörige Lehrwerk [statistik1](https://sebastiansauer.github.io/statistik1/).
+Sie richtet sich an Studierende, die einen praxisnahen Einstieg in die statistische Datenanalyse suchen – mit Fokus auf Prognose-Modellierung in R.
+
+
+## Ziel und Nutzen
+
+Statistik lernt man nicht durch Lesen, sondern durch Rechnen.
+Diese Sammlung bietet über **600 Aufgaben**, mit denen Sie Schritt für Schritt die zentralen Konzepte der beschreibenden Statistik und der Regressionsmodellierung einüben.
+
+Konkrete Vorteile:
+
+- Sie festigen das Verständnis durch wiederholtes, aktives Anwenden.
+- Sie erkennen typische Stolperstellen, bevor sie in der Prüfung auftauchen.
+- Sie üben den Umgang mit echten Datensätzen in R.
+- Viele Aufgaben sind als **Quiz** gestaltet: Sie erhalten unmittelbar Rückmeldung, ob Ihre Antwort richtig ist.
+
+
+## Inhalt
+
+Die Aufgaben sind thematisch gegliedert:
+
+| Kapitel | Thema |
+|---|---|
+| Rahmen | Grundbegriffe, Skalenniveaus, Ziele der Statistik |
+| R | R-Grundlagen, Dateneingabe, Pakete |
+| Aufbereiten | Daten importieren und mit dplyr transformieren |
+| Verbildlichen | Datenvisualisierung mit ggplot2 |
+| Zusammenfassen | Lagemaße, Verteilungen |
+| Modellgüte | Fehlermaße, Vorhersagequalität |
+| Zusammenhänge | Kovarianz, Korrelation |
+| Regression 1 | Einfache lineare Regression |
+| Regression 2 | Multiple Regression, Modellvergleich |
+
+
+## Nutzungshinweise
+
+**Navigation:** Über das Inhaltsverzeichnis links gelangen Sie direkt zu einem Themenbereich. Innerhalb eines Kapitels können Sie mit den Pfeilschaltflächen vor- und zurückblättern.
+
+**Aufgabenformate:** Es gibt zwei Typen:
+
+- *Multiple-Choice / Single-Choice* – Wählen Sie eine oder mehrere Antworten; das System zeigt Ihnen sofort, ob Sie richtig liegen.
+- *Offene Rechenaufgaben* – Lösen Sie die Aufgabe eigenständig und vergleichen Sie dann mit der Musterlösung.
+
+**R-Code:** Viele Aufgaben enthalten ausführbaren R-Code. Kopieren Sie ihn in Ihr lokales R oder in [Posit Cloud](https://posit.cloud), um selbst zu experimentieren.
+
+**Lehrwerk:** Ergänzende Erklärungen, Herleitungen und Beispiele finden Sie im Begleitbuch [statistik1](https://sebastiansauer.github.io/statistik1/).
+
+
+## Tipps für eine erfolgreiche Prüfung
+
+1. **Früh anfangen.** Statistik ist kumulativ – späteres Material baut auf früherem auf. Wer in Woche 3 den Anschluss verliert, kämpft in Woche 10.
+
+2. **Selbst rechnen, nicht nur nachvollziehen.** Lösungen lesen erzeugt das Gefühl des Verstehens, ohne es zu liefern. Decken Sie die Lösung ab und arbeiten Sie die Aufgabe durch.
+
+3. **Fehler analysieren.** Eine falsche Antwort ist wertvoller als eine richtige, die zufällig kam. Fragen Sie sich: Welches Konzept habe ich falsch verstanden?
+
+4. **R routiniert benutzen.** Viele Prüfungsaufgaben setzen voraus, dass Sie Standardbefehle (`lm()`, `filter()`, `ggplot()`) flüssig einsetzen. Schreiben Sie den Code immer selbst, statt ihn zu kopieren.
+
+5. **Formeln verstehen, nicht nur auswendig lernen.** Wer weiß, *warum* die Formel so aussieht, kann sie im Zweifelsfall ableiten – wer sie nur auswendig kennt, ist verloren, wenn ein ungewohnter Begriff auftaucht.
+
+6. **Begriffe präzise verwenden.** In der Statistik bedeuten Wörter wie *Stichprobe*, *Parameter*, *Schätzer* oder *Residuum* Genaues. Üben Sie, diese Begriffe korrekt zu benutzen.
+
+7. **Regelmäßig wiederholen.** Planen Sie feste Übungsblöcke ein – lieber dreimal 30 Minuten pro Woche als sechs Stunden am Vorabend der Prüfung.
+
+---
+
+*Viel Erfolg – und vor allem: viel Erkenntnisgewinn!*

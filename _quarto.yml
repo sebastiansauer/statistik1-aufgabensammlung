@@ -198,6 +198,7 @@ execute:
   freeze: auto 
   echo: false
   warning: false
+  message: false
   cache: true
   # message: false
 
