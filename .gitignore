@@ -37,3 +37,6 @@ Icon?
 **/*.quarto_ipynb
 
 .positai
+
+# Claude Code: lokale, rechnerspezifische Berechtigungen nicht versionieren
+.claude/settings.local.json
