@@ -1,3 +1,3 @@
 [submodule "exrs"]
 	path = exrs
-	url = https://github.com/sebastiansauer/aufgabensammlung
+	url = git@github.com:sebastiansauer/aufgabensammlung.git
