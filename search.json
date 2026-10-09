@@ -141,7 +141,7 @@
     "href": "exrs/posts/def-statistik01/def-statistik01.html#answerlist-1",
     "title": "\n3  Def-Statistik01\n",
     "section": "\n3.4 Answerlist",
-    "text": "3.4 Answerlist\n\nFalsch\nFalsch\nFalsch\nWahr\n\n\nCategories:\nschoice",
+    "text": "3.4 Answerlist\n\nFalsch\nFalsch\nFalsch\nWahr\nFalsch",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Def-Statistik01</span>"
@@ -328,7 +328,7 @@
     "href": "exrs/posts/tidydata1/tidydata1.html",
     "title": "\n9  tidydata1\n",
     "section": "",
-    "text": "9.1 Aufgabe\nLaden Sie die folgende Tabellen mit folgendem Befehl aus dem Paket tidyverse:\ntable1_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/tidy-table1.csv\"\ntable1 &lt;- read_csv(table1_path)\nInsgesamt sollten Sie als folgende Tabellen in Ihrem environment verfügbar haben:\nWelche der Tabellen ist in der Normalform?",
+    "text": "9.1 Aufgabe\nLaden Sie die folgende Tabellen mit folgendem Befehl aus dem Paket tidyverse:\nInsgesamt sollten Sie als folgende Tabellen in Ihrem environment verfügbar haben:\nWelche der Tabellen ist in der Normalform?",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>tidydata1</span>"
@@ -361,7 +361,7 @@
     "href": "exrs/posts/tidydata1/tidydata1.html#lösung",
     "title": "\n9  tidydata1\n",
     "section": "\n9.3 Lösung",
-    "text": "9.3 Lösung\nLaden wir noch die übrigen Tabellen\n\ntable2_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/tidy-table2.csv\"\ntable2 &lt;- read_csv(table2_path)\n\ntable3_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/tidy-table3.csv\"\ntable3 &lt;- read_csv(table3_path)\n\ntable4_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/tidy-table4.csv\"\ntable4 &lt;- read_csv(table4_path)\n\ntable5_path &lt;- \"https://raw.githubusercontent.com/sebastiansauer/Lehre/main/data/tidy-table5.csv\"\ntable5 &lt;- read_csv(table5_path)\n\nBetrachten wir alle fünf Tabellen:\n\ntable1\ntable2\ntable3\ntable4\ntable5\n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n\nMan sieht, dass nur Tabelle 1 “tidy” ist.\nQuelle",
+    "text": "9.3 Lösung\nLaden wir noch die übrigen Tabellen\nBetrachten wir alle fünf Tabellen:\n\n\n\n\ncountry\nyear\ncases\npopulation\n\n\n\nAfghanistan\n1999\n745\n19987071\n\n\nAfghanistan\n2000\n2666\n20595360\n\n\nBrazil\n1999\n37737\n172006362\n\n\nBrazil\n2000\n80488\n174504898\n\n\nChina\n1999\n212258\n1272915272\n\n\nChina\n2000\n213766\n1280428583\n\n\n\n\n\ncountry\nyear\ntype\ncount\n\n\n\nAfghanistan\n1999\ncases\n745\n\n\nAfghanistan\n1999\npopulation\n19987071\n\n\nAfghanistan\n2000\ncases\n2666\n\n\nAfghanistan\n2000\npopulation\n20595360\n\n\nBrazil\n1999\ncases\n37737\n\n\nBrazil\n1999\npopulation\n172006362\n\n\nBrazil\n2000\ncases\n80488\n\n\nBrazil\n2000\npopulation\n174504898\n\n\nChina\n1999\ncases\n212258\n\n\nChina\n1999\npopulation\n1272915272\n\n\nChina\n2000\ncases\n213766\n\n\nChina\n2000\npopulation\n1280428583\n\n\n\n\n\ncountry\nyear\nrate\n\n\n\nAfghanistan\n1999\n745/19987071\n\n\nAfghanistan\n2000\n2666/20595360\n\n\nBrazil\n1999\n37737/172006362\n\n\nBrazil\n2000\n80488/174504898\n\n\nChina\n1999\n212258/1272915272\n\n\nChina\n2000\n213766/1280428583\n\n\n\n\n\ncountry\n1999\n2000\n\n\n\nAfghanistan\n745\n2666\n\n\nBrazil\n37737\n80488\n\n\nChina\n212258\n213766\n\n\n\n\n\ncountry\ncentury\nyear\nrate\n\n\n\nAfghanistan\n19\n99\n745/19987071\n\n\nAfghanistan\n20\n00\n2666/20595360\n\n\nBrazil\n19\n99\n37737/172006362\n\n\nBrazil\n20\n00\n80488/174504898\n\n\nChina\n19\n99\n212258/1272915272\n\n\nChina\n20\n00\n213766/1280428583\n\n\n\n\n\nMan sieht, dass nur Tabelle 1 “tidy” ist.\nQuelle",
     "crumbs": [
       "Rahmen",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>tidydata1</span>"
@@ -559,7 +559,7 @@
     "href": "exrs/posts/typ-fehler-r-07/typ-fehler-r-07.html#answerlist-1",
     "title": "\n15  Typ-Fehler-R-07\n",
     "section": "\n15.4 Answerlist",
-    "text": "15.4 Answerlist\n\nFalsch\nFalsch\nRichtig\nFalsch\nFalsch\n\n\nCategories:\n\nR\nerror\nmchoice",
+    "text": "15.4 Answerlist\n\nFalsch\nFalsch\nRichtig\nFalsch\nFalsch\n\n\nCategories:\n\nR\nerror\nschoice",
     "crumbs": [
       "R",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Typ-Fehler-R-07</span>"
@@ -669,7 +669,7 @@
     "href": "exrs/posts/there-is-no-package/there-is-no-package.html#answerlist",
     "title": "\n19  there-is-no-package\n",
     "section": "\n19.2 Answerlist",
-    "text": "19.2 Answerlist\n\nEs existiert kein Paket namens tidyverse.\nEs existiert kein Paket namens tidyverse auf Ihrem Rechner.\nDas Paket tidyverse ist nicht gestartet.\nDas Paket tidyverse ist kaputt.\nR ist in Sie verliebt und versucht auf ungelenke Weise Kontakt aufzunehmen.",
+    "text": "19.2 Answerlist\n\nEs existiert kein Paket namens tidyverse in R.\nEs existiert kein Paket namens tidyverse auf Ihrem Rechner.\nDas Paket tidyverse ist nicht gestartet.\nDas Paket tidyverse ist kaputt.\nR ist in Sie verliebt und versucht auf ungelenke Weise Kontakt aufzunehmen.",
     "crumbs": [
       "R",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>there-is-no-package</span>"
@@ -779,7 +779,7 @@
     "href": "exrs/posts/argumente/argumente.html",
     "title": "\n22  argumente\n",
     "section": "",
-    "text": "22.1 Aufgabe\nWelche der folgenden Syntax-Beispiele zeigt fehlerhaften Code?\nEs sei jeweils definiert:\nx &lt;- c(1, 2, 3)",
+    "text": "22.1 Aufgabe\nWelche der folgenden Syntax-Beispiele zeigt fehlerhaften Code?\nEs sei jeweils definiert:",
     "crumbs": [
       "R",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>argumente</span>"
