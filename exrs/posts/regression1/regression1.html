@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -1060,27 +1095,28 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell" data-layout-align="center">
 <pre><code>## 
 ## Call:
-## lm(formula = y ~ x, data = d)
+## lm(formula = log(y) ~ x, data = d)
 ## 
 ## Residuals:
-##      Min       1Q   Median       3Q      Max 
-## -2.87887 -0.60527  0.04293  0.70823  2.08217 
+##     Min      1Q  Median      3Q     Max 
+## -7.6522 -1.4774  0.1109  1.4872  4.3046 
 ## 
 ## Coefficients:
 ##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  0.08065    0.10357   0.779    0.438    
-## x           -2.07399    0.10731 -19.327   &lt;2e-16 ***
+## (Intercept)  0.08037    0.36852   0.218    0.828    
+## x            2.23663    0.42398   5.275 4.91e-06 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
-## Residual standard error: 0.9546 on 83 degrees of freedom
-## Multiple R-squared:  0.8182, Adjusted R-squared:  0.816 
-## F-statistic: 373.5 on 1 and 83 DF,  p-value: &lt; 2.2e-16</code></pre>
+## Residual standard error: 2.383 on 40 degrees of freedom
+## Multiple R-squared:  0.4103, Adjusted R-squared:  0.3955 
+## F-statistic: 27.83 on 1 and 40 DF,  p-value: 4.907e-06</code></pre>
 </div>
 <p>Zusammengefasst sind die Koeffizienten (beta0 und beta1) also:</p>
 <div class="cell" data-layout-align="center" data-ech0="false">
-<pre><code>## (Intercept)           x 
-##   0.0806547  -2.0739903</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html">coef</a></span><span class="op">(</span><span class="va">m</span><span class="op">)</span></span>
+<span><span class="co">## (Intercept)           x </span></span>
+<span><span class="co">##  0.08037179  2.23662670</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Welche der folgenden Aussagen ist korrekt?</p>
 <div class="cell" data-layout-align="center">

@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -1057,10 +1092,17 @@ ul.task-list li input[type="checkbox"] {
 </header><section id="aufgabe" class="level2" data-number="16.1"><h2 data-number="16.1" class="anchored" data-anchor-id="aufgabe">
 <span class="header-section-number">16.1</span> Aufgabe</h2>
 <p>R spuckt eine komische Fehlermeldung aus. Was ist nur los? Hat R einen schlechten Tag?</p>
+<p>Wir möchten mit <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code> aus dem Datensatz <code>mtcars</code> nur die Spalten <code>hp</code> und <code>am</code> auswählen:</p>
 <p>Schauen wir uns die Sache näher an:</p>
 <div class="cell" data-layout-align="center">
-<pre><code>## Error in `select()`:
-## ! unbenutzte Argumente (hp, am)</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://www.stats.ox.ac.uk/pub/MASS4/">MASS</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">mtcars_small</span> <span class="op">&lt;-</span></span>
+<span>  <span class="va">mtcars</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">hp</span>, <span class="va">am</span><span class="op">)</span></span>
+<span><span class="co">## Error in `select()`:</span></span>
+<span><span class="co">## ! unbenutzte Argumente (hp, am)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Oh nein! Fehler!</p>
 <p>Was ist nur los?</p>
@@ -1071,7 +1113,7 @@ ul.task-list li input[type="checkbox"] {
 <p>         </p>
 </section><section id="lösung" class="level2" data-number="16.2"><h2 data-number="16.2" class="anchored" data-anchor-id="lösung">
 <span class="header-section-number">16.2</span> Lösung</h2>
-<p>Das Problem ist, dass es in beiden Paketen, <a href="http://www.stats.ox.ac.uk/pub/MASS4/">MASS</a> und <a href="https://dplyr.tidyverse.org">dplyr</a> (dasjenige Paket im <code>tidyverse</code>, in dem <code>select()</code> wohnt), eine Funktion namens <code>select</code> vorhanden ist.</p>
+<p>Das Problem ist, dass es in beiden Paketen, <a href="http://www.stats.ox.ac.uk/pub/MASS4/">MASS</a> und <a href="https://dplyr.tidyverse.org">dplyr</a> (dasjenige Paket im <code>tidyverse</code>, in dem <code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code> wohnt), eine Funktion namens <code>select</code> vorhanden ist.</p>
 <p>Es kommt zu einem “Name Clash”, einer Namenskollision.</p>
 <p>Wenn mehrere Funktion gleichen Namens geladen (“attached”) sind, so “gewinnt” diejenige Funktion, die als <em>letztes</em> geladen wurde, in unserem Fall ist das die Funktion aus <a href="http://www.stats.ox.ac.uk/pub/MASS4/">MASS</a>.</p>
 <p>Es gibt eine Reihe von Lösungen.</p>
@@ -1079,16 +1121,30 @@ ul.task-list li input[type="checkbox"] {
 <li>Nur das benötigte Paket starten</li>
 </ol>
 <p>Zuerst “entladen” wir <code>MASS</code>, da wir es nicht benötigen:</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/detach.html">detach</a></span><span class="op">(</span><span class="st">"package:MASS"</span>, unload <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>Alternativ (und einfacher) könnten wir R neu starten: <code>Session &gt; Restart R</code>.</p>
 <div class="cell" data-layout-align="center">
-<pre><code>## Error in `select()`:
-## ! unbenutzte Argumente (hp, am)</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#library(MASS)</span></span>
+<span></span>
+<span><span class="va">mtcars</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">hp</span>, <span class="va">am</span><span class="op">)</span></span>
+<span><span class="co">## Error in `select()`:</span></span>
+<span><span class="co">## ! unbenutzte Argumente (hp, am)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Und schon geht’s!</p>
 <ol start="2" type="1">
 <li>Paketnamen vor Funktionsnamen anfügen</li>
 </ol>
 <div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#library(dplyr)</span></span>
+<span><span class="co">#library(MASS)</span></span>
+<span></span>
+<span><span class="va">mtcars</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">hp</span>, <span class="va">am</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">hp</span> <span class="op">&gt;</span> <span class="fl">200</span><span class="op">)</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">

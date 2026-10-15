@@ -1094,17 +1094,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="header-section-number">28.1</span> Aufgabe</h2>
 <p>Berechnen Sie den Mittelwert folgender <code>zahlenreihe</code>; ignorieren sie etwaige fehlende Werte. Runden Sie auf zwei Dezimalstellen.</p>
 <div class="cell" data-layout-align="center">
-<pre><code>## [1] -0.61  1.09 -0.26 -0.10  0.37    NA</code></pre>
+<pre><code>## [1]  0.60  0.58 -1.56  1.64  1.13</code></pre>
 </div>
 <p>         </p>
 </section><section id="lösung" class="level2" data-number="28.2"><h2 data-number="28.2" class="anchored" data-anchor-id="lösung">
 <span class="header-section-number">28.2</span> Lösung</h2>
-<p>Der Mittelwert liegt bei 0.1.</p>
-<p>Die Antwort lautet 0.1.</p>
+<p>Der Mittelwert liegt bei 0.48.</p>
+<p>Die Antwort lautet 0.48.</p>
 <p>In R kann man den Mittelwert z.B. so berechnen:</p>
 <div class="cell" data-layout-align="center">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">zahlenreihe</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="co">## [1] 0.098</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span><span class="co">## [1] 0.478</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Das Argument <code>na.rm = TRUE</code> sorgt dafür, dass R <em>auch bei Vorhandensein fehlender Werte</em> ein Ergebnis ausgibt. Ohne dieses Argument würde R ein sprödes <code>NA</code> zurückgeben, falls fehlende Werte vorliegen. Dieses Verhalten von R ist recht defensiv, getreu dem Motto: Wenn es ein Problem gibt, sollte man so früh wie möglich darüber deutlich informiert werden (und nicht erst, wenn die Marsrakete gestartet ist…).</p>
 <hr>
