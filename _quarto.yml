@@ -194,9 +194,9 @@ editor: source
 keep-md: false
 #prefer-html: true
 
-execute: 
-  freeze: auto 
-  echo: false
+execute:
+  freeze: auto
+  echo: true
   warning: false
   message: false
   cache: true
