@@ -83,6 +83,7 @@ book:
         - exrs/posts/wrangle1/wrangle1.rmd
         - exrs/posts/repro1-sessioninfo/repro1-sessioninfo.rmd
         - exrs/posts/mw-berechnen/mw-berechnen.rmd
+        - exrs/posts/fallstudie-excel-r/fallstudie-excel-r.qmd
 
     - part: Aufbereiten
       chapters:
