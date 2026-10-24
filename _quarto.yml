@@ -402,7 +402,7 @@ book:
         - exrs/posts/lm1/lm1.rmd
         - exrs/posts/mtcars-regr01/mtcars-regr01.rmd
         - exrs/posts/nichtlineare-regr1/nichtlineare-regr1.rmd
-        - exrs/posts/penguins-regr02/penguins-regr02.rmd
+#        - exrs/posts/penguins-regr02/penguins-regr02.rmd
         - exrs/posts/regression1/regression1.rmd
         - exrs/posts/regression1b/regression1b.rmd
         - exrs/posts/regression3/regression3.rmd
