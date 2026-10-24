@@ -71,6 +71,42 @@ book:
         - exrs/posts/tidy_data/tidy_data.rmd
         - exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd
         - exrs/posts/ziele_statistik/ziele_statistik.rmd
+        - exrs/posts/aufgaben_statistik/aufgaben_statistik.rmd
+        - exrs/posts/av-uv.de/av-uv.de.rmd
+        - exrs/posts/beobachtungseinheit/beobachtungseinheit.rmd
+        - exrs/posts/datenstrukturgrad/datenstrukturgrad.rmd
+        - exrs/posts/def-statistik01-schoice/def-statistik01-schoice.Rmd
+        - exrs/posts/effekt-definition-nicht-kausal-schoice/effekt-definition-nicht-kausal-schoice.Rmd
+        - exrs/posts/epistemologische-zielrichtung-schoice/epistemologische-zielrichtung-schoice.Rmd
+        - exrs/posts/erklaeren-population-vs-kausal-schoice/erklaeren-population-vs-kausal-schoice.Rmd
+        - exrs/posts/experimente/experimente.rmd
+        - exrs/posts/expgruppe-vs-kontrollgruppe/expgruppe-vs-kontrollgruppe.rmd
+        - exrs/posts/generalisieren-population/generalisieren-population.rmd
+        - exrs/posts/griech-buchstaben/griech-buchstaben.rmd
+        - exrs/posts/griech-buchstaben-schoice/griech-buchstaben-schoice.Rmd
+        - exrs/posts/kausale-verben/kausale-verben.rmd
+        - exrs/posts/kausale-verben_schoice/kausale-verben_schoice.rmd
+        - exrs/posts/modell-definition-schoice/modell-definition-schoice.Rmd
+        - exrs/posts/operationalismus/operationalismus.rmd
+        - exrs/posts/parameter-statistik/parameter-statistik.rmd
+        - exrs/posts/populationsinferenz-definition-schoice/populationsinferenz-definition-schoice.Rmd
+        - exrs/posts/samples-nyc/index.qmd
+        - exrs/posts/samples-nyc2/index.qmd
+        - exrs/posts/skalenniveau1/skalenniveau1.rmd
+        - exrs/posts/skalenniveau2/skalenniveau2.rmd
+        - exrs/posts/stichprobenmethoden/stichprobenmethoden.rmd
+#        - exrs/posts/stipro-beschreiben/stipro-beschreiben.rmd
+        - exrs/posts/szenario-charakterisieren1/szenario-charakterisieren1.rmd
+        - exrs/posts/taxonomie-bda/taxonomie-bda.rmd
+        - exrs/posts/test-mse1/test-mse1.rmd
+        - exrs/posts/ttest-als-regr/ttest-als-regr.rmd
+        - exrs/posts/ttest-als-regr_var1/ttest-als-regr_var1.rmd
+        - exrs/posts/ttest-als-regr_var2/ttest-als-regr_var2.rmd
+        - exrs/posts/ttest-skalenniveau/ttest-skalenniveau.rmd
+        - exrs/posts/var-vs-stufe/var-vs-stufe.rmd
+        - exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd
+        - exrs/posts/zielart-vorhersagen-punkt-bereich-schoice/zielart-vorhersagen-punkt-bereich-schoice.Rmd
+        - exrs/posts/zielarten-stat-schoice/zielarten-stat-schoice.Rmd
 
     - part: R
       chapters:
@@ -116,6 +152,26 @@ book:
         - exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd
         - exrs/posts/na_philosophie/na_philosophie.rmd
         - exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd
+        - exrs/posts/datenvis-moderndive-1/datenvis-moderndive-1.rmd
+        - exrs/posts/durch3-durch5/durch3-durch5.rmd
+        - exrs/posts/fun1/index.qmd
+        - exrs/posts/funs-is-binary/funs-is-binary.rmd
+        - exrs/posts/funs-na-n/funs-na-n.rmd
+        - exrs/posts/import-data/index.qmd
+        - exrs/posts/import-xls/import-xls.qmd
+        - exrs/posts/n-col-mariokart/n-col-mariokart.rmd
+        - exrs/posts/options-print/options-print.rmd
+        - exrs/posts/parse_number/parse_number.rmd
+        - exrs/posts/pfad/pfad.rmd
+        - exrs/posts/purrr-map01/purrr-map01.rmd
+        - exrs/posts/r-quiz/r-quiz.qmd
+        - exrs/posts/rmd-01/rmd-01.rmd
+        - exrs/posts/rmd-02/rmd-02.rmd
+        - exrs/posts/vektorindizieren/vektorindizieren.rmd
+        - exrs/posts/wertberechnen/wertberechnen.rmd
+        - exrs/posts/wrangle2/wrangle2.rmd
+        - exrs/posts/wrangle6/wrangle6.rmd
+        - exrs/posts/xlsx-online-import/index.qmd
 
     - part: Aufbereiten
       chapters:
@@ -149,6 +205,32 @@ book:
         - exrs/posts/pipe_vorteil/pipe_vorteil.rmd
         - exrs/posts/select_anwendung/select_anwendung.rmd
         - exrs/posts/filter_logik/filter_logik.rmd
+        - exrs/posts/arrange/arrange.rmd
+        - exrs/posts/dating01/dating01.rmd
+        - exrs/posts/def_datenjudo/def_datenjudo.rmd
+        - exrs/posts/dplyr-mtcars01/index.qmd
+        - exrs/posts/filter/filter.rmd
+        - exrs/posts/filter-b/filter-b.rmd
+        - exrs/posts/filter-na1/filter-na1.rmd
+        - exrs/posts/filter-na2/filter-na2.rmd
+        - exrs/posts/filter-na3/filter-na3.rmd
+        - exrs/posts/filter-na4/filter-na4.rmd
+        - exrs/posts/filter-na5/filter-na5.rmd
+        - exrs/posts/groupby/groupby.rmd
+        - exrs/posts/groupby1/groupby1.rmd
+        - exrs/posts/joins/joins.rmd
+        - exrs/posts/mutate/mutate.rmd
+        - exrs/posts/na-per-col/na-per-col.qmd
+        - exrs/posts/nasa03/nasa03.rmd
+#        - exrs/posts/oecd-yacsda/index.qmd
+        - exrs/posts/pfeife/pfeife.rmd
+#        - exrs/posts/popup01/popup01.rmd
+        - exrs/posts/praxisprobleme1/praxisprobleme1.rmd
+        - exrs/posts/select/select.rmd
+        - exrs/posts/select-b/select-b.rmd
+        - exrs/posts/summarize/summarize.rmd
+        - exrs/posts/typ-fehler-r-05/typ-fehler-r-05.rmd
+        - exrs/posts/wrangle8/wrangle8.rmd
 
     - part: verbildlichen
       chapters:
@@ -176,6 +258,49 @@ book:
         - exrs/posts/normal_rechnen/normal_rechnen.rmd
         - exrs/posts/plot_wahl/plot_wahl.rmd
         - exrs/posts/anscombe_logik/anscombe_logik.rmd
+        - exrs/posts/anim01/anim01.rmd
+        - exrs/posts/anim02/anim02.rmd
+        - exrs/posts/anim03/anim03.qmd
+        - exrs/posts/boxhist2/boxhist2.rmd
+        - exrs/posts/boxplot_with_points/index.qmd
+        - exrs/posts/boxplots/boxplots.rmd
+        - exrs/posts/boxplots-de/boxplots-de.rmd
+#        - exrs/posts/choroplethen/choroplethen.rmd
+#        - exrs/posts/corona-dashboard/corona-dashboard.rmd
+        - exrs/posts/datenvis-moderndive-barplot1/datenvis-moderndive-barplot1.rmd
+        - exrs/posts/datenvis-moderndive-boxplot1/datenvis-moderndive-boxplot1.rmd
+        - exrs/posts/datenvis-moderndive-histogramm1/datenvis-moderndive-histogramm1.rmd
+        - exrs/posts/datenvis-moderndive-scatterplot1/datenvis-moderndive-scatterplot1.rmd
+#        - exrs/posts/datenvis-moderndive-scatterplot2/datenvis-moderndive-scatterplot2.rmd
+        - exrs/posts/diamonds-histogram-rcode/diamonds-histogram-rcode.rmd
+        - exrs/posts/flights-geom_point-geom-lm/flights-geom_point-geom-lm.rmd
+#        - exrs/posts/flights-geovis/flights-geovis.rmd
+        - exrs/posts/ggplot-prog/ggplot-prog.rmd
+        - exrs/posts/ggstatsplot01/ggstatsplot01.rmd
+        - exrs/posts/haeufigkeit02/haeufigkeit02.rmd
+        - exrs/posts/heatmap/heatmap.rmd
+        - exrs/posts/heatmap-mosaic/heatmap-mosaic.rmd
+        - exrs/posts/nasa04/nasa04.rmd
+        - exrs/posts/nasa05/nasa05.rmd
+        - exrs/posts/post1/post1.rmd
+        - exrs/posts/ridges-vergleichen/ridges-vergleichen.rmd
+        - exrs/posts/ridges-vergleichen2/ridges-vergleichen2.rmd
+        - exrs/posts/schiefe-erkennen/schiefe-erkennen.rmd
+        - exrs/posts/schiefe1-b/schiefe1-b.rmd
+        - exrs/posts/verteilungen1/verteilungen1.rmd
+        - exrs/posts/verteilungen2a/verteilungen2a.rmd
+        - exrs/posts/vis-mtcars/vis-mtcars.rmd
+        - exrs/posts/vis-penguins/vis-penguins.rmd
+        - exrs/posts/viz-geom-point/viz-geom-point.rmd
+        - exrs/posts/viz-geom-point10/viz-geom-point10.rmd
+        - exrs/posts/viz-geom-point2/viz-geom-point2.rmd
+        - exrs/posts/viz-geom-point5/viz-geom-point5.rmd
+        - exrs/posts/viz-geom-point6/viz-geom-point6.rmd
+        - exrs/posts/viz-geom-point7/viz-geom-point7.rmd
+#        - exrs/posts/viz-geom-point9/viz-geom-point9.rmd
+#        - exrs/posts/wachstum_corona/wachstum_corona.rmd
+        - exrs/posts/wozu-streudiagramm/wozu-streudiagramm.rmd
+        - exrs/posts/zusammenhang-kategorial/zusammenhang-kategorial.rmd
 
     - part: Zusammenfassen
       chapters:
@@ -193,6 +318,19 @@ book:
         - exrs/posts/schiefe_interpolation/schiefe_interpolation.rmd
         - exrs/posts/nullmodell_r/nullmodell_r.rmd
         - exrs/posts/mw_eigenschaft/mw_eigenschaft.rmd
+        - exrs/posts/kontingenztabelle1/kontingenztabelle1.rmd
+        - exrs/posts/median-berechnen/median-berechnen.rmd
+        - exrs/posts/mittelwert-berechnen/mittelwert-berechnen.rmd
+        - exrs/posts/mtcars-easystats/index.qmd
+        - exrs/posts/mutate02/mutate02.rmd
+        - exrs/posts/mutate03/mutate03.rmd
+        - exrs/posts/mw-berechnen2/mw-berechnen2.rmd
+        - exrs/posts/mwberechnen/mwberechnen.rmd
+        - exrs/posts/nasa06/nasa06.rmd
+        - exrs/posts/nasa07/index.rmd
+        - exrs/posts/robustheit/robustheit.rmd
+        - exrs/posts/rowmeans-groupby-summarise/index.qmd
+        - exrs/posts/smartphone1/index.qmd
 
     - part: Modellguete
       chapters:
@@ -216,6 +354,10 @@ book:
         - exrs/posts/mae_berechnung/mae_berechnung.rmd
         - exrs/posts/residuen_vergleich/residuen_vergleich.rmd
         - exrs/posts/guete_streuung/guete_streuung.rmd
+        - exrs/posts/kennwert-robust2/kennwert-robust2.rmd
+        - exrs/posts/zwert-berechnen/zwert-berechnen.rmd
+        - exrs/posts/zwert-berechnen2/zwert-berechnen2.rmd
+        - exrs/posts/zwert1/zwert1.rmd
 
     - part: Zusammenhaenge
       chapters:
@@ -236,6 +378,20 @@ book:
         - exrs/posts/korrelation_richtung/korrelation_richtung.rmd
         - exrs/posts/kovarianz_skalierung/kovarianz_skalierung.rmd
         - exrs/posts/kovarianz_null/kovarianz_null.rmd
+        - exrs/posts/bsp-korr-kaus/bsp-korr-kaus.rmd
+        - exrs/posts/bullshit1/bullshit1.rmd
+#        - exrs/posts/corr-dyn1/corr-dyn1.rmd
+        - exrs/posts/flights-yacsda-eda/index.qmd
+        - exrs/posts/linearer-zshg-nicht-kausal-schoice/linearer-zshg-nicht-kausal-schoice.Rmd
+        - exrs/posts/min-corr1/min-corr1.rmd
+        - exrs/posts/penguins-vis-bodymass1/index.qmd
+        - exrs/posts/penguins-vis-bodymass2/index.qmd
+        - exrs/posts/saratoga-cor1/saratoga-cor1.qmd
+        - exrs/posts/saratoga-cor2/saratoga-cor2.qmd
+        - exrs/posts/scatterplot-art-korrelation/scatterplot-art-korrelation.rmd
+        - exrs/posts/scatterplot-de/scatterplot-de.rmd
+        - exrs/posts/smartphone_addict/index.qmd
+        - exrs/posts/streudiagramm/streudiagramm.rmd
 
     - part: Regression 1
       chapters:
@@ -264,6 +420,23 @@ book:
         - exrs/posts/r2_logik/r2_logik.rmd
         - exrs/posts/slope_inter/slope_inter.rmd
         - exrs/posts/intercept_m/intercept_m.rmd
+        - exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.rmd
+        - exrs/posts/interpret-koeff-schoice/interpret-koeff-schoice.Rmd
+        - exrs/posts/linearitaet/linearitaet.rmd
+        - exrs/posts/m1-koeffizienten-berechnen-schoice/m1-koeffizienten-berechnen-schoice.Rmd
+        - exrs/posts/mse/mse.rmd
+        - exrs/posts/mu-bedingt-berechnen-schoice/mu-bedingt-berechnen-schoice.Rmd
+        - exrs/posts/ols-minimierung/ols-minimierung.rmd
+        - exrs/posts/penguins-lm/index.qmd
+        - exrs/posts/praediktoren-zentrieren/praediktoren-zentrieren.rmd
+#        - exrs/posts/regression/regression.rmd
+        - exrs/posts/regressionbegriff/regressionbegriff.rmd
+        - exrs/posts/regressionsgleichung-berechnen-schoice/regressionsgleichung-berechnen-schoice.Rmd
+        - exrs/posts/rquadrat/rquadrat.rmd
+        - exrs/posts/stand-regr/index.qmd
+        - exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd
+#        - exrs/posts/tidymodels01/tidymodels01.rmd
+        - exrs/posts/umrechnung-r-b/umrechnung-r-b.rmd
 
     - part: Regression 2
       chapters:
@@ -284,6 +457,56 @@ book:
         - exrs/posts/interaktion/interaktion.rmd
         - exrs/posts/dummykodier/dummykodier.rmd
         - exrs/posts/zentrierung/zentrierung.rmd
+#        - exrs/posts/adjustieren1a/adjustieren1a.qmd
+#        - exrs/posts/adjustieren1b/index.qmd
+        - exrs/posts/adjustieren2a/adjustieren2a.qmd
+#        - exrs/posts/anova-als-regr/anova-als-regr.rmd
+#        - exrs/posts/bike05/index.qmd
+#        - exrs/posts/bike06/index.qmd
+        - exrs/posts/flights-delay/index.qmd
+        - exrs/posts/flights-delay-simplified/index.qmd
+        - exrs/posts/fofrage-regrformel/index.qmd
+        - exrs/posts/fofrage-regrformel-schoice/fofrage-regrformel-schoice.Rmd
+        - exrs/posts/fofrage-regrformel2/index.qmd
+#        - exrs/posts/fofrage-regrformel2-schoice/fofrage-regrformel2-schoice.Rmd
+        - exrs/posts/gruppenvergleich-regression/index.qmd
+        - exrs/posts/gruppenvergleich-regression-schoice/gruppenvergleich-regression-schoice.Rmd
+        - exrs/posts/ims-kap-04-01/ims-kap-04-01.rmd
+        - exrs/posts/ims-kap-04-02/ims-kap-04-02.rmd
+        - exrs/posts/ims-kap-04-03/ims-kap-04-03.rmd
+        - exrs/posts/ims-kap-04-04/ims-kap-04-04.rmd
+        - exrs/posts/ims-kap-04-05/ims-kap-04-05.rmd
+        - exrs/posts/ims-kap-04-06/ims-kap-04-06.rmd
+        - exrs/posts/interaktion-falsch-interpretiert-schoice/interaktion-falsch-interpretiert-schoice.Rmd
+        - exrs/posts/interaktion-konzept-schoice/interaktion-konzept-schoice.Rmd
+        - exrs/posts/interaktionseffekt1/interaktionseffekt1.rmd
+        - exrs/posts/log-y-regr1/log-y-regr1.rmd
+        - exrs/posts/log-y-regr2/log-y-regr2.rmd
+        - exrs/posts/log-y-regr3/log-y-regr3.rmd
+#        - exrs/posts/mariokart_desk-inf-mod/index.qmd
+        - exrs/posts/modelldef-regrformel/index.qmd
+        - exrs/posts/modellguete-testset/modellguete-testset.rmd
+#        - exrs/posts/modellinterpret-beta/modellinterpret-beta.rmd
+        - exrs/posts/moderation/index.qmd
+        - exrs/posts/mtcars-simple1/mtcars-simple1.rmd
+        - exrs/posts/mtcars-simple2/mtcars-simple2.rmd
+        - exrs/posts/mtcars-simple3/mtcars-simple3.rmd
+        - exrs/posts/multiple-regr-kontrolle-schoice/multiple-regr-kontrolle-schoice.Rmd
+        - exrs/posts/nom-praed-in-regression/nom-praed-in-regression.rmd
+        - exrs/posts/penguins-lm2/index.qmd
+#        - exrs/posts/penguins-punktschaetzer1/penguins-punktschaetzer1.rmd
+        - exrs/posts/predictioncontest1/predictioncontest1.rmd
+        - exrs/posts/regr-spezialfaelle-schoice/regr-spezialfaelle-schoice.Rmd
+        - exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd
+        - exrs/posts/regression2/regression2.rmd
+        - exrs/posts/regression6a/regression6a.rmd
+        - exrs/posts/tidymodels3/tidymodels3.rmd
+        - exrs/posts/vollstandardisiertes-modell-interpretation-schoice/vollstandardisiertes-modell-interpretation-schoice.Rmd
+        - exrs/posts/vorhersage-interaktion-berechnen-schoice/vorhersage-interaktion-berechnen-schoice.Rmd
+        - exrs/posts/vorhersage-yb-berechnen-schoice/vorhersage-yb-berechnen-schoice.Rmd
+        - exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd
+        - exrs/posts/zentrieren-mit-interaktion-schoice/zentrieren-mit-interaktion-schoice.Rmd
+        - exrs/posts/zuordnung_regr_formel1/index.qmd
 
 # bibliography: bib/bib.bib
 bibliography: specifics/bib-local.bib
