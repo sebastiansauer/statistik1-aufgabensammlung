@@ -61,6 +61,16 @@ book:
         - exrs/posts/variation02/variation02.rmd
         - exrs/posts/skalenniveau1b/skalenniveau1b.rmd
         - exrs/posts/tidydata1/tidydata1.rmd
+        - exrs/posts/definition_statistik/definition_statistik.rmd
+        - exrs/posts/nutzen_modelle/nutzen_modelle.rmd
+        - exrs/posts/ppdac_modell/ppdac_modell.rmd
+        - exrs/posts/residuum_definition/residuum_definition.rmd
+        - exrs/posts/skalenniveau_intervall/skalenniveau_intervall.rmd
+        - exrs/posts/skalenniveau_ordinal/skalenniveau_ordinal.rmd
+        - exrs/posts/stichprobengroesse_genauigkeit/stichprobengroesse_genauigkeit.rmd
+        - exrs/posts/tidy_data/tidy_data.rmd
+        - exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd
+        - exrs/posts/ziele_statistik/ziele_statistik.rmd
 
     - part: R
       chapters:
@@ -84,6 +94,28 @@ book:
         - exrs/posts/repro1-sessioninfo/repro1-sessioninfo.rmd
         - exrs/posts/mw-berechnen/mw-berechnen.rmd
         - exrs/posts/fallstudie-excel-r/fallstudie-excel-r.qmd
+        - exrs/posts/reproduzierbarkeit/reproduzierbarkeit.rmd
+        - exrs/posts/r_vs_rstudio/r_vs_rstudio.rmd
+        - exrs/posts/zuweisung_operator/zuweisung_operator.rmd
+        - exrs/posts/na_bedeutung/na_bedeutung.rmd
+        - exrs/posts/vektor_erstellung/vektor_erstellung.rmd
+        - exrs/posts/mean_na_standard/mean_na_standard.rmd
+        - exrs/posts/funktionsargumente/funktionsargumente.rmd
+        - exrs/posts/logikpruefung_gleichheit/logikpruefung_gleichheit.rmd
+        - exrs/posts/definition_dataframe/definition_dataframe.rmd
+        - exrs/posts/dollar_operator/dollar_operator.rmd
+        - exrs/posts/rstudio_gui_view/rstudio_gui_view.rmd
+        - exrs/posts/verschachtelte_funktionen/verschachtelte_funktionen.rmd
+        - exrs/posts/funktionsargumente_defaults/funktionsargumente_defaults.rmd
+        - exrs/posts/vorteil_skripte/vorteil_skripte.rmd
+        - exrs/posts/logikpruefung_anwendung/logikpruefung_anwendung.rmd
+        - exrs/posts/struktur_dataframe/struktur_dataframe.rmd
+        - exrs/posts/na_handling_transfer/na_handling_transfer.rmd
+        - exrs/posts/datentypen_coercion/datentypen_coercion.rmd
+        - exrs/posts/vektorielles_rechnen_transfer/vektorielles_rechnen_transfer.rmd
+        - exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd
+        - exrs/posts/na_philosophie/na_philosophie.rmd
+        - exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd
 
     - part: Aufbereiten
       chapters:
@@ -107,6 +139,16 @@ book:
         - exrs/posts/summarise01/summarise01.rmd
         - exrs/posts/summarise02/summarise02.rmd
         - exrs/posts/mutate01/mutate01.rmd
+        - exrs/posts/praxis_datenjudo/praxis_datenjudo.rmd
+        - exrs/posts/filter_syntax/filter_syntax.rmd
+        - exrs/posts/lego_prinzip_logik/lego_prinzip_logik.rmd
+        - exrs/posts/count_nominal/count_nominal.rmd
+        - exrs/posts/arrange_minus/arrange_minus.rmd
+        - exrs/posts/mutate_neu/mutate_neu.rmd
+        - exrs/posts/group_summarise/group_summarise.rmd
+        - exrs/posts/pipe_vorteil/pipe_vorteil.rmd
+        - exrs/posts/select_anwendung/select_anwendung.rmd
+        - exrs/posts/filter_logik/filter_logik.rmd
 
     - part: verbildlichen
       chapters:
@@ -124,6 +166,16 @@ book:
         - exrs/posts/wozu-balkendiagramm/wozu-balkendiagramm.rmd
         - exrs/posts/diamonds-histogram/diamonds-histogram.rmd
         - exrs/posts/n-vars-diagram/n-vars-diagram.rmd
+        - exrs/posts/achsen_trick/achsen_trick.rmd
+        - exrs/posts/okabe_ito/okabe_ito.rmd
+        - exrs/posts/torten_kritik/torten_kritik.rmd
+        - exrs/posts/schein_korr/schein_korr.rmd
+        - exrs/posts/balken_normierung/balken_normierung.rmd
+        - exrs/posts/bosplot_schiefe/bosplot_schiefe.rmd
+        - exrs/posts/scatter_ellipse/scatter_ellipse.rmd
+        - exrs/posts/normal_rechnen/normal_rechnen.rmd
+        - exrs/posts/plot_wahl/plot_wahl.rmd
+        - exrs/posts/anscombe_logik/anscombe_logik.rmd
 
     - part: Zusammenfassen
       chapters:
@@ -132,6 +184,15 @@ book:
         - exrs/posts/nasa01/nasa01.rmd
         - exrs/posts/schiefe1/schiefe1.rmd
         - exrs/posts/summarise03/summarise03.rmd
+        - exrs/posts/file_drawer_problem/file_drawer_problem.rmd
+        - exrs/posts/definition_punktmodell/definition_punktmodell.rmd
+        - exrs/posts/median_gerade_n/median_gerade_n.rmd
+        - exrs/posts/gruppen_modell_vorteil/gruppen_modell_vorteil.rmd
+        - exrs/posts/quantil_transfer/quantil_transfer.rmd
+        - exrs/posts/modell_gleichung/modell_gleichung.rmd
+        - exrs/posts/schiefe_interpolation/schiefe_interpolation.rmd
+        - exrs/posts/nullmodell_r/nullmodell_r.rmd
+        - exrs/posts/mw_eigenschaft/mw_eigenschaft.rmd
 
     - part: Modellguete
       chapters:
@@ -145,6 +206,16 @@ book:
         - exrs/posts/sd-vergleich/sd-vergleich.rmd
         - exrs/posts/streuung-histogramm/streuung-histogramm.rmd
         - exrs/posts/mariokart-desk01/mariokart-desk01.rmd
+        - exrs/posts/residuen_summe/residuen_summe.rmd
+        - exrs/posts/modellvergleich_mae/modellvergleich_mae.rmd
+        - exrs/posts/rmse_sd_bezug/rmse_sd_bezug.rmd
+        - exrs/posts/z_wert_interpretation/z_wert_interpretation.rmd
+        - exrs/posts/z_transformation_effekt/z_transformation_effekt.rmd
+        - exrs/posts/robuste_streuung/robuste_streuung.rmd
+        - exrs/posts/sd_vs_varianz/sd_vs_varianz.rmd
+        - exrs/posts/mae_berechnung/mae_berechnung.rmd
+        - exrs/posts/residuen_vergleich/residuen_vergleich.rmd
+        - exrs/posts/guete_streuung/guete_streuung.rmd
 
     - part: Zusammenhaenge
       chapters:
@@ -155,6 +226,16 @@ book:
         - exrs/posts/mariokart-korr4/mariokart-korr4.rmd
         - exrs/posts/korr01/korr01.rmd
         - exrs/posts/korr02/korr02.rmd
+        - exrs/posts/korrelation_na_handling/korrelation_na_handling.rmd
+        - exrs/posts/r_syntax_correlation/r_syntax_correlation.rmd
+        - exrs/posts/nichtlineare_korrelation/nichtlineare_korrelation.rmd
+        - exrs/posts/scheinkorrelation_glatze/scheinkorrelation_glatze.rmd
+        - exrs/posts/cohen_kategorisierung/cohen_kategorisierung.rmd
+        - exrs/posts/range_restriction/range_restriction.rmd
+        - exrs/posts/korrelation_z_logik/korrelation_z_logik.rmd
+        - exrs/posts/korrelation_richtung/korrelation_richtung.rmd
+        - exrs/posts/kovarianz_skalierung/kovarianz_skalierung.rmd
+        - exrs/posts/kovarianz_null/kovarianz_null.rmd
 
     - part: Regression 1
       chapters:
@@ -173,6 +254,16 @@ book:
         - exrs/posts/regression5/regression5.rmd
         - exrs/posts/regression6/regression6.rmd
         - exrs/posts/ames-kaggle1/ames-kaggle1.rmd
+        - exrs/posts/neg_slope/neg_slope.rmd
+        - exrs/posts/r_vs_r2/r_vs_r2.rmd
+        - exrs/posts/resid_calc/resid_calc.rmd
+        - exrs/posts/causal_err/causal_err.rmd
+        - exrs/posts/null_vs_lin/null_vs_lin.rmd
+        - exrs/posts/predict_r/predict_r.rmd
+        - exrs/posts/ols_prinzip/ols_prinzip.rmd
+        - exrs/posts/r2_logik/r2_logik.rmd
+        - exrs/posts/slope_inter/slope_inter.rmd
+        - exrs/posts/intercept_m/intercept_m.rmd
 
     - part: Regression 2
       chapters:
@@ -183,6 +274,16 @@ book:
         - exrs/posts/lm-mario3/lm-mario3.rmd
         - exrs/posts/ausreisser1/ausreisser1.qmd
         - exrs/posts/mario-compare-models/index.qmd
+        - exrs/posts/variablenwahl/variablenwahl.rmd
+        - exrs/posts/regebene/regebene.rmd
+        - exrs/posts/kauslalinterp/kauslalinterp.rmd
+        - exrs/posts/logigkodier/logigkodier.rmd
+        - exrs/posts/simpsonpara/simpsonpara.rmd
+        - exrs/posts/overfitting/overfitting.rmd
+        - exrs/posts/samplesplit/samplesplit.rmd
+        - exrs/posts/interaktion/interaktion.rmd
+        - exrs/posts/dummykodier/dummykodier.rmd
+        - exrs/posts/zentrierung/zentrierung.rmd
 
 # bibliography: bib/bib.bib
 bibliography: specifics/bib-local.bib
