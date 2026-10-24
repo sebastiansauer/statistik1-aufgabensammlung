@@ -17,6 +17,7 @@ _freeze/
 # Hier wohnen Monster, riesig, auf jeden Fall ignorieren:
 *_cache/
 *_html/
+*_files/
 
 # !!Use **Quarto publish**, do not track the rendered website:
 _site/
