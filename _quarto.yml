@@ -253,7 +253,7 @@ book:
         - exrs/posts/torten_kritik/torten_kritik.rmd
         - exrs/posts/schein_korr/schein_korr.rmd
         - exrs/posts/balken_normierung/balken_normierung.rmd
-        - exrs/posts/bosplot_schiefe/bosplot_schiefe.rmd
+        - exrs/posts/boxplot_schiefe/boxplot_schiefe.rmd
         - exrs/posts/scatter_ellipse/scatter_ellipse.rmd
         - exrs/posts/normal_rechnen/normal_rechnen.rmd
         - exrs/posts/plot_wahl/plot_wahl.rmd
