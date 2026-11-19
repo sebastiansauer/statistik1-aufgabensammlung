@@ -3,7 +3,7 @@ title: "na_handling_transfer"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/na_handling_transfer/na_handling_transfer.rmd | md5: 989c0a4953431a708e492d53c62db0b1 -->
+<!-- quelle: exrs/posts/na_handling_transfer/na_handling_transfer.rmd | stand: 989c0a4953431a708e492d53c62db0b1-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "989c0a4953431a708e492d53c62db0b1-fee003527427"
 quiz(file.path(root, "exrs/posts/na_handling_transfer/na_handling_transfer.rmd"), seed = 22341)
 ```

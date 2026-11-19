@@ -3,7 +3,7 @@ title: "diamonds-histogram"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/diamonds-histogram/diamonds-histogram.rmd | md5: 9fac4bd0f26d041864aea7e3e6d4dbfc -->
+<!-- quelle: exrs/posts/diamonds-histogram/diamonds-histogram.rmd | stand: 9fac4bd0f26d041864aea7e3e6d4dbfc-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "9fac4bd0f26d041864aea7e3e6d4dbfc-fee003527427"
 quiz(file.path(root, "exrs/posts/diamonds-histogram/diamonds-histogram.rmd"), seed = 17894)
 ```

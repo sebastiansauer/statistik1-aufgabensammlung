@@ -3,7 +3,7 @@ title: "expgruppe-vs-kontrollgruppe"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/expgruppe-vs-kontrollgruppe/expgruppe-vs-kontrollgruppe.rmd | md5: 93d65701d5a188dcfbe4497891d7231d -->
+<!-- quelle: exrs/posts/expgruppe-vs-kontrollgruppe/expgruppe-vs-kontrollgruppe.rmd | stand: 93d65701d5a188dcfbe4497891d7231d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "93d65701d5a188dcfbe4497891d7231d-fee003527427"
 quiz(file.path(root, "exrs/posts/expgruppe-vs-kontrollgruppe/expgruppe-vs-kontrollgruppe.rmd"), seed = 40282)
 ```

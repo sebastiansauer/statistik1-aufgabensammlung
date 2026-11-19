@@ -3,7 +3,7 @@ title: "regressionsgleichung-berechnen-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regressionsgleichung-berechnen-schoice/regressionsgleichung-berechnen-schoice.Rmd | md5: 1004d7c972b5196b001332eb9a80c65c -->
+<!-- quelle: exrs/posts/regressionsgleichung-berechnen-schoice/regressionsgleichung-berechnen-schoice.Rmd | stand: 1004d7c972b5196b001332eb9a80c65c-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "1004d7c972b5196b001332eb9a80c65c-fee003527427"
 quiz(file.path(root, "exrs/posts/regressionsgleichung-berechnen-schoice/regressionsgleichung-berechnen-schoice.Rmd"), seed = 74942)
 ```

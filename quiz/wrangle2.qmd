@@ -3,7 +3,7 @@ title: "wrangle2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wrangle2/wrangle2.rmd | md5: 31564ab5dab3fe2fd6e0afe0186a85c9 -->
+<!-- quelle: exrs/posts/wrangle2/wrangle2.rmd | stand: 31564ab5dab3fe2fd6e0afe0186a85c9-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "31564ab5dab3fe2fd6e0afe0186a85c9-fee003527427"
 quiz(file.path(root, "exrs/posts/wrangle2/wrangle2.rmd"), seed = 3348)
 ```

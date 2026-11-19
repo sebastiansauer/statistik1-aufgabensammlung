@@ -22,6 +22,10 @@ quiz_normalisieren <- function(x) {
   x <- setext(x, "Solution|Lösung|Loesung", "Solution")
   x <- sub("^Meta-information *$", "Meta-information", x)
 
+  # Eigene Abbildungsordner (fig.path = "chunk-img/") wuerden von exams2forms
+  # nicht eingebettet -> wie in den uebrigen Aufgaben auf "" setzen.
+  x <- gsub("fig\\.path *= *[\"'][^\"']+[\"']", "fig.path = \"\"", x)
+
   # Meta-information aus dem YAML-Header ergaenzen, falls nicht vorhanden
   if (!any(x == "Meta-information")) {
     yaml_end <- which(x == "---")
@@ -142,6 +146,15 @@ quiz_interaktiv <- function(tmp, edir, seed, x, ...) {
 
 # Rueckgabe (unsichtbar): "interaktiv", "klassisch", "klassisch-knit",
 # "fehler" oder "ausgelassen"
+# Vor jedem Zaun ":::" muss eine Leerzeile stehen, sonst liest Pandoc ihn als
+# Text der letzten Antwortoption (sichtbares ":::" im Quiz).
+quiz_leerzeilen <- function(z) {
+  k <- which(grepl("^:::", z) & c(FALSE, nzchar(trimws(z[-length(z)]))) &
+             !c(FALSE, grepl("^:::", z[-length(z)])))
+  for (i in rev(k)) z <- append(z, "", after = i - 1)
+  z
+}
+
 quiz_protokoll <- function(datei, modus) {
   log <- Sys.getenv("QUIZ_LOG")
   if (nzchar(log))
@@ -164,14 +177,14 @@ quiz_ausfuehren <- function(datei, seed, ...) {
 
   erg <- tryCatch(quiz_interaktiv(tmp, edir, seed, x, ...), error = function(e) e)
   if (!inherits(erg, "error")) {
-    cat(erg$html, sep = "\n")
+    cat(quiz_leerzeilen(erg$html), sep = "\n")
     return(invisible(erg$modus))
   }
   kl <- tryCatch(quiz_knit_klassisch(tmp, seed), error = function(e) e)
   if (!inherits(kl, "error")) {
-    cat(kl, sep = "\n")
+    cat(quiz_leerzeilen(kl), sep = "\n")
     return(invisible("klassisch-knit"))
   }
-  cat(quiz_hinweis(datei, conditionMessage(erg)), sep = "\n")
+  cat(quiz_leerzeilen(quiz_hinweis(datei, conditionMessage(erg))), sep = "\n")
   invisible("fehler")
 }

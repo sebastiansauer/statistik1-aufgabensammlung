@@ -3,7 +3,7 @@ title: "groupby1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/groupby1/groupby1.rmd | md5: b21649fc914d705038e914f14e28f97d -->
+<!-- quelle: exrs/posts/groupby1/groupby1.rmd | stand: b21649fc914d705038e914f14e28f97d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b21649fc914d705038e914f14e28f97d-fee003527427"
 quiz(file.path(root, "exrs/posts/groupby1/groupby1.rmd"), seed = 3519)
 ```

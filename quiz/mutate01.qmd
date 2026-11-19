@@ -3,7 +3,7 @@ title: "mutate01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mutate01/mutate01.rmd | md5: adcf69dd4f5630f523c26c70004b4ad4 -->
+<!-- quelle: exrs/posts/mutate01/mutate01.rmd | stand: adcf69dd4f5630f523c26c70004b4ad4-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "adcf69dd4f5630f523c26c70004b4ad4-fee003527427"
 quiz(file.path(root, "exrs/posts/mutate01/mutate01.rmd"), seed = 2993)
 ```

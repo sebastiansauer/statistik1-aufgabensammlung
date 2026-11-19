@@ -3,7 +3,7 @@ title: "ggstatsplot01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ggstatsplot01/ggstatsplot01.rmd | md5: dbaa81f0cfa553ad9741b3903f0dd510 -->
+<!-- quelle: exrs/posts/ggstatsplot01/ggstatsplot01.rmd | stand: dbaa81f0cfa553ad9741b3903f0dd510-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "dbaa81f0cfa553ad9741b3903f0dd510-fee003527427"
 quiz(file.path(root, "exrs/posts/ggstatsplot01/ggstatsplot01.rmd"), seed = 8571)
 ```

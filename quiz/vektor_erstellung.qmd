@@ -3,7 +3,7 @@ title: "vektor_erstellung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vektor_erstellung/vektor_erstellung.rmd | md5: ee60208f3b7d323f3c299f33d4ea7bc3 -->
+<!-- quelle: exrs/posts/vektor_erstellung/vektor_erstellung.rmd | stand: ee60208f3b7d323f3c299f33d4ea7bc3-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "ee60208f3b7d323f3c299f33d4ea7bc3-fee003527427"
 quiz(file.path(root, "exrs/posts/vektor_erstellung/vektor_erstellung.rmd"), seed = 16663)
 ```

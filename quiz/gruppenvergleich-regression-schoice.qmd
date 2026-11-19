@@ -3,7 +3,7 @@ title: "gruppenvergleich-regression-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/gruppenvergleich-regression-schoice/gruppenvergleich-regression-schoice.Rmd | md5: 6b32688aefc17f37b461ae56f3a1f7fa -->
+<!-- quelle: exrs/posts/gruppenvergleich-regression-schoice/gruppenvergleich-regression-schoice.Rmd | stand: 6b32688aefc17f37b461ae56f3a1f7fa-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "6b32688aefc17f37b461ae56f3a1f7fa-fee003527427"
 quiz(file.path(root, "exrs/posts/gruppenvergleich-regression-schoice/gruppenvergleich-regression-schoice.Rmd"), seed = 64425)
 ```

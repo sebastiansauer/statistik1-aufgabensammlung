@@ -3,7 +3,7 @@ title: "funktionsargumente_defaults"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/funktionsargumente_defaults/funktionsargumente_defaults.rmd | md5: 97ec319ed42e77e47150660f8f4e81ae -->
+<!-- quelle: exrs/posts/funktionsargumente_defaults/funktionsargumente_defaults.rmd | stand: 97ec319ed42e77e47150660f8f4e81ae-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "97ec319ed42e77e47150660f8f4e81ae-fee003527427"
 quiz(file.path(root, "exrs/posts/funktionsargumente_defaults/funktionsargumente_defaults.rmd"), seed = 40598)
 ```

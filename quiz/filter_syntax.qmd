@@ -3,7 +3,7 @@ title: "filter_syntax"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/filter_syntax/filter_syntax.rmd | md5: 1e5c11b6634df43c26543b76c77b8ae5 -->
+<!-- quelle: exrs/posts/filter_syntax/filter_syntax.rmd | stand: 1e5c11b6634df43c26543b76c77b8ae5-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "1e5c11b6634df43c26543b76c77b8ae5-fee003527427"
 quiz(file.path(root, "exrs/posts/filter_syntax/filter_syntax.rmd"), seed = 10063)
 ```

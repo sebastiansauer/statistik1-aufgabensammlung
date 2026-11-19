@@ -3,7 +3,7 @@ title: "Schiefe-erkennen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/schiefe-erkennen/schiefe-erkennen.rmd | md5: 5f0099f93a1c7aa65854bab895db2f81 -->
+<!-- quelle: exrs/posts/schiefe-erkennen/schiefe-erkennen.rmd | stand: 5f0099f93a1c7aa65854bab895db2f81-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "5f0099f93a1c7aa65854bab895db2f81-fee003527427"
 quiz(file.path(root, "exrs/posts/schiefe-erkennen/schiefe-erkennen.rmd"), seed = 13912)
 ```

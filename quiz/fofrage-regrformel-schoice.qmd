@@ -3,7 +3,7 @@ title: "fofrage-regrformel-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/fofrage-regrformel-schoice/fofrage-regrformel-schoice.Rmd | md5: 9560b3d6f0db5157f4db257c580b9f33 -->
+<!-- quelle: exrs/posts/fofrage-regrformel-schoice/fofrage-regrformel-schoice.Rmd | stand: 9560b3d6f0db5157f4db257c580b9f33-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "9560b3d6f0db5157f4db257c580b9f33-fee003527427"
 quiz(file.path(root, "exrs/posts/fofrage-regrformel-schoice/fofrage-regrformel-schoice.Rmd"), seed = 35484)
 ```

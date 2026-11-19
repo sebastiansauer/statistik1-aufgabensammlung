@@ -3,7 +3,7 @@ title: "r2_logik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/r2_logik/r2_logik.rmd | md5: 90f4dfd02ef61a6088713e90b3f64b13 -->
+<!-- quelle: exrs/posts/r2_logik/r2_logik.rmd | stand: 90f4dfd02ef61a6088713e90b3f64b13-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "90f4dfd02ef61a6088713e90b3f64b13-fee003527427"
 quiz(file.path(root, "exrs/posts/r2_logik/r2_logik.rmd"), seed = 3695)
 ```

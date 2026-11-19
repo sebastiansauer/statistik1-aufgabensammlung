@@ -3,7 +3,7 @@ title: "penguins-lm2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/penguins-lm2/index.qmd | md5: 2919c47d97aebb3a65c1b2bfef986e78 -->
+<!-- quelle: exrs/posts/penguins-lm2/index.qmd | stand: 2919c47d97aebb3a65c1b2bfef986e78-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "2919c47d97aebb3a65c1b2bfef986e78-fee003527427"
 quiz(file.path(root, "exrs/posts/penguins-lm2/index.qmd"), seed = 7245)
 ```

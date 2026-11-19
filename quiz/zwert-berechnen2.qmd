@@ -3,7 +3,7 @@ title: "zwert-berechnen2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zwert-berechnen2/zwert-berechnen2.rmd | md5: d775851cd438389b2a61086669246ac6 -->
+<!-- quelle: exrs/posts/zwert-berechnen2/zwert-berechnen2.rmd | stand: d775851cd438389b2a61086669246ac6-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "d775851cd438389b2a61086669246ac6-fee003527427"
 quiz(file.path(root, "exrs/posts/zwert-berechnen2/zwert-berechnen2.rmd"), seed = 13130)
 ```

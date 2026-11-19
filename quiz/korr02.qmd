@@ -3,7 +3,7 @@ title: "korr02"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/korr02/korr02.rmd | md5: b443eb9e32e92d11199eb305ff1ea4ef -->
+<!-- quelle: exrs/posts/korr02/korr02.rmd | stand: b443eb9e32e92d11199eb305ff1ea4ef-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b443eb9e32e92d11199eb305ff1ea4ef-fee003527427"
 quiz(file.path(root, "exrs/posts/korr02/korr02.rmd"), seed = 1667)
 ```

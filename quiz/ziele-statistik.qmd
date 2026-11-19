@@ -3,7 +3,7 @@ title: "Ziele-Statistik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ziele-statistik/ziele-statistik.rmd | md5: 8deff42008925b8cefd44ec5e23221d0 -->
+<!-- quelle: exrs/posts/ziele-statistik/ziele-statistik.rmd | stand: 8deff42008925b8cefd44ec5e23221d0-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "8deff42008925b8cefd44ec5e23221d0-fee003527427"
 quiz(file.path(root, "exrs/posts/ziele-statistik/ziele-statistik.rmd"), seed = 12726)
 ```

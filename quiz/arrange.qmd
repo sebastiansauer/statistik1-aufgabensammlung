@@ -3,7 +3,7 @@ title: "arrange"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/arrange/arrange.rmd | md5: 8b20218e3929eedfb20135dd392a9df2 -->
+<!-- quelle: exrs/posts/arrange/arrange.rmd | stand: 8b20218e3929eedfb20135dd392a9df2-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "8b20218e3929eedfb20135dd392a9df2-fee003527427"
 quiz(file.path(root, "exrs/posts/arrange/arrange.rmd"), seed = 2930)
 ```

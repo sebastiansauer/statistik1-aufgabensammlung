@@ -3,7 +3,7 @@ title: "affairs-dplyr"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/affairs-dplyr/affairs-dplyr.rmd | md5: 976e92090bed1d8fabf1a631864a238d -->
+<!-- quelle: exrs/posts/affairs-dplyr/affairs-dplyr.rmd | stand: 976e92090bed1d8fabf1a631864a238d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "976e92090bed1d8fabf1a631864a238d-fee003527427"
 quiz(file.path(root, "exrs/posts/affairs-dplyr/affairs-dplyr.rmd"), seed = 9511)
 ```

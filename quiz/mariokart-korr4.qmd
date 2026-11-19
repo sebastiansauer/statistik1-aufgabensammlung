@@ -3,7 +3,7 @@ title: "mariokart-korr4"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mariokart-korr4/mariokart-korr4.rmd | md5: 0dd2722fe0c6038e69bd35c54db638e5 -->
+<!-- quelle: exrs/posts/mariokart-korr4/mariokart-korr4.rmd | stand: 0dd2722fe0c6038e69bd35c54db638e5-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "0dd2722fe0c6038e69bd35c54db638e5-fee003527427"
 quiz(file.path(root, "exrs/posts/mariokart-korr4/mariokart-korr4.rmd"), seed = 11714)
 ```

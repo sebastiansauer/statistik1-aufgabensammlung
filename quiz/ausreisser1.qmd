@@ -3,7 +3,7 @@ title: "ausreisser1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ausreisser1/ausreisser1.qmd | md5: 26d4545eb9fb6b6be49636ebebde6cbb -->
+<!-- quelle: exrs/posts/ausreisser1/ausreisser1.qmd | stand: 26d4545eb9fb6b6be49636ebebde6cbb-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "26d4545eb9fb6b6be49636ebebde6cbb-fee003527427"
 quiz(file.path(root, "exrs/posts/ausreisser1/ausreisser1.qmd"), seed = 6580)
 ```

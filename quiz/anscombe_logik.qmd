@@ -3,7 +3,7 @@ title: "anscombe_logik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/anscombe_logik/anscombe_logik.rmd | md5: 43f17953b5838b06fb9f9046a9ab1b9d -->
+<!-- quelle: exrs/posts/anscombe_logik/anscombe_logik.rmd | stand: 43f17953b5838b06fb9f9046a9ab1b9d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "43f17953b5838b06fb9f9046a9ab1b9d-fee003527427"
 quiz(file.path(root, "exrs/posts/anscombe_logik/anscombe_logik.rmd"), seed = 11016)
 ```

@@ -3,7 +3,7 @@ title: "interpret-koeff-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/interpret-koeff-schoice/interpret-koeff-schoice.Rmd | md5: f4f402eb1bf1eefbdec932592899c2de -->
+<!-- quelle: exrs/posts/interpret-koeff-schoice/interpret-koeff-schoice.Rmd | stand: f4f402eb1bf1eefbdec932592899c2de-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "f4f402eb1bf1eefbdec932592899c2de-fee003527427"
 quiz(file.path(root, "exrs/posts/interpret-koeff-schoice/interpret-koeff-schoice.Rmd"), seed = 27558)
 ```

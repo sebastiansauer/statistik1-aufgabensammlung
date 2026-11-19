@@ -3,7 +3,7 @@ title: "Pfad"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/pfad/pfad.rmd | md5: aedd348ca61c0b6c6e59a8f22b505baf -->
+<!-- quelle: exrs/posts/pfad/pfad.rmd | stand: aedd348ca61c0b6c6e59a8f22b505baf-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "aedd348ca61c0b6c6e59a8f22b505baf-fee003527427"
 quiz(file.path(root, "exrs/posts/pfad/pfad.rmd"), seed = 1007)
 ```

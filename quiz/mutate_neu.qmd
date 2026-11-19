@@ -3,7 +3,7 @@ title: "mutate_neu"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mutate_neu/mutate_neu.rmd | md5: ef8ddd43a676b7e8b8b3919765fd10a3 -->
+<!-- quelle: exrs/posts/mutate_neu/mutate_neu.rmd | stand: ef8ddd43a676b7e8b8b3919765fd10a3-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "ef8ddd43a676b7e8b8b3919765fd10a3-fee003527427"
 quiz(file.path(root, "exrs/posts/mutate_neu/mutate_neu.rmd"), seed = 5889)
 ```

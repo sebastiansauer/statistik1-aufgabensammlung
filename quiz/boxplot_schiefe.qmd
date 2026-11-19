@@ -3,7 +3,7 @@ title: "bosplot_schiefe"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/boxplot_schiefe/boxplot_schiefe.rmd | md5: 4de954661a8ed5227b75d1c25a650638 -->
+<!-- quelle: exrs/posts/boxplot_schiefe/boxplot_schiefe.rmd | stand: 4de954661a8ed5227b75d1c25a650638-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "4de954661a8ed5227b75d1c25a650638-fee003527427"
 quiz(file.path(root, "exrs/posts/boxplot_schiefe/boxplot_schiefe.rmd"), seed = 12591)
 ```

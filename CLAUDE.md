@@ -81,7 +81,7 @@ Gemeinsam genutzte Datensätze liegen unter `data/` (CSV, XLSX). Aufgabenspezifi
 `_quarto.yml` listet nicht mehr die Aufgaben selbst, sondern generierte **Wrapper-Kapitel** `quiz/<ordner>.qmd`. Jeder Wrapper ruft `quiz()` (`specifics/quiz.R`) auf, das die Aufgabe aus `exrs/posts/` per `exams2forms` als HTML-Quiz rendert. Das Submodul `exrs/` bleibt unverändert.
 
 - **Neue Aufgabe:** wie bisher als `exrs/posts/<ordner>/<datei>` in `_quarto.yml` eintragen und dann `Rscript scripts/make-quiz-chapters.R` ausführen. Das Skript erzeugt den Wrapper und biegt den Eintrag auf `quiz/<ordner>.qmd` um.
-- **Aufgabe geändert:** Skript erneut ausführen. Der Quell-Hash im Wrapper ändert sich, dadurch rechnet `freeze: auto` neu.
+- **Aufgabe oder `specifics/quiz.R` geändert:** Skript erneut ausführen. Der Stand (Prüfsummen von Aufgabe und `quiz.R`) steht im Wrapper und im Cache-Schlüssel (`cache.extra`); dadurch rechnen `freeze: auto` und der knitr-Cache neu. Ohne erneutes Ausführen bleiben alte Ausgaben stehen.
 - **Ausnahmen** (Aufgaben bleiben unverändert als Kapitel): `quiz/ausnahmen.yml`. Die Zuordnung Wrapper → Quelle steht in `quiz/quellen.csv`.
 - **Wrapper nicht von Hand ändern**, sie werden überschrieben.
 - **Aufgabenformate:** `quiz()` normalisiert drei Formate (Setext-Überschriften, ATX `## Question`, Quarto `## Aufgabe`/`## Exercise` mit Metadaten nur im YAML).

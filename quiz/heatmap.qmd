@@ -3,7 +3,7 @@ title: "heatmap"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/heatmap/heatmap.rmd | md5: 007740419de24030a36e9127d9b476c6 -->
+<!-- quelle: exrs/posts/heatmap/heatmap.rmd | stand: 007740419de24030a36e9127d9b476c6-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "007740419de24030a36e9127d9b476c6-fee003527427"
 quiz(file.path(root, "exrs/posts/heatmap/heatmap.rmd"), seed = 2972)
 ```

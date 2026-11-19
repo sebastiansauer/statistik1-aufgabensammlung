@@ -3,7 +3,7 @@ title: "praxis_datenjudo"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/praxis_datenjudo/praxis_datenjudo.rmd | md5: 24a47f3f5567fed76e52b9367376a6a6 -->
+<!-- quelle: exrs/posts/praxis_datenjudo/praxis_datenjudo.rmd | stand: 24a47f3f5567fed76e52b9367376a6a6-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "24a47f3f5567fed76e52b9367376a6a6-fee003527427"
 quiz(file.path(root, "exrs/posts/praxis_datenjudo/praxis_datenjudo.rmd"), seed = 14547)
 ```

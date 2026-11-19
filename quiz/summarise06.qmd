@@ -3,7 +3,7 @@ title: "summarise06"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/summarise06/summarise06.rmd | md5: 1870370a5b3ff9462abf97c795a95bff -->
+<!-- quelle: exrs/posts/summarise06/summarise06.rmd | stand: 1870370a5b3ff9462abf97c795a95bff-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "1870370a5b3ff9462abf97c795a95bff-fee003527427"
 quiz(file.path(root, "exrs/posts/summarise06/summarise06.rmd"), seed = 5919)
 ```

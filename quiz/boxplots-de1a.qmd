@@ -3,7 +3,7 @@ title: "boxplots-de1a"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/boxplots-de1a/boxplots-de1a.rmd | md5: 9aeddeae1cdf293a9f698417a8b0e7ba -->
+<!-- quelle: exrs/posts/boxplots-de1a/boxplots-de1a.rmd | stand: 9aeddeae1cdf293a9f698417a8b0e7ba-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "9aeddeae1cdf293a9f698417a8b0e7ba-fee003527427"
 quiz(file.path(root, "exrs/posts/boxplots-de1a/boxplots-de1a.rmd"), seed = 8431)
 ```

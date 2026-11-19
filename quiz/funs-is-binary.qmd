@@ -3,7 +3,7 @@ title: "funs-is-binary"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/funs-is-binary/funs-is-binary.rmd | md5: f3d0036f300511011a3c563e590dcffa -->
+<!-- quelle: exrs/posts/funs-is-binary/funs-is-binary.rmd | stand: f3d0036f300511011a3c563e590dcffa-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "f3d0036f300511011a3c563e590dcffa-fee003527427"
 quiz(file.path(root, "exrs/posts/funs-is-binary/funs-is-binary.rmd"), seed = 10628)
 ```

@@ -3,7 +3,7 @@ title: "nasa01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/nasa01/nasa01.rmd | md5: acd2c7dc6d1e84d7b4cf2cbdaaa2b6cb -->
+<!-- quelle: exrs/posts/nasa01/nasa01.rmd | stand: acd2c7dc6d1e84d7b4cf2cbdaaa2b6cb-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "acd2c7dc6d1e84d7b4cf2cbdaaa2b6cb-fee003527427"
 quiz(file.path(root, "exrs/posts/nasa01/nasa01.rmd"), seed = 1571)
 ```

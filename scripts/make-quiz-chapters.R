@@ -8,8 +8,9 @@
 #
 # - Neue Aufgabe: wie bisher in _quarto.yml als exrs/posts/... eintragen und das
 #   Skript erneut ausfuehren.
-# - Aenderte sich der Quelltext einer Aufgabe, Skript erneut ausfuehren: Der
-#   Quell-Hash im Wrapper aendert sich, damit rechnet `freeze: auto` neu.
+# - Aenderte sich der Quelltext einer Aufgabe oder specifics/quiz.R, Skript erneut
+#   ausfuehren: Der Stand im Wrapper (Kommentar + cache.extra) aendert sich, damit
+#   rechnen `freeze: auto` und der knitr-Cache neu.
 # - Ausnahmen (bleiben unveraendert): quiz/ausnahmen.yml
 # - Zuordnung Wrapper -> Quelldatei: quiz/quellen.csv
 
@@ -55,13 +56,16 @@ for (k in seq_len(nrow(zuordnung))) {
   if (!file.exists(quelle)) { fehlend <- c(fehlend, quelle); next }
   titel <- gsub("\"", "\\\\\"", titel_von(quelle))
   md5 <- unname(tools::md5sum(quelle))
+  # Aufgabe UND quiz.R gehen in den Cache-Schluessel ein, damit freeze/knitr-Cache
+  # bei Aenderungen an einer von beiden neu rechnen.
+  stand <- paste0(md5, "-", substr(unname(tools::md5sum("specifics/quiz.R")), 1, 12))
   wrapper <- c(
     "---",
     paste0("title: \"", titel, "\""),
     "---",
     "",
     "<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->",
-    paste0("<!-- quelle: ", quelle, " | md5: ", md5, " -->"),
+    paste0("<!-- quelle: ", quelle, " | stand: ", stand, " -->"),
     "",
     "```{r}",
     "#| include: false",
@@ -72,6 +76,7 @@ for (k in seq_len(nrow(zuordnung))) {
     "```{r}",
     "#| echo: false",
     "#| results: asis",
+    paste0("#| cache.extra: \"", stand, "\""),
     paste0("quiz(file.path(root, \"", quelle, "\"), seed = ", seed_von(ordner), ")"),
     "```"
   )

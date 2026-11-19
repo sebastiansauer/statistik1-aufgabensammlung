@@ -3,7 +3,7 @@ title: "verschachtelte_funktionen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/verschachtelte_funktionen/verschachtelte_funktionen.rmd | md5: 34ec749d8cf6b910c1dfae50a6130ed8 -->
+<!-- quelle: exrs/posts/verschachtelte_funktionen/verschachtelte_funktionen.rmd | stand: 34ec749d8cf6b910c1dfae50a6130ed8-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "34ec749d8cf6b910c1dfae50a6130ed8-fee003527427"
 quiz(file.path(root, "exrs/posts/verschachtelte_funktionen/verschachtelte_funktionen.rmd"), seed = 34867)
 ```

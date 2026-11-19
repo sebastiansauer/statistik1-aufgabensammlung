@@ -3,7 +3,7 @@ title: "tidymodels-simple1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd | md5: dd4c0871ea859cfb124b27ed432086ab -->
+<!-- quelle: exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd | stand: dd4c0871ea859cfb124b27ed432086ab-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "dd4c0871ea859cfb124b27ed432086ab-fee003527427"
 quiz(file.path(root, "exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd"), seed = 16724)
 ```

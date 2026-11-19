@@ -3,7 +3,7 @@ title: "zentrierung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zentrierung/zentrierung.rmd | md5: 9130dca0f72c7d6ab90f3a78fb0e6ba8 -->
+<!-- quelle: exrs/posts/zentrierung/zentrierung.rmd | stand: 9130dca0f72c7d6ab90f3a78fb0e6ba8-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "9130dca0f72c7d6ab90f3a78fb0e6ba8-fee003527427"
 quiz(file.path(root, "exrs/posts/zentrierung/zentrierung.rmd"), seed = 7223)
 ```

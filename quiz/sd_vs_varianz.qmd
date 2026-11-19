@@ -3,7 +3,7 @@ title: "sd_vs_varianz"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/sd_vs_varianz/sd_vs_varianz.rmd | md5: 7b223eac66f0a130c47ed7ef394e29cb -->
+<!-- quelle: exrs/posts/sd_vs_varianz/sd_vs_varianz.rmd | stand: 7b223eac66f0a130c47ed7ef394e29cb-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "7b223eac66f0a130c47ed7ef394e29cb-fee003527427"
 quiz(file.path(root, "exrs/posts/sd_vs_varianz/sd_vs_varianz.rmd"), seed = 9868)
 ```

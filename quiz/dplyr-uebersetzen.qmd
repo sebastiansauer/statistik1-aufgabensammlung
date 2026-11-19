@@ -3,7 +3,7 @@ title: "dplyr-uebersetzen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd | md5: fe679b1d8bcbe4b5156a58d24908b0f2 -->
+<!-- quelle: exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd | stand: fe679b1d8bcbe4b5156a58d24908b0f2-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "fe679b1d8bcbe4b5156a58d24908b0f2-fee003527427"
 quiz(file.path(root, "exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd"), seed = 16378)
 ```

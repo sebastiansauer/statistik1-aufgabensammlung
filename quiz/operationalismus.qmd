@@ -3,7 +3,7 @@ title: "operationalismus"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/operationalismus/operationalismus.rmd | md5: 22e1ecd0e102e3bb28d1dbf938c178dd -->
+<!-- quelle: exrs/posts/operationalismus/operationalismus.rmd | stand: 22e1ecd0e102e3bb28d1dbf938c178dd-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "22e1ecd0e102e3bb28d1dbf938c178dd-fee003527427"
 quiz(file.path(root, "exrs/posts/operationalismus/operationalismus.rmd"), seed = 14922)
 ```

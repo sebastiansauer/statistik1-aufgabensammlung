@@ -3,7 +3,7 @@ title: "samplesplit"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/samplesplit/samplesplit.rmd | md5: 3070657b1509db82d948f73bd6ea7fea -->
+<!-- quelle: exrs/posts/samplesplit/samplesplit.rmd | stand: 3070657b1509db82d948f73bd6ea7fea-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "3070657b1509db82d948f73bd6ea7fea-fee003527427"
 quiz(file.path(root, "exrs/posts/samplesplit/samplesplit.rmd"), seed = 7229)
 ```

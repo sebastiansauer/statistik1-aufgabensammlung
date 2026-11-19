@@ -3,7 +3,7 @@ title: "schiefe_interpolation"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/schiefe_interpolation/schiefe_interpolation.rmd | md5: 3608c4c68d8b640299e369af6282276d -->
+<!-- quelle: exrs/posts/schiefe_interpolation/schiefe_interpolation.rmd | stand: 3608c4c68d8b640299e369af6282276d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "3608c4c68d8b640299e369af6282276d-fee003527427"
 quiz(file.path(root, "exrs/posts/schiefe_interpolation/schiefe_interpolation.rmd"), seed = 24867)
 ```

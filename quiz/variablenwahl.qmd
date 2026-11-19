@@ -3,7 +3,7 @@ title: "variablenwahl"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/variablenwahl/variablenwahl.rmd | md5: 4dce1de8af7bf904839bd6f115d65bf0 -->
+<!-- quelle: exrs/posts/variablenwahl/variablenwahl.rmd | stand: 4dce1de8af7bf904839bd6f115d65bf0-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "4dce1de8af7bf904839bd6f115d65bf0-fee003527427"
 quiz(file.path(root, "exrs/posts/variablenwahl/variablenwahl.rmd"), seed = 9610)
 ```

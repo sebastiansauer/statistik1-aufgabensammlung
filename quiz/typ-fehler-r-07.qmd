@@ -3,7 +3,7 @@ title: "Typ-Fehler-R-07"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/typ-fehler-r-07/typ-fehler-r-07.qmd | md5: 85f111072eb8c624223609f99b28cbaf -->
+<!-- quelle: exrs/posts/typ-fehler-r-07/typ-fehler-r-07.qmd | stand: 85f111072eb8c624223609f99b28cbaf-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "85f111072eb8c624223609f99b28cbaf-fee003527427"
 quiz(file.path(root, "exrs/posts/typ-fehler-r-07/typ-fehler-r-07.qmd"), seed = 9576)
 ```

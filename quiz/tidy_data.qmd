@@ -3,7 +3,7 @@ title: "tidy_data"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/tidy_data/tidy_data.rmd | md5: 47c7e3e3adde5df502a95b7151e2356b -->
+<!-- quelle: exrs/posts/tidy_data/tidy_data.rmd | stand: 47c7e3e3adde5df502a95b7151e2356b-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "47c7e3e3adde5df502a95b7151e2356b-fee003527427"
 quiz(file.path(root, "exrs/posts/tidy_data/tidy_data.rmd"), seed = 4665)
 ```

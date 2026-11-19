@@ -3,7 +3,7 @@ title: "multiple-regr-kontrolle-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/multiple-regr-kontrolle-schoice/multiple-regr-kontrolle-schoice.Rmd | md5: 18bb76e7b102ca589cb8a1569b90b59c -->
+<!-- quelle: exrs/posts/multiple-regr-kontrolle-schoice/multiple-regr-kontrolle-schoice.Rmd | stand: 18bb76e7b102ca589cb8a1569b90b59c-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "18bb76e7b102ca589cb8a1569b90b59c-fee003527427"
 quiz(file.path(root, "exrs/posts/multiple-regr-kontrolle-schoice/multiple-regr-kontrolle-schoice.Rmd"), seed = 50179)
 ```

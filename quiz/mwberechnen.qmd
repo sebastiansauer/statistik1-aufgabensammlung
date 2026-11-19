@@ -3,7 +3,7 @@ title: "MWberechnen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mwberechnen/mwberechnen.rmd | md5: 967aa5624fac79891e8f0a6e5525165b -->
+<!-- quelle: exrs/posts/mwberechnen/mwberechnen.rmd | stand: 967aa5624fac79891e8f0a6e5525165b-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "967aa5624fac79891e8f0a6e5525165b-fee003527427"
 quiz(file.path(root, "exrs/posts/mwberechnen/mwberechnen.rmd"), seed = 6956)
 ```

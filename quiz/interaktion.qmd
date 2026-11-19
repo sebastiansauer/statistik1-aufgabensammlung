@@ -3,7 +3,7 @@ title: "interaktion"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/interaktion/interaktion.rmd | md5: 420779fad049ccda3270d3086467ff52 -->
+<!-- quelle: exrs/posts/interaktion/interaktion.rmd | stand: 420779fad049ccda3270d3086467ff52-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "420779fad049ccda3270d3086467ff52-fee003527427"
 quiz(file.path(root, "exrs/posts/interaktion/interaktion.rmd"), seed = 7171)
 ```

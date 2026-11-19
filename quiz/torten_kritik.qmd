@@ -3,7 +3,7 @@ title: "torten_kritik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/torten_kritik/torten_kritik.rmd | md5: d6f75698a80f681c903fb35e7eea2bb9 -->
+<!-- quelle: exrs/posts/torten_kritik/torten_kritik.rmd | stand: d6f75698a80f681c903fb35e7eea2bb9-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "d6f75698a80f681c903fb35e7eea2bb9-fee003527427"
 quiz(file.path(root, "exrs/posts/torten_kritik/torten_kritik.rmd"), seed = 9833)
 ```

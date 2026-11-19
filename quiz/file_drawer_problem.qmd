@@ -3,7 +3,7 @@ title: "file_drawer_problem"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/file_drawer_problem/file_drawer_problem.rmd | md5: b93408d9030916287f572ab2afafffcf -->
+<!-- quelle: exrs/posts/file_drawer_problem/file_drawer_problem.rmd | stand: b93408d9030916287f572ab2afafffcf-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b93408d9030916287f572ab2afafffcf-fee003527427"
 quiz(file.path(root, "exrs/posts/file_drawer_problem/file_drawer_problem.rmd"), seed = 20174)
 ```

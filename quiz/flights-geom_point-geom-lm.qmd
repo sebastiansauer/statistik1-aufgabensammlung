@@ -3,7 +3,7 @@ title: "flights-geom_point-geom-lm"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/flights-geom_point-geom-lm/flights-geom_point-geom-lm.rmd | md5: c3f4c265d296c2c4c4342c25bd1105ba -->
+<!-- quelle: exrs/posts/flights-geom_point-geom-lm/flights-geom_point-geom-lm.rmd | stand: c3f4c265d296c2c4c4342c25bd1105ba-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "c3f4c265d296c2c4c4342c25bd1105ba-fee003527427"
 quiz(file.path(root, "exrs/posts/flights-geom_point-geom-lm/flights-geom_point-geom-lm.rmd"), seed = 34597)
 ```

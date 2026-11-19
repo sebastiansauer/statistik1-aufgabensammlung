@@ -3,7 +3,7 @@ title: "stand-reg"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/stand-regr/index.qmd | md5: fac9e7c5264c2b4eda06073ec36859f2 -->
+<!-- quelle: exrs/posts/stand-regr/index.qmd | stand: fac9e7c5264c2b4eda06073ec36859f2-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "fac9e7c5264c2b4eda06073ec36859f2-fee003527427"
 quiz(file.path(root, "exrs/posts/stand-regr/index.qmd"), seed = 5521)
 ```

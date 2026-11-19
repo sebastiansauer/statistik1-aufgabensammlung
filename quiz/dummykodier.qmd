@@ -3,7 +3,7 @@ title: "dummykodier"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/dummykodier/dummykodier.rmd | md5: 498a3aabe30fa3f540fdb4b252fc2cea -->
+<!-- quelle: exrs/posts/dummykodier/dummykodier.rmd | stand: 498a3aabe30fa3f540fdb4b252fc2cea-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "498a3aabe30fa3f540fdb4b252fc2cea-fee003527427"
 quiz(file.path(root, "exrs/posts/dummykodier/dummykodier.rmd"), seed = 7130)
 ```

@@ -3,7 +3,7 @@ title: "variability02"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/variation02/variation02.rmd | md5: 90b979fc8d1690a5518779cecfcc17f8 -->
+<!-- quelle: exrs/posts/variation02/variation02.rmd | stand: 90b979fc8d1690a5518779cecfcc17f8-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "90b979fc8d1690a5518779cecfcc17f8-fee003527427"
 quiz(file.path(root, "exrs/posts/variation02/variation02.rmd"), seed = 5898)
 ```

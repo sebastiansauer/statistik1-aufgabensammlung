@@ -3,7 +3,7 @@ title: "vollstandardisiertes-modell-interpretation-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vollstandardisiertes-modell-interpretation-schoice/vollstandardisiertes-modell-interpretation-schoice.Rmd | md5: 2ed1ee4395d38c47f777e9fbff0d8f3a -->
+<!-- quelle: exrs/posts/vollstandardisiertes-modell-interpretation-schoice/vollstandardisiertes-modell-interpretation-schoice.Rmd | stand: 2ed1ee4395d38c47f777e9fbff0d8f3a-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "2ed1ee4395d38c47f777e9fbff0d8f3a-fee003527427"
 quiz(file.path(root, "exrs/posts/vollstandardisiertes-modell-interpretation-schoice/vollstandardisiertes-modell-interpretation-schoice.Rmd"), seed = 31100)
 ```

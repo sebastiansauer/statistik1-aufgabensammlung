@@ -3,7 +3,7 @@ title: "cohen_kategorisierung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/cohen_kategorisierung/cohen_kategorisierung.rmd | md5: 77440f6e8a220e18e848ce29a36749ca -->
+<!-- quelle: exrs/posts/cohen_kategorisierung/cohen_kategorisierung.rmd | stand: 77440f6e8a220e18e848ce29a36749ca-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "77440f6e8a220e18e848ce29a36749ca-fee003527427"
 quiz(file.path(root, "exrs/posts/cohen_kategorisierung/cohen_kategorisierung.rmd"), seed = 24913)
 ```

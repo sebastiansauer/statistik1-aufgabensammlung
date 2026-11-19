@@ -3,7 +3,7 @@ title: "OLS-Minimierung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ols-minimierung/ols-minimierung.rmd | md5: fe3391da607b7e388c953b3167c8b008 -->
+<!-- quelle: exrs/posts/ols-minimierung/ols-minimierung.rmd | stand: fe3391da607b7e388c953b3167c8b008-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "fe3391da607b7e388c953b3167c8b008-fee003527427"
 quiz(file.path(root, "exrs/posts/ols-minimierung/ols-minimierung.rmd"), seed = 12753)
 ```

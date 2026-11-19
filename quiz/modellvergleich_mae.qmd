@@ -3,7 +3,7 @@ title: "modellvergleich_mae"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/modellvergleich_mae/modellvergleich_mae.rmd | md5: dafcde35cd9fcf6a519a97cf86a245e9 -->
+<!-- quelle: exrs/posts/modellvergleich_mae/modellvergleich_mae.rmd | stand: dafcde35cd9fcf6a519a97cf86a245e9-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "dafcde35cd9fcf6a519a97cf86a245e9-fee003527427"
 quiz(file.path(root, "exrs/posts/modellvergleich_mae/modellvergleich_mae.rmd"), seed = 19662)
 ```

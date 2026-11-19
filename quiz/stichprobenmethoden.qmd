@@ -3,7 +3,7 @@ title: "stichprobenmethoden"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/stichprobenmethoden/stichprobenmethoden.rmd | md5: 9817b05c7c74e61dc84cdc7312a404c5 -->
+<!-- quelle: exrs/posts/stichprobenmethoden/stichprobenmethoden.rmd | stand: 9817b05c7c74e61dc84cdc7312a404c5-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "9817b05c7c74e61dc84cdc7312a404c5-fee003527427"
 quiz(file.path(root, "exrs/posts/stichprobenmethoden/stichprobenmethoden.rmd"), seed = 20227)
 ```

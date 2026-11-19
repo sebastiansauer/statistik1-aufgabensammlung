@@ -3,7 +3,7 @@ title: "vektorisierung_logik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd | md5: ca91a4d748973a98b80a0751da7903a4 -->
+<!-- quelle: exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd | stand: ca91a4d748973a98b80a0751da7903a4-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "ca91a4d748973a98b80a0751da7903a4-fee003527427"
 quiz(file.path(root, "exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd"), seed = 22513)
 ```

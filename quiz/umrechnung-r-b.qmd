@@ -3,7 +3,7 @@ title: "umrechnung-r-b"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/umrechnung-r-b/umrechnung-r-b.rmd | md5: be119dec69ddfc9339b3d5501031d755 -->
+<!-- quelle: exrs/posts/umrechnung-r-b/umrechnung-r-b.rmd | stand: be119dec69ddfc9339b3d5501031d755-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "be119dec69ddfc9339b3d5501031d755-fee003527427"
 quiz(file.path(root, "exrs/posts/umrechnung-r-b/umrechnung-r-b.rmd"), seed = 9746)
 ```

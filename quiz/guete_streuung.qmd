@@ -3,7 +3,7 @@ title: "guete_streuung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/guete_streuung/guete_streuung.rmd | md5: bfae6f03ac4a284f1d126f8cf6bb17d1 -->
+<!-- quelle: exrs/posts/guete_streuung/guete_streuung.rmd | stand: bfae6f03ac4a284f1d126f8cf6bb17d1-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "bfae6f03ac4a284f1d126f8cf6bb17d1-fee003527427"
 quiz(file.path(root, "exrs/posts/guete_streuung/guete_streuung.rmd"), seed = 11511)
 ```

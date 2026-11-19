@@ -3,7 +3,7 @@ title: "simpsonpara"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/simpsonpara/simpsonpara.rmd | md5: 809c5bff1a3b7e0fa5141bd0e5cdba26 -->
+<!-- quelle: exrs/posts/simpsonpara/simpsonpara.rmd | stand: 809c5bff1a3b7e0fa5141bd0e5cdba26-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "809c5bff1a3b7e0fa5141bd0e5cdba26-fee003527427"
 quiz(file.path(root, "exrs/posts/simpsonpara/simpsonpara.rmd"), seed = 7087)
 ```

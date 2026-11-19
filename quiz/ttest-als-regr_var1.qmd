@@ -3,7 +3,7 @@ title: "ttest-als-regr_var1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ttest-als-regr_var1/ttest-als-regr_var1.rmd | md5: 34fade63b58f23d3b74d59cf7727f15d -->
+<!-- quelle: exrs/posts/ttest-als-regr_var1/ttest-als-regr_var1.rmd | stand: 34fade63b58f23d3b74d59cf7727f15d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "34fade63b58f23d3b74d59cf7727f15d-fee003527427"
 quiz(file.path(root, "exrs/posts/ttest-als-regr_var1/ttest-als-regr_var1.rmd"), seed = 18335)
 ```

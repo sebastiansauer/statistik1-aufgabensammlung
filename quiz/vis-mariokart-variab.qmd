@@ -3,7 +3,7 @@ title: "vis-mariokart-variab"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vis-mariokart-variab/vis-mariokart-variab.rmd | md5: fcd311fd98939da112b3601be7505138 -->
+<!-- quelle: exrs/posts/vis-mariokart-variab/vis-mariokart-variab.rmd | stand: fcd311fd98939da112b3601be7505138-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "fcd311fd98939da112b3601be7505138-fee003527427"
 quiz(file.path(root, "exrs/posts/vis-mariokart-variab/vis-mariokart-variab.rmd"), seed = 21213)
 ```

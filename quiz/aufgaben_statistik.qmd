@@ -3,7 +3,7 @@ title: "aufgaben_statistik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/aufgaben_statistik/aufgaben_statistik.rmd | md5: b9e994b8d479f2b14f82d2f28ba82659 -->
+<!-- quelle: exrs/posts/aufgaben_statistik/aufgaben_statistik.rmd | stand: b9e994b8d479f2b14f82d2f28ba82659-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b9e994b8d479f2b14f82d2f28ba82659-fee003527427"
 quiz(file.path(root, "exrs/posts/aufgaben_statistik/aufgaben_statistik.rmd"), seed = 18424)
 ```

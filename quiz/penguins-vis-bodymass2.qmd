@@ -3,7 +3,7 @@ title: "penguins-vis-bodymass2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/penguins-vis-bodymass2/index.qmd | md5: 95f6ea4d76b76746e56d80875412a8fc -->
+<!-- quelle: exrs/posts/penguins-vis-bodymass2/index.qmd | stand: 95f6ea4d76b76746e56d80875412a8fc-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "95f6ea4d76b76746e56d80875412a8fc-fee003527427"
 quiz(file.path(root, "exrs/posts/penguins-vis-bodymass2/index.qmd"), seed = 24980)
 ```

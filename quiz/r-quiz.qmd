@@ -3,7 +3,7 @@ title: "r-quiz"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/r-quiz/r-quiz.qmd | md5: 247213b98ea7f5a4036a143db0b6370a -->
+<!-- quelle: exrs/posts/r-quiz/r-quiz.qmd | stand: 247213b98ea7f5a4036a143db0b6370a-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "247213b98ea7f5a4036a143db0b6370a-fee003527427"
 quiz(file.path(root, "exrs/posts/r-quiz/r-quiz.qmd"), seed = 2268)
 ```

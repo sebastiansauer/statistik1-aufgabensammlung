@@ -3,7 +3,7 @@ title: "boxhist"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/boxhist/boxhist.rmd | md5: e9a71ab602d4c4ad465bbd77dfc38a64 -->
+<!-- quelle: exrs/posts/boxhist/boxhist.rmd | stand: e9a71ab602d4c4ad465bbd77dfc38a64-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "e9a71ab602d4c4ad465bbd77dfc38a64-fee003527427"
 quiz(file.path(root, "exrs/posts/boxhist/boxhist.rmd"), seed = 3123)
 ```

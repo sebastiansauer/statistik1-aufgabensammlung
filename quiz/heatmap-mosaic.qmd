@@ -3,7 +3,7 @@ title: "heatmap-mosaic"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/heatmap-mosaic/heatmap-mosaic.rmd | md5: b9260f1cc5126ea807c446e2b64d77d5 -->
+<!-- quelle: exrs/posts/heatmap-mosaic/heatmap-mosaic.rmd | stand: b9260f1cc5126ea807c446e2b64d77d5-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b9260f1cc5126ea807c446e2b64d77d5-fee003527427"
 quiz(file.path(root, "exrs/posts/heatmap-mosaic/heatmap-mosaic.rmd"), seed = 10603)
 ```

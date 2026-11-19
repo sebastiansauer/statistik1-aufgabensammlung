@@ -3,7 +3,7 @@ title: "flights-yacsda-eda"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/flights-yacsda-eda/index.qmd | md5: 416a6e5e8140205a270f7a2c59e0c335 -->
+<!-- quelle: exrs/posts/flights-yacsda-eda/index.qmd | stand: 416a6e5e8140205a270f7a2c59e0c335-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "416a6e5e8140205a270f7a2c59e0c335-fee003527427"
 quiz(file.path(root, "exrs/posts/flights-yacsda-eda/index.qmd"), seed = 16349)
 ```

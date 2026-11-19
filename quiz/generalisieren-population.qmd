@@ -3,7 +3,7 @@ title: "generalisieren-population"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/generalisieren-population/generalisieren-population.rmd | md5: a6bb5ea785d2181064ffe853b6822575 -->
+<!-- quelle: exrs/posts/generalisieren-population/generalisieren-population.rmd | stand: a6bb5ea785d2181064ffe853b6822575-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "a6bb5ea785d2181064ffe853b6822575-fee003527427"
 quiz(file.path(root, "exrs/posts/generalisieren-population/generalisieren-population.rmd"), seed = 34375)
 ```

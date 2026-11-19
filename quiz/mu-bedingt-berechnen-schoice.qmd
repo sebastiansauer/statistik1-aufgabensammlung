@@ -3,7 +3,7 @@ title: "mu-bedingt-berechnen-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mu-bedingt-berechnen-schoice/mu-bedingt-berechnen-schoice.Rmd | md5: 74fa4abfd3aaed6af17663fd86f6248d -->
+<!-- quelle: exrs/posts/mu-bedingt-berechnen-schoice/mu-bedingt-berechnen-schoice.Rmd | stand: 74fa4abfd3aaed6af17663fd86f6248d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "74fa4abfd3aaed6af17663fd86f6248d-fee003527427"
 quiz(file.path(root, "exrs/posts/mu-bedingt-berechnen-schoice/mu-bedingt-berechnen-schoice.Rmd"), seed = 40477)
 ```

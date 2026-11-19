@@ -3,7 +3,7 @@ title: "ims-kap-04-01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ims-kap-04-01/ims-kap-04-01.rmd | md5: e05c5bb41c324815f3786a619856f862 -->
+<!-- quelle: exrs/posts/ims-kap-04-01/ims-kap-04-01.rmd | stand: e05c5bb41c324815f3786a619856f862-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "e05c5bb41c324815f3786a619856f862-fee003527427"
 quiz(file.path(root, "exrs/posts/ims-kap-04-01/ims-kap-04-01.rmd"), seed = 5769)
 ```

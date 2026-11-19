@@ -3,7 +3,7 @@ title: "modelldef-regrformel"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/modelldef-regrformel/index.qmd | md5: 0a8e70b933cc8afd2ea78f5b45a9d730 -->
+<!-- quelle: exrs/posts/modelldef-regrformel/index.qmd | stand: 0a8e70b933cc8afd2ea78f5b45a9d730-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "0a8e70b933cc8afd2ea78f5b45a9d730-fee003527427"
 quiz(file.path(root, "exrs/posts/modelldef-regrformel/index.qmd"), seed = 21785)
 ```

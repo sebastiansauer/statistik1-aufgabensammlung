@@ -3,7 +3,7 @@ title: "Kausale-Verben"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/kausale-verben/kausale-verben.rmd | md5: 41f0ddcc72fe43b44b6c639c371ecc4c -->
+<!-- quelle: exrs/posts/kausale-verben/kausale-verben.rmd | stand: 41f0ddcc72fe43b44b6c639c371ecc4c-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "41f0ddcc72fe43b44b6c639c371ecc4c-fee003527427"
 quiz(file.path(root, "exrs/posts/kausale-verben/kausale-verben.rmd"), seed = 10667)
 ```

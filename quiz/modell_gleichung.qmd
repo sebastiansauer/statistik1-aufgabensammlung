@@ -3,7 +3,7 @@ title: "modell_gleichung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/modell_gleichung/modell_gleichung.rmd | md5: 95c77d514e2024f3cf066caf2d1fd66a -->
+<!-- quelle: exrs/posts/modell_gleichung/modell_gleichung.rmd | stand: 95c77d514e2024f3cf066caf2d1fd66a-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "95c77d514e2024f3cf066caf2d1fd66a-fee003527427"
 quiz(file.path(root, "exrs/posts/modell_gleichung/modell_gleichung.rmd"), seed = 14325)
 ```

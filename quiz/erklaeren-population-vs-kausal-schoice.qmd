@@ -3,7 +3,7 @@ title: "erklaeren-population-vs-kausal-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/erklaeren-population-vs-kausal-schoice/erklaeren-population-vs-kausal-schoice.Rmd | md5: 35531d98a1d3b794396f2096cda559f4 -->
+<!-- quelle: exrs/posts/erklaeren-population-vs-kausal-schoice/erklaeren-population-vs-kausal-schoice.Rmd | stand: 35531d98a1d3b794396f2096cda559f4-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "35531d98a1d3b794396f2096cda559f4-fee003527427"
 quiz(file.path(root, "exrs/posts/erklaeren-population-vs-kausal-schoice/erklaeren-population-vs-kausal-schoice.Rmd"), seed = 74159)
 ```

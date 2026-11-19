@@ -3,7 +3,7 @@ title: "joins"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/joins/joins.rmd | md5: 407be89d48fa5002bc24822a606d7e1e -->
+<!-- quelle: exrs/posts/joins/joins.rmd | stand: 407be89d48fa5002bc24822a606d7e1e-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "407be89d48fa5002bc24822a606d7e1e-fee003527427"
 quiz(file.path(root, "exrs/posts/joins/joins.rmd"), seed = 1658)
 ```

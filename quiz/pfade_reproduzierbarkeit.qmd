@@ -3,7 +3,7 @@ title: "pfade_reproduzierbarkeit"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd | md5: 22fc43b325f0c54abe9af717a5f6bbd0 -->
+<!-- quelle: exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd | stand: 22fc43b325f0c54abe9af717a5f6bbd0-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "22fc43b325f0c54abe9af717a5f6bbd0-fee003527427"
 quiz(file.path(root, "exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd"), seed = 32170)
 ```

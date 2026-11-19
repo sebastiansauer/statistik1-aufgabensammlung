@@ -3,7 +3,7 @@ title: "Kennwert-robust"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/kennwert-robust/kennwert-robust.rmd | md5: db54bc00a505c91473fd78fd336a2030 -->
+<!-- quelle: exrs/posts/kennwert-robust/kennwert-robust.rmd | stand: db54bc00a505c91473fd78fd336a2030-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "db54bc00a505c91473fd78fd336a2030-fee003527427"
 quiz(file.path(root, "exrs/posts/kennwert-robust/kennwert-robust.rmd"), seed = 12819)
 ```

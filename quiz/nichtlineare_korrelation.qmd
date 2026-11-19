@@ -3,7 +3,7 @@ title: "nichtlineare_korrelation"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/nichtlineare_korrelation/nichtlineare_korrelation.rmd | md5: 14e60f328c72934c70460aeba505c73e -->
+<!-- quelle: exrs/posts/nichtlineare_korrelation/nichtlineare_korrelation.rmd | stand: 14e60f328c72934c70460aeba505c73e-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "14e60f328c72934c70460aeba505c73e-fee003527427"
 quiz(file.path(root, "exrs/posts/nichtlineare_korrelation/nichtlineare_korrelation.rmd"), seed = 32130)
 ```

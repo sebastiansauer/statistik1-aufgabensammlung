@@ -3,7 +3,7 @@ title: "Logikpruefung1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/logikpruefung1/logikpruefung1.rmd | md5: 6af16ebd99c1336d7013e1f8188095f1 -->
+<!-- quelle: exrs/posts/logikpruefung1/logikpruefung1.rmd | stand: 6af16ebd99c1336d7013e1f8188095f1-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "6af16ebd99c1336d7013e1f8188095f1-fee003527427"
 quiz(file.path(root, "exrs/posts/logikpruefung1/logikpruefung1.rmd"), seed = 10561)
 ```

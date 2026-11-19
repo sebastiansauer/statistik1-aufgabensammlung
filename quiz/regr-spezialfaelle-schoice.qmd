@@ -3,7 +3,7 @@ title: "regr-spezialfaelle-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regr-spezialfaelle-schoice/regr-spezialfaelle-schoice.Rmd | md5: 31d26179009a7ab43ae160b1ae2ddee1 -->
+<!-- quelle: exrs/posts/regr-spezialfaelle-schoice/regr-spezialfaelle-schoice.Rmd | stand: 31d26179009a7ab43ae160b1ae2ddee1-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "31d26179009a7ab43ae160b1ae2ddee1-fee003527427"
 quiz(file.path(root, "exrs/posts/regr-spezialfaelle-schoice/regr-spezialfaelle-schoice.Rmd"), seed = 35376)
 ```

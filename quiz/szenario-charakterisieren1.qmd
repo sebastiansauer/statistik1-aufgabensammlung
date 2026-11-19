@@ -3,7 +3,7 @@ title: "Szenario-charakterisieren1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/szenario-charakterisieren1/szenario-charakterisieren1.rmd | md5: 8ed21fa92de4a5e47676dadc30e4766e -->
+<!-- quelle: exrs/posts/szenario-charakterisieren1/szenario-charakterisieren1.rmd | stand: 8ed21fa92de4a5e47676dadc30e4766e-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "8ed21fa92de4a5e47676dadc30e4766e-fee003527427"
 quiz(file.path(root, "exrs/posts/szenario-charakterisieren1/szenario-charakterisieren1.rmd"), seed = 35459)
 ```

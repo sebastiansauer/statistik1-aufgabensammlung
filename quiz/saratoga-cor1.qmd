@@ -3,7 +3,7 @@ title: "saratoga-cor1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/saratoga-cor1/saratoga-cor1.qmd | md5: ed5bc7d1aa147864c4cb6e814b10c352 -->
+<!-- quelle: exrs/posts/saratoga-cor1/saratoga-cor1.qmd | stand: ed5bc7d1aa147864c4cb6e814b10c352-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "ed5bc7d1aa147864c4cb6e814b10c352-fee003527427"
 quiz(file.path(root, "exrs/posts/saratoga-cor1/saratoga-cor1.qmd"), seed = 8403)
 ```

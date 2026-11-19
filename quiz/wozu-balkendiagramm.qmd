@@ -3,7 +3,7 @@ title: "wozu-balkendiagramm"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wozu-balkendiagramm/wozu-balkendiagramm.rmd | md5: 18d523afa860f3a72278cd7deb2c0283 -->
+<!-- quelle: exrs/posts/wozu-balkendiagramm/wozu-balkendiagramm.rmd | stand: 18d523afa860f3a72278cd7deb2c0283-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "18d523afa860f3a72278cd7deb2c0283-fee003527427"
 quiz(file.path(root, "exrs/posts/wozu-balkendiagramm/wozu-balkendiagramm.rmd"), seed = 19688)
 ```

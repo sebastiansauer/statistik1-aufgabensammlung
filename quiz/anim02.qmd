@@ -3,7 +3,7 @@ title: "anim02"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/anim02/anim02.rmd | md5: 5a63ae455c44eab592ea017fac6b0c8b -->
+<!-- quelle: exrs/posts/anim02/anim02.rmd | stand: 5a63ae455c44eab592ea017fac6b0c8b-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "5a63ae455c44eab592ea017fac6b0c8b-fee003527427"
 quiz(file.path(root, "exrs/posts/anim02/anim02.rmd"), seed = 1608)
 ```

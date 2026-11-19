@@ -3,7 +3,7 @@ title: "rowmeans-groupby-summarise"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/rowmeans-groupby-summarise/index.qmd | md5: b693fe49e8b0bcd07db79a59b4a71c6c -->
+<!-- quelle: exrs/posts/rowmeans-groupby-summarise/index.qmd | stand: b693fe49e8b0bcd07db79a59b4a71c6c-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b693fe49e8b0bcd07db79a59b4a71c6c-fee003527427"
 quiz(file.path(root, "exrs/posts/rowmeans-groupby-summarise/index.qmd"), seed = 36726)
 ```

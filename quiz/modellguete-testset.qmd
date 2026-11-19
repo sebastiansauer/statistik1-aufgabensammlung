@@ -3,7 +3,7 @@ title: "modellguete-testset"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/modellguete-testset/modellguete-testset.rmd | md5: 0a88446a883205b64ffdb9eb4cb703f6 -->
+<!-- quelle: exrs/posts/modellguete-testset/modellguete-testset.rmd | stand: 0a88446a883205b64ffdb9eb4cb703f6-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "0a88446a883205b64ffdb9eb4cb703f6-fee003527427"
 quiz(file.path(root, "exrs/posts/modellguete-testset/modellguete-testset.rmd"), seed = 20080)
 ```

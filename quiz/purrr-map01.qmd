@@ -3,7 +3,7 @@ title: "purrr-map01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/purrr-map01/purrr-map01.rmd | md5: b1e9ee0cb37439fc6fae42f7210bab38 -->
+<!-- quelle: exrs/posts/purrr-map01/purrr-map01.rmd | stand: b1e9ee0cb37439fc6fae42f7210bab38-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b1e9ee0cb37439fc6fae42f7210bab38-fee003527427"
 quiz(file.path(root, "exrs/posts/purrr-map01/purrr-map01.rmd"), seed = 5550)
 ```

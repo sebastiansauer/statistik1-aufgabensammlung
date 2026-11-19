@@ -3,7 +3,7 @@ title: "nutzen_modelle"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/nutzen_modelle/nutzen_modelle.rmd | md5: 42e000d447a5cae845b8737598b17eac -->
+<!-- quelle: exrs/posts/nutzen_modelle/nutzen_modelle.rmd | stand: 42e000d447a5cae845b8737598b17eac-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "42e000d447a5cae845b8737598b17eac-fee003527427"
 quiz(file.path(root, "exrs/posts/nutzen_modelle/nutzen_modelle.rmd"), seed = 11106)
 ```

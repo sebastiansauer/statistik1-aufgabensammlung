@@ -3,7 +3,7 @@ title: "verteilungen2a"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/verteilungen2a/verteilungen2a.rmd | md5: 22346af60d88bb55ae707daaf07e078e -->
+<!-- quelle: exrs/posts/verteilungen2a/verteilungen2a.rmd | stand: 22346af60d88bb55ae707daaf07e078e-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "22346af60d88bb55ae707daaf07e078e-fee003527427"
 quiz(file.path(root, "exrs/posts/verteilungen2a/verteilungen2a.rmd"), seed = 10412)
 ```

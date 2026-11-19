@@ -3,7 +3,7 @@ title: "viz-geom-point5"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/viz-geom-point5/viz-geom-point5.rmd | md5: b32a06e3ffe1ec5aa813f6a7299ffd5b -->
+<!-- quelle: exrs/posts/viz-geom-point5/viz-geom-point5.rmd | stand: b32a06e3ffe1ec5aa813f6a7299ffd5b-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "b32a06e3ffe1ec5aa813f6a7299ffd5b-fee003527427"
 quiz(file.path(root, "exrs/posts/viz-geom-point5/viz-geom-point5.rmd"), seed = 11499)
 ```

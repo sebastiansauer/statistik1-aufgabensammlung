@@ -3,7 +3,7 @@ title: "bullshit1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/bullshit1/bullshit1.rmd | md5: 211d07c39df1b0fc37dae07714393bec -->
+<!-- quelle: exrs/posts/bullshit1/bullshit1.rmd | stand: 211d07c39df1b0fc37dae07714393bec-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "211d07c39df1b0fc37dae07714393bec-fee003527427"
 quiz(file.path(root, "exrs/posts/bullshit1/bullshit1.rmd"), seed = 4391)
 ```

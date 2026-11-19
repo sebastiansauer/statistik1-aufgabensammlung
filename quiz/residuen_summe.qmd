@@ -3,7 +3,7 @@ title: "residuen_summe"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/residuen_summe/residuen_summe.rmd | md5: c040f584da6454efedfa684db584e59d -->
+<!-- quelle: exrs/posts/residuen_summe/residuen_summe.rmd | stand: c040f584da6454efedfa684db584e59d-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "c040f584da6454efedfa684db584e59d-fee003527427"
 quiz(file.path(root, "exrs/posts/residuen_summe/residuen_summe.rmd"), seed = 11301)
 ```

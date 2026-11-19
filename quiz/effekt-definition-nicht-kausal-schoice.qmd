@@ -3,7 +3,7 @@ title: "effekt-definition-nicht-kausal-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/effekt-definition-nicht-kausal-schoice/effekt-definition-nicht-kausal-schoice.Rmd | md5: 77485d7bf0b1dcb0dacc16144b6d8921 -->
+<!-- quelle: exrs/posts/effekt-definition-nicht-kausal-schoice/effekt-definition-nicht-kausal-schoice.Rmd | stand: 77485d7bf0b1dcb0dacc16144b6d8921-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "77485d7bf0b1dcb0dacc16144b6d8921-fee003527427"
 quiz(file.path(root, "exrs/posts/effekt-definition-nicht-kausal-schoice/effekt-definition-nicht-kausal-schoice.Rmd"), seed = 73763)
 ```

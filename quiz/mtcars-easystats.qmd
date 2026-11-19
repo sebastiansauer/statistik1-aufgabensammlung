@@ -3,7 +3,7 @@ title: "mtcars-easystats"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mtcars-easystats/index.qmd | md5: e0909d75befe701172694886fe0a841b -->
+<!-- quelle: exrs/posts/mtcars-easystats/index.qmd | stand: e0909d75befe701172694886fe0a841b-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "e0909d75befe701172694886fe0a841b-fee003527427"
 quiz(file.path(root, "exrs/posts/mtcars-easystats/index.qmd"), seed = 14589)
 ```

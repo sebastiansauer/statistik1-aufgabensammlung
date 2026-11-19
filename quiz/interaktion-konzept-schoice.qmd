@@ -3,7 +3,7 @@ title: "interaktion-konzept-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/interaktion-konzept-schoice/interaktion-konzept-schoice.Rmd | md5: a7c1210c99d8ebc242a353668671e020 -->
+<!-- quelle: exrs/posts/interaktion-konzept-schoice/interaktion-konzept-schoice.Rmd | stand: a7c1210c99d8ebc242a353668671e020-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "a7c1210c99d8ebc242a353668671e020-fee003527427"
 quiz(file.path(root, "exrs/posts/interaktion-konzept-schoice/interaktion-konzept-schoice.Rmd"), seed = 38670)
 ```

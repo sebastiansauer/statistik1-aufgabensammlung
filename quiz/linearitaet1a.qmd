@@ -3,7 +3,7 @@ title: "Linearitaet1a"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/linearitaet1a/linearitaet1a.rmd | md5: eb089874a35dfacfc6aaa8e573674ba3 -->
+<!-- quelle: exrs/posts/linearitaet1a/linearitaet1a.rmd | stand: eb089874a35dfacfc6aaa8e573674ba3-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "eb089874a35dfacfc6aaa8e573674ba3-fee003527427"
 quiz(file.path(root, "exrs/posts/linearitaet1a/linearitaet1a.rmd"), seed = 8892)
 ```

@@ -3,7 +3,7 @@ title: "ames-kaggle1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ames-kaggle1/ames-kaggle1.rmd | md5: fbba13d41fe602511205de7f3df23676 -->
+<!-- quelle: exrs/posts/ames-kaggle1/ames-kaggle1.rmd | stand: fbba13d41fe602511205de7f3df23676-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "fbba13d41fe602511205de7f3df23676-fee003527427"
 quiz(file.path(root, "exrs/posts/ames-kaggle1/ames-kaggle1.rmd"), seed = 7154)
 ```

@@ -3,7 +3,7 @@ title: "moderation"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/moderation/index.qmd | md5: 72833ce6c66422cb44aef280d1bf82ca -->
+<!-- quelle: exrs/posts/moderation/index.qmd | stand: 72833ce6c66422cb44aef280d1bf82ca-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "72833ce6c66422cb44aef280d1bf82ca-fee003527427"
 quiz(file.path(root, "exrs/posts/moderation/index.qmd"), seed = 5938)
 ```

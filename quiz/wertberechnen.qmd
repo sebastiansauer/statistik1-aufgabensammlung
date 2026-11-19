@@ -3,7 +3,7 @@ title: "Wertberechnen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wertberechnen/wertberechnen.rmd | md5: 4f938a46331a57bbcf6bfbcdcf5da9a9 -->
+<!-- quelle: exrs/posts/wertberechnen/wertberechnen.rmd | stand: 4f938a46331a57bbcf6bfbcdcf5da9a9-fee003527427 -->
 
 ```{r}
 #| include: false
@@ -14,5 +14,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
+#| cache.extra: "4f938a46331a57bbcf6bfbcdcf5da9a9-fee003527427"
 quiz(file.path(root, "exrs/posts/wertberechnen/wertberechnen.rmd"), seed = 9612)
 ```
