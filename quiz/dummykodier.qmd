@@ -3,10 +3,11 @@ title: "dummykodier"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/dummykodier/dummykodier.rmd | stand: 498a3aabe30fa3f540fdb4b252fc2cea-fee003527427 -->
+<!-- quelle: exrs/posts/dummykodier/dummykodier.rmd | stand: 498a3aabe30fa3f540fdb4b252fc2cea-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "498a3aabe30fa3f540fdb4b252fc2cea-fee003527427"
+#| cache.extra: "498a3aabe30fa3f540fdb4b252fc2cea-64598fa00985"
 quiz(file.path(root, "exrs/posts/dummykodier/dummykodier.rmd"), seed = 7130)
 ```

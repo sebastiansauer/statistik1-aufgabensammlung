@@ -69,6 +69,7 @@ for (k in seq_len(nrow(zuordnung))) {
     "",
     "```{r}",
     "#| include: false",
+    "#| cache: false",
     "root <- Sys.getenv(\"QUARTO_PROJECT_DIR\", unset = normalizePath(\"..\"))",
     "source(file.path(root, \"specifics\", \"quiz.R\"))",
     "```",

@@ -3,10 +3,11 @@ title: "regr-yb-interpretation-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd | stand: 9ab83415aa7dfcfa0c3644f59f1804d8-fee003527427 -->
+<!-- quelle: exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd | stand: 9ab83415aa7dfcfa0c3644f59f1804d8-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "9ab83415aa7dfcfa0c3644f59f1804d8-fee003527427"
+#| cache.extra: "9ab83415aa7dfcfa0c3644f59f1804d8-64598fa00985"
 quiz(file.path(root, "exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd"), seed = 47572)
 ```

@@ -3,10 +3,11 @@ title: "dplyr-uebersetzen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd | stand: fe679b1d8bcbe4b5156a58d24908b0f2-fee003527427 -->
+<!-- quelle: exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd | stand: fe679b1d8bcbe4b5156a58d24908b0f2-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "fe679b1d8bcbe4b5156a58d24908b0f2-fee003527427"
+#| cache.extra: "fe679b1d8bcbe4b5156a58d24908b0f2-64598fa00985"
 quiz(file.path(root, "exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd"), seed = 16378)
 ```

@@ -3,10 +3,11 @@ title: "regressionbegriff"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regressionbegriff/regressionbegriff.rmd | stand: 16983ef02ae6e37aa27f13c03aa253bd-fee003527427 -->
+<!-- quelle: exrs/posts/regressionbegriff/regressionbegriff.rmd | stand: 16983ef02ae6e37aa27f13c03aa253bd-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "16983ef02ae6e37aa27f13c03aa253bd-fee003527427"
+#| cache.extra: "16983ef02ae6e37aa27f13c03aa253bd-64598fa00985"
 quiz(file.path(root, "exrs/posts/regressionbegriff/regressionbegriff.rmd"), seed = 16186)
 ```

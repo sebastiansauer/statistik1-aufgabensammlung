@@ -3,10 +3,11 @@ title: "zuweisung_operator"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zuweisung_operator/zuweisung_operator.rmd | stand: db8335e231f9945d01ef927eb6cd2a22-fee003527427 -->
+<!-- quelle: exrs/posts/zuweisung_operator/zuweisung_operator.rmd | stand: db8335e231f9945d01ef927eb6cd2a22-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "db8335e231f9945d01ef927eb6cd2a22-fee003527427"
+#| cache.extra: "db8335e231f9945d01ef927eb6cd2a22-64598fa00985"
 quiz(file.path(root, "exrs/posts/zuweisung_operator/zuweisung_operator.rmd"), seed = 18632)
 ```

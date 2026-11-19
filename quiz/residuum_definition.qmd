@@ -3,10 +3,11 @@ title: "residuum_definition"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/residuum_definition/residuum_definition.rmd | stand: 2c67cc4572fd9ca99c925c816e11e57a-fee003527427 -->
+<!-- quelle: exrs/posts/residuum_definition/residuum_definition.rmd | stand: 2c67cc4572fd9ca99c925c816e11e57a-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "2c67cc4572fd9ca99c925c816e11e57a-fee003527427"
+#| cache.extra: "2c67cc4572fd9ca99c925c816e11e57a-64598fa00985"
 quiz(file.path(root, "exrs/posts/residuum_definition/residuum_definition.rmd"), seed = 20373)
 ```

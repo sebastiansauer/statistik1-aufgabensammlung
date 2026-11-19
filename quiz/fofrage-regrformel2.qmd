@@ -3,10 +3,11 @@ title: "fofrage-regrformel2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/fofrage-regrformel2/index.qmd | stand: 0c749e5ed1a91cbde10287acb9b76a48-fee003527427 -->
+<!-- quelle: exrs/posts/fofrage-regrformel2/index.qmd | stand: 0c749e5ed1a91cbde10287acb9b76a48-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "0c749e5ed1a91cbde10287acb9b76a48-fee003527427"
+#| cache.extra: "0c749e5ed1a91cbde10287acb9b76a48-64598fa00985"
 quiz(file.path(root, "exrs/posts/fofrage-regrformel2/index.qmd"), seed = 18738)
 ```

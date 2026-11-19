@@ -3,10 +3,11 @@ title: "z-standardisierung-vergleich-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd | stand: 523d94de832d9aff31b92635dc96231d-fee003527427 -->
+<!-- quelle: exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd | stand: 523d94de832d9aff31b92635dc96231d-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "523d94de832d9aff31b92635dc96231d-fee003527427"
+#| cache.extra: "523d94de832d9aff31b92635dc96231d-64598fa00985"
 quiz(file.path(root, "exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd"), seed = 67419)
 ```

@@ -3,10 +3,11 @@ title: "vektorielles_rechnen_transfer"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vektorielles_rechnen_transfer/vektorielles_rechnen_transfer.rmd | stand: e736a07bbd9af7b3ea7fe79005f34333-fee003527427 -->
+<!-- quelle: exrs/posts/vektorielles_rechnen_transfer/vektorielles_rechnen_transfer.rmd | stand: e736a07bbd9af7b3ea7fe79005f34333-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "e736a07bbd9af7b3ea7fe79005f34333-fee003527427"
+#| cache.extra: "e736a07bbd9af7b3ea7fe79005f34333-64598fa00985"
 quiz(file.path(root, "exrs/posts/vektorielles_rechnen_transfer/vektorielles_rechnen_transfer.rmd"), seed = 46352)
 ```

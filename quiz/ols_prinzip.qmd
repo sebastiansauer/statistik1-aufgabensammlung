@@ -3,10 +3,11 @@ title: "ols_prinzip"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ols_prinzip/ols_prinzip.rmd | stand: 312b5b63094df3cf4da9eddd5c912935-fee003527427 -->
+<!-- quelle: exrs/posts/ols_prinzip/ols_prinzip.rmd | stand: 312b5b63094df3cf4da9eddd5c912935-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "312b5b63094df3cf4da9eddd5c912935-fee003527427"
+#| cache.extra: "312b5b63094df3cf4da9eddd5c912935-64598fa00985"
 quiz(file.path(root, "exrs/posts/ols_prinzip/ols_prinzip.rmd"), seed = 7291)
 ```

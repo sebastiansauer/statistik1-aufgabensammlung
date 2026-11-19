@@ -127,10 +127,29 @@ quiz_hinweis <- function(datei, grund) {
     paste0("`", basename(datei), "`"), ":::")
 }
 
+# Quarto installiert beim Rendern knitr-Hooks, die jede Chunk-Ausgabe in
+# "::: {.cell}"-Bloecke packen. Innerhalb von exams2forms haengt sich der
+# schliessende ":::" dann an die letzte Antwortoption. Deshalb exams2forms mit
+# Standard-Hooks und -Optionen von knitr ausfuehren und danach alles zuruecksetzen.
+quiz_ohne_quarto_hooks <- function(expr) {
+  hooks <- knitr::knit_hooks$get()
+  chunk <- knitr::opts_chunk$get()
+  knit  <- knitr::opts_knit$get()
+  on.exit({
+    knitr::knit_hooks$set(hooks)
+    knitr::opts_chunk$set(chunk)
+    knitr::opts_knit$set(knit)
+  })
+  knitr::knit_hooks$restore()
+  knitr::opts_chunk$restore()
+  knitr::opts_knit$restore()
+  expr
+}
+
 quiz_interaktiv <- function(tmp, edir, seed, x, ...) {
   rendern <- function(...) {
     set.seed(seed)
-    capture.output(exams2forms(tmp, edir = edir, ...))
+    quiz_ohne_quarto_hooks(capture.output(exams2forms(tmp, edir = edir, ...)))
   }
   ist_string <- any(grepl("^extype: *string *$", x))
   if (!ist_string) return(list(modus = "interaktiv", html = rendern(...)))
@@ -155,6 +174,17 @@ quiz_leerzeilen <- function(z) {
   z
 }
 
+# Die Auswahl-Gruppen (Radio-Buttons/Checkboxen) sind HTML-Zeilen. Quarto liest sie
+# je nach Pandoc-Einstellung als nicht geschlossenes <div>; dann landen die
+# folgenden ":::" als Text im Quiz. Als rohen HTML-Block kennzeichnen.
+quiz_rohhtml <- function(z) {
+  k <- grep("^<div class='webex-(radiogroup|checkboxgroup)'", z)
+  for (i in rev(k)) z <- append(z, c("```{=html}", z[i], "```"), after = i)[-i]
+  z
+}
+
+quiz_nachbearbeiten <- function(z) quiz_leerzeilen(quiz_rohhtml(z))
+
 quiz_protokoll <- function(datei, modus) {
   log <- Sys.getenv("QUIZ_LOG")
   if (nzchar(log))
@@ -176,15 +206,19 @@ quiz_ausfuehren <- function(datei, seed, ...) {
   edir <- dirname(normalizePath(datei))
 
   erg <- tryCatch(quiz_interaktiv(tmp, edir, seed, x, ...), error = function(e) e)
+  # Bleiben Quarto-Zellen ("::: {.cell...}") im Text stehen (z.B. bei kableExtra),
+  # waere das Ergebnis kaputt -> wie ein Fehler behandeln (Rueckfall).
+  if (!inherits(erg, "error") && any(grepl("::: *\\{\\.cell", erg$html)))
+    erg <- simpleError("Quarto-Zellen im Ausgabetext")
   if (!inherits(erg, "error")) {
-    cat(quiz_leerzeilen(erg$html), sep = "\n")
+    cat(quiz_nachbearbeiten(erg$html), sep = "\n")
     return(invisible(erg$modus))
   }
   kl <- tryCatch(quiz_knit_klassisch(tmp, seed), error = function(e) e)
   if (!inherits(kl, "error")) {
-    cat(quiz_leerzeilen(kl), sep = "\n")
+    cat(quiz_nachbearbeiten(kl), sep = "\n")
     return(invisible("klassisch-knit"))
   }
-  cat(quiz_leerzeilen(quiz_hinweis(datei, conditionMessage(erg))), sep = "\n")
+  cat(quiz_nachbearbeiten(quiz_hinweis(datei, conditionMessage(erg))), sep = "\n")
   invisible("fehler")
 }

@@ -3,10 +3,11 @@ title: "tidymodels-simple1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd | stand: dd4c0871ea859cfb124b27ed432086ab-fee003527427 -->
+<!-- quelle: exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd | stand: dd4c0871ea859cfb124b27ed432086ab-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "dd4c0871ea859cfb124b27ed432086ab-fee003527427"
+#| cache.extra: "dd4c0871ea859cfb124b27ed432086ab-64598fa00985"
 quiz(file.path(root, "exrs/posts/tidymodels-simple1/tidymodels-simple1.rmd"), seed = 16724)
 ```

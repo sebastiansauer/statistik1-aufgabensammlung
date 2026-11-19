@@ -3,10 +3,11 @@ title: "anim01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/anim01/anim01.rmd | stand: 91c4f01481cf92c980ba5253c3cc9cb3-fee003527427 -->
+<!-- quelle: exrs/posts/anim01/anim01.rmd | stand: 91c4f01481cf92c980ba5253c3cc9cb3-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "91c4f01481cf92c980ba5253c3cc9cb3-fee003527427"
+#| cache.extra: "91c4f01481cf92c980ba5253c3cc9cb3-64598fa00985"
 quiz(file.path(root, "exrs/posts/anim01/anim01.rmd"), seed = 1602)
 ```

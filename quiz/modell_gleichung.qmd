@@ -3,10 +3,11 @@ title: "modell_gleichung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/modell_gleichung/modell_gleichung.rmd | stand: 95c77d514e2024f3cf066caf2d1fd66a-fee003527427 -->
+<!-- quelle: exrs/posts/modell_gleichung/modell_gleichung.rmd | stand: 95c77d514e2024f3cf066caf2d1fd66a-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "95c77d514e2024f3cf066caf2d1fd66a-fee003527427"
+#| cache.extra: "95c77d514e2024f3cf066caf2d1fd66a-64598fa00985"
 quiz(file.path(root, "exrs/posts/modell_gleichung/modell_gleichung.rmd"), seed = 14325)
 ```

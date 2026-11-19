@@ -3,10 +3,11 @@ title: "r_vs_rstudio"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/r_vs_rstudio/r_vs_rstudio.rmd | stand: 93b97365f3bee67fd296b71dba4c18ff-fee003527427 -->
+<!-- quelle: exrs/posts/r_vs_rstudio/r_vs_rstudio.rmd | stand: 93b97365f3bee67fd296b71dba4c18ff-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "93b97365f3bee67fd296b71dba4c18ff-fee003527427"
+#| cache.extra: "93b97365f3bee67fd296b71dba4c18ff-64598fa00985"
 quiz(file.path(root, "exrs/posts/r_vs_rstudio/r_vs_rstudio.rmd"), seed = 8550)
 ```

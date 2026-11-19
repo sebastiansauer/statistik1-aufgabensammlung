@@ -3,10 +3,11 @@ title: "zielart-beschreiben-definition-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd | stand: 03f7db6bbe9bcc423174302a4c06bf95-fee003527427 -->
+<!-- quelle: exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd | stand: 03f7db6bbe9bcc423174302a4c06bf95-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "03f7db6bbe9bcc423174302a4c06bf95-fee003527427"
+#| cache.extra: "03f7db6bbe9bcc423174302a4c06bf95-64598fa00985"
 quiz(file.path(root, "exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd"), seed = 74673)
 ```

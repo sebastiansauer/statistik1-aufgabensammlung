@@ -3,10 +3,11 @@ title: "nullmodell_r"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/nullmodell_r/nullmodell_r.rmd | stand: fd80de4d521c74afe340e234826d0b71-fee003527427 -->
+<!-- quelle: exrs/posts/nullmodell_r/nullmodell_r.rmd | stand: fd80de4d521c74afe340e234826d0b71-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "fd80de4d521c74afe340e234826d0b71-fee003527427"
+#| cache.extra: "fd80de4d521c74afe340e234826d0b71-64598fa00985"
 quiz(file.path(root, "exrs/posts/nullmodell_r/nullmodell_r.rmd"), seed = 8284)
 ```

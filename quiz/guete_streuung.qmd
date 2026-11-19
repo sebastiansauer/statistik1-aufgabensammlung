@@ -3,10 +3,11 @@ title: "guete_streuung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/guete_streuung/guete_streuung.rmd | stand: bfae6f03ac4a284f1d126f8cf6bb17d1-fee003527427 -->
+<!-- quelle: exrs/posts/guete_streuung/guete_streuung.rmd | stand: bfae6f03ac4a284f1d126f8cf6bb17d1-64598fa00985 -->
 
 ```{r}
 #| include: false
+#| cache: false
 root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
 source(file.path(root, "specifics", "quiz.R"))
 ```
@@ -14,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "bfae6f03ac4a284f1d126f8cf6bb17d1-fee003527427"
+#| cache.extra: "bfae6f03ac4a284f1d126f8cf6bb17d1-64598fa00985"
 quiz(file.path(root, "exrs/posts/guete_streuung/guete_streuung.rmd"), seed = 11511)
 ```
