@@ -84,30 +84,83 @@ quiz_klassisch <- function(html) {
       "::: {.callout-tip collapse=\"true\" title=\"L\u00f6sung\"}", html)
 }
 
-quiz <- function(datei, seed = getOption("quiz.seed", 42), ...) {
-  x <- quiz_normalisieren(readLines(datei, encoding = "UTF-8", warn = FALSE))
-  tmp <- file.path(tempdir(), basename(datei))
-  writeLines(x, tmp, useBytes = TRUE)
-  edir <- dirname(normalizePath(datei))
+# Aufgaben, auf die im Buch verzichtet wird (Paket nicht verfuegbar)
+quiz_ausgelassen_muster <- "textfeatures"
+
+# Rueckfall 1: Aufgabe ohne exams2forms knitten und Frage/Loesung klassisch
+# darstellen (Bilder als base64 eingebettet).
+quiz_knit_klassisch <- function(tmp, seed) {
+  # In frischem R-Prozess knitten: nach einem Fehler in exams2forms bleibt in
+  # der aktuellen Sitzung Zustand zurueck, der das Knitten stoert.
+  out <- tempfile(fileext = ".md")
+  xfun::Rscript_call(function(tmp, out, seed, libs, wd) {
+    .libPaths(libs); setwd(wd); set.seed(seed)
+    knitr::knit(tmp, out, quiet = TRUE, envir = new.env(), encoding = "UTF-8")
+  }, list(tmp, out, seed, .libPaths(), getwd()))
+  md <- readLines(out, encoding = "UTF-8", warn = FALSE)
+  setext <- function(titel) which(md == titel & c(md[-1], "") == "========")[1]
+  q <- setext("Question"); l <- setext("Solution"); m <- setext("Meta-information")
+  if (is.na(q)) stop("keine Question-Ueberschrift")
+  ende_q <- if (is.na(l)) length(md) else l - 1
+  frage <- md[(q + 2):ende_q]
+  loesung <- if (is.na(l)) character() else md[(l + 2):(if (is.na(m)) length(md) else m - 1)]
+  einbetten <- function(z) {
+    for (i in grep("!\\[[^]]*\\]\\([^)]+\\)", z)) {
+      pfad <- sub(".*!\\[[^]]*\\]\\(([^) ]+).*", "\\1", z[i])
+      if (file.exists(pfad))
+        z[i] <- sub("(!\\[[^]]*\\]\\()[^) ]+", paste0("\\1", xfun::base64_uri(pfad)), z[i])
+    }
+    z
+  }
+  c("::: {.aufgabe-klassisch}", einbetten(frage), ":::", "",
+    "::: {.callout-tip collapse=\"true\" title=\"L\u00f6sung\"}", einbetten(loesung), ":::")
+}
+
+# Rueckfall 2: Hinweis statt Aufgabe, damit das Buch nie abbricht
+quiz_hinweis <- function(datei, grund) {
+  warning("quiz(): ", basename(datei), " nicht darstellbar: ", grund, call. = FALSE)
+  c("::: {.callout-warning title=\"Aufgabe derzeit nicht darstellbar\"}",
+    paste0("`", basename(datei), "`"), ":::")
+}
+
+quiz_interaktiv <- function(tmp, edir, seed, x, ...) {
   rendern <- function(...) {
     set.seed(seed)
     capture.output(exams2forms(tmp, edir = edir, ...))
   }
-
   ist_string <- any(grepl("^extype: *string *$", x))
-  if (!ist_string) {
-    cat(rendern(...), sep = "\n")
-    return(invisible("interaktiv"))
-  }
+  if (!ist_string) return(list(modus = "interaktiv", html = rendern(...)))
 
   # string: Leerzeichen und Gross-/Kleinschreibung egal
   probe <- rendern(obfuscate = FALSE, usespace = FALSE, usecase = FALSE, ...)
   antworten <- quiz_antworten(probe)
-  if (quiz_string_geeignet(antworten)) {
-    cat(quiz_loesung_ohne_leerzeichen(probe, antworten), sep = "\n")
-    invisible("interaktiv")
-  } else {
-    cat(quiz_klassisch(probe), sep = "\n")
-    invisible("klassisch")
+  if (quiz_string_geeignet(antworten))
+    list(modus = "interaktiv", html = quiz_loesung_ohne_leerzeichen(probe, antworten))
+  else
+    list(modus = "klassisch", html = quiz_klassisch(probe))
+}
+
+# Rueckgabe (unsichtbar): "interaktiv", "klassisch", "klassisch-knit",
+# "fehler" oder "ausgelassen"
+quiz <- function(datei, seed = getOption("quiz.seed", 42), ...) {
+  roh <- readLines(datei, encoding = "UTF-8", warn = FALSE)
+  if (any(grepl(quiz_ausgelassen_muster, roh, ignore.case = TRUE))) return(invisible("ausgelassen"))
+
+  x <- quiz_normalisieren(roh)
+  tmp <- file.path(tempdir(), basename(datei))
+  writeLines(x, tmp, useBytes = TRUE)
+  edir <- dirname(normalizePath(datei))
+
+  erg <- tryCatch(quiz_interaktiv(tmp, edir, seed, x, ...), error = function(e) e)
+  if (!inherits(erg, "error")) {
+    cat(erg$html, sep = "\n")
+    return(invisible(erg$modus))
   }
+  kl <- tryCatch(quiz_knit_klassisch(tmp, seed), error = function(e) e)
+  if (!inherits(kl, "error")) {
+    cat(kl, sep = "\n")
+    return(invisible("klassisch-knit"))
+  }
+  cat(quiz_hinweis(datei, conditionMessage(erg)), sep = "\n")
+  invisible("fehler")
 }
