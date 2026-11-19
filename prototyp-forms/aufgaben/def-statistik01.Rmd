@@ -1,0 +1,48 @@
+---
+exname: def-statistik01
+extype: schoice
+exsolution: 00010
+exshuffle: 5
+expoints: 1
+categories:
+- schoice
+date: '2023-02-02'
+title: Def-Statistik01
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+Welche Definition von Statistik passt am besten?
+
+Answerlist
+----------
+* Statistik fasst Daten zusammen.
+* Statistik vervielfacht Daten.
+* Statistik fasst Daten zusammen, um wesentliche Informationen den Daten zu entnehmen.
+* Statistik fasst Daten zusammen, um wesentliche Informationen den Daten zu entnehmen und beschreibt die Ungewissheit unserer Schlüsse.
+* Statistik transformiert Rohdaten in Grafiken.
+
+## Solution
+
+Die vollständigste Definition (Option 4) umfasst sowohl das Zusammenfassen von Daten als auch das explizite Benennen der Ungewissheit – ein zentrales Merkmal statistischen Schlussfolgerns.
+
+Answerlist
+----------
+* Falsch
+* Falsch
+* Falsch
+* Wahr
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 00010
+exname: def-statistik01
+exshuffle: 5

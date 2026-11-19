@@ -1,0 +1,56 @@
+---
+exname: vis-mariokart-variab
+extype: schoice
+exsolution: 10000
+exshuffle: 5
+expoints: 1
+categories:
+- datawrangling
+- eda
+- vis
+- variability
+- schoice
+date: '2023-04-28'
+title: vis-mariokart-variab
+---
+
+```{r global-knitr-options, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H', fig.asp = 0.618, fig.width = 4,
+                      fig.cap = "", fig.path = "", echo = FALSE,
+                      message = FALSE, warning = FALSE, fig.show = "hold")
+```
+
+## Question
+
+
+
+Im Datensatz `mariokart` soll die **Streuung der Variable `total_pr`** visualisiert werden.
+
+Welcher R-Befehl (aus dem Paket `ggpubr`) ist dafür am besten geeignet?
+
+Answerlist
+----------
+* `gghistogram(mariokart, x = "total_pr")`
+* `ggbarplot(mariokart, x = "total_pr")`
+* `ggpiechart(mariokart, x = "total_pr")`
+* `ggline(mariokart, x = "total_pr")`
+* `ggcorrplot(mariokart)`
+
+## Solution
+
+`gghistogram()` zeigt die Häufigkeitsverteilung einer metrischen Variable und macht damit Streuung, Schiefe und Ausreißer sichtbar. Balken- und Kreisdiagramme sind für kategoriale Variablen gedacht.
+
+Answerlist
+----------
+* Wahr
+* Falsch
+* Falsch
+* Falsch
+* Falsch
+
+## Meta-information
+
+extype: schoice
+exsolution: 10000
+exname: vis-mariokart-variab
+exshuffle: 5
