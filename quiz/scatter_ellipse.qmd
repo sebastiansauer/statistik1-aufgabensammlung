@@ -1,0 +1,18 @@
+---
+title: "scatter_ellipse"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/scatter_ellipse/scatter_ellipse.rmd | md5: 0578f0bdac9ccf823e421a62e687409f -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/scatter_ellipse/scatter_ellipse.rmd"), seed = 12830)
+```

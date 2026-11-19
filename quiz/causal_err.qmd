@@ -1,0 +1,18 @@
+---
+title: "causal_err"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/causal_err/causal_err.rmd | md5: 4aa3620d47227d9e34d557863b4bdf6a -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/causal_err/causal_err.rmd"), seed = 5876)
+```

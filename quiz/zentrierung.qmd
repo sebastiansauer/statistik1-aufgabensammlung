@@ -1,0 +1,18 @@
+---
+title: "zentrierung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/zentrierung/zentrierung.rmd | md5: 9130dca0f72c7d6ab90f3a78fb0e6ba8 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/zentrierung/zentrierung.rmd"), seed = 7223)
+```

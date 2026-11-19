@@ -1,0 +1,18 @@
+---
+title: "aussagen-einfache-regr"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.rmd | md5: be16e7f87aea5216b5093e6c67c45f34 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.rmd"), seed = 24933)
+```

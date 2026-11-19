@@ -1,0 +1,18 @@
+---
+title: "neg_slope"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/neg_slope/neg_slope.rmd | md5: d72bb032fb8712c4d5c054c1449575e7 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/neg_slope/neg_slope.rmd"), seed = 4806)
+```

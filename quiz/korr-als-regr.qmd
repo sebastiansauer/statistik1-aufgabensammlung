@@ -1,0 +1,18 @@
+---
+title: "korr-als-regr"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/korr-als-regr/korr-als-regr.rmd | md5: 910a79dfdf373ae433194f50dae4ad40 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/korr-als-regr/korr-als-regr.rmd"), seed = 8984)
+```

@@ -1,0 +1,18 @@
+---
+title: "affairs-dplyr"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/affairs-dplyr/affairs-dplyr.rmd | md5: 976e92090bed1d8fabf1a631864a238d -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/affairs-dplyr/affairs-dplyr.rmd"), seed = 9511)
+```

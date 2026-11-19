@@ -1,0 +1,18 @@
+---
+title: "datenvis-moderndive-boxplot1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/datenvis-moderndive-boxplot1/datenvis-moderndive-boxplot1.rmd | md5: 8bace3d1fdaed07de75ce4191b888304 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/datenvis-moderndive-boxplot1/datenvis-moderndive-boxplot1.rmd"), seed = 40800)
+```

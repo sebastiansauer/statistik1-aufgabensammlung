@@ -1,0 +1,18 @@
+---
+title: "mae_berechnung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mae_berechnung/mae_berechnung.rmd | md5: 586b981ffaba1241d2277cea5d91b202 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mae_berechnung/mae_berechnung.rmd"), seed = 11105)
+```

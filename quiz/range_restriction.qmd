@@ -1,0 +1,18 @@
+---
+title: "range_restriction"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/range_restriction/range_restriction.rmd | md5: be0e77c04440cc2f0a7596313ef1c296 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/range_restriction/range_restriction.rmd"), seed = 16572)
+```

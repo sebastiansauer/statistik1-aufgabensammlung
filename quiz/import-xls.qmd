@@ -1,0 +1,18 @@
+---
+title: "import-xls"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/import-xls/import-xls.qmd | md5: 992578724031919b1a59b56ffa917ffa -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/import-xls/import-xls.qmd"), seed = 5766)
+```

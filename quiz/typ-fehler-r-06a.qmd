@@ -1,0 +1,18 @@
+---
+title: "Typ-Fehler-R-06a"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/typ-fehler-r-06a/typ-fehler-r-06a.rmd | md5: cdab3aa907e5c0aa9c60bb5273d08f83 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/typ-fehler-r-06a/typ-fehler-r-06a.rmd"), seed = 11113)
+```

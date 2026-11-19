@@ -1,0 +1,18 @@
+---
+title: "kovarianz_null"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/kovarianz_null/kovarianz_null.rmd | md5: 54807a7feb4b38f25ec2689776445141 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/kovarianz_null/kovarianz_null.rmd"), seed = 11408)
+```

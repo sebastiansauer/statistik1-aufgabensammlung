@@ -1,0 +1,18 @@
+---
+title: "options-print"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/options-print/options-print.rmd | md5: cac527891eee82f21a549e8a38fcf2ec -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/options-print/options-print.rmd"), seed = 9614)
+```

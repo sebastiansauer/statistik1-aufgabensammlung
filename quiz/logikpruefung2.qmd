@@ -1,0 +1,18 @@
+---
+title: "Logikpruefung2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/logikpruefung2/logikpruefung2.rmd | md5: ca4463459e61c841c43acd54624bd3ad -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/logikpruefung2/logikpruefung2.rmd"), seed = 10575)
+```

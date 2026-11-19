@@ -1,0 +1,18 @@
+---
+title: "Var-vs-Stufe"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/var-vs-stufe/var-vs-stufe.rmd | md5: f72b269aa8b00cdc038a9ffa57ad4daa -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/var-vs-stufe/var-vs-stufe.rmd"), seed = 7897)
+```

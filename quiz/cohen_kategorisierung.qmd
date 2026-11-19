@@ -1,0 +1,18 @@
+---
+title: "cohen_kategorisierung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/cohen_kategorisierung/cohen_kategorisierung.rmd | md5: 77440f6e8a220e18e848ce29a36749ca -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/cohen_kategorisierung/cohen_kategorisierung.rmd"), seed = 24913)
+```

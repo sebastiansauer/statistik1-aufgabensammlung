@@ -1,0 +1,18 @@
+---
+title: "dollar_operator"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/dollar_operator/dollar_operator.rmd | md5: 1a3a702fbd2e9ff040a32e00fa94f934 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/dollar_operator/dollar_operator.rmd"), seed = 13008)
+```

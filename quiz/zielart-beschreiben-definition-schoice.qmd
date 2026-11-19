@@ -1,0 +1,18 @@
+---
+title: "zielart-beschreiben-definition-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd | md5: 03f7db6bbe9bcc423174302a4c06bf95 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd"), seed = 74673)
+```

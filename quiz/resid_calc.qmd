@@ -1,0 +1,18 @@
+---
+title: "resid_calc"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/resid_calc/resid_calc.rmd | md5: 0817d5c3c8333df0fc383662057c7d6f -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/resid_calc/resid_calc.rmd"), seed = 5582)
+```

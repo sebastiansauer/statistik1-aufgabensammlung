@@ -1,0 +1,18 @@
+---
+title: "funktionsargumente"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/funktionsargumente/funktionsargumente.rmd | md5: 7d7e6933f4a2f05cdb2e37cf0f879342 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/funktionsargumente/funktionsargumente.rmd"), seed = 18568)
+```

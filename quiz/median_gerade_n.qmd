@@ -1,0 +1,18 @@
+---
+title: "median_gerade_n"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/median_gerade_n/median_gerade_n.rmd | md5: 005d2e8a1aa29b7c450a08de433e5660 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/median_gerade_n/median_gerade_n.rmd"), seed = 12274)
+```

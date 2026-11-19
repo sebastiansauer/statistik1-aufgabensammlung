@@ -1,0 +1,18 @@
+---
+title: "null_vs_lin"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/null_vs_lin/null_vs_lin.rmd | md5: 7e8ba3e4f8b8f2b395292e5f9c6159f5 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/null_vs_lin/null_vs_lin.rmd"), seed = 7080)
+```

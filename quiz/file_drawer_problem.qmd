@@ -1,0 +1,18 @@
+---
+title: "file_drawer_problem"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/file_drawer_problem/file_drawer_problem.rmd | md5: b93408d9030916287f572ab2afafffcf -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/file_drawer_problem/file_drawer_problem.rmd"), seed = 20174)
+```

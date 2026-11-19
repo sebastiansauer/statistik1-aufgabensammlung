@@ -1,0 +1,18 @@
+---
+title: "vektorisierung_logik"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd | md5: ca91a4d748973a98b80a0751da7903a4 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/vektorisierung_logik/vektorisierung_logik.rmd"), seed = 22513)
+```

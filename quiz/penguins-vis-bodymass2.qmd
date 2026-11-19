@@ -1,0 +1,18 @@
+---
+title: "penguins-vis-bodymass2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/penguins-vis-bodymass2/index.qmd | md5: 95f6ea4d76b76746e56d80875412a8fc -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/penguins-vis-bodymass2/index.qmd"), seed = 24980)
+```

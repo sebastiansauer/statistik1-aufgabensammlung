@@ -1,0 +1,18 @@
+---
+title: "log-y-regression1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/log-y-regr1/log-y-regr1.rmd | md5: 7eb04c6f28f5c2be119b67918d70381e -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/log-y-regr1/log-y-regr1.rmd"), seed = 5906)
+```

@@ -1,0 +1,18 @@
+---
+title: "skalenniveau_ordinal"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/skalenniveau_ordinal/skalenniveau_ordinal.rmd | md5: c2cb22c01ce2631f32de6047bc5d371a -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/skalenniveau_ordinal/skalenniveau_ordinal.rmd"), seed = 22237)
+```

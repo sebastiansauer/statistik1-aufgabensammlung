@@ -1,0 +1,18 @@
+---
+title: "datenvis-moderndive-barplot1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/datenvis-moderndive-barplot1/datenvis-moderndive-barplot1.rmd | md5: ffea2db3ec8eaa4d12bb681c8a2612a6 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/datenvis-moderndive-barplot1/datenvis-moderndive-barplot1.rmd"), seed = 40354)
+```

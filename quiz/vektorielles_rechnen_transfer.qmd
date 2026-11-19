@@ -1,0 +1,18 @@
+---
+title: "vektorielles_rechnen_transfer"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/vektorielles_rechnen_transfer/vektorielles_rechnen_transfer.rmd | md5: e736a07bbd9af7b3ea7fe79005f34333 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/vektorielles_rechnen_transfer/vektorielles_rechnen_transfer.rmd"), seed = 46352)
+```

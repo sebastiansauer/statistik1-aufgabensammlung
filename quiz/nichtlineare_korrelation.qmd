@@ -1,0 +1,18 @@
+---
+title: "nichtlineare_korrelation"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/nichtlineare_korrelation/nichtlineare_korrelation.rmd | md5: 14e60f328c72934c70460aeba505c73e -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/nichtlineare_korrelation/nichtlineare_korrelation.rmd"), seed = 32130)
+```

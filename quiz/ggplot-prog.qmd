@@ -1,0 +1,18 @@
+---
+title: "ggplot-prog"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/ggplot-prog/ggplot-prog.rmd | md5: 0746b7d50cb5cc7e32e5071117ec0845 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/ggplot-prog/ggplot-prog.rmd"), seed = 6808)
+```

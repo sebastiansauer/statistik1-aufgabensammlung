@@ -1,0 +1,18 @@
+---
+title: "MWberechnen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mwberechnen/mwberechnen.rmd | md5: 967aa5624fac79891e8f0a6e5525165b -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mwberechnen/mwberechnen.rmd"), seed = 6956)
+```

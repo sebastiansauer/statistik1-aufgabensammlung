@@ -1,0 +1,18 @@
+---
+title: "populationsinferenz-definition-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/populationsinferenz-definition-schoice/populationsinferenz-definition-schoice.Rmd | md5: 3f1539d9ba0434ccf2a54eadd1fc5e15 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/populationsinferenz-definition-schoice/populationsinferenz-definition-schoice.Rmd"), seed = 75951)
+```

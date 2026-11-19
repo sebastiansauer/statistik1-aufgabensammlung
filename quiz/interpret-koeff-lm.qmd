@@ -1,0 +1,18 @@
+---
+title: "interpret-koeff-lm"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/interpret-koeff-lm/interpret-koeff-lm.rmd | md5: 978bced2132b3e6e55a8a2113c8a3242 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/interpret-koeff-lm/interpret-koeff-lm.rmd"), seed = 16717)
+```

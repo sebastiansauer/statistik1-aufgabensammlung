@@ -1,0 +1,18 @@
+---
+title: "kauslalinterp"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/kauslalinterp/kauslalinterp.rmd | md5: f45dc2cfee732b471cffddca67441f3c -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/kauslalinterp/kauslalinterp.rmd"), seed = 9915)
+```

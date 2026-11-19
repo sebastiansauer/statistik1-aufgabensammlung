@@ -1,0 +1,18 @@
+---
+title: "wrangle7"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/wrangle7/wrangle7.rmd | md5: 66c6fbf87da245067962d35a9ad5e1d0 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/wrangle7/wrangle7.rmd"), seed = 3388)
+```

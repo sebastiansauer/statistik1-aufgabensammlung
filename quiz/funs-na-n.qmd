@@ -1,0 +1,18 @@
+---
+title: "funs-na-n"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/funs-na-n/funs-na-n.rmd | md5: 83d9d3e440cf9ae663056619f6b67d4b -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/funs-na-n/funs-na-n.rmd"), seed = 4040)
+```

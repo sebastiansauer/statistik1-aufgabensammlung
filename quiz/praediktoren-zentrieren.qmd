@@ -1,0 +1,18 @@
+---
+title: "praediktoren-zentrieren"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/praediktoren-zentrieren/praediktoren-zentrieren.rmd | md5: f07d8e653de02f0a3cc1e779af93fbca -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/praediktoren-zentrieren/praediktoren-zentrieren.rmd"), seed = 29165)
+```

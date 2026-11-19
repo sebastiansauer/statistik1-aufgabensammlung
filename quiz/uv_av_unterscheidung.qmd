@@ -1,0 +1,18 @@
+---
+title: "uv_av_unterscheidung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd | md5: 483de8539ea6b85bd3e56b79ce2010aa -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd"), seed = 22467)
+```

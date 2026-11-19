@@ -1,0 +1,18 @@
+---
+title: "ggstatsplot01"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/ggstatsplot01/ggstatsplot01.rmd | md5: dbaa81f0cfa553ad9741b3903f0dd510 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/ggstatsplot01/ggstatsplot01.rmd"), seed = 8571)
+```

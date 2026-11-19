@@ -1,0 +1,18 @@
+---
+title: "stichprobenmethoden"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/stichprobenmethoden/stichprobenmethoden.rmd | md5: 9817b05c7c74e61dc84cdc7312a404c5 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/stichprobenmethoden/stichprobenmethoden.rmd"), seed = 20227)
+```

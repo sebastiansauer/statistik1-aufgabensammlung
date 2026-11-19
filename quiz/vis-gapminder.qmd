@@ -1,0 +1,18 @@
+---
+title: "vis-gapminder"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/vis-gapminder/vis-gapminder.rmd | md5: bad5da608a053ddabcde0ccd3688b4c6 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/vis-gapminder/vis-gapminder.rmd"), seed = 9445)
+```

@@ -1,0 +1,18 @@
+---
+title: "viz-geom-point6"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/viz-geom-point6/viz-geom-point6.rmd | md5: 8ecafcd146744875c0a8140b75012e0c -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/viz-geom-point6/viz-geom-point6.rmd"), seed = 11514)
+```

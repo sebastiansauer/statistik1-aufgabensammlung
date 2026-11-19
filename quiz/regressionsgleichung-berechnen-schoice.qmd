@@ -1,0 +1,18 @@
+---
+title: "regressionsgleichung-berechnen-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/regressionsgleichung-berechnen-schoice/regressionsgleichung-berechnen-schoice.Rmd | md5: 1004d7c972b5196b001332eb9a80c65c -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/regressionsgleichung-berechnen-schoice/regressionsgleichung-berechnen-schoice.Rmd"), seed = 74942)
+```

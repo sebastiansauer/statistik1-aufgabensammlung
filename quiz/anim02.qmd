@@ -1,0 +1,18 @@
+---
+title: "anim02"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/anim02/anim02.rmd | md5: 5a63ae455c44eab592ea017fac6b0c8b -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/anim02/anim02.rmd"), seed = 1608)
+```

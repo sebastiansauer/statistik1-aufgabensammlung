@@ -1,0 +1,18 @@
+---
+title: "z_transformation_effekt"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/z_transformation_effekt/z_transformation_effekt.rmd | md5: d6588483f4ce276c3551e76972423ae7 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/z_transformation_effekt/z_transformation_effekt.rmd"), seed = 29341)
+```

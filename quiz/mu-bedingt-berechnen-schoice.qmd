@@ -1,0 +1,18 @@
+---
+title: "mu-bedingt-berechnen-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mu-bedingt-berechnen-schoice/mu-bedingt-berechnen-schoice.Rmd | md5: 74fa4abfd3aaed6af17663fd86f6248d -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mu-bedingt-berechnen-schoice/mu-bedingt-berechnen-schoice.Rmd"), seed = 40477)
+```

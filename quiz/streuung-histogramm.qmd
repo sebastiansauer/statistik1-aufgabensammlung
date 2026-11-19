@@ -1,0 +1,18 @@
+---
+title: "Streuung-Histogramm"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/streuung-histogramm/streuung-histogramm.rmd | md5: caa0dc0f5281d9ff361598f8d62576ca -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/streuung-histogramm/streuung-histogramm.rmd"), seed = 20067)
+```

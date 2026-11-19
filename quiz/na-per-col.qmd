@@ -1,0 +1,18 @@
+---
+title: "na-per-col"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/na-per-col/na-per-col.qmd | md5: 1c2c26b6c4e9703a4babecc1a10f7a0f -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/na-per-col/na-per-col.qmd"), seed = 5262)
+```

@@ -1,0 +1,18 @@
+---
+title: "group_summarise"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/group_summarise/group_summarise.rmd | md5: affa4a933d0678cd280dbc88c3c08735 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/group_summarise/group_summarise.rmd"), seed = 12999)
+```

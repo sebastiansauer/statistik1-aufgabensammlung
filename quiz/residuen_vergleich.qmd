@@ -1,0 +1,18 @@
+---
+title: "residuen_vergleich"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/residuen_vergleich/residuen_vergleich.rmd | md5: eb6a5fd75c6ec3b4af2d5ed7bc4481e8 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/residuen_vergleich/residuen_vergleich.rmd"), seed = 17985)
+```

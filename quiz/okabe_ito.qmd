@@ -1,0 +1,18 @@
+---
+title: "okabe_ito"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/okabe_ito/okabe_ito.rmd | md5: 11a10409d3ba3fed0669447c930c4969 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/okabe_ito/okabe_ito.rmd"), seed = 4745)
+```

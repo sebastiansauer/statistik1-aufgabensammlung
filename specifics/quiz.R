@@ -30,7 +30,7 @@ quiz_normalisieren <- function(x) {
       kopf <- x[2:(yaml_end[2] - 1)]
       meta <- grep("^ex[a-z]+:", kopf, value = TRUE)
     }
-    meta <- sub("^(exsolution: *)(r +)(.*[^ ]) *$", "\\1`r \\3`", meta)
+    meta <- sub("^(ex[a-z]+: *)r +(.*[^ ]) *$", "\\1`r \\2`", meta)
     x <- c(x, "", "Meta-information", "================", meta)
   }
   x
@@ -142,7 +142,18 @@ quiz_interaktiv <- function(tmp, edir, seed, x, ...) {
 
 # Rueckgabe (unsichtbar): "interaktiv", "klassisch", "klassisch-knit",
 # "fehler" oder "ausgelassen"
+quiz_protokoll <- function(datei, modus) {
+  log <- Sys.getenv("QUIZ_LOG")
+  if (nzchar(log))
+    cat(basename(dirname(datei)), modus, sep = "\t", file = log, append = TRUE, fill = TRUE)
+  invisible(modus)
+}
+
 quiz <- function(datei, seed = getOption("quiz.seed", 42), ...) {
+  quiz_protokoll(datei, quiz_ausfuehren(datei, seed, ...))
+}
+
+quiz_ausfuehren <- function(datei, seed, ...) {
   roh <- readLines(datei, encoding = "UTF-8", warn = FALSE)
   if (any(grepl(quiz_ausgelassen_muster, roh, ignore.case = TRUE))) return(invisible("ausgelassen"))
 

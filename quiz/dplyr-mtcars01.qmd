@@ -1,0 +1,18 @@
+---
+title: "dplyr-mtcars1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/dplyr-mtcars01/index.qmd | md5: adf4d1a40f9e1886f0fb04bbe413689a -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/dplyr-mtcars01/index.qmd"), seed = 9468)
+```

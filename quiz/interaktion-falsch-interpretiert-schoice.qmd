@@ -1,0 +1,18 @@
+---
+title: "interaktion-falsch-interpretiert-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/interaktion-falsch-interpretiert-schoice/interaktion-falsch-interpretiert-schoice.Rmd | md5: e77103d7f1ddd3461653b64499dbc3b6 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/interaktion-falsch-interpretiert-schoice/interaktion-falsch-interpretiert-schoice.Rmd"), seed = 83948)
+```

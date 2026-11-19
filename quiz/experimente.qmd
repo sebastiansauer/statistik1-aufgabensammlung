@@ -1,0 +1,18 @@
+---
+title: "experimente"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/experimente/experimente.rmd | md5: fcca0d649e9bea3dc73ee3e4bc6a5d66 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/experimente/experimente.rmd"), seed = 7113)
+```

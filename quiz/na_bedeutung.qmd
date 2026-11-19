@@ -1,0 +1,18 @@
+---
+title: "na_bedeutung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/na_bedeutung/na_bedeutung.rmd | md5: 3a0bc92ad156635949b4b88efe6e6569 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/na_bedeutung/na_bedeutung.rmd"), seed = 8389)
+```

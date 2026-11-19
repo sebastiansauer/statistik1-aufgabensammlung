@@ -1,0 +1,18 @@
+---
+title: "diamonds-histogram-rcode"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/diamonds-histogram-rcode/diamonds-histogram-rcode.rmd | md5: eeed9c8e6275ef574f467b5d27374a91 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/diamonds-histogram-rcode/diamonds-histogram-rcode.rmd"), seed = 30274)
+```

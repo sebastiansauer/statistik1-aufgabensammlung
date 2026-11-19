@@ -1,0 +1,18 @@
+---
+title: "Typ-Fehler-R-08-name-clash"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/typ-fehler-r-08-name-clash/typ-fehler-r-08-name-clash.qmd | md5: 2076eb343ab442c46c3af1859ffe604a -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/typ-fehler-r-08-name-clash/typ-fehler-r-08-name-clash.qmd"), seed = 31532)
+```

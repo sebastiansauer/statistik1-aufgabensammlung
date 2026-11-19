@@ -1,0 +1,18 @@
+---
+title: "balken_normierung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/balken_normierung/balken_normierung.rmd | md5: 2caf482afa6afe01ba5eaa8fd0d37186 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/balken_normierung/balken_normierung.rmd"), seed = 16527)
+```

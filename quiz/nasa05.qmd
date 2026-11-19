@@ -1,0 +1,18 @@
+---
+title: "nasa05"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/nasa05/nasa05.rmd | md5: fa286b88b2b50b83ab946e177c446695 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/nasa05/nasa05.rmd"), seed = 1595)
+```

@@ -1,0 +1,18 @@
+---
+title: "Szenario-charakterisieren1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/szenario-charakterisieren1/szenario-charakterisieren1.rmd | md5: 8ed21fa92de4a5e47676dadc30e4766e -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/szenario-charakterisieren1/szenario-charakterisieren1.rmd"), seed = 35459)
+```

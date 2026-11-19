@@ -1,0 +1,18 @@
+---
+title: "zwert-berechnen2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/zwert-berechnen2/zwert-berechnen2.rmd | md5: d775851cd438389b2a61086669246ac6 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/zwert-berechnen2/zwert-berechnen2.rmd"), seed = 13130)
+```

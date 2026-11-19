@@ -16,7 +16,7 @@ execute:
 library(exams2forms)
 
 options(quiz.seed = 42)
-source("prototyp-forms/quiz.R")
+source("specifics/quiz.R")
 ```
 
 ## 1. schoice – `def-statistik01.Rmd`

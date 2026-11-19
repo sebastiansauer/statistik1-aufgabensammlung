@@ -1,0 +1,18 @@
+---
+title: "regressionbegriff"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/regressionbegriff/regressionbegriff.rmd | md5: 16983ef02ae6e37aa27f13c03aa253bd -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/regressionbegriff/regressionbegriff.rmd"), seed = 16186)
+```

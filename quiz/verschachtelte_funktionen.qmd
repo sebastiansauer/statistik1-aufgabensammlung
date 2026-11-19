@@ -1,0 +1,18 @@
+---
+title: "verschachtelte_funktionen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/verschachtelte_funktionen/verschachtelte_funktionen.rmd | md5: 34ec749d8cf6b910c1dfae50a6130ed8 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/verschachtelte_funktionen/verschachtelte_funktionen.rmd"), seed = 34867)
+```

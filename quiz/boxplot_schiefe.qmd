@@ -1,0 +1,18 @@
+---
+title: "bosplot_schiefe"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/boxplot_schiefe/boxplot_schiefe.rmd | md5: 4de954661a8ed5227b75d1c25a650638 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/boxplot_schiefe/boxplot_schiefe.rmd"), seed = 12591)
+```

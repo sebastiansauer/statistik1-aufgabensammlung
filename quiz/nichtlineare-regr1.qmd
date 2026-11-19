@@ -1,0 +1,18 @@
+---
+title: "nichtlineare-regr1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/nichtlineare-regr1/nichtlineare-regr1.rmd | md5: c2d56b82ced582598036e95c47cd2fb7 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/nichtlineare-regr1/nichtlineare-regr1.rmd"), seed = 16385)
+```

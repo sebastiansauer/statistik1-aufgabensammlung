@@ -1,0 +1,18 @@
+---
+title: "modell_gleichung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/modell_gleichung/modell_gleichung.rmd | md5: 95c77d514e2024f3cf066caf2d1fd66a -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/modell_gleichung/modell_gleichung.rmd"), seed = 14325)
+```

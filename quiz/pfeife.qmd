@@ -1,0 +1,18 @@
+---
+title: "pfeife"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/pfeife/pfeife.rmd | md5: 9d239fc44edeaa7f27e3b941be8e4c94 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/pfeife/pfeife.rmd"), seed = 2155)
+```

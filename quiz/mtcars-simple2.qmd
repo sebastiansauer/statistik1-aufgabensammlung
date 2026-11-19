@@ -1,0 +1,18 @@
+---
+title: "mtcars-simple2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mtcars-simple2/mtcars-simple2.rmd | md5: e82ea8848a5d30ed78e755d6523a2782 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mtcars-simple2/mtcars-simple2.rmd"), seed = 10097)
+```

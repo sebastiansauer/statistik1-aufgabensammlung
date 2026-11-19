@@ -1,0 +1,10 @@
+# Aufgaben, die NICHT ueber quiz()/exams2forms laufen, sondern unveraendert
+# als Kapitel bleiben. Schluessel = Ordnername unter exrs/posts/.
+xlsx-online-import: kein extype (keine r-exams-Aufgabe)
+boxplot_with_points: kein extype (keine r-exams-Aufgabe)
+smartphone_addict: kein extype (keine r-exams-Aufgabe)
+bike05: kein extype (keine r-exams-Aufgabe)
+bike06: kein extype (keine r-exams-Aufgabe)
+gruppenvergleich-regression: kein extype (keine r-exams-Aufgabe)
+corona-dashboard: Aufgaben-Code scheitert (Bilddatei fehlt)
+adjustieren1a: Aufgaben-Code scheitert (Objekt sol nicht gefunden)

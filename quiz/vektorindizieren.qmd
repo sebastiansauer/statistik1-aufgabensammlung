@@ -1,0 +1,18 @@
+---
+title: "vektorindizieren"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/vektorindizieren/vektorindizieren.rmd | md5: 6ac5c0c5597a8a9bd9ebbbee2ae115ef -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/vektorindizieren/vektorindizieren.rmd"), seed = 14695)
+```

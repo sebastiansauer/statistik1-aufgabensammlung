@@ -1,0 +1,18 @@
+---
+title: "mariokart-sd1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mariokart-sd1/mariokart-sd1.rmd | md5: a0ed3e27d5acf1a7c4b073995c2cac37 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mariokart-sd1/mariokart-sd1.rmd"), seed = 8449)
+```

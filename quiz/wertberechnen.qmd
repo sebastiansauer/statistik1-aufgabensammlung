@@ -1,0 +1,18 @@
+---
+title: "Wertberechnen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/wertberechnen/wertberechnen.rmd | md5: 4f938a46331a57bbcf6bfbcdcf5da9a9 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/wertberechnen/wertberechnen.rmd"), seed = 9612)
+```

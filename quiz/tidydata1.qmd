@@ -1,0 +1,18 @@
+---
+title: "tidydata1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/tidydata1/tidydata1.rmd | md5: 6e0fc966fda83a7b7417d0013a4fb26d -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/tidydata1/tidydata1.rmd"), seed = 4221)
+```

@@ -1,0 +1,18 @@
+---
+title: "boxhist2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/boxhist2/boxhist2.rmd | md5: 56e81caeade0e9836bb928dd46dd5301 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/boxhist2/boxhist2.rmd"), seed = 3523)
+```

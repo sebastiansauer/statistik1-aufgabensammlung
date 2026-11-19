@@ -1,0 +1,18 @@
+---
+title: "heatmap"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/heatmap/heatmap.rmd | md5: 007740419de24030a36e9127d9b476c6 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/heatmap/heatmap.rmd"), seed = 2972)
+```

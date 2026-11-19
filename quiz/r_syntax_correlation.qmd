@@ -1,0 +1,18 @@
+---
+title: "r_syntax_correlation"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/r_syntax_correlation/r_syntax_correlation.rmd | md5: eae5845c0acdbe25d0a37d658c048c67 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/r_syntax_correlation/r_syntax_correlation.rmd"), seed = 22691)
+```

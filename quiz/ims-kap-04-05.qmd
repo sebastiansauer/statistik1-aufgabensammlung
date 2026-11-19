@@ -1,0 +1,18 @@
+---
+title: "ims-kap-04-05"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/ims-kap-04-05/ims-kap-04-05.rmd | md5: 4c5224122070898fa76af9df05288462 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/ims-kap-04-05/ims-kap-04-05.rmd"), seed = 5821)
+```

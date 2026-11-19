@@ -1,0 +1,18 @@
+---
+title: "pfade_reproduzierbarkeit"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd | md5: 22fc43b325f0c54abe9af717a5f6bbd0 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/pfade_reproduzierbarkeit/pfade_reproduzierbarkeit.rmd"), seed = 32170)
+```

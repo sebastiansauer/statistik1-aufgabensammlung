@@ -1,0 +1,18 @@
+---
+title: "verteilungen1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/verteilungen1/verteilungen1.rmd | md5: b7b6eafc6615fdbfc53f6cf2ff371449 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/verteilungen1/verteilungen1.rmd"), seed = 9041)
+```

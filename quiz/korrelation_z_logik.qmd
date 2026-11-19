@@ -1,0 +1,18 @@
+---
+title: "korrelation_z_logik"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/korrelation_z_logik/korrelation_z_logik.rmd | md5: 12993e748ce629512dafde06e00baa93 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/korrelation_z_logik/korrelation_z_logik.rmd"), seed = 20278)
+```

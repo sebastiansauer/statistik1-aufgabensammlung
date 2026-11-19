@@ -1,0 +1,18 @@
+---
+title: "arrange"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/arrange/arrange.rmd | md5: 8b20218e3929eedfb20135dd392a9df2 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/arrange/arrange.rmd"), seed = 2930)
+```

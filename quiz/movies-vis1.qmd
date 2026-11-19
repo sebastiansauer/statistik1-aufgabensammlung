@@ -1,0 +1,18 @@
+---
+title: "movies-vis1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/movies-vis1/movies-vis1.rmd | md5: ae578d3aa2174a967edbf43c26e817aa -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/movies-vis1/movies-vis1.rmd"), seed = 6193)
+```

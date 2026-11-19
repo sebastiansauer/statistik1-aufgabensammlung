@@ -1,0 +1,18 @@
+---
+title: "r_vs_rstudio"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/r_vs_rstudio/r_vs_rstudio.rmd | md5: 93b97365f3bee67fd296b71dba4c18ff -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/r_vs_rstudio/r_vs_rstudio.rmd"), seed = 8550)
+```

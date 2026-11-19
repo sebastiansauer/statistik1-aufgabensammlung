@@ -1,0 +1,18 @@
+---
+title: "Diamonds-Histogramm-Vergleich2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/diamonds-histogramm-vergleich2/diamonds-histogramm-vergleich2.rmd | md5: 03d73e5bacc8dfda07421e764c8bbad5 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/diamonds-histogramm-vergleich2/diamonds-histogramm-vergleich2.rmd"), seed = 46108)
+```

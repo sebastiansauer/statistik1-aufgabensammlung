@@ -1,0 +1,18 @@
+---
+title: "mutate01"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mutate01/mutate01.rmd | md5: adcf69dd4f5630f523c26c70004b4ad4 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mutate01/mutate01.rmd"), seed = 2993)
+```

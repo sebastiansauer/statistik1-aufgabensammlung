@@ -1,0 +1,18 @@
+---
+title: "mean_na_standard"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mean_na_standard/mean_na_standard.rmd | md5: e1dd11eba97d7953b8726b88e5f0c7a1 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mean_na_standard/mean_na_standard.rmd"), seed = 14166)
+```

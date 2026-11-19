@@ -1,0 +1,18 @@
+---
+title: "count_nominal"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/count_nominal/count_nominal.rmd | md5: 64f87c484b5bda2dd40982791719fee3 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/count_nominal/count_nominal.rmd"), seed = 9729)
+```

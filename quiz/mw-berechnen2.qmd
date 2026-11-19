@@ -1,0 +1,18 @@
+---
+title: "mw-berechnen2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mw-berechnen2/mw-berechnen2.rmd | md5: d4d266315c8b0f23159b07496a27e5b5 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mw-berechnen2/mw-berechnen2.rmd"), seed = 8679)
+```

@@ -1,0 +1,18 @@
+---
+title: "Wertzuweisen_mc"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/wertzuweisen_mc/wertzuweisen_mc.rmd | md5: cca6d83431e428bce723e15e4e84558d -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/wertzuweisen_mc/wertzuweisen_mc.rmd"), seed = 12852)
+```

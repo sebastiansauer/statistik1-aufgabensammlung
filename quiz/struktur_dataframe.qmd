@@ -1,0 +1,18 @@
+---
+title: "struktur_dataframe"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/struktur_dataframe/struktur_dataframe.rmd | md5: 72e9c852c07037c30be9d7c926f07e79 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/struktur_dataframe/struktur_dataframe.rmd"), seed = 18055)
+```

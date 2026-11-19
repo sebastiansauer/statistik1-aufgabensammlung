@@ -1,0 +1,18 @@
+---
+title: "parse_number"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/parse_number/parse_number.rmd | md5: d5f931a70d6008ecad4bb63388c7e52e -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/parse_number/parse_number.rmd"), seed = 8329)
+```

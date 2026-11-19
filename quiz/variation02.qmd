@@ -1,0 +1,18 @@
+---
+title: "variability02"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/variation02/variation02.rmd | md5: 90b979fc8d1690a5518779cecfcc17f8 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/variation02/variation02.rmd"), seed = 5898)
+```

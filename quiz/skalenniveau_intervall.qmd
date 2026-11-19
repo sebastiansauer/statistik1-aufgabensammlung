@@ -1,0 +1,18 @@
+---
+title: "skalenniveau_intervall"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/skalenniveau_intervall/skalenniveau_intervall.rmd | md5: 02b7faee774b42c5480488b30c3c2274 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/skalenniveau_intervall/skalenniveau_intervall.rmd"), seed = 27176)
+```

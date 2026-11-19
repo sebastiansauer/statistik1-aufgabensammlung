@@ -1,0 +1,18 @@
+---
+title: "filter"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/filter/filter.rmd | md5: 377e5a3a205b7dd9ad2f66b5483d1867 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/filter/filter.rmd"), seed = 2289)
+```

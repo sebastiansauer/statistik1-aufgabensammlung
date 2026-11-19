@@ -1,0 +1,18 @@
+---
+title: "ttest-als-regression"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/ttest-als-regr/ttest-als-regr.rmd | md5: 5a29ee9436d1b443dfb9e21dbd684532 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/ttest-als-regr/ttest-als-regr.rmd"), seed = 10390)
+```

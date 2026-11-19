@@ -1,0 +1,18 @@
+---
+title: "bullshit1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/bullshit1/bullshit1.rmd | md5: 211d07c39df1b0fc37dae07714393bec -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/bullshit1/bullshit1.rmd"), seed = 4391)
+```

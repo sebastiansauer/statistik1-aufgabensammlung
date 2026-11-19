@@ -1,0 +1,18 @@
+---
+title: "datenvis-moderndive-scatterplot1"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/datenvis-moderndive-scatterplot1/datenvis-moderndive-scatterplot1.rmd | md5: 8c0e0a117115d57c43d8cef396dd0833 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/datenvis-moderndive-scatterplot1/datenvis-moderndive-scatterplot1.rmd"), seed = 53736)
+```

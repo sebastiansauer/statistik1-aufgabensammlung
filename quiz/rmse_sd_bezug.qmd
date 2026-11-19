@@ -1,0 +1,18 @@
+---
+title: "rmse_sd_bezug"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/rmse_sd_bezug/rmse_sd_bezug.rmd | md5: 2b99b679dede2da387947b88c80dfaa0 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/rmse_sd_bezug/rmse_sd_bezug.rmd"), seed = 9683)
+```

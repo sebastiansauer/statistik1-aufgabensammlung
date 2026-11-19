@@ -1,0 +1,18 @@
+---
+title: "intercept_m"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/intercept_m/intercept_m.rmd | md5: 038cb40497da9c472c8f8864c66f5a39 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/intercept_m/intercept_m.rmd"), seed = 7037)
+```

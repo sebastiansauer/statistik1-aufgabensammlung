@@ -1,0 +1,18 @@
+---
+title: "Kennwert-robust"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/kennwert-robust/kennwert-robust.rmd | md5: db54bc00a505c91473fd78fd336a2030 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/kennwert-robust/kennwert-robust.rmd"), seed = 12819)
+```

@@ -1,0 +1,18 @@
+---
+title: "samplesplit"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/samplesplit/samplesplit.rmd | md5: 3070657b1509db82d948f73bd6ea7fea -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/samplesplit/samplesplit.rmd"), seed = 7229)
+```

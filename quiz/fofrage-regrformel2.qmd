@@ -1,0 +1,18 @@
+---
+title: "fofrage-regrformel2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/fofrage-regrformel2/index.qmd | md5: 0c749e5ed1a91cbde10287acb9b76a48 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/fofrage-regrformel2/index.qmd"), seed = 18738)
+```

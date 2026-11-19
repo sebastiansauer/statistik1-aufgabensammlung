@@ -1,0 +1,18 @@
+---
+title: "normal_rechnen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/normal_rechnen/normal_rechnen.rmd | md5: e0dcd1e2643e3aa952f357007ea63907 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/normal_rechnen/normal_rechnen.rmd"), seed = 11036)
+```

@@ -1,0 +1,18 @@
+---
+title: "lm-mario2"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/lm-mario2/lm-mario2.rmd | md5: 1403f364e1c9dbbc96c6bd181c216027 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/lm-mario2/lm-mario2.rmd"), seed = 4139)
+```

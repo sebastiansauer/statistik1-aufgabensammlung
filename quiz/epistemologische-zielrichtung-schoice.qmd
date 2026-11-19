@@ -1,0 +1,18 @@
+---
+title: "epistemologische-zielrichtung-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/epistemologische-zielrichtung-schoice/epistemologische-zielrichtung-schoice.Rmd | md5: f8ea4c67801820f3a39587aa6b4b9917 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/epistemologische-zielrichtung-schoice/epistemologische-zielrichtung-schoice.Rmd"), seed = 72119)
+```

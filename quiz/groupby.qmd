@@ -1,0 +1,18 @@
+---
+title: "groupby"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/groupby/groupby.rmd | md5: 9cd60d3472d11fecaefff7d13a6d5bdd -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/groupby/groupby.rmd"), seed = 3127)
+```

@@ -1,0 +1,7 @@
+# Nur Wrapper, Ausnahmen und Zuordnung gehoeren ins Repo; alles, was Aufgaben
+# beim Rendern hier ablegen (Bilder, CSV usw.), wird ignoriert.
+*
+!.gitignore
+!*.qmd
+!ausnahmen.yml
+!quellen.csv

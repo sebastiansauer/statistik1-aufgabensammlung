@@ -72,8 +72,23 @@ Gemeinsam genutzte Datensätze liegen unter `data/` (CSV, XLSX). Aufgabenspezifi
 
 - `bib-local.bib` – Literaturnachweise
 - `apa7.csl` – Zitierstil
-- `webex.css` / `webex.js` – JavaScript-Interaktivität für r-exams-Fragen im HTML-Output
+- `webex.css` / `webex.js` – CSS/JS des Pakets `exams2forms` (Quiz-Elemente im HTML-Output); bei Paket-Updates durch die Dateien aus `system.file("webex", package = "exams2forms")` ersetzen
+- `quiz.R` – Funktion `quiz()`, bindet eine Aufgabe per `exams2forms` ein (siehe unten)
 
+
+### Quiz-Rendering mit `exams2forms`
+
+`_quarto.yml` listet nicht mehr die Aufgaben selbst, sondern generierte **Wrapper-Kapitel** `quiz/<ordner>.qmd`. Jeder Wrapper ruft `quiz()` (`specifics/quiz.R`) auf, das die Aufgabe aus `exrs/posts/` per `exams2forms` als HTML-Quiz rendert. Das Submodul `exrs/` bleibt unverändert.
+
+- **Neue Aufgabe:** wie bisher als `exrs/posts/<ordner>/<datei>` in `_quarto.yml` eintragen und dann `Rscript scripts/make-quiz-chapters.R` ausführen. Das Skript erzeugt den Wrapper und biegt den Eintrag auf `quiz/<ordner>.qmd` um.
+- **Aufgabe geändert:** Skript erneut ausführen. Der Quell-Hash im Wrapper ändert sich, dadurch rechnet `freeze: auto` neu.
+- **Ausnahmen** (Aufgaben bleiben unverändert als Kapitel): `quiz/ausnahmen.yml`. Die Zuordnung Wrapper → Quelle steht in `quiz/quellen.csv`.
+- **Wrapper nicht von Hand ändern**, sie werden überschrieben.
+- **Aufgabenformate:** `quiz()` normalisiert drei Formate (Setext-Überschriften, ATX `## Question`, Quarto `## Aufgabe`/`## Exercise` mit Metadaten nur im YAML).
+- **`string`-Aufgaben** sind nur dann interaktiv, wenn die Lösung kurz ist (höchstens 40 Zeichen, einzeilig); Leerzeichen und Groß-/Kleinschreibung sind egal. Sonst erscheint die Aufgabe klassisch mit einklappbarer Lösung.
+- **Rückfall bei Fehlern:** scheitert `exams2forms`, wird die Aufgabe normal geknittet (Frage plus einklappbare Lösung); als letzter Ausweg erscheint ein Hinweiskasten. Aufgaben mit `textfeatures` werden ausgelassen.
+- **Protokoll:** Ist die Umgebungsvariable `QUIZ_LOG` gesetzt, schreibt `quiz()` pro Aufgabe den gewählten Modus (`interaktiv`, `klassisch`, `klassisch-knit`, `fehler`, `ausgelassen`) in diese Datei.
+- `quiz.R` nutzt die interne Funktion `exams2forms:::json_answer()`; bei Paket-Updates prüfen.
 
 ### Quizze
 

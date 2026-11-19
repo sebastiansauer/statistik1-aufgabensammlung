@@ -1,0 +1,18 @@
+---
+title: "arrange_minus"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/arrange_minus/arrange_minus.rmd | md5: 669c7c4bb3d67897a820c274664bd3ae -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/arrange_minus/arrange_minus.rmd"), seed = 9830)
+```

@@ -1,0 +1,18 @@
+---
+title: "mittelwert-berechnen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/mittelwert-berechnen/mittelwert-berechnen.rmd | md5: f664b77d56ce76abbebe133d4073f6b1 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/mittelwert-berechnen/mittelwert-berechnen.rmd"), seed = 21657)
+```

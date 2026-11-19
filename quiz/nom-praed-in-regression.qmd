@@ -1,0 +1,18 @@
+---
+title: "nom-praed-in-regression"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/nom-praed-in-regression/nom-praed-in-regression.rmd | md5: efb8dc44461c65dc2c93f5539a329146 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/nom-praed-in-regression/nom-praed-in-regression.rmd"), seed = 28157)
+```

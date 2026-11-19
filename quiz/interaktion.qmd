@@ -1,0 +1,18 @@
+---
+title: "interaktion"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/interaktion/interaktion.rmd | md5: 420779fad049ccda3270d3086467ff52 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/interaktion/interaktion.rmd"), seed = 7171)
+```

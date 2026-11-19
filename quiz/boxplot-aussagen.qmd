@@ -1,0 +1,18 @@
+---
+title: "Boxplot-Aussagen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/boxplot-aussagen/boxplot-aussagen.rmd | md5: aa3a6d50aed3a29bcdaefd21d0147fe1 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/boxplot-aussagen/boxplot-aussagen.rmd"), seed = 14172)
+```

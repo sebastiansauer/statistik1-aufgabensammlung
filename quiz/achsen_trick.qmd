@@ -1,0 +1,18 @@
+---
+title: "achsen_trick"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/achsen_trick/achsen_trick.rmd | md5: 3e49120aba634620685e64d98f212c5a -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/achsen_trick/achsen_trick.rmd"), seed = 8274)
+```

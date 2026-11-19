@@ -1,0 +1,18 @@
+---
+title: "vis-mariokart-variab"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/vis-mariokart-variab/vis-mariokart-variab.rmd | md5: fcd311fd98939da112b3601be7505138 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/vis-mariokart-variab/vis-mariokart-variab.rmd"), seed = 21213)
+```

@@ -1,0 +1,18 @@
+---
+title: "korrelation_na_handling"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/korrelation_na_handling/korrelation_na_handling.rmd | md5: 4698d3c2217a29c70bc09f1129ea3008 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/korrelation_na_handling/korrelation_na_handling.rmd"), seed = 28852)
+```

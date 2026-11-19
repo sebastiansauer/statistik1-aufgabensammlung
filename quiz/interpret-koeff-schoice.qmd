@@ -1,0 +1,18 @@
+---
+title: "interpret-koeff-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/interpret-koeff-schoice/interpret-koeff-schoice.Rmd | md5: f4f402eb1bf1eefbdec932592899c2de -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/interpret-koeff-schoice/interpret-koeff-schoice.Rmd"), seed = 27558)
+```

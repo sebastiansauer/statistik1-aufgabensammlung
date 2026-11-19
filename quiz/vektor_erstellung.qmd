@@ -1,0 +1,18 @@
+---
+title: "vektor_erstellung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/vektor_erstellung/vektor_erstellung.rmd | md5: ee60208f3b7d323f3c299f33d4ea7bc3 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/vektor_erstellung/vektor_erstellung.rmd"), seed = 16663)
+```

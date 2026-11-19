@@ -1,0 +1,18 @@
+---
+title: "def-statistik01-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/def-statistik01-schoice/def-statistik01-schoice.Rmd | md5: 7cbd1955e422b8f037786aeed9888e30 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/def-statistik01-schoice/def-statistik01-schoice.Rmd"), seed = 26454)
+```

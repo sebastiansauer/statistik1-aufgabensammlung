@@ -1,0 +1,18 @@
+---
+title: "logikpruefung_gleichheit"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/logikpruefung_gleichheit/logikpruefung_gleichheit.rmd | md5: 69814f4f97f6ccfc8febbcd2fde9b79e -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/logikpruefung_gleichheit/logikpruefung_gleichheit.rmd"), seed = 31651)
+```

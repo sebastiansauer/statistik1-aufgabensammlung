@@ -1,0 +1,18 @@
+---
+title: "dplyr-uebersetzen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd | md5: fe679b1d8bcbe4b5156a58d24908b0f2 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/dplyr-uebersetzen/dplyr-uebersetzen.rmd"), seed = 16378)
+```

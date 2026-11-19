@@ -1,0 +1,18 @@
+---
+title: "zentrieren-mit-interaktion-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/zentrieren-mit-interaktion-schoice/zentrieren-mit-interaktion-schoice.Rmd | md5: 3fa81e9556988186e387fd2b46e2b4f8 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/zentrieren-mit-interaktion-schoice/zentrieren-mit-interaktion-schoice.Rmd"), seed = 60392)
+```

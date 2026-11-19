@@ -1,0 +1,18 @@
+---
+title: "umrechnung-r-b"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/umrechnung-r-b/umrechnung-r-b.rmd | md5: be119dec69ddfc9339b3d5501031d755 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/umrechnung-r-b/umrechnung-r-b.rmd"), seed = 9746)
+```

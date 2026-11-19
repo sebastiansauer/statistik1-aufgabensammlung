@@ -1,0 +1,18 @@
+---
+title: "Regression6"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/regression6/regression6.rmd | md5: d5843e2daa920f20d0b11c9d325d547b -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/regression6/regression6.rmd"), seed = 6614)
+```

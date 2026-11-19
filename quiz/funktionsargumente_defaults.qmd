@@ -1,0 +1,18 @@
+---
+title: "funktionsargumente_defaults"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/funktionsargumente_defaults/funktionsargumente_defaults.rmd | md5: 97ec319ed42e77e47150660f8f4e81ae -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/funktionsargumente_defaults/funktionsargumente_defaults.rmd"), seed = 40598)
+```

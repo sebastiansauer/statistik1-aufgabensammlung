@@ -1,0 +1,18 @@
+---
+title: "lego_prinzip_logik"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/lego_prinzip_logik/lego_prinzip_logik.rmd | md5: 3e5ee8b96568ae5befe7c7ec7a22f70b -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/lego_prinzip_logik/lego_prinzip_logik.rmd"), seed = 18328)
+```

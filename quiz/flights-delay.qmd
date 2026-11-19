@@ -1,0 +1,18 @@
+---
+title: "flights-delay"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/flights-delay/index.qmd | md5: 83d7136d27a920cddf175e0cc92bd322 -->
+
+```{r}
+#| include: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+quiz(file.path(root, "exrs/posts/flights-delay/index.qmd"), seed = 9261)
+```
