@@ -40,7 +40,7 @@ quiz("aufgaben/boxplots-de.rmd")
 quiz("aufgaben/odds1.rmd")
 ```
 
-## 4. string – `datenvis-moderndive-barplot1.rmd`
+## 4. string, nicht quiz-tauglich (keine Lösung) → klassische Darstellung – `datenvis-moderndive-barplot1.rmd`
 
 ```{r string}
 #| results: asis
@@ -68,7 +68,7 @@ quiz("aufgaben/bayes-theorem1.qmd")
 quiz("aufgaben/gem-wskt1.rmd")
 ```
 
-## 8. string mit echter Lösung – `bayesmod-bestimmen01.rmd`
+## 8. string mit kurzer Lösung → interaktiv – `bayesmod-bestimmen01.rmd`
 
 ```{r string-echt}
 #| results: asis

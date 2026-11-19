@@ -36,10 +36,78 @@ quiz_normalisieren <- function(x) {
   x
 }
 
+# Eine string-Aufgabe eignet sich nur dann als Quiz, wenn die Loesung kurz
+# ist (ein Wort oder ein einzelner R-Befehl). Alle anderen string-Aufgaben
+# (exsolution NA/leer, lange Texte) werden nicht interaktiv gerendert.
+quiz_string_max_zeichen <- 40
+
+quiz_antworten <- function(html) {
+  m <- regmatches(html, regexpr("data-answer='[^']*'", html))
+  if (length(m) == 0) return(character())
+  json <- sub("^data-answer='(.*)'$", "\\1", m)
+  tryCatch(as.character(jsonlite::fromJSON(json)), error = function(e) character())
+}
+
+quiz_string_geeignet <- function(antworten) {
+  length(antworten) > 0 &&
+    all(!is.na(antworten) & nzchar(trimws(antworten)) & !antworten %in% c("NA", "NULL", "~") &
+        !grepl("\n", antworten) &
+        nchar(antworten) <= quiz_string_max_zeichen)
+}
+
+# Workaround fuer exams2forms (usespace = FALSE): Das JS entfernt Leerzeichen aus
+# der Eingabe, nicht aber aus der hinterlegten Loesung (ebenso Kleinschreibung). Deshalb Leerzeichen aus
+# der Loesung entfernen und neu verschluesseln. Nutzt die interne Funktion
+# exams2forms:::json_answer() (bei Paket-Updates pruefen).
+quiz_loesung_ohne_leerzeichen <- function(html, antworten) {
+  k <- grep("^<input class='webex-solveme", html)
+  for (i in k) {
+    alt <- sub(".* id='webex-([^']*)'.*", "\\1", html[i])
+    # Verschluesselung greift nur bei reiner Hex-ID -> neue ID erzeugen
+    neu_id <- paste(sample(c(0:9, letters[1:6]), 32, replace = TRUE), collapse = "")
+    html <- gsub(alt, neu_id, html, fixed = TRUE)
+    neu <- exams2forms:::json_answer(tolower(gsub(" ", "", antworten)), neu_id)
+    html[i] <- sub("data-answer='[^']*'", paste0("data-answer='", neu, "'"), html[i])
+  }
+  html
+}
+
+# Nicht interaktive Darstellung: Frage normal, Loesung einklappbar, ohne Eingabefeld
+quiz_klassisch <- function(html) {
+  html <- html[!grepl("^<input class='webex-solveme", html)]
+  k <- grep("^::: \\{\\.webex-check", html)[1]
+  if (!is.na(k)) {
+    zu <- which(html == ":::" & seq_along(html) > k)[1]
+    html <- html[-c(k, zu)]
+  }
+  sub("^::: \\{\\.webex-solution\\}",
+      "::: {.callout-tip collapse=\"true\" title=\"L\u00f6sung\"}", html)
+}
+
 quiz <- function(datei, seed = getOption("quiz.seed", 42), ...) {
   x <- quiz_normalisieren(readLines(datei, encoding = "UTF-8", warn = FALSE))
   tmp <- file.path(tempdir(), basename(datei))
   writeLines(x, tmp, useBytes = TRUE)
-  set.seed(seed)
-  exams2forms(tmp, edir = dirname(normalizePath(datei)), ...)
+  edir <- dirname(normalizePath(datei))
+  rendern <- function(...) {
+    set.seed(seed)
+    capture.output(exams2forms(tmp, edir = edir, ...))
+  }
+
+  ist_string <- any(grepl("^extype: *string *$", x))
+  if (!ist_string) {
+    cat(rendern(...), sep = "\n")
+    return(invisible("interaktiv"))
+  }
+
+  # string: Leerzeichen und Gross-/Kleinschreibung egal
+  probe <- rendern(obfuscate = FALSE, usespace = FALSE, usecase = FALSE, ...)
+  antworten <- quiz_antworten(probe)
+  if (quiz_string_geeignet(antworten)) {
+    cat(quiz_loesung_ohne_leerzeichen(probe, antworten), sep = "\n")
+    invisible("interaktiv")
+  } else {
+    cat(quiz_klassisch(probe), sep = "\n")
+    invisible("klassisch")
+  }
 }
