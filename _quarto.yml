@@ -60,7 +60,6 @@ book:
         - quiz/ziele-statistik.qmd
         - quiz/variation02.qmd
         - quiz/skalenniveau1b.qmd
-        - quiz/tidydata1.qmd
         - quiz/definition_statistik.qmd
         - quiz/nutzen_modelle.qmd
         - quiz/ppdac_modell.qmd
@@ -128,7 +127,6 @@ book:
         - quiz/wertpruefen.qmd
         - quiz/wrangle1.qmd
         - quiz/repro1-sessioninfo.qmd
-        - quiz/mw-berechnen.qmd
         - quiz/fallstudie-excel-r.qmd
         - quiz/reproduzierbarkeit.qmd
         - quiz/r_vs_rstudio.qmd
