@@ -3,7 +3,7 @@ title: "lm-mario3"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/lm-mario3/lm-mario3.rmd | stand: 985724bbda886c2f06431f5ad4dde2bb-6417a11b1537 -->
+<!-- quelle: exrs/posts/lm-mario3/lm-mario3.rmd | stand: 67bf9679513d3cf4f9e5a6b9b12462d7-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "985724bbda886c2f06431f5ad4dde2bb-6417a11b1537"
+#| cache.extra: "67bf9679513d3cf4f9e5a6b9b12462d7-6417a11b1537"
 quiz(file.path(root, "exrs/posts/lm-mario3/lm-mario3.rmd"), seed = 4148)
 ```
