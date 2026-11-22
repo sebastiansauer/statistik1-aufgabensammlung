@@ -3,7 +3,7 @@ title: "boxhist2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/boxhist2/boxhist2.rmd | stand: 9e8a36bbc9ec6da981cf16b8976b8d62-6417a11b1537 -->
+<!-- quelle: exrs/posts/boxhist2/boxhist2.rmd | stand: ff66b10ff7627f0fc1cc2a81e5e0b24f-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "9e8a36bbc9ec6da981cf16b8976b8d62-6417a11b1537"
+#| cache.extra: "ff66b10ff7627f0fc1cc2a81e5e0b24f-6417a11b1537"
 quiz(file.path(root, "exrs/posts/boxhist2/boxhist2.rmd"), seed = 3523)
 ```

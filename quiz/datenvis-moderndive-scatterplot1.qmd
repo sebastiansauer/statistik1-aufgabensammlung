@@ -3,7 +3,7 @@ title: "datenvis-moderndive-scatterplot1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/datenvis-moderndive-scatterplot1/datenvis-moderndive-scatterplot1.rmd | stand: bc01aabb8a83925340d45a5ae4b9df62-6417a11b1537 -->
+<!-- quelle: exrs/posts/datenvis-moderndive-scatterplot1/datenvis-moderndive-scatterplot1.rmd | stand: 8f1cf62293ac8c1e358c64219e1d639e-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "bc01aabb8a83925340d45a5ae4b9df62-6417a11b1537"
+#| cache.extra: "8f1cf62293ac8c1e358c64219e1d639e-6417a11b1537"
 quiz(file.path(root, "exrs/posts/datenvis-moderndive-scatterplot1/datenvis-moderndive-scatterplot1.rmd"), seed = 53736)
 ```

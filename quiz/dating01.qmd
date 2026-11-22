@@ -3,7 +3,7 @@ title: "dating01"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/dating01/dating01.rmd | stand: 7b4222675ba4c59a3a35b22d2b2ca5fc-6417a11b1537 -->
+<!-- quelle: exrs/posts/dating01/dating01.rmd | stand: 2ab0f81374df81b84828c6277817752c-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "7b4222675ba4c59a3a35b22d2b2ca5fc-6417a11b1537"
+#| cache.extra: "2ab0f81374df81b84828c6277817752c-6417a11b1537"
 quiz(file.path(root, "exrs/posts/dating01/dating01.rmd"), seed = 2958)
 ```

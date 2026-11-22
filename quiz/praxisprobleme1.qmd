@@ -3,7 +3,7 @@ title: "praxisprobleme1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/praxisprobleme1/praxisprobleme1.rmd | stand: 74bd8f6ad508cb31d80e713b3d15fb3e-6417a11b1537 -->
+<!-- quelle: exrs/posts/praxisprobleme1/praxisprobleme1.rmd | stand: b279cd529814c94f1de2f1560b450248-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "74bd8f6ad508cb31d80e713b3d15fb3e-6417a11b1537"
+#| cache.extra: "b279cd529814c94f1de2f1560b450248-6417a11b1537"
 quiz(file.path(root, "exrs/posts/praxisprobleme1/praxisprobleme1.rmd"), seed = 11967)
 ```

@@ -3,7 +3,7 @@ title: "datenvis-moderndive-barplot1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/datenvis-moderndive-barplot1/datenvis-moderndive-barplot1.rmd | stand: ca80e4b010347f5fc6448491c08ac3b2-6417a11b1537 -->
+<!-- quelle: exrs/posts/datenvis-moderndive-barplot1/datenvis-moderndive-barplot1.rmd | stand: 03eda773b49b63287e0045021065000b-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "ca80e4b010347f5fc6448491c08ac3b2-6417a11b1537"
+#| cache.extra: "03eda773b49b63287e0045021065000b-6417a11b1537"
 quiz(file.path(root, "exrs/posts/datenvis-moderndive-barplot1/datenvis-moderndive-barplot1.rmd"), seed = 40354)
 ```

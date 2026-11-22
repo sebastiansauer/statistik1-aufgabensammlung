@@ -3,7 +3,7 @@ title: "ggplot-prog"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ggplot-prog/ggplot-prog.rmd | stand: 83e5604f6c53c3e026b4b11fe23011df-6417a11b1537 -->
+<!-- quelle: exrs/posts/ggplot-prog/ggplot-prog.rmd | stand: 3a43d122f23859e2be76764e5aae0b5e-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "83e5604f6c53c3e026b4b11fe23011df-6417a11b1537"
+#| cache.extra: "3a43d122f23859e2be76764e5aae0b5e-6417a11b1537"
 quiz(file.path(root, "exrs/posts/ggplot-prog/ggplot-prog.rmd"), seed = 6808)
 ```
