@@ -3,7 +3,7 @@ title: "funktionsargumente"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/funktionsargumente/funktionsargumente.rmd | stand: 7d7e6933f4a2f05cdb2e37cf0f879342-64598fa00985 -->
+<!-- quelle: exrs/posts/funktionsargumente/funktionsargumente.rmd | stand: 26bae30985755ca747ce808dc83b30de-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "7d7e6933f4a2f05cdb2e37cf0f879342-64598fa00985"
+#| cache.extra: "26bae30985755ca747ce808dc83b30de-6417a11b1537"
 quiz(file.path(root, "exrs/posts/funktionsargumente/funktionsargumente.rmd"), seed = 18568)
 ```

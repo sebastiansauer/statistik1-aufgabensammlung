@@ -3,7 +3,7 @@ title: "mariokart-mean3"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mariokart-mean3/mariokart-mean3.rmd | stand: afbf3b8214d93d3c7fdf89ad9d852f20-64598fa00985 -->
+<!-- quelle: exrs/posts/mariokart-mean3/mariokart-mean3.rmd | stand: 4cc48662ad91cb8cf21563b13ad255d7-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "afbf3b8214d93d3c7fdf89ad9d852f20-64598fa00985"
+#| cache.extra: "4cc48662ad91cb8cf21563b13ad255d7-6417a11b1537"
 quiz(file.path(root, "exrs/posts/mariokart-mean3/mariokart-mean3.rmd"), seed = 11324)
 ```

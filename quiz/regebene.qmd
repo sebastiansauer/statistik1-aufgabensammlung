@@ -3,7 +3,7 @@ title: "regebene"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regebene/regebene.rmd | stand: 3219ed4fdd1230c03938e3de0f98109b-64598fa00985 -->
+<!-- quelle: exrs/posts/regebene/regebene.rmd | stand: 0d9dc9630b6bdea28765aa325caf25da-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "3219ed4fdd1230c03938e3de0f98109b-64598fa00985"
+#| cache.extra: "0d9dc9630b6bdea28765aa325caf25da-6417a11b1537"
 quiz(file.path(root, "exrs/posts/regebene/regebene.rmd"), seed = 3703)
 ```

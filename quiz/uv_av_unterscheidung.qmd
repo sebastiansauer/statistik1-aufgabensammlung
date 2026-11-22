@@ -3,7 +3,7 @@ title: "uv_av_unterscheidung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd | stand: 483de8539ea6b85bd3e56b79ce2010aa-64598fa00985 -->
+<!-- quelle: exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd | stand: 483de8539ea6b85bd3e56b79ce2010aa-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "483de8539ea6b85bd3e56b79ce2010aa-64598fa00985"
+#| cache.extra: "483de8539ea6b85bd3e56b79ce2010aa-6417a11b1537"
 quiz(file.path(root, "exrs/posts/uv_av_unterscheidung/uv_av_unterscheidung.rmd"), seed = 22467)
 ```

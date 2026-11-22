@@ -3,7 +3,7 @@ title: "Skalenniveau1a"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/skalenniveau1a/skalenniveau1a.rmd | stand: b18c7ba802ffdf3f671ebf1b507252f2-64598fa00985 -->
+<!-- quelle: exrs/posts/skalenniveau1a/skalenniveau1a.rmd | stand: 14c673dea09f0717226696b81eec00ea-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "b18c7ba802ffdf3f671ebf1b507252f2-64598fa00985"
+#| cache.extra: "14c673dea09f0717226696b81eec00ea-6417a11b1537"
 quiz(file.path(root, "exrs/posts/skalenniveau1a/skalenniveau1a.rmd"), seed = 10365)
 ```

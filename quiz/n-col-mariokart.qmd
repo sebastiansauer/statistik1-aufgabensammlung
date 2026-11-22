@@ -3,7 +3,7 @@ title: "n-col-mariokart"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/n-col-mariokart/n-col-mariokart.rmd | stand: f9fbbc303ab725eecb2e6486449ab9f3-64598fa00985 -->
+<!-- quelle: exrs/posts/n-col-mariokart/n-col-mariokart.rmd | stand: 71bf4754d4fc29883cf2eaa5a645b63d-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "f9fbbc303ab725eecb2e6486449ab9f3-64598fa00985"
+#| cache.extra: "71bf4754d4fc29883cf2eaa5a645b63d-6417a11b1537"
 quiz(file.path(root, "exrs/posts/n-col-mariokart/n-col-mariokart.rmd"), seed = 12468)
 ```

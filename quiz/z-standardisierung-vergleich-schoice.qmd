@@ -3,7 +3,7 @@ title: "z-standardisierung-vergleich-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd | stand: 523d94de832d9aff31b92635dc96231d-64598fa00985 -->
+<!-- quelle: exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd | stand: c9a20f636e7d7637a1eaf3cb3e74eeb8-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "523d94de832d9aff31b92635dc96231d-64598fa00985"
+#| cache.extra: "c9a20f636e7d7637a1eaf3cb3e74eeb8-6417a11b1537"
 quiz(file.path(root, "exrs/posts/z-standardisierung-vergleich-schoice/z-standardisierung-vergleich-schoice.Rmd"), seed = 67419)
 ```

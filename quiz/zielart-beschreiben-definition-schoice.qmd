@@ -3,7 +3,7 @@ title: "zielart-beschreiben-definition-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd | stand: 03f7db6bbe9bcc423174302a4c06bf95-64598fa00985 -->
+<!-- quelle: exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd | stand: e21fc5fc410c9e7d50a7288c2472b52b-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "03f7db6bbe9bcc423174302a4c06bf95-64598fa00985"
+#| cache.extra: "e21fc5fc410c9e7d50a7288c2472b52b-6417a11b1537"
 quiz(file.path(root, "exrs/posts/zielart-beschreiben-definition-schoice/zielart-beschreiben-definition-schoice.Rmd"), seed = 74673)
 ```

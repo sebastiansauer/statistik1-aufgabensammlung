@@ -3,7 +3,7 @@ title: "log-y-regression1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/log-y-regr1/log-y-regr1.rmd | stand: 7eb04c6f28f5c2be119b67918d70381e-64598fa00985 -->
+<!-- quelle: exrs/posts/log-y-regr1/log-y-regr1.rmd | stand: 7eb04c6f28f5c2be119b67918d70381e-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "7eb04c6f28f5c2be119b67918d70381e-64598fa00985"
+#| cache.extra: "7eb04c6f28f5c2be119b67918d70381e-6417a11b1537"
 quiz(file.path(root, "exrs/posts/log-y-regr1/log-y-regr1.rmd"), seed = 5906)
 ```

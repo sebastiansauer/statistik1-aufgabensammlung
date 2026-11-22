@@ -3,7 +3,7 @@ title: "arrange_minus"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/arrange_minus/arrange_minus.rmd | stand: 669c7c4bb3d67897a820c274664bd3ae-64598fa00985 -->
+<!-- quelle: exrs/posts/arrange_minus/arrange_minus.rmd | stand: 669c7c4bb3d67897a820c274664bd3ae-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "669c7c4bb3d67897a820c274664bd3ae-64598fa00985"
+#| cache.extra: "669c7c4bb3d67897a820c274664bd3ae-6417a11b1537"
 quiz(file.path(root, "exrs/posts/arrange_minus/arrange_minus.rmd"), seed = 9830)
 ```

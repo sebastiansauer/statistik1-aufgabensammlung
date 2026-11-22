@@ -3,7 +3,7 @@ title: "datenvis-moderndive-histogramm1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/datenvis-moderndive-histogramm1/datenvis-moderndive-histogramm1.rmd | stand: 563d8dd7091eff4df122daaa1b81cc16-64598fa00985 -->
+<!-- quelle: exrs/posts/datenvis-moderndive-histogramm1/datenvis-moderndive-histogramm1.rmd | stand: e2bb551e9fd3b90b876865d5c2527729-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "563d8dd7091eff4df122daaa1b81cc16-64598fa00985"
+#| cache.extra: "e2bb551e9fd3b90b876865d5c2527729-6417a11b1537"
 quiz(file.path(root, "exrs/posts/datenvis-moderndive-histogramm1/datenvis-moderndive-histogramm1.rmd"), seed = 49882)
 ```

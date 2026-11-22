@@ -3,7 +3,7 @@ title: "robustheit"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/robustheit/robustheit.rmd | stand: 817e5ea0ec4eb640df2bb82fac1ea60e-64598fa00985 -->
+<!-- quelle: exrs/posts/robustheit/robustheit.rmd | stand: 140531baf8d8a29b2a5ae77740facf5f-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "817e5ea0ec4eb640df2bb82fac1ea60e-64598fa00985"
+#| cache.extra: "140531baf8d8a29b2a5ae77740facf5f-6417a11b1537"
 quiz(file.path(root, "exrs/posts/robustheit/robustheit.rmd"), seed = 6010)
 ```

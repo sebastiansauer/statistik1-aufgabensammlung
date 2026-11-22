@@ -3,7 +3,7 @@ title: "Boxplot-Aussagen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/boxplot-aussagen/boxplot-aussagen.rmd | stand: aa3a6d50aed3a29bcdaefd21d0147fe1-64598fa00985 -->
+<!-- quelle: exrs/posts/boxplot-aussagen/boxplot-aussagen.rmd | stand: f939148e2a33da87d6d2d43ede82d19f-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "aa3a6d50aed3a29bcdaefd21d0147fe1-64598fa00985"
+#| cache.extra: "f939148e2a33da87d6d2d43ede82d19f-6417a11b1537"
 quiz(file.path(root, "exrs/posts/boxplot-aussagen/boxplot-aussagen.rmd"), seed = 14172)
 ```

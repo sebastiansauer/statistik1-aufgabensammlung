@@ -3,7 +3,7 @@ title: "Wertpruefen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wertpruefen/wertpruefen.rmd | stand: 3a1a9fc7b235919dcf18d5e37169f8f7-64598fa00985 -->
+<!-- quelle: exrs/posts/wertpruefen/wertpruefen.rmd | stand: 51227b842b7922dbc439d01f19672795-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "3a1a9fc7b235919dcf18d5e37169f8f7-64598fa00985"
+#| cache.extra: "51227b842b7922dbc439d01f19672795-6417a11b1537"
 quiz(file.path(root, "exrs/posts/wertpruefen/wertpruefen.rmd"), seed = 7136)
 ```

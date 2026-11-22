@@ -3,7 +3,7 @@ title: "count_nominal"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/count_nominal/count_nominal.rmd | stand: 64f87c484b5bda2dd40982791719fee3-64598fa00985 -->
+<!-- quelle: exrs/posts/count_nominal/count_nominal.rmd | stand: 64f87c484b5bda2dd40982791719fee3-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "64f87c484b5bda2dd40982791719fee3-64598fa00985"
+#| cache.extra: "64f87c484b5bda2dd40982791719fee3-6417a11b1537"
 quiz(file.path(root, "exrs/posts/count_nominal/count_nominal.rmd"), seed = 9729)
 ```

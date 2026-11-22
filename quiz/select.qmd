@@ -3,7 +3,7 @@ title: "select"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/select/select.rmd | stand: 8039e969a05a5f77649649b4ab4bf853-64598fa00985 -->
+<!-- quelle: exrs/posts/select/select.rmd | stand: 02e5f427997f42bea8bae122820c3530-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "8039e969a05a5f77649649b4ab4bf853-64598fa00985"
+#| cache.extra: "02e5f427997f42bea8bae122820c3530-6417a11b1537"
 quiz(file.path(root, "exrs/posts/select/select.rmd"), seed = 2236)
 ```

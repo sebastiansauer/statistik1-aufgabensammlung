@@ -3,7 +3,7 @@ title: "residuum_definition"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/residuum_definition/residuum_definition.rmd | stand: 2c67cc4572fd9ca99c925c816e11e57a-64598fa00985 -->
+<!-- quelle: exrs/posts/residuum_definition/residuum_definition.rmd | stand: 97ce65e34dcc08662289149de2dbe9f0-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "2c67cc4572fd9ca99c925c816e11e57a-64598fa00985"
+#| cache.extra: "97ce65e34dcc08662289149de2dbe9f0-6417a11b1537"
 quiz(file.path(root, "exrs/posts/residuum_definition/residuum_definition.rmd"), seed = 20373)
 ```

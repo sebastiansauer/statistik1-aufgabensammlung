@@ -3,7 +3,7 @@ title: "Griech-Buchstaben-Inferenz"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/griech-buchstaben/griech-buchstaben.rmd | stand: fac757601d01606ad828af4280605888-64598fa00985 -->
+<!-- quelle: exrs/posts/griech-buchstaben/griech-buchstaben.rmd | stand: 927dbd9fbea6dcb71c19e120a3c63ece-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "fac757601d01606ad828af4280605888-64598fa00985"
+#| cache.extra: "927dbd9fbea6dcb71c19e120a3c63ece-6417a11b1537"
 quiz(file.path(root, "exrs/posts/griech-buchstaben/griech-buchstaben.rmd"), seed = 15657)
 ```

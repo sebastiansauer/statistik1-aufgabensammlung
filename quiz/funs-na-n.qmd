@@ -3,7 +3,7 @@ title: "funs-na-n"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/funs-na-n/funs-na-n.rmd | stand: 83d9d3e440cf9ae663056619f6b67d4b-64598fa00985 -->
+<!-- quelle: exrs/posts/funs-na-n/funs-na-n.rmd | stand: b17c72b07d18ab858364cd34a5a49441-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "83d9d3e440cf9ae663056619f6b67d4b-64598fa00985"
+#| cache.extra: "b17c72b07d18ab858364cd34a5a49441-6417a11b1537"
 quiz(file.path(root, "exrs/posts/funs-na-n/funs-na-n.rmd"), seed = 4040)
 ```

@@ -3,7 +3,7 @@ title: "vektorindizieren"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vektorindizieren/vektorindizieren.rmd | stand: 6ac5c0c5597a8a9bd9ebbbee2ae115ef-64598fa00985 -->
+<!-- quelle: exrs/posts/vektorindizieren/vektorindizieren.rmd | stand: 44380160584395b91f56062b281f2233-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "6ac5c0c5597a8a9bd9ebbbee2ae115ef-64598fa00985"
+#| cache.extra: "44380160584395b91f56062b281f2233-6417a11b1537"
 quiz(file.path(root, "exrs/posts/vektorindizieren/vektorindizieren.rmd"), seed = 14695)
 ```

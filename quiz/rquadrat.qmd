@@ -3,7 +3,7 @@ title: "rquadrat"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/rquadrat/rquadrat.rmd | stand: 3c7861e96dd8ef0ca3f57a66ac61ee53-64598fa00985 -->
+<!-- quelle: exrs/posts/rquadrat/rquadrat.rmd | stand: eefb053e53d990c3785355859de2e7b8-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "3c7861e96dd8ef0ca3f57a66ac61ee53-64598fa00985"
+#| cache.extra: "eefb053e53d990c3785355859de2e7b8-6417a11b1537"
 quiz(file.path(root, "exrs/posts/rquadrat/rquadrat.rmd"), seed = 3870)
 ```

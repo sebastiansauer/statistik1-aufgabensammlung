@@ -3,7 +3,7 @@ title: "logikpruefung_gleichheit"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/logikpruefung_gleichheit/logikpruefung_gleichheit.rmd | stand: 69814f4f97f6ccfc8febbcd2fde9b79e-64598fa00985 -->
+<!-- quelle: exrs/posts/logikpruefung_gleichheit/logikpruefung_gleichheit.rmd | stand: 69814f4f97f6ccfc8febbcd2fde9b79e-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "69814f4f97f6ccfc8febbcd2fde9b79e-64598fa00985"
+#| cache.extra: "69814f4f97f6ccfc8febbcd2fde9b79e-6417a11b1537"
 quiz(file.path(root, "exrs/posts/logikpruefung_gleichheit/logikpruefung_gleichheit.rmd"), seed = 31651)
 ```

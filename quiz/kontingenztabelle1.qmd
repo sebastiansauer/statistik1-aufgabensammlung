@@ -3,7 +3,7 @@ title: "kontingenztabelle1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/kontingenztabelle1/kontingenztabelle1.rmd | stand: 8da32c186f4cd5589a060894d1a16e16-64598fa00985 -->
+<!-- quelle: exrs/posts/kontingenztabelle1/kontingenztabelle1.rmd | stand: dc6d472605349cafe4abada6aa0c0c8d-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "8da32c186f4cd5589a060894d1a16e16-64598fa00985"
+#| cache.extra: "dc6d472605349cafe4abada6aa0c0c8d-6417a11b1537"
 quiz(file.path(root, "exrs/posts/kontingenztabelle1/kontingenztabelle1.rmd"), seed = 17122)
 ```

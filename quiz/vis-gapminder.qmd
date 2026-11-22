@@ -3,7 +3,7 @@ title: "vis-gapminder"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vis-gapminder/vis-gapminder.rmd | stand: bad5da608a053ddabcde0ccd3688b4c6-64598fa00985 -->
+<!-- quelle: exrs/posts/vis-gapminder/vis-gapminder.rmd | stand: bad5da608a053ddabcde0ccd3688b4c6-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "bad5da608a053ddabcde0ccd3688b4c6-64598fa00985"
+#| cache.extra: "bad5da608a053ddabcde0ccd3688b4c6-6417a11b1537"
 quiz(file.path(root, "exrs/posts/vis-gapminder/vis-gapminder.rmd"), seed = 9445)
 ```

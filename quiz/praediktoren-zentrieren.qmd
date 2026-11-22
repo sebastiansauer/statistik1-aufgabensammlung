@@ -3,7 +3,7 @@ title: "praediktoren-zentrieren"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/praediktoren-zentrieren/praediktoren-zentrieren.rmd | stand: f07d8e653de02f0a3cc1e779af93fbca-64598fa00985 -->
+<!-- quelle: exrs/posts/praediktoren-zentrieren/praediktoren-zentrieren.rmd | stand: 823a13ed4a45d16c992b0b8e3a8509bc-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "f07d8e653de02f0a3cc1e779af93fbca-64598fa00985"
+#| cache.extra: "823a13ed4a45d16c992b0b8e3a8509bc-6417a11b1537"
 quiz(file.path(root, "exrs/posts/praediktoren-zentrieren/praediktoren-zentrieren.rmd"), seed = 29165)
 ```

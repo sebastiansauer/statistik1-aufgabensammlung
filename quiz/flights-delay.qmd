@@ -3,7 +3,7 @@ title: "flights-delay"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/flights-delay/index.qmd | stand: 83d7136d27a920cddf175e0cc92bd322-64598fa00985 -->
+<!-- quelle: exrs/posts/flights-delay/index.qmd | stand: 83d7136d27a920cddf175e0cc92bd322-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "83d7136d27a920cddf175e0cc92bd322-64598fa00985"
+#| cache.extra: "83d7136d27a920cddf175e0cc92bd322-6417a11b1537"
 quiz(file.path(root, "exrs/posts/flights-delay/index.qmd"), seed = 9261)
 ```

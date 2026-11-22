@@ -3,7 +3,7 @@ title: "regr-yb-interpretation-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd | stand: 9ab83415aa7dfcfa0c3644f59f1804d8-64598fa00985 -->
+<!-- quelle: exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd | stand: 2042ec56fdf3138f7942758c01bc7df3-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "9ab83415aa7dfcfa0c3644f59f1804d8-64598fa00985"
+#| cache.extra: "2042ec56fdf3138f7942758c01bc7df3-6417a11b1537"
 quiz(file.path(root, "exrs/posts/regr-yb-interpretation-schoice/regr-yb-interpretation-schoice.Rmd"), seed = 47572)
 ```

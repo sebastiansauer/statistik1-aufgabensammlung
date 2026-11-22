@@ -3,7 +3,7 @@ title: "skalenniveau_ordinal"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/skalenniveau_ordinal/skalenniveau_ordinal.rmd | stand: c2cb22c01ce2631f32de6047bc5d371a-64598fa00985 -->
+<!-- quelle: exrs/posts/skalenniveau_ordinal/skalenniveau_ordinal.rmd | stand: c2cb22c01ce2631f32de6047bc5d371a-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "c2cb22c01ce2631f32de6047bc5d371a-64598fa00985"
+#| cache.extra: "c2cb22c01ce2631f32de6047bc5d371a-6417a11b1537"
 quiz(file.path(root, "exrs/posts/skalenniveau_ordinal/skalenniveau_ordinal.rmd"), seed = 22237)
 ```

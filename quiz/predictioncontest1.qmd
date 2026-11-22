@@ -3,7 +3,7 @@ title: "predictioncontest1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/predictioncontest1/predictioncontest1.rmd | stand: b4df291059edb276ecb6dceb176a105d-64598fa00985 -->
+<!-- quelle: exrs/posts/predictioncontest1/predictioncontest1.rmd | stand: b4df291059edb276ecb6dceb176a105d-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "b4df291059edb276ecb6dceb176a105d-64598fa00985"
+#| cache.extra: "b4df291059edb276ecb6dceb176a105d-6417a11b1537"
 quiz(file.path(root, "exrs/posts/predictioncontest1/predictioncontest1.rmd"), seed = 17597)
 ```

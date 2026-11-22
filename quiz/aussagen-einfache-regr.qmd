@@ -3,7 +3,7 @@ title: "aussagen-einfache-regr"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.rmd | stand: be16e7f87aea5216b5093e6c67c45f34-64598fa00985 -->
+<!-- quelle: exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.rmd | stand: 58a9fc440d76b9dbf6c1511eaad70157-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "be16e7f87aea5216b5093e6c67c45f34-64598fa00985"
+#| cache.extra: "58a9fc440d76b9dbf6c1511eaad70157-6417a11b1537"
 quiz(file.path(root, "exrs/posts/aussagen-einfache-regr/aussagen-einfache-regr.rmd"), seed = 24933)
 ```

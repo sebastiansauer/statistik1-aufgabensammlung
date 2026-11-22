@@ -3,7 +3,7 @@ title: "balken_normierung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/balken_normierung/balken_normierung.rmd | stand: 2caf482afa6afe01ba5eaa8fd0d37186-64598fa00985 -->
+<!-- quelle: exrs/posts/balken_normierung/balken_normierung.rmd | stand: b78866602114f78185436e59951fbaf8-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "2caf482afa6afe01ba5eaa8fd0d37186-64598fa00985"
+#| cache.extra: "b78866602114f78185436e59951fbaf8-6417a11b1537"
 quiz(file.path(root, "exrs/posts/balken_normierung/balken_normierung.rmd"), seed = 16527)
 ```

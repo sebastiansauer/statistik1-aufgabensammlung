@@ -3,7 +3,7 @@ title: "intercept_m"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/intercept_m/intercept_m.rmd | stand: 038cb40497da9c472c8f8864c66f5a39-64598fa00985 -->
+<!-- quelle: exrs/posts/intercept_m/intercept_m.rmd | stand: 73b9fa98a5fa4ae4f640c2aa9226b6d8-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "038cb40497da9c472c8f8864c66f5a39-64598fa00985"
+#| cache.extra: "73b9fa98a5fa4ae4f640c2aa9226b6d8-6417a11b1537"
 quiz(file.path(root, "exrs/posts/intercept_m/intercept_m.rmd"), seed = 7037)
 ```

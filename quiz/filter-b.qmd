@@ -3,7 +3,7 @@ title: "filter-b"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/filter-b/filter-b.rmd | stand: 57a30b493baedfb1f57c570f756ab0bb-64598fa00985 -->
+<!-- quelle: exrs/posts/filter-b/filter-b.rmd | stand: 724930987ec2a0164c7a459ab7a31b64-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "57a30b493baedfb1f57c570f756ab0bb-64598fa00985"
+#| cache.extra: "724930987ec2a0164c7a459ab7a31b64-6417a11b1537"
 quiz(file.path(root, "exrs/posts/filter-b/filter-b.rmd"), seed = 3388)
 ```

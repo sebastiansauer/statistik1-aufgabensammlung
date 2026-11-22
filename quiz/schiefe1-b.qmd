@@ -3,7 +3,7 @@ title: "schiefe1-b"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/schiefe1-b/schiefe1-b.rmd | stand: 6b735ad44dc2512e6cdb541ae88b4633-64598fa00985 -->
+<!-- quelle: exrs/posts/schiefe1-b/schiefe1-b.rmd | stand: 1f0ab7dfb7f90d81ea01f430f5422244-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "6b735ad44dc2512e6cdb541ae88b4633-64598fa00985"
+#| cache.extra: "1f0ab7dfb7f90d81ea01f430f5422244-6417a11b1537"
 quiz(file.path(root, "exrs/posts/schiefe1-b/schiefe1-b.rmd"), seed = 4646)
 ```

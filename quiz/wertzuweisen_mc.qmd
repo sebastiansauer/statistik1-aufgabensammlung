@@ -3,7 +3,7 @@ title: "Wertzuweisen_mc"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wertzuweisen_mc/wertzuweisen_mc.rmd | stand: cca6d83431e428bce723e15e4e84558d-64598fa00985 -->
+<!-- quelle: exrs/posts/wertzuweisen_mc/wertzuweisen_mc.rmd | stand: cca6d83431e428bce723e15e4e84558d-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "cca6d83431e428bce723e15e4e84558d-64598fa00985"
+#| cache.extra: "cca6d83431e428bce723e15e4e84558d-6417a11b1537"
 quiz(file.path(root, "exrs/posts/wertzuweisen_mc/wertzuweisen_mc.rmd"), seed = 12852)
 ```

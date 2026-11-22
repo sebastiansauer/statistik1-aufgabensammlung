@@ -3,7 +3,7 @@ title: "ols_prinzip"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ols_prinzip/ols_prinzip.rmd | stand: 312b5b63094df3cf4da9eddd5c912935-64598fa00985 -->
+<!-- quelle: exrs/posts/ols_prinzip/ols_prinzip.rmd | stand: 312b5b63094df3cf4da9eddd5c912935-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "312b5b63094df3cf4da9eddd5c912935-64598fa00985"
+#| cache.extra: "312b5b63094df3cf4da9eddd5c912935-6417a11b1537"
 quiz(file.path(root, "exrs/posts/ols_prinzip/ols_prinzip.rmd"), seed = 7291)
 ```

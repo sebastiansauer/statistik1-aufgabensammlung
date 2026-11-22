@@ -3,7 +3,7 @@ title: "reproduzierbarkeit"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/reproduzierbarkeit/reproduzierbarkeit.rmd | stand: dcf480572d48db137e34a71a6e6006c5-64598fa00985 -->
+<!-- quelle: exrs/posts/reproduzierbarkeit/reproduzierbarkeit.rmd | stand: dcf480572d48db137e34a71a6e6006c5-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "dcf480572d48db137e34a71a6e6006c5-64598fa00985"
+#| cache.extra: "dcf480572d48db137e34a71a6e6006c5-6417a11b1537"
 quiz(file.path(root, "exrs/posts/reproduzierbarkeit/reproduzierbarkeit.rmd"), seed = 18394)
 ```

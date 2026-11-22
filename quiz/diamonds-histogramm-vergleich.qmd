@@ -3,7 +3,7 @@ title: "Diamonds-Histogramm-Vergleich"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/diamonds-histogramm-vergleich/diamonds-histogramm-vergleich.rmd | stand: de96decc9329c4bd872593692604978e-64598fa00985 -->
+<!-- quelle: exrs/posts/diamonds-histogramm-vergleich/diamonds-histogramm-vergleich.rmd | stand: de96decc9329c4bd872593692604978e-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "de96decc9329c4bd872593692604978e-64598fa00985"
+#| cache.extra: "de96decc9329c4bd872593692604978e-6417a11b1537"
 quiz(file.path(root, "exrs/posts/diamonds-histogramm-vergleich/diamonds-histogramm-vergleich.rmd"), seed = 44608)
 ```

@@ -3,7 +3,7 @@ title: "parameter-statistik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/parameter-statistik/parameter-statistik.rmd | stand: 385508e320853496cdfbc37c84fc2cec-64598fa00985 -->
+<!-- quelle: exrs/posts/parameter-statistik/parameter-statistik.rmd | stand: a142fc053aaf35fb17a7930a7abc3ce3-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "385508e320853496cdfbc37c84fc2cec-64598fa00985"
+#| cache.extra: "a142fc053aaf35fb17a7930a7abc3ce3-6417a11b1537"
 quiz(file.path(root, "exrs/posts/parameter-statistik/parameter-statistik.rmd"), seed = 20135)
 ```

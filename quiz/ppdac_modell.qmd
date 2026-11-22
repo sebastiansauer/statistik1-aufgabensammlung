@@ -3,7 +3,7 @@ title: "ppdac_modell"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ppdac_modell/ppdac_modell.rmd | stand: 0fda2406fbd9d44533c2b102afe855ef-64598fa00985 -->
+<!-- quelle: exrs/posts/ppdac_modell/ppdac_modell.rmd | stand: 8b85ef1e465aa742a181eac85e565802-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "0fda2406fbd9d44533c2b102afe855ef-64598fa00985"
+#| cache.extra: "8b85ef1e465aa742a181eac85e565802-6417a11b1537"
 quiz(file.path(root, "exrs/posts/ppdac_modell/ppdac_modell.rmd"), seed = 8134)
 ```

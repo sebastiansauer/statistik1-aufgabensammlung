@@ -3,7 +3,7 @@ title: "regressionbegriff"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regressionbegriff/regressionbegriff.rmd | stand: 16983ef02ae6e37aa27f13c03aa253bd-64598fa00985 -->
+<!-- quelle: exrs/posts/regressionbegriff/regressionbegriff.rmd | stand: 99a7a972428dc8f6928a7c5e531c981f-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "16983ef02ae6e37aa27f13c03aa253bd-64598fa00985"
+#| cache.extra: "99a7a972428dc8f6928a7c5e531c981f-6417a11b1537"
 quiz(file.path(root, "exrs/posts/regressionbegriff/regressionbegriff.rmd"), seed = 16186)
 ```

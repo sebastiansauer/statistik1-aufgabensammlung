@@ -3,7 +3,7 @@ title: "logikpruefung_anwendung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/logikpruefung_anwendung/logikpruefung_anwendung.rmd | stand: 1190b8bc333bf00b6b3c1d1d43d00ffa-64598fa00985 -->
+<!-- quelle: exrs/posts/logikpruefung_anwendung/logikpruefung_anwendung.rmd | stand: febd74b6ae87abe8d33765a3d371cbb7-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "1190b8bc333bf00b6b3c1d1d43d00ffa-64598fa00985"
+#| cache.extra: "febd74b6ae87abe8d33765a3d371cbb7-6417a11b1537"
 quiz(file.path(root, "exrs/posts/logikpruefung_anwendung/logikpruefung_anwendung.rmd"), seed = 29597)
 ```

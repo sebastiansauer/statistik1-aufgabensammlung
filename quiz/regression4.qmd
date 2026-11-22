@@ -3,7 +3,7 @@ title: "Regression4"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/regression4/regression4.rmd | stand: af2fad843e9fdc2159872c1fd269d11d-64598fa00985 -->
+<!-- quelle: exrs/posts/regression4/regression4.rmd | stand: eb5a54d1a2dd4967d68dc6a4d892445e-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "af2fad843e9fdc2159872c1fd269d11d-64598fa00985"
+#| cache.extra: "eb5a54d1a2dd4967d68dc6a4d892445e-6417a11b1537"
 quiz(file.path(root, "exrs/posts/regression4/regression4.rmd"), seed = 6592)
 ```

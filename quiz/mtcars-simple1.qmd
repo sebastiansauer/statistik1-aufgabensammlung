@@ -3,7 +3,7 @@ title: "mtcars-simple1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mtcars-simple1/mtcars-simple1.rmd | stand: 814264ad05963fef942cbd516b699556-64598fa00985 -->
+<!-- quelle: exrs/posts/mtcars-simple1/mtcars-simple1.rmd | stand: 2c27b7e45727eca6b4832089ca078b59-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "814264ad05963fef942cbd516b699556-64598fa00985"
+#| cache.extra: "2c27b7e45727eca6b4832089ca078b59-6417a11b1537"
 quiz(file.path(root, "exrs/posts/mtcars-simple1/mtcars-simple1.rmd"), seed = 10083)
 ```

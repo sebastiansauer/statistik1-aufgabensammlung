@@ -3,7 +3,7 @@ title: "adjustieren2a"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/adjustieren2a/adjustieren2a.qmd | stand: 82bd293be58ee55dd41fd426b2bb2d1f-64598fa00985 -->
+<!-- quelle: exrs/posts/adjustieren2a/adjustieren2a.qmd | stand: 82bd293be58ee55dd41fd426b2bb2d1f-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "82bd293be58ee55dd41fd426b2bb2d1f-64598fa00985"
+#| cache.extra: "82bd293be58ee55dd41fd426b2bb2d1f-6417a11b1537"
 quiz(file.path(root, "exrs/posts/adjustieren2a/adjustieren2a.qmd"), seed = 9004)
 ```

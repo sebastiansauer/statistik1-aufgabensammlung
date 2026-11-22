@@ -3,7 +3,7 @@ title: "Ridges-vergleichen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/ridges-vergleichen/ridges-vergleichen.rmd | stand: 97deb3fb8f5e56b126a6c4f3c986780a-64598fa00985 -->
+<!-- quelle: exrs/posts/ridges-vergleichen/ridges-vergleichen.rmd | stand: 97deb3fb8f5e56b126a6c4f3c986780a-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "97deb3fb8f5e56b126a6c4f3c986780a-64598fa00985"
+#| cache.extra: "97deb3fb8f5e56b126a6c4f3c986780a-6417a11b1537"
 quiz(file.path(root, "exrs/posts/ridges-vergleichen/ridges-vergleichen.rmd"), seed = 17597)
 ```

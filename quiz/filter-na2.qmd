@@ -3,7 +3,7 @@ title: "filter-na2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/filter-na2/filter-na2.rmd | stand: 6d670ca36d90a2135734f4f7d68f2344-64598fa00985 -->
+<!-- quelle: exrs/posts/filter-na2/filter-na2.rmd | stand: 6d670ca36d90a2135734f4f7d68f2344-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "6d670ca36d90a2135734f4f7d68f2344-64598fa00985"
+#| cache.extra: "6d670ca36d90a2135734f4f7d68f2344-6417a11b1537"
 quiz(file.path(root, "exrs/posts/filter-na2/filter-na2.rmd"), seed = 4857)
 ```

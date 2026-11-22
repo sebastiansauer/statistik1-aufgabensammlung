@@ -3,7 +3,7 @@ title: "nasa07"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/nasa07/index.rmd | stand: c0ec89f999830c3b453eb9bfc6103717-64598fa00985 -->
+<!-- quelle: exrs/posts/nasa07/index.rmd | stand: c0ec89f999830c3b453eb9bfc6103717-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "c0ec89f999830c3b453eb9bfc6103717-64598fa00985"
+#| cache.extra: "c0ec89f999830c3b453eb9bfc6103717-6417a11b1537"
 quiz(file.path(root, "exrs/posts/nasa07/index.rmd"), seed = 1607)
 ```

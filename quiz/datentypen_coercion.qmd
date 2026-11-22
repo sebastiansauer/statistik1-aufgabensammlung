@@ -3,7 +3,7 @@ title: "datentypen_coercion"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/datentypen_coercion/datentypen_coercion.rmd | stand: e45e39a868d92fe41dea46356eab5808-64598fa00985 -->
+<!-- quelle: exrs/posts/datentypen_coercion/datentypen_coercion.rmd | stand: 6184f02e1de16e39ccabb86f7e524b87-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "e45e39a868d92fe41dea46356eab5808-64598fa00985"
+#| cache.extra: "6184f02e1de16e39ccabb86f7e524b87-6417a11b1537"
 quiz(file.path(root, "exrs/posts/datentypen_coercion/datentypen_coercion.rmd"), seed = 20301)
 ```

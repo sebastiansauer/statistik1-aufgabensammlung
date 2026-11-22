@@ -3,7 +3,7 @@ title: "Streuung-Histogramm"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/streuung-histogramm/streuung-histogramm.rmd | stand: caa0dc0f5281d9ff361598f8d62576ca-64598fa00985 -->
+<!-- quelle: exrs/posts/streuung-histogramm/streuung-histogramm.rmd | stand: caa0dc0f5281d9ff361598f8d62576ca-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "caa0dc0f5281d9ff361598f8d62576ca-64598fa00985"
+#| cache.extra: "caa0dc0f5281d9ff361598f8d62576ca-6417a11b1537"
 quiz(file.path(root, "exrs/posts/streuung-histogramm/streuung-histogramm.rmd"), seed = 20067)
 ```

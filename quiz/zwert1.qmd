@@ -3,7 +3,7 @@ title: "zwert1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zwert1/zwert1.rmd | stand: 1d3af6bcb9a59fb2758c05c25c60b5b8-64598fa00985 -->
+<!-- quelle: exrs/posts/zwert1/zwert1.rmd | stand: a27b1c4a23dc117763cc5b7384814e99-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "1d3af6bcb9a59fb2758c05c25c60b5b8-64598fa00985"
+#| cache.extra: "a27b1c4a23dc117763cc5b7384814e99-6417a11b1537"
 quiz(file.path(root, "exrs/posts/zwert1/zwert1.rmd"), seed = 1993)
 ```

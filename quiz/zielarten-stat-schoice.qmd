@@ -3,7 +3,7 @@ title: "zielarten-stat-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zielarten-stat-schoice/zielarten-stat-schoice.Rmd | stand: d35a4122cf1ab9bf3c9eef26cf25b6a4-64598fa00985 -->
+<!-- quelle: exrs/posts/zielarten-stat-schoice/zielarten-stat-schoice.Rmd | stand: 0b6c8454b706f87429e50d723a73fda4-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "d35a4122cf1ab9bf3c9eef26cf25b6a4-64598fa00985"
+#| cache.extra: "0b6c8454b706f87429e50d723a73fda4-6417a11b1537"
 quiz(file.path(root, "exrs/posts/zielarten-stat-schoice/zielarten-stat-schoice.Rmd"), seed = 25418)
 ```

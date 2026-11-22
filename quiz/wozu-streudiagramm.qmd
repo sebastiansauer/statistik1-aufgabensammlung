@@ -3,7 +3,7 @@ title: "wozu-streudiagramm"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wozu-streudiagramm/wozu-streudiagramm.rmd | stand: 872f25d8d7a3cdb74a0a216dd8817abf-64598fa00985 -->
+<!-- quelle: exrs/posts/wozu-streudiagramm/wozu-streudiagramm.rmd | stand: 872f25d8d7a3cdb74a0a216dd8817abf-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "872f25d8d7a3cdb74a0a216dd8817abf-64598fa00985"
+#| cache.extra: "872f25d8d7a3cdb74a0a216dd8817abf-6417a11b1537"
 quiz(file.path(root, "exrs/posts/wozu-streudiagramm/wozu-streudiagramm.rmd"), seed = 18033)
 ```

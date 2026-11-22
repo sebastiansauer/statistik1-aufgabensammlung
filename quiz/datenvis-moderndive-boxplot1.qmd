@@ -3,7 +3,7 @@ title: "datenvis-moderndive-boxplot1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/datenvis-moderndive-boxplot1/datenvis-moderndive-boxplot1.rmd | stand: 8bace3d1fdaed07de75ce4191b888304-64598fa00985 -->
+<!-- quelle: exrs/posts/datenvis-moderndive-boxplot1/datenvis-moderndive-boxplot1.rmd | stand: 17d93457fc2fbdbeccbf3459a55b9f1a-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "8bace3d1fdaed07de75ce4191b888304-64598fa00985"
+#| cache.extra: "17d93457fc2fbdbeccbf3459a55b9f1a-6417a11b1537"
 quiz(file.path(root, "exrs/posts/datenvis-moderndive-boxplot1/datenvis-moderndive-boxplot1.rmd"), seed = 40800)
 ```

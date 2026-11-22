@@ -3,7 +3,7 @@ title: "rmse_sd_bezug"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/rmse_sd_bezug/rmse_sd_bezug.rmd | stand: 2b99b679dede2da387947b88c80dfaa0-64598fa00985 -->
+<!-- quelle: exrs/posts/rmse_sd_bezug/rmse_sd_bezug.rmd | stand: 2b99b679dede2da387947b88c80dfaa0-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "2b99b679dede2da387947b88c80dfaa0-64598fa00985"
+#| cache.extra: "2b99b679dede2da387947b88c80dfaa0-6417a11b1537"
 quiz(file.path(root, "exrs/posts/rmse_sd_bezug/rmse_sd_bezug.rmd"), seed = 9683)
 ```

@@ -3,7 +3,7 @@ title: "zentrieren-mit-interaktion-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zentrieren-mit-interaktion-schoice/zentrieren-mit-interaktion-schoice.Rmd | stand: 3fa81e9556988186e387fd2b46e2b4f8-64598fa00985 -->
+<!-- quelle: exrs/posts/zentrieren-mit-interaktion-schoice/zentrieren-mit-interaktion-schoice.Rmd | stand: b74241d620df77c2ba64d7c9478712d3-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "3fa81e9556988186e387fd2b46e2b4f8-64598fa00985"
+#| cache.extra: "b74241d620df77c2ba64d7c9478712d3-6417a11b1537"
 quiz(file.path(root, "exrs/posts/zentrieren-mit-interaktion-schoice/zentrieren-mit-interaktion-schoice.Rmd"), seed = 60392)
 ```

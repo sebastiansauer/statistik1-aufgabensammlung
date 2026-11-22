@@ -3,7 +3,7 @@ title: "logigkodier"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/logigkodier/logigkodier.rmd | stand: e3566cc5c2f269c3771f96d4831d3d91-64598fa00985 -->
+<!-- quelle: exrs/posts/logigkodier/logigkodier.rmd | stand: e3566cc5c2f269c3771f96d4831d3d91-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "e3566cc5c2f269c3771f96d4831d3d91-64598fa00985"
+#| cache.extra: "e3566cc5c2f269c3771f96d4831d3d91-6417a11b1537"
 quiz(file.path(root, "exrs/posts/logigkodier/logigkodier.rmd"), seed = 7002)
 ```

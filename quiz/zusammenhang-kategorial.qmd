@@ -3,7 +3,7 @@ title: "zusammenhang-kategorial"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/zusammenhang-kategorial/zusammenhang-kategorial.rmd | stand: 7bd54f47ece5d1a1d3ab285a7f5e49e8-64598fa00985 -->
+<!-- quelle: exrs/posts/zusammenhang-kategorial/zusammenhang-kategorial.rmd | stand: 3529bb8c9205636100a711409e2563b4-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "7bd54f47ece5d1a1d3ab285a7f5e49e8-64598fa00985"
+#| cache.extra: "3529bb8c9205636100a711409e2563b4-6417a11b1537"
 quiz(file.path(root, "exrs/posts/zusammenhang-kategorial/zusammenhang-kategorial.rmd"), seed = 28404)
 ```

@@ -3,7 +3,7 @@ title: "griech-buchstaben-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/griech-buchstaben-schoice/griech-buchstaben-schoice.Rmd | stand: ac9fa6bafa1e6aeff5c2905fecd6eb73-64598fa00985 -->
+<!-- quelle: exrs/posts/griech-buchstaben-schoice/griech-buchstaben-schoice.Rmd | stand: fcb39dc0bef3f26e7ebac6db8e928d77-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "ac9fa6bafa1e6aeff5c2905fecd6eb73-64598fa00985"
+#| cache.extra: "fcb39dc0bef3f26e7ebac6db8e928d77-6417a11b1537"
 quiz(file.path(root, "exrs/posts/griech-buchstaben-schoice/griech-buchstaben-schoice.Rmd"), seed = 32574)
 ```

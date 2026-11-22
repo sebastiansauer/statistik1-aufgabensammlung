@@ -3,7 +3,7 @@ title: "vorteil_skripte"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/vorteil_skripte/vorteil_skripte.rmd | stand: b58d7be36856bb4275caf780144d0ad1-64598fa00985 -->
+<!-- quelle: exrs/posts/vorteil_skripte/vorteil_skripte.rmd | stand: f717721f3586630e6140fb1a13cd5539-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "b58d7be36856bb4275caf780144d0ad1-64598fa00985"
+#| cache.extra: "f717721f3586630e6140fb1a13cd5539-6417a11b1537"
 quiz(file.path(root, "exrs/posts/vorteil_skripte/vorteil_skripte.rmd"), seed = 13011)
 ```

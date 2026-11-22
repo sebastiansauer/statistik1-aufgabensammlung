@@ -3,7 +3,7 @@ title: "wrangle5"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/wrangle5/wrangle5.rmd | stand: f3d6574f4c8fac18c37f4c1d2743d909-64598fa00985 -->
+<!-- quelle: exrs/posts/wrangle5/wrangle5.rmd | stand: f3d6574f4c8fac18c37f4c1d2743d909-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "f3d6574f4c8fac18c37f4c1d2743d909-64598fa00985"
+#| cache.extra: "f3d6574f4c8fac18c37f4c1d2743d909-6417a11b1537"
 quiz(file.path(root, "exrs/posts/wrangle5/wrangle5.rmd"), seed = 3372)
 ```

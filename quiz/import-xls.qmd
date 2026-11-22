@@ -3,7 +3,7 @@ title: "import-xls"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/import-xls/import-xls.qmd | stand: 992578724031919b1a59b56ffa917ffa-64598fa00985 -->
+<!-- quelle: exrs/posts/import-xls/import-xls.qmd | stand: 992578724031919b1a59b56ffa917ffa-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "992578724031919b1a59b56ffa917ffa-64598fa00985"
+#| cache.extra: "992578724031919b1a59b56ffa917ffa-6417a11b1537"
 quiz(file.path(root, "exrs/posts/import-xls/import-xls.qmd"), seed = 5766)
 ```

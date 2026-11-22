@@ -3,7 +3,7 @@ title: "lego_prinzip_logik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/lego_prinzip_logik/lego_prinzip_logik.rmd | stand: 3e5ee8b96568ae5befe7c7ec7a22f70b-64598fa00985 -->
+<!-- quelle: exrs/posts/lego_prinzip_logik/lego_prinzip_logik.rmd | stand: c644e6462558201de2f19845ad670fb0-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "3e5ee8b96568ae5befe7c7ec7a22f70b-64598fa00985"
+#| cache.extra: "c644e6462558201de2f19845ad670fb0-6417a11b1537"
 quiz(file.path(root, "exrs/posts/lego_prinzip_logik/lego_prinzip_logik.rmd"), seed = 18328)
 ```

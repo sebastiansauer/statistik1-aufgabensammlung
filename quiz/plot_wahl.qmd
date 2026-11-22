@@ -3,7 +3,7 @@ title: "plot_wahl"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/plot_wahl/plot_wahl.rmd | stand: 8b19218eabda77da713f1e7935b097ff-64598fa00985 -->
+<!-- quelle: exrs/posts/plot_wahl/plot_wahl.rmd | stand: 8b19218eabda77da713f1e7935b097ff-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "8b19218eabda77da713f1e7935b097ff-64598fa00985"
+#| cache.extra: "8b19218eabda77da713f1e7935b097ff-6417a11b1537"
 quiz(file.path(root, "exrs/posts/plot_wahl/plot_wahl.rmd"), seed = 4797)
 ```

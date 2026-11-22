@@ -3,7 +3,7 @@ title: "modell-definition-schoice"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/modell-definition-schoice/modell-definition-schoice.Rmd | stand: 5cec62a76b35c166bb40c10324b4da75-64598fa00985 -->
+<!-- quelle: exrs/posts/modell-definition-schoice/modell-definition-schoice.Rmd | stand: b0a360e5182c902f495e9f03618f7b28-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "5cec62a76b35c166bb40c10324b4da75-64598fa00985"
+#| cache.extra: "b0a360e5182c902f495e9f03618f7b28-6417a11b1537"
 quiz(file.path(root, "exrs/posts/modell-definition-schoice/modell-definition-schoice.Rmd"), seed = 32869)
 ```

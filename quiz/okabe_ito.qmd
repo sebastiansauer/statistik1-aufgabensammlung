@@ -3,7 +3,7 @@ title: "okabe_ito"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/okabe_ito/okabe_ito.rmd | stand: 11a10409d3ba3fed0669447c930c4969-64598fa00985 -->
+<!-- quelle: exrs/posts/okabe_ito/okabe_ito.rmd | stand: 228e828fa8dc7356c15de39f0427905d-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "11a10409d3ba3fed0669447c930c4969-64598fa00985"
+#| cache.extra: "228e828fa8dc7356c15de39f0427905d-6417a11b1537"
 quiz(file.path(root, "exrs/posts/okabe_ito/okabe_ito.rmd"), seed = 4745)
 ```

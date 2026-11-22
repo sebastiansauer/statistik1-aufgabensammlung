@@ -3,7 +3,7 @@ title: "stichprobengroesse_genauigkeit"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/stichprobengroesse_genauigkeit/stichprobengroesse_genauigkeit.rmd | stand: df96681de1ffcc96084e5a962a9ca223-64598fa00985 -->
+<!-- quelle: exrs/posts/stichprobengroesse_genauigkeit/stichprobengroesse_genauigkeit.rmd | stand: 47862b1855f1c79c9bff5083c9fa6643-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "df96681de1ffcc96084e5a962a9ca223-64598fa00985"
+#| cache.extra: "47862b1855f1c79c9bff5083c9fa6643-6417a11b1537"
 quiz(file.path(root, "exrs/posts/stichprobengroesse_genauigkeit/stichprobengroesse_genauigkeit.rmd"), seed = 49428)
 ```

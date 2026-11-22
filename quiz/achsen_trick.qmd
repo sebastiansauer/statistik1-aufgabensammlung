@@ -3,7 +3,7 @@ title: "achsen_trick"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/achsen_trick/achsen_trick.rmd | stand: 3e49120aba634620685e64d98f212c5a-64598fa00985 -->
+<!-- quelle: exrs/posts/achsen_trick/achsen_trick.rmd | stand: 4cdced430a0431054ef843c99ed3de0a-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "3e49120aba634620685e64d98f212c5a-64598fa00985"
+#| cache.extra: "4cdced430a0431054ef843c99ed3de0a-6417a11b1537"
 quiz(file.path(root, "exrs/posts/achsen_trick/achsen_trick.rmd"), seed = 8274)
 ```

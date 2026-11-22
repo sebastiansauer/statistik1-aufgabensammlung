@@ -3,7 +3,7 @@ title: "sd-vergleich"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/sd-vergleich/sd-vergleich.rmd | stand: e8c978c9bdfeec6eba593e6deffb3077-64598fa00985 -->
+<!-- quelle: exrs/posts/sd-vergleich/sd-vergleich.rmd | stand: e8c978c9bdfeec6eba593e6deffb3077-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "e8c978c9bdfeec6eba593e6deffb3077-64598fa00985"
+#| cache.extra: "e8c978c9bdfeec6eba593e6deffb3077-6417a11b1537"
 quiz(file.path(root, "exrs/posts/sd-vergleich/sd-vergleich.rmd"), seed = 7992)
 ```

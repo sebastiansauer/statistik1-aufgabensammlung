@@ -3,7 +3,7 @@ title: "causal_err"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/causal_err/causal_err.rmd | stand: 4aa3620d47227d9e34d557863b4bdf6a-64598fa00985 -->
+<!-- quelle: exrs/posts/causal_err/causal_err.rmd | stand: 01810014b06b98017a4cc22c2c218e60-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "4aa3620d47227d9e34d557863b4bdf6a-64598fa00985"
+#| cache.extra: "01810014b06b98017a4cc22c2c218e60-6417a11b1537"
 quiz(file.path(root, "exrs/posts/causal_err/causal_err.rmd"), seed = 5876)
 ```

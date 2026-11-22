@@ -3,7 +3,7 @@ title: "durch3-durch5"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/durch3-durch5/durch3-durch5.rmd | stand: 936d95b2198b7a11dc8e57788e9295e4-64598fa00985 -->
+<!-- quelle: exrs/posts/durch3-durch5/durch3-durch5.rmd | stand: 936d95b2198b7a11dc8e57788e9295e4-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "936d95b2198b7a11dc8e57788e9295e4-64598fa00985"
+#| cache.extra: "936d95b2198b7a11dc8e57788e9295e4-6417a11b1537"
 quiz(file.path(root, "exrs/posts/durch3-durch5/durch3-durch5.rmd"), seed = 8232)
 ```

@@ -3,7 +3,7 @@ title: "scatterplot-art-korrelation"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/scatterplot-art-korrelation/scatterplot-art-korrelation.rmd | stand: e2a09f5cde56e051c6f1e20d29fa3c0d-64598fa00985 -->
+<!-- quelle: exrs/posts/scatterplot-art-korrelation/scatterplot-art-korrelation.rmd | stand: 7168573e2c91feea2cce06b9343092ee-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "e2a09f5cde56e051c6f1e20d29fa3c0d-64598fa00985"
+#| cache.extra: "7168573e2c91feea2cce06b9343092ee-6417a11b1537"
 quiz(file.path(root, "exrs/posts/scatterplot-art-korrelation/scatterplot-art-korrelation.rmd"), seed = 39419)
 ```

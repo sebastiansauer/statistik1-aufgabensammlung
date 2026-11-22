@@ -3,7 +3,7 @@ title: "max-corr1"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/max-corr1/max-corr1.rmd | stand: 361207dd0baea6ab4ab5552fc9401dc2-64598fa00985 -->
+<!-- quelle: exrs/posts/max-corr1/max-corr1.rmd | stand: af5ecb89c41f262d142febeea976fc69-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "361207dd0baea6ab4ab5552fc9401dc2-64598fa00985"
+#| cache.extra: "af5ecb89c41f262d142febeea976fc69-6417a11b1537"
 quiz(file.path(root, "exrs/posts/max-corr1/max-corr1.rmd"), seed = 4155)
 ```

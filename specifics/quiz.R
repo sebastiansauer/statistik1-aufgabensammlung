@@ -102,12 +102,18 @@ quiz_knit_klassisch <- function(tmp, seed) {
     knitr::knit(tmp, out, quiet = TRUE, envir = new.env(), encoding = "UTF-8")
   }, list(tmp, out, seed, .libPaths(), getwd()))
   md <- readLines(out, encoding = "UTF-8", warn = FALSE)
-  setext <- function(titel) which(md == titel & c(md[-1], "") == "========")[1]
+  setext <- function(titel) which(md == titel & grepl("^=+$", c(md[-1], "")))[1]
   q <- setext("Question"); l <- setext("Solution"); m <- setext("Meta-information")
   if (is.na(q)) stop("keine Question-Ueberschrift")
   ende_q <- if (is.na(l)) length(md) else l - 1
   frage <- md[(q + 2):ende_q]
   loesung <- if (is.na(l)) character() else md[(l + 2):(if (is.na(m)) length(md) else m - 1)]
+  # r-exams-Zwischenueberschrift "Answerlist" (cloze: Liste der Teilfragen) ausblenden
+  ohne_answerlist <- function(z) {
+    k <- which(z == "Answerlist" & c(z[-1], "") %in% c("----------", "--------"))
+    if (length(k)) z[-c(k, k + 1)] else z
+  }
+  frage <- ohne_answerlist(frage); loesung <- ohne_answerlist(loesung)
   einbetten <- function(z) {
     for (i in grep("!\\[[^]]*\\]\\([^)]+\\)", z)) {
       pfad <- sub(".*!\\[[^]]*\\]\\(([^) ]+).*", "\\1", z[i])
