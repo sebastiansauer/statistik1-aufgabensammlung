@@ -1,0 +1,20 @@
+---
+title: "anscombe-panel-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/anscombe-panel-schoice/anscombe-panel-schoice.rmd | stand: 606ea9bb414dc39564de3ee5dfaf9834-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "606ea9bb414dc39564de3ee5dfaf9834-6417a11b1537"
+quiz(file.path(root, "exrs/posts/anscombe-panel-schoice/anscombe-panel-schoice.rmd"), seed = 25078)
+```
