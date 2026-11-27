@@ -1,0 +1,20 @@
+---
+title: "anscombe-kennwerte-schoice"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/anscombe-kennwerte-schoice/anscombe-kennwerte-schoice.rmd | stand: 7219f0e84ab68b6c3fe78c930d16e568-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "7219f0e84ab68b6c3fe78c930d16e568-6417a11b1537"
+quiz(file.path(root, "exrs/posts/anscombe-kennwerte-schoice/anscombe-kennwerte-schoice.rmd"), seed = 35588)
+```

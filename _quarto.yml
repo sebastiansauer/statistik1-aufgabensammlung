@@ -257,6 +257,7 @@ book:
         - quiz/normal_rechnen.qmd
         - quiz/plot_wahl.qmd
         - quiz/anscombe_logik.qmd
+        - quiz/anscombe-kennwerte-schoice.qmd
         - quiz/anim01.qmd
         - quiz/anim02.qmd
         - quiz/anim03.qmd
@@ -370,6 +371,8 @@ book:
         - quiz/korrelation_na_handling.qmd
         - quiz/r_syntax_correlation.qmd
         - quiz/nichtlineare_korrelation.qmd
+        - quiz/anscombe-panel-schoice.qmd
+        - quiz/anscombe-r-einzelpunkt-schoice.qmd
         - quiz/scheinkorrelation_glatze.qmd
         - quiz/cohen_kategorisierung.qmd
         - quiz/range_restriction.qmd
