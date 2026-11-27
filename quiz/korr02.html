@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 <meta charset="UTF-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.11.9">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="keywords" content="Aufgaben, Statistik, Prognose, Modellierung, R, Datenanalyse, Regression">
 <meta name="description" content="Aufgaben zur Einführung in die Statistik mit einem Schwerpunkt auf Prognose-Modellierung">
-<title>286&nbsp; korr02 – Aufgabensammlung - Statistik1</title>
+<title>287&nbsp; korr02 – Aufgabensammlung - Statistik1</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -35,18 +38,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="../img/statistik1_icon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-613b3621c13d6e1168d5fe52bd912707.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-414b5c4ed78a43da754c5fea08cce4b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-3c58d63652ba0c60e09005b12683fbd2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-aed52539b219d9c6855463ba15712414.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3c58d63652ba0c60e09005b12683fbd2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -75,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 }</script><link href="../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
 <script src="../site_libs/pagedtable-1.1/js/pagedtable.js"></script><link rel="stylesheet" href="../specifics/webex.css">
 </head>
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Zum Hauptinhalt springen</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -98,6 +102,7 @@ ul.task-list li input[type="checkbox"] {
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
         if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
           if (alternate) {
             toggle.classList.add("alternate");
           } else {
@@ -127,13 +132,19 @@ ul.task-list li input[type="checkbox"] {
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
       setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
         manageTransitions("body", false);
-        window.scrollTo(0, 1);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
         setTimeout(() => {
-          window.scrollTo(0, 0);
+          window.scrollTo(0, scrollY);
           manageTransitions("body", true);
         }, 40);
       }
@@ -227,6 +238,7 @@ ul.task-list li input[type="checkbox"] {
       // Read the current dark / light value
       let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
@@ -240,12 +252,12 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" aria-label="Symbolleiste"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quiz/nasa02.html">Zusammenhaenge</a></li><li class="breadcrumb-item"><a href="../quiz/korr02.html"><span class="chapter-number">286</span>&nbsp; <span class="chapter-title">korr02</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Pfad"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quiz/nasa02.html">Zusammenhaenge</a></li><li class="breadcrumb-item"><a href="../quiz/korr02.html"><span class="chapter-number">287</span>&nbsp; <span class="chapter-title">korr02</span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -253,14 +265,14 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Website"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../img/statistik1_icon.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="../img/statistik1_icon.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">Aufgabensammlung - Statistik1</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/sebastiansauer/statistik1" title="Quellcode" class="quarto-navigation-tool px-1" aria-label="Quellcode"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten" aria-label="Dunkelmodus umschalten"><i class="bi"></i></button>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Lesemodus umschalten">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -284,13 +296,10 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Rahmen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Rahmen</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/variation01.html" class="sidebar-item-text sidebar-link">
@@ -607,13 +616,10 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">R</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">R</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/typ-fehler-r-01.html" class="sidebar-item-text sidebar-link">
@@ -984,1823 +990,1808 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Aufbereiten</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Aufbereiten</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../quiz/fallstudie-umfrage-aufraeumen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">115</span>&nbsp; <span class="chapter-title">fallstudie-umfrage-aufraeumen</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">115</span>&nbsp; <span class="chapter-title">wrangle3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">116</span>&nbsp; <span class="chapter-title">wrangle3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">116</span>&nbsp; <span class="chapter-title">wrangle4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">117</span>&nbsp; <span class="chapter-title">wrangle4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">117</span>&nbsp; <span class="chapter-title">wrangle5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">118</span>&nbsp; <span class="chapter-title">wrangle5</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">118</span>&nbsp; <span class="chapter-title">wrangle7</span></span></a>
+ <span class="menu-text"><span class="chapter-number">119</span>&nbsp; <span class="chapter-title">wrangle7</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">119</span>&nbsp; <span class="chapter-title">wrangle9</span></span></a>
+ <span class="menu-text"><span class="chapter-number">120</span>&nbsp; <span class="chapter-title">wrangle9</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">120</span>&nbsp; <span class="chapter-title">wrangle10</span></span></a>
+ <span class="menu-text"><span class="chapter-number">121</span>&nbsp; <span class="chapter-title">wrangle10</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/tidydata1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">121</span>&nbsp; <span class="chapter-title">tidydata1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">122</span>&nbsp; <span class="chapter-title">tidydata1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/affairs-dplyr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">122</span>&nbsp; <span class="chapter-title">affairs-dplyr</span></span></a>
+ <span class="menu-text"><span class="chapter-number">123</span>&nbsp; <span class="chapter-title">affairs-dplyr</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/dplyr-uebersetzen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">123</span>&nbsp; <span class="chapter-title">dplyr-uebersetzen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">124</span>&nbsp; <span class="chapter-title">dplyr-uebersetzen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/haeufigkeit01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">124</span>&nbsp; <span class="chapter-title">haeufigkeit01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">125</span>&nbsp; <span class="chapter-title">haeufigkeit01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-mean1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">125</span>&nbsp; <span class="chapter-title">mariokart-mean1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">126</span>&nbsp; <span class="chapter-title">mariokart-mean1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-mean2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">126</span>&nbsp; <span class="chapter-title">mariokart-mean2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">127</span>&nbsp; <span class="chapter-title">mariokart-mean2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-mean3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">127</span>&nbsp; <span class="chapter-title">mariokart-mean3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">128</span>&nbsp; <span class="chapter-title">mariokart-mean3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-mean4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">128</span>&nbsp; <span class="chapter-title">mariokart-mean4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">129</span>&nbsp; <span class="chapter-title">mariokart-mean4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-max1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">129</span>&nbsp; <span class="chapter-title">mariokart-max1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">130</span>&nbsp; <span class="chapter-title">mariokart-max1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-max2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">130</span>&nbsp; <span class="chapter-title">mariokart-max2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">131</span>&nbsp; <span class="chapter-title">mariokart-max2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">131</span>&nbsp; <span class="chapter-title">filter01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">132</span>&nbsp; <span class="chapter-title">filter01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarise01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">132</span>&nbsp; <span class="chapter-title">summarise01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">133</span>&nbsp; <span class="chapter-title">summarise01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarise02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">133</span>&nbsp; <span class="chapter-title">summarise02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">134</span>&nbsp; <span class="chapter-title">summarise02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mutate01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">134</span>&nbsp; <span class="chapter-title">mutate01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">135</span>&nbsp; <span class="chapter-title">mutate01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/praxis_datenjudo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">135</span>&nbsp; <span class="chapter-title">praxis_datenjudo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">136</span>&nbsp; <span class="chapter-title">praxis_datenjudo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter_syntax.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">136</span>&nbsp; <span class="chapter-title">filter_syntax</span></span></a>
+ <span class="menu-text"><span class="chapter-number">137</span>&nbsp; <span class="chapter-title">filter_syntax</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/lego_prinzip_logik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">137</span>&nbsp; <span class="chapter-title">lego_prinzip_logik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">138</span>&nbsp; <span class="chapter-title">lego_prinzip_logik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/count_nominal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">138</span>&nbsp; <span class="chapter-title">count_nominal</span></span></a>
+ <span class="menu-text"><span class="chapter-number">139</span>&nbsp; <span class="chapter-title">count_nominal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/arrange_minus.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">139</span>&nbsp; <span class="chapter-title">arrange_minus</span></span></a>
+ <span class="menu-text"><span class="chapter-number">140</span>&nbsp; <span class="chapter-title">arrange_minus</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mutate_neu.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">140</span>&nbsp; <span class="chapter-title">mutate_neu</span></span></a>
+ <span class="menu-text"><span class="chapter-number">141</span>&nbsp; <span class="chapter-title">mutate_neu</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/group_summarise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">141</span>&nbsp; <span class="chapter-title">group_summarise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">142</span>&nbsp; <span class="chapter-title">group_summarise</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/pipe_vorteil.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">142</span>&nbsp; <span class="chapter-title">pipe_vorteil</span></span></a>
+ <span class="menu-text"><span class="chapter-number">143</span>&nbsp; <span class="chapter-title">pipe_vorteil</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/select_anwendung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">143</span>&nbsp; <span class="chapter-title">select_anwendung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">144</span>&nbsp; <span class="chapter-title">select_anwendung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter_logik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">144</span>&nbsp; <span class="chapter-title">filter_logik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">145</span>&nbsp; <span class="chapter-title">filter_logik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/arrange.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">145</span>&nbsp; <span class="chapter-title">arrange</span></span></a>
+ <span class="menu-text"><span class="chapter-number">146</span>&nbsp; <span class="chapter-title">arrange</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/dating01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">146</span>&nbsp; <span class="chapter-title">dating01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">147</span>&nbsp; <span class="chapter-title">dating01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/def_datenjudo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">147</span>&nbsp; <span class="chapter-title">def_datenjudo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">148</span>&nbsp; <span class="chapter-title">def_datenjudo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/dplyr-mtcars01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">148</span>&nbsp; <span class="chapter-title">dplyr-mtcars1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">149</span>&nbsp; <span class="chapter-title">dplyr-mtcars1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">149</span>&nbsp; <span class="chapter-title">filter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">150</span>&nbsp; <span class="chapter-title">filter</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter-b.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">150</span>&nbsp; <span class="chapter-title">filter-b</span></span></a>
+ <span class="menu-text"><span class="chapter-number">151</span>&nbsp; <span class="chapter-title">filter-b</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter-na1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">151</span>&nbsp; <span class="chapter-title">filter-na1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">152</span>&nbsp; <span class="chapter-title">filter-na1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter-na2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">152</span>&nbsp; <span class="chapter-title">filter-na2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">153</span>&nbsp; <span class="chapter-title">filter-na2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter-na3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">153</span>&nbsp; <span class="chapter-title">filter-na3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">154</span>&nbsp; <span class="chapter-title">filter-na3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter-na4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">154</span>&nbsp; <span class="chapter-title">filter-na4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">155</span>&nbsp; <span class="chapter-title">filter-na4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/filter-na5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">155</span>&nbsp; <span class="chapter-title">filter-na5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">156</span>&nbsp; <span class="chapter-title">filter-na5</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/groupby.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">156</span>&nbsp; <span class="chapter-title">groupby</span></span></a>
+ <span class="menu-text"><span class="chapter-number">157</span>&nbsp; <span class="chapter-title">groupby</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/groupby1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">157</span>&nbsp; <span class="chapter-title">groupby1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">158</span>&nbsp; <span class="chapter-title">groupby1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/joins.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">158</span>&nbsp; <span class="chapter-title">joins</span></span></a>
+ <span class="menu-text"><span class="chapter-number">159</span>&nbsp; <span class="chapter-title">joins</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mutate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">159</span>&nbsp; <span class="chapter-title">mutate</span></span></a>
+ <span class="menu-text"><span class="chapter-number">160</span>&nbsp; <span class="chapter-title">mutate</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/na-per-col.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">160</span>&nbsp; <span class="chapter-title">na-per-col</span></span></a>
+ <span class="menu-text"><span class="chapter-number">161</span>&nbsp; <span class="chapter-title">na-per-col</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">161</span>&nbsp; <span class="chapter-title">nasa03</span></span></a>
+ <span class="menu-text"><span class="chapter-number">162</span>&nbsp; <span class="chapter-title">nasa03</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/pfeife.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">162</span>&nbsp; <span class="chapter-title">pfeife</span></span></a>
+ <span class="menu-text"><span class="chapter-number">163</span>&nbsp; <span class="chapter-title">pfeife</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/praxisprobleme1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">163</span>&nbsp; <span class="chapter-title">praxisprobleme1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">164</span>&nbsp; <span class="chapter-title">praxisprobleme1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/select.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">164</span>&nbsp; <span class="chapter-title">select</span></span></a>
+ <span class="menu-text"><span class="chapter-number">165</span>&nbsp; <span class="chapter-title">select</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/select-b.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">165</span>&nbsp; <span class="chapter-title">select-b</span></span></a>
+ <span class="menu-text"><span class="chapter-number">166</span>&nbsp; <span class="chapter-title">select-b</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarize.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">166</span>&nbsp; <span class="chapter-title">summarize</span></span></a>
+ <span class="menu-text"><span class="chapter-number">167</span>&nbsp; <span class="chapter-title">summarize</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/typ-fehler-r-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">167</span>&nbsp; <span class="chapter-title">typ-fehler-r-05</span></span></a>
+ <span class="menu-text"><span class="chapter-number">168</span>&nbsp; <span class="chapter-title">typ-fehler-r-05</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wrangle8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">168</span>&nbsp; <span class="chapter-title">wrangle8</span></span></a>
+ <span class="menu-text"><span class="chapter-number">169</span>&nbsp; <span class="chapter-title">wrangle8</span></span></a>
   </div>
 </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">verbildlichen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-controls="quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-4-label">verbildlichen</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-4" aria-labelledby="quarto-sidebar-section-4-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxhist.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">169</span>&nbsp; <span class="chapter-title">boxhist</span></span></a>
+ <span class="menu-text"><span class="chapter-number">170</span>&nbsp; <span class="chapter-title">boxhist</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/max-corr1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">170</span>&nbsp; <span class="chapter-title">max-corr1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">171</span>&nbsp; <span class="chapter-title">max-corr1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/max-corr2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">171</span>&nbsp; <span class="chapter-title">max-corr2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">172</span>&nbsp; <span class="chapter-title">max-corr2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/histogramm-in-boxplot.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">172</span>&nbsp; <span class="chapter-title">Histogramm-in-Boxplot</span></span></a>
+ <span class="menu-text"><span class="chapter-number">173</span>&nbsp; <span class="chapter-title">Histogramm-in-Boxplot</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/diamonds-histogramm-vergleich2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">173</span>&nbsp; <span class="chapter-title">Diamonds-Histogramm-Vergleich2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">174</span>&nbsp; <span class="chapter-title">Diamonds-Histogramm-Vergleich2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxplot-aussagen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">174</span>&nbsp; <span class="chapter-title">Boxplot-Aussagen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">175</span>&nbsp; <span class="chapter-title">Boxplot-Aussagen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxplots-de1a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">175</span>&nbsp; <span class="chapter-title">boxplots-de1a</span></span></a>
+ <span class="menu-text"><span class="chapter-number">176</span>&nbsp; <span class="chapter-title">boxplots-de1a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/movies-vis1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">176</span>&nbsp; <span class="chapter-title">movies-vis1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">177</span>&nbsp; <span class="chapter-title">movies-vis1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/movies-vis2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">177</span>&nbsp; <span class="chapter-title">movies-vis2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">178</span>&nbsp; <span class="chapter-title">movies-vis2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vis-gapminder.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">178</span>&nbsp; <span class="chapter-title">vis-gapminder</span></span></a>
+ <span class="menu-text"><span class="chapter-number">179</span>&nbsp; <span class="chapter-title">vis-gapminder</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/diamonds-histogramm-vergleich.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">179</span>&nbsp; <span class="chapter-title">Diamonds-Histogramm-Vergleich</span></span></a>
+ <span class="menu-text"><span class="chapter-number">180</span>&nbsp; <span class="chapter-title">Diamonds-Histogramm-Vergleich</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wozu-balkendiagramm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">180</span>&nbsp; <span class="chapter-title">wozu-balkendiagramm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">181</span>&nbsp; <span class="chapter-title">wozu-balkendiagramm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/diamonds-histogram.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">181</span>&nbsp; <span class="chapter-title">diamonds-histogram</span></span></a>
+ <span class="menu-text"><span class="chapter-number">182</span>&nbsp; <span class="chapter-title">diamonds-histogram</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/n-vars-diagram.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">182</span>&nbsp; <span class="chapter-title">n-vars-diagram</span></span></a>
+ <span class="menu-text"><span class="chapter-number">183</span>&nbsp; <span class="chapter-title">n-vars-diagram</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/achsen_trick.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">183</span>&nbsp; <span class="chapter-title">achsen_trick</span></span></a>
+ <span class="menu-text"><span class="chapter-number">184</span>&nbsp; <span class="chapter-title">achsen_trick</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/okabe_ito.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">184</span>&nbsp; <span class="chapter-title">okabe_ito</span></span></a>
+ <span class="menu-text"><span class="chapter-number">185</span>&nbsp; <span class="chapter-title">okabe_ito</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/torten_kritik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">185</span>&nbsp; <span class="chapter-title">torten_kritik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">186</span>&nbsp; <span class="chapter-title">torten_kritik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/schein_korr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">186</span>&nbsp; <span class="chapter-title">schein_korr</span></span></a>
+ <span class="menu-text"><span class="chapter-number">187</span>&nbsp; <span class="chapter-title">schein_korr</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/balken_normierung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">187</span>&nbsp; <span class="chapter-title">balken_normierung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">188</span>&nbsp; <span class="chapter-title">balken_normierung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxplot_schiefe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">188</span>&nbsp; <span class="chapter-title">bosplot_schiefe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">189</span>&nbsp; <span class="chapter-title">bosplot_schiefe</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/scatter_ellipse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">189</span>&nbsp; <span class="chapter-title">scatter_ellipse</span></span></a>
+ <span class="menu-text"><span class="chapter-number">190</span>&nbsp; <span class="chapter-title">scatter_ellipse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/normal_rechnen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">190</span>&nbsp; <span class="chapter-title">normal_rechnen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">191</span>&nbsp; <span class="chapter-title">normal_rechnen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/plot_wahl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">191</span>&nbsp; <span class="chapter-title">plot_wahl</span></span></a>
+ <span class="menu-text"><span class="chapter-number">192</span>&nbsp; <span class="chapter-title">plot_wahl</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/anscombe_logik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">192</span>&nbsp; <span class="chapter-title">anscombe_logik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">193</span>&nbsp; <span class="chapter-title">anscombe_logik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/anim01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">193</span>&nbsp; <span class="chapter-title">anim01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">194</span>&nbsp; <span class="chapter-title">anim01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/anim02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">194</span>&nbsp; <span class="chapter-title">anim02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">195</span>&nbsp; <span class="chapter-title">anim02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/anim03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">195</span>&nbsp; <span class="chapter-title">anim03</span></span></a>
+ <span class="menu-text"><span class="chapter-number">196</span>&nbsp; <span class="chapter-title">anim03</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxhist2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">196</span>&nbsp; <span class="chapter-title">boxhist2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">197</span>&nbsp; <span class="chapter-title">boxhist2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exrs/posts/boxplot_with_points/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">197</span>&nbsp; <span class="chapter-title">boxplot_with_points</span></span></a>
+ <span class="menu-text"><span class="chapter-number">198</span>&nbsp; <span class="chapter-title">boxplot_with_points</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxplots.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">198</span>&nbsp; <span class="chapter-title">boxplots</span></span></a>
+ <span class="menu-text"><span class="chapter-number">199</span>&nbsp; <span class="chapter-title">boxplots</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/boxplots-de.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">199</span>&nbsp; <span class="chapter-title">boxplots-de</span></span></a>
+ <span class="menu-text"><span class="chapter-number">200</span>&nbsp; <span class="chapter-title">boxplots-de</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/datenvis-moderndive-barplot1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">200</span>&nbsp; <span class="chapter-title">datenvis-moderndive-barplot1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">201</span>&nbsp; <span class="chapter-title">datenvis-moderndive-barplot1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/datenvis-moderndive-boxplot1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">201</span>&nbsp; <span class="chapter-title">datenvis-moderndive-boxplot1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">202</span>&nbsp; <span class="chapter-title">datenvis-moderndive-boxplot1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/datenvis-moderndive-histogramm1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">202</span>&nbsp; <span class="chapter-title">datenvis-moderndive-histogramm1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">203</span>&nbsp; <span class="chapter-title">datenvis-moderndive-histogramm1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/datenvis-moderndive-scatterplot1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">203</span>&nbsp; <span class="chapter-title">datenvis-moderndive-scatterplot1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">204</span>&nbsp; <span class="chapter-title">datenvis-moderndive-scatterplot1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/diamonds-histogram-rcode.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">204</span>&nbsp; <span class="chapter-title">diamonds-histogram-rcode</span></span></a>
+ <span class="menu-text"><span class="chapter-number">205</span>&nbsp; <span class="chapter-title">diamonds-histogram-rcode</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/flights-geom_point-geom-lm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">205</span>&nbsp; <span class="chapter-title">flights-geom_point-geom-lm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">206</span>&nbsp; <span class="chapter-title">flights-geom_point-geom-lm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ggplot-prog.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">206</span>&nbsp; <span class="chapter-title">ggplot-prog</span></span></a>
+ <span class="menu-text"><span class="chapter-number">207</span>&nbsp; <span class="chapter-title">ggplot-prog</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ggstatsplot01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">207</span>&nbsp; <span class="chapter-title">ggstatsplot01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">208</span>&nbsp; <span class="chapter-title">ggstatsplot01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/haeufigkeit02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">208</span>&nbsp; <span class="chapter-title">haeufigkeit02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">209</span>&nbsp; <span class="chapter-title">haeufigkeit02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/heatmap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">209</span>&nbsp; <span class="chapter-title">heatmap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">210</span>&nbsp; <span class="chapter-title">heatmap</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/heatmap-mosaic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">210</span>&nbsp; <span class="chapter-title">heatmap-mosaic</span></span></a>
+ <span class="menu-text"><span class="chapter-number">211</span>&nbsp; <span class="chapter-title">heatmap-mosaic</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">211</span>&nbsp; <span class="chapter-title">nasa04</span></span></a>
+ <span class="menu-text"><span class="chapter-number">212</span>&nbsp; <span class="chapter-title">nasa04</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">212</span>&nbsp; <span class="chapter-title">nasa05</span></span></a>
+ <span class="menu-text"><span class="chapter-number">213</span>&nbsp; <span class="chapter-title">nasa05</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ridges-vergleichen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">213</span>&nbsp; <span class="chapter-title">Ridges-vergleichen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">214</span>&nbsp; <span class="chapter-title">Ridges-vergleichen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ridges-vergleichen2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">214</span>&nbsp; <span class="chapter-title">ridges-vergleichen2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">215</span>&nbsp; <span class="chapter-title">ridges-vergleichen2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/schiefe-erkennen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">215</span>&nbsp; <span class="chapter-title">Schiefe-erkennen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">216</span>&nbsp; <span class="chapter-title">Schiefe-erkennen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/schiefe1-b.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">216</span>&nbsp; <span class="chapter-title">schiefe1-b</span></span></a>
+ <span class="menu-text"><span class="chapter-number">217</span>&nbsp; <span class="chapter-title">schiefe1-b</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/verteilungen1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">217</span>&nbsp; <span class="chapter-title">verteilungen1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">218</span>&nbsp; <span class="chapter-title">verteilungen1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/verteilungen2a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">218</span>&nbsp; <span class="chapter-title">verteilungen2a</span></span></a>
+ <span class="menu-text"><span class="chapter-number">219</span>&nbsp; <span class="chapter-title">verteilungen2a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vis-mtcars.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">219</span>&nbsp; <span class="chapter-title">vis-mtcars</span></span></a>
+ <span class="menu-text"><span class="chapter-number">220</span>&nbsp; <span class="chapter-title">vis-mtcars</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vis-penguins.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">220</span>&nbsp; <span class="chapter-title">vis-penguins</span></span></a>
+ <span class="menu-text"><span class="chapter-number">221</span>&nbsp; <span class="chapter-title">vis-penguins</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/viz-geom-point.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">221</span>&nbsp; <span class="chapter-title">viz-geom-point</span></span></a>
+ <span class="menu-text"><span class="chapter-number">222</span>&nbsp; <span class="chapter-title">viz-geom-point</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/viz-geom-point10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">222</span>&nbsp; <span class="chapter-title">viz-geom-point10</span></span></a>
+ <span class="menu-text"><span class="chapter-number">223</span>&nbsp; <span class="chapter-title">viz-geom-point10</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/viz-geom-point2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">223</span>&nbsp; <span class="chapter-title">viz-geom-point2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">224</span>&nbsp; <span class="chapter-title">viz-geom-point2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/viz-geom-point5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">224</span>&nbsp; <span class="chapter-title">viz-geom-point5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">225</span>&nbsp; <span class="chapter-title">viz-geom-point5</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/viz-geom-point6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">225</span>&nbsp; <span class="chapter-title">viz-geom-point6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">226</span>&nbsp; <span class="chapter-title">viz-geom-point6</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/viz-geom-point7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">226</span>&nbsp; <span class="chapter-title">viz-geom-point7</span></span></a>
+ <span class="menu-text"><span class="chapter-number">227</span>&nbsp; <span class="chapter-title">viz-geom-point7</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/wozu-streudiagramm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">227</span>&nbsp; <span class="chapter-title">wozu-streudiagramm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">228</span>&nbsp; <span class="chapter-title">wozu-streudiagramm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zusammenhang-kategorial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">228</span>&nbsp; <span class="chapter-title">zusammenhang-kategorial</span></span></a>
+ <span class="menu-text"><span class="chapter-number">229</span>&nbsp; <span class="chapter-title">zusammenhang-kategorial</span></span></a>
   </div>
 </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Zusammenfassen</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-controls="quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-5-label">Zusammenfassen</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-5" aria-labelledby="quarto-sidebar-section-5-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/kennwert-robust.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">229</span>&nbsp; <span class="chapter-title">Kennwert-robust</span></span></a>
+ <span class="menu-text"><span class="chapter-number">230</span>&nbsp; <span class="chapter-title">Kennwert-robust</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mw-berechnen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">230</span>&nbsp; <span class="chapter-title">mw-berechnen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">231</span>&nbsp; <span class="chapter-title">mw-berechnen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">231</span>&nbsp; <span class="chapter-title">nasa01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">232</span>&nbsp; <span class="chapter-title">nasa01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/schiefe1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">232</span>&nbsp; <span class="chapter-title">Schiefe1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">233</span>&nbsp; <span class="chapter-title">Schiefe1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarise03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">233</span>&nbsp; <span class="chapter-title">summarise03</span></span></a>
+ <span class="menu-text"><span class="chapter-number">234</span>&nbsp; <span class="chapter-title">summarise03</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/file_drawer_problem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">234</span>&nbsp; <span class="chapter-title">file_drawer_problem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">235</span>&nbsp; <span class="chapter-title">file_drawer_problem</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/definition_punktmodell.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">235</span>&nbsp; <span class="chapter-title">definition_punktmodell</span></span></a>
+ <span class="menu-text"><span class="chapter-number">236</span>&nbsp; <span class="chapter-title">definition_punktmodell</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/median_gerade_n.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">236</span>&nbsp; <span class="chapter-title">median_gerade_n</span></span></a>
+ <span class="menu-text"><span class="chapter-number">237</span>&nbsp; <span class="chapter-title">median_gerade_n</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/gruppen_modell_vorteil.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">237</span>&nbsp; <span class="chapter-title">gruppen_modell_vorteil</span></span></a>
+ <span class="menu-text"><span class="chapter-number">238</span>&nbsp; <span class="chapter-title">gruppen_modell_vorteil</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/quantil_transfer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">238</span>&nbsp; <span class="chapter-title">quantil_transfer</span></span></a>
+ <span class="menu-text"><span class="chapter-number">239</span>&nbsp; <span class="chapter-title">quantil_transfer</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/modell_gleichung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">239</span>&nbsp; <span class="chapter-title">modell_gleichung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">240</span>&nbsp; <span class="chapter-title">modell_gleichung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/schiefe_interpolation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">240</span>&nbsp; <span class="chapter-title">schiefe_interpolation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">241</span>&nbsp; <span class="chapter-title">schiefe_interpolation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nullmodell_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">241</span>&nbsp; <span class="chapter-title">nullmodell_r</span></span></a>
+ <span class="menu-text"><span class="chapter-number">242</span>&nbsp; <span class="chapter-title">nullmodell_r</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mw_eigenschaft.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">242</span>&nbsp; <span class="chapter-title">mw_eigenschaft</span></span></a>
+ <span class="menu-text"><span class="chapter-number">243</span>&nbsp; <span class="chapter-title">mw_eigenschaft</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/kontingenztabelle1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">243</span>&nbsp; <span class="chapter-title">kontingenztabelle1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">244</span>&nbsp; <span class="chapter-title">kontingenztabelle1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/median-berechnen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">244</span>&nbsp; <span class="chapter-title">median-berechnen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">245</span>&nbsp; <span class="chapter-title">median-berechnen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mittelwert-berechnen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">245</span>&nbsp; <span class="chapter-title">mittelwert-berechnen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">246</span>&nbsp; <span class="chapter-title">mittelwert-berechnen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mtcars-easystats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">246</span>&nbsp; <span class="chapter-title">mtcars-easystats</span></span></a>
+ <span class="menu-text"><span class="chapter-number">247</span>&nbsp; <span class="chapter-title">mtcars-easystats</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mutate02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">247</span>&nbsp; <span class="chapter-title">mutate02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">248</span>&nbsp; <span class="chapter-title">mutate02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mutate03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">248</span>&nbsp; <span class="chapter-title">mutate03</span></span></a>
+ <span class="menu-text"><span class="chapter-number">249</span>&nbsp; <span class="chapter-title">mutate03</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mw-berechnen2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">249</span>&nbsp; <span class="chapter-title">mw-berechnen2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">250</span>&nbsp; <span class="chapter-title">mw-berechnen2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mwberechnen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">250</span>&nbsp; <span class="chapter-title">MWberechnen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">251</span>&nbsp; <span class="chapter-title">MWberechnen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">251</span>&nbsp; <span class="chapter-title">nasa06</span></span></a>
+ <span class="menu-text"><span class="chapter-number">252</span>&nbsp; <span class="chapter-title">nasa06</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">252</span>&nbsp; <span class="chapter-title">nasa07</span></span></a>
+ <span class="menu-text"><span class="chapter-number">253</span>&nbsp; <span class="chapter-title">nasa07</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/robustheit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">253</span>&nbsp; <span class="chapter-title">robustheit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">254</span>&nbsp; <span class="chapter-title">robustheit</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/rowmeans-groupby-summarise.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">254</span>&nbsp; <span class="chapter-title">rowmeans-groupby-summarise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">255</span>&nbsp; <span class="chapter-title">rowmeans-groupby-summarise</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/smartphone1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">255</span>&nbsp; <span class="chapter-title">smartphone1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">256</span>&nbsp; <span class="chapter-title">smartphone1</span></span></a>
   </div>
 </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Modellguete</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-controls="quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-6-label">Modellguete</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-6" aria-labelledby="quarto-sidebar-section-6-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-sd1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">256</span>&nbsp; <span class="chapter-title">mariokart-sd1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">257</span>&nbsp; <span class="chapter-title">mariokart-sd1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-sd2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">257</span>&nbsp; <span class="chapter-title">mariokart-sd2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">258</span>&nbsp; <span class="chapter-title">mariokart-sd2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-sd3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">258</span>&nbsp; <span class="chapter-title">mariokart-sd3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">259</span>&nbsp; <span class="chapter-title">mariokart-sd3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarise04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">259</span>&nbsp; <span class="chapter-title">summarise04</span></span></a>
+ <span class="menu-text"><span class="chapter-number">260</span>&nbsp; <span class="chapter-title">summarise04</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarise05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">260</span>&nbsp; <span class="chapter-title">summarise05</span></span></a>
+ <span class="menu-text"><span class="chapter-number">261</span>&nbsp; <span class="chapter-title">summarise05</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/summarise06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">261</span>&nbsp; <span class="chapter-title">summarise06</span></span></a>
+ <span class="menu-text"><span class="chapter-number">262</span>&nbsp; <span class="chapter-title">summarise06</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vis-mariokart-variab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">262</span>&nbsp; <span class="chapter-title">vis-mariokart-variab</span></span></a>
+ <span class="menu-text"><span class="chapter-number">263</span>&nbsp; <span class="chapter-title">vis-mariokart-variab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/sd-vergleich.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">263</span>&nbsp; <span class="chapter-title">sd-vergleich</span></span></a>
+ <span class="menu-text"><span class="chapter-number">264</span>&nbsp; <span class="chapter-title">sd-vergleich</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/streuung-histogramm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">264</span>&nbsp; <span class="chapter-title">Streuung-Histogramm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">265</span>&nbsp; <span class="chapter-title">Streuung-Histogramm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-desk01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">265</span>&nbsp; <span class="chapter-title">mariokart-desk01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">266</span>&nbsp; <span class="chapter-title">mariokart-desk01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/residuen_summe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">266</span>&nbsp; <span class="chapter-title">residuen_summe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">267</span>&nbsp; <span class="chapter-title">residuen_summe</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/modellvergleich_mae.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">267</span>&nbsp; <span class="chapter-title">modellvergleich_mae</span></span></a>
+ <span class="menu-text"><span class="chapter-number">268</span>&nbsp; <span class="chapter-title">modellvergleich_mae</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/rmse_sd_bezug.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">268</span>&nbsp; <span class="chapter-title">rmse_sd_bezug</span></span></a>
+ <span class="menu-text"><span class="chapter-number">269</span>&nbsp; <span class="chapter-title">rmse_sd_bezug</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/z_wert_interpretation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">269</span>&nbsp; <span class="chapter-title">z_wert_interpretation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">270</span>&nbsp; <span class="chapter-title">z_wert_interpretation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/z_transformation_effekt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">270</span>&nbsp; <span class="chapter-title">z_transformation_effekt</span></span></a>
+ <span class="menu-text"><span class="chapter-number">271</span>&nbsp; <span class="chapter-title">z_transformation_effekt</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/robuste_streuung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">271</span>&nbsp; <span class="chapter-title">robuste_streuung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">272</span>&nbsp; <span class="chapter-title">robuste_streuung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/sd_vs_varianz.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">272</span>&nbsp; <span class="chapter-title">sd_vs_varianz</span></span></a>
+ <span class="menu-text"><span class="chapter-number">273</span>&nbsp; <span class="chapter-title">sd_vs_varianz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mae_berechnung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">273</span>&nbsp; <span class="chapter-title">mae_berechnung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">274</span>&nbsp; <span class="chapter-title">mae_berechnung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/residuen_vergleich.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">274</span>&nbsp; <span class="chapter-title">residuen_vergleich</span></span></a>
+ <span class="menu-text"><span class="chapter-number">275</span>&nbsp; <span class="chapter-title">residuen_vergleich</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/guete_streuung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">275</span>&nbsp; <span class="chapter-title">guete_streuung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">276</span>&nbsp; <span class="chapter-title">guete_streuung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/kennwert-robust2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">276</span>&nbsp; <span class="chapter-title">Kennwert-robust2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">277</span>&nbsp; <span class="chapter-title">Kennwert-robust2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zwert-berechnen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">277</span>&nbsp; <span class="chapter-title">zwert-berechnen</span></span></a>
+ <span class="menu-text"><span class="chapter-number">278</span>&nbsp; <span class="chapter-title">zwert-berechnen</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zwert-berechnen2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">278</span>&nbsp; <span class="chapter-title">zwert-berechnen2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">279</span>&nbsp; <span class="chapter-title">zwert-berechnen2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zwert1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">279</span>&nbsp; <span class="chapter-title">zwert1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">280</span>&nbsp; <span class="chapter-title">zwert1</span></span></a>
   </div>
 </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Zusammenhaenge</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-controls="quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-7-label">Zusammenhaenge</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-7" aria-labelledby="quarto-sidebar-section-7-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nasa02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">280</span>&nbsp; <span class="chapter-title">nasa02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">281</span>&nbsp; <span class="chapter-title">nasa02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-korr1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">281</span>&nbsp; <span class="chapter-title">mariokart-korr1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">282</span>&nbsp; <span class="chapter-title">mariokart-korr1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-korr2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">282</span>&nbsp; <span class="chapter-title">mariokart-korr2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">283</span>&nbsp; <span class="chapter-title">mariokart-korr2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-korr3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">283</span>&nbsp; <span class="chapter-title">mariokart-korr3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">284</span>&nbsp; <span class="chapter-title">mariokart-korr3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mariokart-korr4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">284</span>&nbsp; <span class="chapter-title">mariokart-korr4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">285</span>&nbsp; <span class="chapter-title">mariokart-korr4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/korr01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">285</span>&nbsp; <span class="chapter-title">korr01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">286</span>&nbsp; <span class="chapter-title">korr01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/korr02.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">286</span>&nbsp; <span class="chapter-title">korr02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">287</span>&nbsp; <span class="chapter-title">korr02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/korrelation_na_handling.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">287</span>&nbsp; <span class="chapter-title">korrelation_na_handling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">288</span>&nbsp; <span class="chapter-title">korrelation_na_handling</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/r_syntax_correlation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">288</span>&nbsp; <span class="chapter-title">r_syntax_correlation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">289</span>&nbsp; <span class="chapter-title">r_syntax_correlation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nichtlineare_korrelation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">289</span>&nbsp; <span class="chapter-title">nichtlineare_korrelation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">290</span>&nbsp; <span class="chapter-title">nichtlineare_korrelation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/scheinkorrelation_glatze.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">290</span>&nbsp; <span class="chapter-title">scheinkorrelation_glatze</span></span></a>
+ <span class="menu-text"><span class="chapter-number">291</span>&nbsp; <span class="chapter-title">scheinkorrelation_glatze</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/cohen_kategorisierung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">291</span>&nbsp; <span class="chapter-title">cohen_kategorisierung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">292</span>&nbsp; <span class="chapter-title">cohen_kategorisierung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/range_restriction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">292</span>&nbsp; <span class="chapter-title">range_restriction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">293</span>&nbsp; <span class="chapter-title">range_restriction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/korrelation_z_logik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">293</span>&nbsp; <span class="chapter-title">korrelation_z_logik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">294</span>&nbsp; <span class="chapter-title">korrelation_z_logik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/korrelation_richtung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">294</span>&nbsp; <span class="chapter-title">korrelation_richtung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">295</span>&nbsp; <span class="chapter-title">korrelation_richtung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/kovarianz_skalierung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">295</span>&nbsp; <span class="chapter-title">kovarianz_skalierung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">296</span>&nbsp; <span class="chapter-title">kovarianz_skalierung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/kovarianz_null.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">296</span>&nbsp; <span class="chapter-title">kovarianz_null</span></span></a>
+ <span class="menu-text"><span class="chapter-number">297</span>&nbsp; <span class="chapter-title">kovarianz_null</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/bsp-korr-kaus.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">297</span>&nbsp; <span class="chapter-title">bsp-korr-kaus</span></span></a>
+ <span class="menu-text"><span class="chapter-number">298</span>&nbsp; <span class="chapter-title">bsp-korr-kaus</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/bullshit1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">298</span>&nbsp; <span class="chapter-title">bullshit1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">299</span>&nbsp; <span class="chapter-title">bullshit1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/flights-yacsda-eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">299</span>&nbsp; <span class="chapter-title">flights-yacsda-eda</span></span></a>
+ <span class="menu-text"><span class="chapter-number">300</span>&nbsp; <span class="chapter-title">flights-yacsda-eda</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/linearer-zshg-nicht-kausal-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">300</span>&nbsp; <span class="chapter-title">linearer-zshg-nicht-kausal-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">301</span>&nbsp; <span class="chapter-title">linearer-zshg-nicht-kausal-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/min-corr1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">301</span>&nbsp; <span class="chapter-title">min-corr1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">302</span>&nbsp; <span class="chapter-title">min-corr1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/penguins-vis-bodymass1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">302</span>&nbsp; <span class="chapter-title">penguins-vis-bodymass1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">303</span>&nbsp; <span class="chapter-title">penguins-vis-bodymass1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/penguins-vis-bodymass2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">303</span>&nbsp; <span class="chapter-title">penguins-vis-bodymass2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">304</span>&nbsp; <span class="chapter-title">penguins-vis-bodymass2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/saratoga-cor1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">304</span>&nbsp; <span class="chapter-title">saratoga-cor1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">305</span>&nbsp; <span class="chapter-title">saratoga-cor1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/saratoga-cor2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">305</span>&nbsp; <span class="chapter-title">saratoga-cor2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">306</span>&nbsp; <span class="chapter-title">saratoga-cor2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/scatterplot-art-korrelation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">306</span>&nbsp; <span class="chapter-title">scatterplot-art-korrelation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">307</span>&nbsp; <span class="chapter-title">scatterplot-art-korrelation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/scatterplot-de.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">307</span>&nbsp; <span class="chapter-title">scatterplot-de</span></span></a>
+ <span class="menu-text"><span class="chapter-number">308</span>&nbsp; <span class="chapter-title">scatterplot-de</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exrs/posts/smartphone_addict/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">308</span>&nbsp; <span class="chapter-title">smartphone_addict</span></span></a>
+ <span class="menu-text"><span class="chapter-number">309</span>&nbsp; <span class="chapter-title">smartphone_addict</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/streudiagramm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">309</span>&nbsp; <span class="chapter-title">Streudiagramm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">310</span>&nbsp; <span class="chapter-title">Streudiagramm</span></span></a>
   </div>
 </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Regression 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-controls="quarto-sidebar-section-8" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-8-label">Regression 1</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-8" aria-labelledby="quarto-sidebar-section-8-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interpret-koeff-lm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">310</span>&nbsp; <span class="chapter-title">interpret-koeff-lm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">311</span>&nbsp; <span class="chapter-title">interpret-koeff-lm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/korr-als-regr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">311</span>&nbsp; <span class="chapter-title">korr-als-regr</span></span></a>
+ <span class="menu-text"><span class="chapter-number">312</span>&nbsp; <span class="chapter-title">korr-als-regr</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/linearitaet1a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">312</span>&nbsp; <span class="chapter-title">Linearitaet1a</span></span></a>
+ <span class="menu-text"><span class="chapter-number">313</span>&nbsp; <span class="chapter-title">Linearitaet1a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/lm1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">313</span>&nbsp; <span class="chapter-title">lm1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">314</span>&nbsp; <span class="chapter-title">lm1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mtcars-regr01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">314</span>&nbsp; <span class="chapter-title">mtcars-regr01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">315</span>&nbsp; <span class="chapter-title">mtcars-regr01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nichtlineare-regr1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">315</span>&nbsp; <span class="chapter-title">nichtlineare-regr1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">316</span>&nbsp; <span class="chapter-title">nichtlineare-regr1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">316</span>&nbsp; <span class="chapter-title">regression1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">317</span>&nbsp; <span class="chapter-title">regression1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression1b.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">317</span>&nbsp; <span class="chapter-title">regression1b</span></span></a>
+ <span class="menu-text"><span class="chapter-number">318</span>&nbsp; <span class="chapter-title">regression1b</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">318</span>&nbsp; <span class="chapter-title">Regression3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">319</span>&nbsp; <span class="chapter-title">Regression3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">319</span>&nbsp; <span class="chapter-title">Regression4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">320</span>&nbsp; <span class="chapter-title">Regression4</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">320</span>&nbsp; <span class="chapter-title">Regression5</span></span></a>
+ <span class="menu-text"><span class="chapter-number">321</span>&nbsp; <span class="chapter-title">Regression5</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">321</span>&nbsp; <span class="chapter-title">Regression6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">322</span>&nbsp; <span class="chapter-title">Regression6</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ames-kaggle1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">322</span>&nbsp; <span class="chapter-title">ames-kaggle1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">323</span>&nbsp; <span class="chapter-title">ames-kaggle1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/neg_slope.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">323</span>&nbsp; <span class="chapter-title">neg_slope</span></span></a>
+ <span class="menu-text"><span class="chapter-number">324</span>&nbsp; <span class="chapter-title">neg_slope</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/r_vs_r2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">324</span>&nbsp; <span class="chapter-title">r_vs_r2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">325</span>&nbsp; <span class="chapter-title">r_vs_r2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/resid_calc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">325</span>&nbsp; <span class="chapter-title">resid_calc</span></span></a>
+ <span class="menu-text"><span class="chapter-number">326</span>&nbsp; <span class="chapter-title">resid_calc</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/causal_err.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">326</span>&nbsp; <span class="chapter-title">causal_err</span></span></a>
+ <span class="menu-text"><span class="chapter-number">327</span>&nbsp; <span class="chapter-title">causal_err</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/null_vs_lin.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">327</span>&nbsp; <span class="chapter-title">null_vs_lin</span></span></a>
+ <span class="menu-text"><span class="chapter-number">328</span>&nbsp; <span class="chapter-title">null_vs_lin</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/predict_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">328</span>&nbsp; <span class="chapter-title">predict_r</span></span></a>
+ <span class="menu-text"><span class="chapter-number">329</span>&nbsp; <span class="chapter-title">predict_r</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ols_prinzip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">329</span>&nbsp; <span class="chapter-title">ols_prinzip</span></span></a>
+ <span class="menu-text"><span class="chapter-number">330</span>&nbsp; <span class="chapter-title">ols_prinzip</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/r2_logik.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">330</span>&nbsp; <span class="chapter-title">r2_logik</span></span></a>
+ <span class="menu-text"><span class="chapter-number">331</span>&nbsp; <span class="chapter-title">r2_logik</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/slope_inter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">331</span>&nbsp; <span class="chapter-title">slope_inter</span></span></a>
+ <span class="menu-text"><span class="chapter-number">332</span>&nbsp; <span class="chapter-title">slope_inter</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/intercept_m.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">332</span>&nbsp; <span class="chapter-title">intercept_m</span></span></a>
+ <span class="menu-text"><span class="chapter-number">333</span>&nbsp; <span class="chapter-title">intercept_m</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/aussagen-einfache-regr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">333</span>&nbsp; <span class="chapter-title">aussagen-einfache-regr</span></span></a>
+ <span class="menu-text"><span class="chapter-number">334</span>&nbsp; <span class="chapter-title">aussagen-einfache-regr</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interpret-koeff-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">334</span>&nbsp; <span class="chapter-title">interpret-koeff-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">335</span>&nbsp; <span class="chapter-title">interpret-koeff-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/linearitaet.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">335</span>&nbsp; <span class="chapter-title">linearitaet</span></span></a>
+ <span class="menu-text"><span class="chapter-number">336</span>&nbsp; <span class="chapter-title">linearitaet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/m1-koeffizienten-berechnen-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">336</span>&nbsp; <span class="chapter-title">m1-koeffizienten-berechnen-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">337</span>&nbsp; <span class="chapter-title">m1-koeffizienten-berechnen-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">337</span>&nbsp; <span class="chapter-title">mse</span></span></a>
+ <span class="menu-text"><span class="chapter-number">338</span>&nbsp; <span class="chapter-title">mse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mu-bedingt-berechnen-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">338</span>&nbsp; <span class="chapter-title">mu-bedingt-berechnen-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">339</span>&nbsp; <span class="chapter-title">mu-bedingt-berechnen-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ols-minimierung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">339</span>&nbsp; <span class="chapter-title">OLS-Minimierung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">340</span>&nbsp; <span class="chapter-title">OLS-Minimierung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/penguins-lm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">340</span>&nbsp; <span class="chapter-title">penguins-lm</span></span></a>
+ <span class="menu-text"><span class="chapter-number">341</span>&nbsp; <span class="chapter-title">penguins-lm</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/praediktoren-zentrieren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">341</span>&nbsp; <span class="chapter-title">praediktoren-zentrieren</span></span></a>
+ <span class="menu-text"><span class="chapter-number">342</span>&nbsp; <span class="chapter-title">praediktoren-zentrieren</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regressionbegriff.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">342</span>&nbsp; <span class="chapter-title">regressionbegriff</span></span></a>
+ <span class="menu-text"><span class="chapter-number">343</span>&nbsp; <span class="chapter-title">regressionbegriff</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regressionsgleichung-berechnen-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">343</span>&nbsp; <span class="chapter-title">regressionsgleichung-berechnen-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">344</span>&nbsp; <span class="chapter-title">regressionsgleichung-berechnen-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/rquadrat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">344</span>&nbsp; <span class="chapter-title">rquadrat</span></span></a>
+ <span class="menu-text"><span class="chapter-number">345</span>&nbsp; <span class="chapter-title">rquadrat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/stand-regr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">345</span>&nbsp; <span class="chapter-title">stand-reg</span></span></a>
+ <span class="menu-text"><span class="chapter-number">346</span>&nbsp; <span class="chapter-title">stand-reg</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/tidymodels-simple1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">346</span>&nbsp; <span class="chapter-title">tidymodels-simple1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">347</span>&nbsp; <span class="chapter-title">tidymodels-simple1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/umrechnung-r-b.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">347</span>&nbsp; <span class="chapter-title">umrechnung-r-b</span></span></a>
+ <span class="menu-text"><span class="chapter-number">348</span>&nbsp; <span class="chapter-title">umrechnung-r-b</span></span></a>
   </div>
 </li>
       </ul>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">Regression 2</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-controls="quarto-sidebar-section-9" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-9-label">Regression 2</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">
+      <ul id="quarto-sidebar-section-9" aria-labelledby="quarto-sidebar-section-9-label" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interpret-koeff.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">348</span>&nbsp; <span class="chapter-title">interpret-koeff</span></span></a>
+ <span class="menu-text"><span class="chapter-number">349</span>&nbsp; <span class="chapter-title">interpret-koeff</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression1a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">349</span>&nbsp; <span class="chapter-title">regression1a</span></span></a>
+ <span class="menu-text"><span class="chapter-number">350</span>&nbsp; <span class="chapter-title">regression1a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/lm-mario1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">350</span>&nbsp; <span class="chapter-title">lm-mario1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">351</span>&nbsp; <span class="chapter-title">lm-mario1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/lm-mario2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">351</span>&nbsp; <span class="chapter-title">lm-mario2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">352</span>&nbsp; <span class="chapter-title">lm-mario2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/lm-mario3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">352</span>&nbsp; <span class="chapter-title">lm-mario3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">353</span>&nbsp; <span class="chapter-title">lm-mario3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ausreisser1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">353</span>&nbsp; <span class="chapter-title">ausreisser1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">354</span>&nbsp; <span class="chapter-title">ausreisser1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mario-compare-models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">354</span>&nbsp; <span class="chapter-title">mario-compare-models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">355</span>&nbsp; <span class="chapter-title">mario-compare-models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/variablenwahl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">355</span>&nbsp; <span class="chapter-title">variablenwahl</span></span></a>
+ <span class="menu-text"><span class="chapter-number">356</span>&nbsp; <span class="chapter-title">variablenwahl</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regebene.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">356</span>&nbsp; <span class="chapter-title">regebene</span></span></a>
+ <span class="menu-text"><span class="chapter-number">357</span>&nbsp; <span class="chapter-title">regebene</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/kauslalinterp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">357</span>&nbsp; <span class="chapter-title">kauslalinterp</span></span></a>
+ <span class="menu-text"><span class="chapter-number">358</span>&nbsp; <span class="chapter-title">kauslalinterp</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/logigkodier.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">358</span>&nbsp; <span class="chapter-title">logigkodier</span></span></a>
+ <span class="menu-text"><span class="chapter-number">359</span>&nbsp; <span class="chapter-title">logigkodier</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/simpsonpara.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">359</span>&nbsp; <span class="chapter-title">simpsonpara</span></span></a>
+ <span class="menu-text"><span class="chapter-number">360</span>&nbsp; <span class="chapter-title">simpsonpara</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/overfitting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">360</span>&nbsp; <span class="chapter-title">overfitting</span></span></a>
+ <span class="menu-text"><span class="chapter-number">361</span>&nbsp; <span class="chapter-title">overfitting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/samplesplit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">361</span>&nbsp; <span class="chapter-title">samplesplit</span></span></a>
+ <span class="menu-text"><span class="chapter-number">362</span>&nbsp; <span class="chapter-title">samplesplit</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interaktion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">362</span>&nbsp; <span class="chapter-title">interaktion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">363</span>&nbsp; <span class="chapter-title">interaktion</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/dummykodier.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">363</span>&nbsp; <span class="chapter-title">dummykodier</span></span></a>
+ <span class="menu-text"><span class="chapter-number">364</span>&nbsp; <span class="chapter-title">dummykodier</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zentrierung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">364</span>&nbsp; <span class="chapter-title">zentrierung</span></span></a>
+ <span class="menu-text"><span class="chapter-number">365</span>&nbsp; <span class="chapter-title">zentrierung</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/adjustieren2a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">365</span>&nbsp; <span class="chapter-title">adjustieren2a</span></span></a>
+ <span class="menu-text"><span class="chapter-number">366</span>&nbsp; <span class="chapter-title">adjustieren2a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/flights-delay.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">366</span>&nbsp; <span class="chapter-title">flights-delay</span></span></a>
+ <span class="menu-text"><span class="chapter-number">367</span>&nbsp; <span class="chapter-title">flights-delay</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/flights-delay-simplified.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">367</span>&nbsp; <span class="chapter-title">flights-delay-simplified</span></span></a>
+ <span class="menu-text"><span class="chapter-number">368</span>&nbsp; <span class="chapter-title">flights-delay-simplified</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/fofrage-regrformel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">368</span>&nbsp; <span class="chapter-title">fofrage-regrformel</span></span></a>
+ <span class="menu-text"><span class="chapter-number">369</span>&nbsp; <span class="chapter-title">fofrage-regrformel</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/fofrage-regrformel-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">369</span>&nbsp; <span class="chapter-title">fofrage-regrformel-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">370</span>&nbsp; <span class="chapter-title">fofrage-regrformel-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/fofrage-regrformel2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">370</span>&nbsp; <span class="chapter-title">fofrage-regrformel2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">371</span>&nbsp; <span class="chapter-title">fofrage-regrformel2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../exrs/posts/gruppenvergleich-regression/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">371</span>&nbsp; <span class="chapter-title">gruppenvergleich-regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">372</span>&nbsp; <span class="chapter-title">gruppenvergleich-regression</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/gruppenvergleich-regression-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">372</span>&nbsp; <span class="chapter-title">gruppenvergleich-regression-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">373</span>&nbsp; <span class="chapter-title">gruppenvergleich-regression-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ims-kap-04-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">373</span>&nbsp; <span class="chapter-title">ims-kap-04-01</span></span></a>
+ <span class="menu-text"><span class="chapter-number">374</span>&nbsp; <span class="chapter-title">ims-kap-04-01</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ims-kap-04-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">374</span>&nbsp; <span class="chapter-title">ims-kap-04-02</span></span></a>
+ <span class="menu-text"><span class="chapter-number">375</span>&nbsp; <span class="chapter-title">ims-kap-04-02</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ims-kap-04-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">375</span>&nbsp; <span class="chapter-title">ims-kap-04-03</span></span></a>
+ <span class="menu-text"><span class="chapter-number">376</span>&nbsp; <span class="chapter-title">ims-kap-04-03</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ims-kap-04-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">376</span>&nbsp; <span class="chapter-title">ims-kap-04-04</span></span></a>
+ <span class="menu-text"><span class="chapter-number">377</span>&nbsp; <span class="chapter-title">ims-kap-04-04</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ims-kap-04-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">377</span>&nbsp; <span class="chapter-title">ims-kap-04-05</span></span></a>
+ <span class="menu-text"><span class="chapter-number">378</span>&nbsp; <span class="chapter-title">ims-kap-04-05</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/ims-kap-04-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">378</span>&nbsp; <span class="chapter-title">ims-kap-04-06</span></span></a>
+ <span class="menu-text"><span class="chapter-number">379</span>&nbsp; <span class="chapter-title">ims-kap-04-06</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interaktion-falsch-interpretiert-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">379</span>&nbsp; <span class="chapter-title">interaktion-falsch-interpretiert-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">380</span>&nbsp; <span class="chapter-title">interaktion-falsch-interpretiert-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interaktion-konzept-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">380</span>&nbsp; <span class="chapter-title">interaktion-konzept-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">381</span>&nbsp; <span class="chapter-title">interaktion-konzept-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/interaktionseffekt1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">381</span>&nbsp; <span class="chapter-title">interaktionseffekt1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">382</span>&nbsp; <span class="chapter-title">interaktionseffekt1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/log-y-regr1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">382</span>&nbsp; <span class="chapter-title">log-y-regression1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">383</span>&nbsp; <span class="chapter-title">log-y-regression1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/log-y-regr2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">383</span>&nbsp; <span class="chapter-title">log-y-regression2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">384</span>&nbsp; <span class="chapter-title">log-y-regression2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/log-y-regr3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">384</span>&nbsp; <span class="chapter-title">log-y-regression3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">385</span>&nbsp; <span class="chapter-title">log-y-regression3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/modelldef-regrformel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">385</span>&nbsp; <span class="chapter-title">modelldef-regrformel</span></span></a>
+ <span class="menu-text"><span class="chapter-number">386</span>&nbsp; <span class="chapter-title">modelldef-regrformel</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/modellguete-testset.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">386</span>&nbsp; <span class="chapter-title">modellguete-testset</span></span></a>
+ <span class="menu-text"><span class="chapter-number">387</span>&nbsp; <span class="chapter-title">modellguete-testset</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/moderation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">387</span>&nbsp; <span class="chapter-title">moderation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">388</span>&nbsp; <span class="chapter-title">moderation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mtcars-simple1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">388</span>&nbsp; <span class="chapter-title">mtcars-simple1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">389</span>&nbsp; <span class="chapter-title">mtcars-simple1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mtcars-simple2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">389</span>&nbsp; <span class="chapter-title">mtcars-simple2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">390</span>&nbsp; <span class="chapter-title">mtcars-simple2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/mtcars-simple3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">390</span>&nbsp; <span class="chapter-title">mtcars-simple3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">391</span>&nbsp; <span class="chapter-title">mtcars-simple3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/multiple-regr-kontrolle-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">391</span>&nbsp; <span class="chapter-title">multiple-regr-kontrolle-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">392</span>&nbsp; <span class="chapter-title">multiple-regr-kontrolle-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/nom-praed-in-regression.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">392</span>&nbsp; <span class="chapter-title">nom-praed-in-regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">393</span>&nbsp; <span class="chapter-title">nom-praed-in-regression</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/penguins-lm2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">393</span>&nbsp; <span class="chapter-title">penguins-lm2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">394</span>&nbsp; <span class="chapter-title">penguins-lm2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/predictioncontest1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">394</span>&nbsp; <span class="chapter-title">predictioncontest1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">395</span>&nbsp; <span class="chapter-title">predictioncontest1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regr-spezialfaelle-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">395</span>&nbsp; <span class="chapter-title">regr-spezialfaelle-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">396</span>&nbsp; <span class="chapter-title">regr-spezialfaelle-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regr-yb-interpretation-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">396</span>&nbsp; <span class="chapter-title">regr-yb-interpretation-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">397</span>&nbsp; <span class="chapter-title">regr-yb-interpretation-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">397</span>&nbsp; <span class="chapter-title">Regression2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">398</span>&nbsp; <span class="chapter-title">Regression2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/regression6a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">398</span>&nbsp; <span class="chapter-title">regression6a</span></span></a>
+ <span class="menu-text"><span class="chapter-number">399</span>&nbsp; <span class="chapter-title">regression6a</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/tidymodels3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">399</span>&nbsp; <span class="chapter-title">tidymodels3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">400</span>&nbsp; <span class="chapter-title">tidymodels3</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vollstandardisiertes-modell-interpretation-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">400</span>&nbsp; <span class="chapter-title">vollstandardisiertes-modell-interpretation-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">401</span>&nbsp; <span class="chapter-title">vollstandardisiertes-modell-interpretation-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vorhersage-interaktion-berechnen-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">401</span>&nbsp; <span class="chapter-title">vorhersage-interaktion-berechnen-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">402</span>&nbsp; <span class="chapter-title">vorhersage-interaktion-berechnen-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/vorhersage-yb-berechnen-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">402</span>&nbsp; <span class="chapter-title">vorhersage-yb-berechnen-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">403</span>&nbsp; <span class="chapter-title">vorhersage-yb-berechnen-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/z-standardisierung-vergleich-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">403</span>&nbsp; <span class="chapter-title">z-standardisierung-vergleich-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">404</span>&nbsp; <span class="chapter-title">z-standardisierung-vergleich-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zentrieren-mit-interaktion-schoice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">404</span>&nbsp; <span class="chapter-title">zentrieren-mit-interaktion-schoice</span></span></a>
+ <span class="menu-text"><span class="chapter-number">405</span>&nbsp; <span class="chapter-title">zentrieren-mit-interaktion-schoice</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../quiz/zuordnung_regr_formel1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">405</span>&nbsp; <span class="chapter-title">zuordnung_regr_formel1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">406</span>&nbsp; <span class="chapter-title">zuordnung_regr_formel1</span></span></a>
   </div>
 </li>
       </ul>
@@ -2813,9 +2804,9 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quiz/nasa02.html">Zusammenhaenge</a></li><li class="breadcrumb-item"><a href="../quiz/korr02.html"><span class="chapter-number">286</span>&nbsp; <span class="chapter-title">korr02</span></a></li></ol></nav><div class="quarto-title">
+<main class="content" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Pfad"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../quiz/nasa02.html">Zusammenhaenge</a></li><li class="breadcrumb-item"><a href="../quiz/korr02.html"><span class="chapter-number">287</span>&nbsp; <span class="chapter-title">korr02</span></a></li></ol></nav><div class="quarto-title">
 <h1 class="title">
-<span class="chapter-number">286</span>&nbsp; <span class="chapter-title">korr02</span>
+<span class="chapter-number">287</span>&nbsp; <span class="chapter-title">korr02</span>
 </h1>
 </div>
 
@@ -2836,7 +2827,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 
-</header><!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. --><!-- quelle: exrs/posts/korr02/korr02.rmd | stand: 392269829c5f859d97d1af4962ea9623-64598fa00985 --><div class="cell" data-layout-align="center" data-cache.extra="392269829c5f859d97d1af4962ea9623-64598fa00985">
+</header><!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. --><!-- quelle: exrs/posts/korr02/korr02.rmd | stand: 392269829c5f859d97d1af4962ea9623-6417a11b1537 --><div class="cell" data-layout-align="center" data-cache.extra="392269829c5f859d97d1af4962ea9623-6417a11b1537">
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Welcher Korrelationswert (Pearson) beschreibt die Korrelation in den Daten am besten?</p>
@@ -2848,7 +2839,7 @@ ul.task-list li input[type="checkbox"] {
 <li>-0.9</li>
 </ul>
 <p><img src="data:image/png;base64,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" alt="" width="100%"></p>
-<p><input class="webex-solveme nospaces" id="webex-d72502a4d57ca4ceca9bfa8887b63277" data-tol="0.15" size="20" data-answer="PxUCGwkQPA=="></p>
+<p><input class="webex-solveme nospaces" id="webex-bafbe3fa2c797174edecd2076fcdaf02" data-tol="0.15" size="20" data-answer="OUNWTFwROw=="></p>
 </div>
 <div class="webex-solution">
 <p>Die Korrelation in der zugehörigen (bivariaten) Population beträgt 0.9.</p>
@@ -3466,15 +3457,50 @@ window.onload = function() {
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Dunkelmodus umschalten");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
       const i = window.document.createElement("i");
       i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Dunkelmodus umschalten");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
     }
     setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
@@ -3553,7 +3579,8 @@ window.onload = function() {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -3562,8 +3589,69 @@ window.onload = function() {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -3577,6 +3665,7 @@ window.onload = function() {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -3739,44 +3828,54 @@ window.onload = function() {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -3874,14 +3973,16 @@ window.onload = function() {
       }
     }
   });
-  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+  </script><script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollbarer Code","output":"Scrollbare Ausgabe"};
+  </script><nav class="page-navigation" aria-label="Seite"><div class="nav-page nav-page-previous">
       <a href="../quiz/korr01.html" class="pagination-link" aria-label="korr01">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">285</span>&nbsp; <span class="chapter-title">korr01</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">286</span>&nbsp; <span class="chapter-title">korr01</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../quiz/korrelation_na_handling.html" class="pagination-link" aria-label="korrelation_na_handling">
-        <span class="nav-page-text"><span class="chapter-number">287</span>&nbsp; <span class="chapter-title">korrelation_na_handling</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">288</span>&nbsp; <span class="chapter-title">korrelation_na_handling</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
