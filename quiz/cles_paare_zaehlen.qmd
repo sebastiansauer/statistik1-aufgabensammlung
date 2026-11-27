@@ -1,0 +1,20 @@
+---
+title: "cles_paare_zaehlen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/cles_paare_zaehlen/cles_paare_zaehlen.rmd | stand: 10f26157a830f93c6498d7707ef69b9e-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "10f26157a830f93c6498d7707ef69b9e-6417a11b1537"
+quiz(file.path(root, "exrs/posts/cles_paare_zaehlen/cles_paare_zaehlen.rmd"), seed = 17885)
+```

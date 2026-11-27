@@ -1,0 +1,20 @@
+---
+title: "rohdaten_dublette"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/rohdaten_dublette/rohdaten_dublette.rmd | stand: 7ac7ac1f87138919ca46ed16517419c2-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "7ac7ac1f87138919ca46ed16517419c2-6417a11b1537"
+quiz(file.path(root, "exrs/posts/rohdaten_dublette/rohdaten_dublette.rmd"), seed = 16265)
+```

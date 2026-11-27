@@ -3,7 +3,7 @@ title: "r_vs_r2"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/r_vs_r2/r_vs_r2.rmd | stand: b34df5bc60583b9a2b35b421b1e14c49-6417a11b1537 -->
+<!-- quelle: exrs/posts/r_vs_r2/r_vs_r2.rmd | stand: ac1e4ff7521edca0e515fe8c10002459-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "b34df5bc60583b9a2b35b421b1e14c49-6417a11b1537"
+#| cache.extra: "ac1e4ff7521edca0e515fe8c10002459-6417a11b1537"
 quiz(file.path(root, "exrs/posts/r_vs_r2/r_vs_r2.rmd"), seed = 2627)
 ```

@@ -1,0 +1,20 @@
+---
+title: "cles_interpretation"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/cles_interpretation/cles_interpretation.rmd | stand: e8e7873752c670a62cd8d34ce67df2df-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "e8e7873752c670a62cd8d34ce67df2df-6417a11b1537"
+quiz(file.path(root, "exrs/posts/cles_interpretation/cles_interpretation.rmd"), seed = 20651)
+```

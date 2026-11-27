@@ -1,0 +1,20 @@
+---
+title: "diagramm_gestaltung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/diagramm_gestaltung/diagramm_gestaltung.rmd | stand: 4d0ba86ff5a1ab2720139d8c6c108a7b-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "4d0ba86ff5a1ab2720139d8c6c108a7b-6417a11b1537"
+quiz(file.path(root, "exrs/posts/diagramm_gestaltung/diagramm_gestaltung.rmd"), seed = 20444)
+```

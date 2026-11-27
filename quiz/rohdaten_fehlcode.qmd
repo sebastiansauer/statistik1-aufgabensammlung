@@ -1,0 +1,20 @@
+---
+title: "rohdaten_fehlcode"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/rohdaten_fehlcode/rohdaten_fehlcode.rmd | stand: 4176d1263ac5efbed33b32956609ad2f-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "4176d1263ac5efbed33b32956609ad2f-6417a11b1537"
+quiz(file.path(root, "exrs/posts/rohdaten_fehlcode/rohdaten_fehlcode.rmd"), seed = 15822)
+```

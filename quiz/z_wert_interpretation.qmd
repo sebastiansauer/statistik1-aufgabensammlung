@@ -3,7 +3,7 @@ title: "z_wert_interpretation"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/z_wert_interpretation/z_wert_interpretation.rmd | stand: 1ddcda5ded8cf14d3d26c61ff94c3ec5-6417a11b1537 -->
+<!-- quelle: exrs/posts/z_wert_interpretation/z_wert_interpretation.rmd | stand: 5f2cd98ceb613859ff25ef839a18a03d-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "1ddcda5ded8cf14d3d26c61ff94c3ec5-6417a11b1537"
+#| cache.extra: "5f2cd98ceb613859ff25ef839a18a03d-6417a11b1537"
 quiz(file.path(root, "exrs/posts/z_wert_interpretation/z_wert_interpretation.rmd"), seed = 25158)
 ```

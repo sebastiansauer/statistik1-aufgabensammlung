@@ -1,0 +1,20 @@
+---
+title: "rohdaten_drop_na"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/rohdaten_drop_na/rohdaten_drop_na.rmd | stand: 9fc8fce57ecc7cdd2e3b6f8124a846cd-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "9fc8fce57ecc7cdd2e3b6f8124a846cd-6417a11b1537"
+quiz(file.path(root, "exrs/posts/rohdaten_drop_na/rohdaten_drop_na.rmd"), seed = 14245)
+```

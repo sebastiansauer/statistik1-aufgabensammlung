@@ -1,0 +1,20 @@
+---
+title: "rohdaten_einlesen_skip"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/rohdaten_einlesen_skip/rohdaten_einlesen_skip.rmd | stand: af68e70b94a5ff0357d47125582e0c4a-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "af68e70b94a5ff0357d47125582e0c4a-6417a11b1537"
+quiz(file.path(root, "exrs/posts/rohdaten_einlesen_skip/rohdaten_einlesen_skip.rmd"), seed = 26889)
+```
