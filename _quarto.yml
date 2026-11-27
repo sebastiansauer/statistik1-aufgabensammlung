@@ -173,6 +173,7 @@ book:
 
     - part: Aufbereiten
       chapters:
+        - quiz/fallstudie-umfrage-aufraeumen.qmd
         - quiz/wrangle3.qmd
         - quiz/wrangle4.qmd
         - quiz/wrangle5.qmd

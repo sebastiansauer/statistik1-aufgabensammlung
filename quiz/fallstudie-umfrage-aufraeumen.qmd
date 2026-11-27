@@ -1,0 +1,20 @@
+---
+title: "fallstudie-umfrage-aufraeumen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/fallstudie-umfrage-aufraeumen/fallstudie-umfrage-aufraeumen.qmd | stand: 1bf16ccac3e60f59fdc1d132198da3ad-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "1bf16ccac3e60f59fdc1d132198da3ad-6417a11b1537"
+quiz(file.path(root, "exrs/posts/fallstudie-umfrage-aufraeumen/fallstudie-umfrage-aufraeumen.qmd"), seed = 44446)
+```
