@@ -1,0 +1,20 @@
+---
+title: "rohdaten_extremwert_entscheidung"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/rohdaten_extremwert_entscheidung/rohdaten_extremwert_entscheidung.rmd | stand: 8cbed1a5357fb607dddf5b56a2dd9fe4-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "8cbed1a5357fb607dddf5b56a2dd9fe4-6417a11b1537"
+quiz(file.path(root, "exrs/posts/rohdaten_extremwert_entscheidung/rohdaten_extremwert_entscheidung.rmd"), seed = 56632)
+```

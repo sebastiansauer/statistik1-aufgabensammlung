@@ -1,0 +1,20 @@
+---
+title: "ki_filter_reihenfolge"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/ki_filter_reihenfolge/ki_filter_reihenfolge.rmd | stand: 0142ffa64ac5a72b611c21964cb0b5fe-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "0142ffa64ac5a72b611c21964cb0b5fe-6417a11b1537"
+quiz(file.path(root, "exrs/posts/ki_filter_reihenfolge/ki_filter_reihenfolge.rmd"), seed = 24306)
+```

@@ -3,7 +3,7 @@ title: "null_vs_lin"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/null_vs_lin/null_vs_lin.rmd | stand: 7e8ba3e4f8b8f2b395292e5f9c6159f5-6417a11b1537 -->
+<!-- quelle: exrs/posts/null_vs_lin/null_vs_lin.rmd | stand: 89505f982b9d19352bccc617c53de5e8-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "7e8ba3e4f8b8f2b395292e5f9c6159f5-6417a11b1537"
+#| cache.extra: "89505f982b9d19352bccc617c53de5e8-6417a11b1537"
 quiz(file.path(root, "exrs/posts/null_vs_lin/null_vs_lin.rmd"), seed = 7080)
 ```

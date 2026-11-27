@@ -3,7 +3,7 @@ title: "korrelation_z_logik"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/korrelation_z_logik/korrelation_z_logik.rmd | stand: 12993e748ce629512dafde06e00baa93-6417a11b1537 -->
+<!-- quelle: exrs/posts/korrelation_z_logik/korrelation_z_logik.rmd | stand: 9ca7453786a6992d61a32dc47944befe-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "12993e748ce629512dafde06e00baa93-6417a11b1537"
+#| cache.extra: "9ca7453786a6992d61a32dc47944befe-6417a11b1537"
 quiz(file.path(root, "exrs/posts/korrelation_z_logik/korrelation_z_logik.rmd"), seed = 20278)
 ```

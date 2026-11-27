@@ -3,7 +3,7 @@ title: "slope_inter"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/slope_inter/slope_inter.rmd | stand: 354e21448fb6f0b267b20880820ff373-6417a11b1537 -->
+<!-- quelle: exrs/posts/slope_inter/slope_inter.rmd | stand: e9d47a679c4aa502d4739ceb779a05a3-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "354e21448fb6f0b267b20880820ff373-6417a11b1537"
+#| cache.extra: "e9d47a679c4aa502d4739ceb779a05a3-6417a11b1537"
 quiz(file.path(root, "exrs/posts/slope_inter/slope_inter.rmd"), seed = 7110)
 ```

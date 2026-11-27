@@ -1,0 +1,20 @@
+---
+title: "cohens_d_berechnen"
+---
+
+<!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
+<!-- quelle: exrs/posts/cohens_d_berechnen/cohens_d_berechnen.rmd | stand: 67318cebfe70307b446a7e6e0d3a67ec-6417a11b1537 -->
+
+```{r}
+#| include: false
+#| cache: false
+root <- Sys.getenv("QUARTO_PROJECT_DIR", unset = normalizePath(".."))
+source(file.path(root, "specifics", "quiz.R"))
+```
+
+```{r}
+#| echo: false
+#| results: asis
+#| cache.extra: "67318cebfe70307b446a7e6e0d3a67ec-6417a11b1537"
+quiz(file.path(root, "exrs/posts/cohens_d_berechnen/cohens_d_berechnen.rmd"), seed = 17772)
+```

@@ -3,7 +3,7 @@ title: "mae_berechnung"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/mae_berechnung/mae_berechnung.rmd | stand: 586b981ffaba1241d2277cea5d91b202-6417a11b1537 -->
+<!-- quelle: exrs/posts/mae_berechnung/mae_berechnung.rmd | stand: f8682fffa6f9ba64be2bc0c06deb469a-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "586b981ffaba1241d2277cea5d91b202-6417a11b1537"
+#| cache.extra: "f8682fffa6f9ba64be2bc0c06deb469a-6417a11b1537"
 quiz(file.path(root, "exrs/posts/mae_berechnung/mae_berechnung.rmd"), seed = 11105)
 ```

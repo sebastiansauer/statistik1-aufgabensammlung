@@ -3,7 +3,7 @@ title: "normal_rechnen"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/normal_rechnen/normal_rechnen.rmd | stand: e0dcd1e2643e3aa952f357007ea63907-6417a11b1537 -->
+<!-- quelle: exrs/posts/normal_rechnen/normal_rechnen.rmd | stand: 6cc89161d78e8f7467ce5dc6273bd517-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "e0dcd1e2643e3aa952f357007ea63907-6417a11b1537"
+#| cache.extra: "6cc89161d78e8f7467ce5dc6273bd517-6417a11b1537"
 quiz(file.path(root, "exrs/posts/normal_rechnen/normal_rechnen.rmd"), seed = 11036)
 ```

@@ -3,7 +3,7 @@ title: "kauslalinterp"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/kauslalinterp/kauslalinterp.rmd | stand: f45dc2cfee732b471cffddca67441f3c-6417a11b1537 -->
+<!-- quelle: exrs/posts/kauslalinterp/kauslalinterp.rmd | stand: f95f189ddb5aa57627df8c79f0cca1da-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "f45dc2cfee732b471cffddca67441f3c-6417a11b1537"
+#| cache.extra: "f95f189ddb5aa57627df8c79f0cca1da-6417a11b1537"
 quiz(file.path(root, "exrs/posts/kauslalinterp/kauslalinterp.rmd"), seed = 9915)
 ```

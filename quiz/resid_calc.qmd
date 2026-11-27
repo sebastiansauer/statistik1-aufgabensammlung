@@ -3,7 +3,7 @@ title: "resid_calc"
 ---
 
 <!-- ERZEUGT von scripts/make-quiz-chapters.R, nicht von Hand aendern. -->
-<!-- quelle: exrs/posts/resid_calc/resid_calc.rmd | stand: 7318ebec7e625d39ed0e3ef496e5f5a4-6417a11b1537 -->
+<!-- quelle: exrs/posts/resid_calc/resid_calc.rmd | stand: 17bfbaf18f62dc6d641ed3dbbb00d457-6417a11b1537 -->
 
 ```{r}
 #| include: false
@@ -15,6 +15,6 @@ source(file.path(root, "specifics", "quiz.R"))
 ```{r}
 #| echo: false
 #| results: asis
-#| cache.extra: "7318ebec7e625d39ed0e3ef496e5f5a4-6417a11b1537"
+#| cache.extra: "17bfbaf18f62dc6d641ed3dbbb00d457-6417a11b1537"
 quiz(file.path(root, "exrs/posts/resid_calc/resid_calc.rmd"), seed = 5582)
 ```
